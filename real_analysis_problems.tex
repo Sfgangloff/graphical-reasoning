@@ -1,0 +1,977 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\title{Putnam Problems in Real Analysis (1985--2025)\\
+\large Curated by topic tags}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Tag vocabulary}
+
+Each problem below carries one or more of the following tags. They cover
+limits/convergence, continuity, differentiability, integrability,
+inequalities involving derivatives or integrals, ODEs on the real line, and
+asymptotic behavior of real-valued functions. Problems whose substance is
+combinatorics, number theory, algebra, geometry, probability, complex
+analysis, or formal power series with combinatorial flavor were excluded.
+
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[\texttt{limit-sequence}] Limits of sequences of real numbers.
+\item[\texttt{limit-series}] Convergence/sum of series of real numbers.
+\item[\texttt{continuity}] Continuity properties of real functions.
+\item[\texttt{differentiability}] Differentiability properties; uses of derivatives.
+\item[\texttt{integrability}] Integrability questions / structural results about integrals.
+\item[\texttt{integral-evaluation}] Compute a definite or improper real integral.
+\item[\texttt{integral-inequality}] Inequality involving one or more integrals.
+\item[\texttt{derivative-inequality}] Inequality involving one or more derivatives.
+\item[\texttt{ode}] Ordinary differential equation on the real line.
+\item[\texttt{asymptotic}] Asymptotic behavior of real-valued sequences/functions.
+\item[\texttt{convergence}] Convergence questions not fitting limit-sequence/series exactly.
+\item[\texttt{iteration}] Iterated maps / recurrences whose question is the limit behavior.
+\item[\texttt{functional-real}] Functional equation/property of a real-valued function.
+\end{description}
+
+\bigskip
+\hrule
+\bigskip
+
+\section*{1985}
+
+\paragraph{1985 A--3 \textnormal{[\texttt{limit-sequence, iteration}]}}
+Let $d$ be a real number. For each integer $m \geq 0$, define a
+sequence $\{a_m(j)\}$, $j=0,1,2,\dots$ by the condition
+\begin{align*}
+a_m(0) &= d/2^m, \\
+a_m(j+1) &= (a_m(j))^2 + 2a_m(j), \qquad j \geq 0.
+\end{align*}
+Evaluate $\lim_{n \to \infty} a_n(n)$.
+
+\paragraph{1985 B--5 \textnormal{[\texttt{integral-evaluation}]}}
+Evaluate $\int_0^\infty t^{-1/2}e^{-1985(t+t^{-1})}\,dt$. You may
+assume that $\int_{-\infty}^\infty e^{-x^2}\,dx = \sqrt{\pi}$.
+
+\section*{1986}
+
+\paragraph{1986 A--1 \textnormal{[\texttt{differentiability}]}}
+Find, with explanation, the maximum value of $f(x)=x^3-3x$ on the
+set of all real numbers $x$ satisfying $x^4+36\leq 13x^2$.
+
+\paragraph{1986 A--3 \textnormal{[\texttt{limit-series}]}}
+Evaluate $\sum_{n=0}^\infty \mathrm{Arccot}(n^2+n+1)$, where
+$\mathrm{Arccot}\,t$ for $t \geq 0$ denotes the number $\theta$ in the
+interval $0 < \theta \leq \pi/2$ with $\cot \theta = t$.
+
+\section*{1987}
+
+\paragraph{1987 A--3 \textnormal{[\texttt{ode, differentiability, derivative-inequality}]}}
+For all real $x$, the real-valued function $y=f(x)$ satisfies
+\[
+y''-2y'+y=2e^x.
+\]
+\begin{enumerate}
+\item[(a)] If $f(x)>0$ for all real $x$, must $f'(x) > 0$ for all real $x$? Explain.
+\item[(b)] If $f'(x)>0$ for all real $x$, must $f(x) > 0$ for all real $x$? Explain.
+\end{enumerate}
+
+\paragraph{1987 A--6 \textnormal{[\texttt{limit-series, convergence}]}}
+For each positive integer $n$, let $a(n)$ be the number of zeroes in
+the base 3 representation of $n$. For which positive real numbers $x$
+does the series
+\[
+\sum_{n=1}^\infty \frac{x^{a(n)}}{n^3}
+\]
+converge?
+
+\paragraph{1987 B--1 \textnormal{[\texttt{integral-evaluation}]}}
+Evaluate
+\[
+\int_2^4 \frac{\sqrt{\ln(9-x)}\,dx}{\sqrt{\ln(9-x)}+\sqrt{\ln(x+3)}}.
+\]
+
+\paragraph{1987 B--4 \textnormal{[\texttt{limit-sequence, iteration}]}}
+Let $(x_1,y_1) = (0.8, 0.6)$ and let $x_{n+1} = x_n \cos y_n - y_n
+\sin y_n$ and $y_{n+1}= x_n \sin y_n + y_n \cos y_n$ for
+$n=1,2,3,\dots$. For each of $\lim_{n\to \infty} x_n$ and $\lim_{n \to
+\infty} y_n$, prove that the limit exists and find it or prove that
+the limit does not exist.
+
+\section*{1988}
+
+\paragraph{1988 A--2 \textnormal{[\texttt{differentiability, functional-real}]}}
+A not uncommon calculus mistake is to believe that the product rule
+for derivatives says that $(fg)' = f'g'$. If $f(x)=e^{x^2}$,
+determine, with proof, whether there exists an open interval $(a,b)$
+and a nonzero function $g$ defined on $(a,b)$ such that this wrong
+product rule is true for $x$ in $(a,b)$.
+
+\paragraph{1988 A--3 \textnormal{[\texttt{limit-series, convergence}]}}
+Determine, with proof, the set of real numbers $x$ for which
+\[
+\sum_{n=1}^\infty \left( \frac{1}{n} \csc \frac{1}{n} - 1 \right)^x
+\]
+converges.
+
+\paragraph{1988 B--4 \textnormal{[\texttt{limit-series, convergence}]}}
+Prove that if $\sum_{n=1}^\infty a_n$ is a convergent series of
+positive real numbers, then so is $\sum_{n=1}^\infty (a_n)^{n/(n+1)}$.
+
+\section*{1989}
+
+\paragraph{1989 A--2 \textnormal{[\texttt{integral-evaluation}]}}
+Evaluate
+$\displaystyle{\int_0^a\int_0^b e^{{\rm max}\{b^2x^2, a^2y^2\}}\,dy\,dx}$
+where $a$ and $b$ are positive.
+
+\paragraph{1989 B--3 \textnormal{[\texttt{ode, integral-evaluation, asymptotic}]}}
+Let $f$ be a function on $[0,\infty)$, differentiable and satisfying
+\[
+f'(x)=-3f(x)+6f(2x)
+\]
+for $x>0$. Assume that $|f(x)|\le e^{-\sqrt{x}}$ for $x\ge 0$ (so that
+$f(x)$ tends rapidly to $0$ as $x$ increases).
+For $n$ a non-negative integer, define
+\[
+\mu_n=\int_0^\infty x^n f(x)\,dx
+\]
+(sometimes called the $n$th moment of $f$).
+\begin{enumerate}
+\item[a)] Express $\mu_n$ in terms of $\mu_0$.
+\item[b)] Prove that the sequence $\{\mu_n \frac{3^n}{n!}\}$ always converges,
+and that the limit is $0$ only if $\mu_0=0$.
+\end{enumerate}
+
+\section*{1990}
+
+\paragraph{1990 A--2 \textnormal{[\texttt{limit-sequence, convergence}]}}
+Is $\sqrt{2}$ the limit of a sequence of numbers of the form
+$\sqrt[3]{n} - \sqrt[3]{m}$ ($n,m = 0, 1, 2, \dots$)?
+
+\paragraph{1990 B--1 \textnormal{[\texttt{differentiability, integral-evaluation, ode}]}}
+Find all real-valued continuously differentiable functions $f$
+on the real line such that for all $x$,
+\[
+(f(x))^2 = \int_0^x [(f(t))^2 + (f'(t))^2]\,dt + 1990.
+\]
+
+\section*{1991}
+
+\paragraph{1991 A--5 \textnormal{[\texttt{integral-evaluation}]}}
+Find the maximum value of
+\[
+\int_0^y \sqrt{x^4 + (y-y^2)^2}\,dx
+\]
+for $0 \leq y \leq 1$.
+
+\paragraph{1991 B--2 \textnormal{[\texttt{differentiability, functional-real}]}}
+Suppose $f$ and $g$ are non-constant, differentiable, real-valued
+functions defined on $(-\infty, \infty)$. Furthermore, suppose that for
+each pair of real numbers $x$ and $y$,
+\begin{align*}
+f(x+y) &= f(x)f(y) - g(x)g(y), \\
+g(x+y) &= f(x)g(y) + g(x)f(y).
+\end{align*}
+If $f'(0) = 0$, prove that $(f(x))^2 + (g(x))^2 = 1$ for all $x$.
+
+\paragraph{1991 B--6 \textnormal{[\texttt{integral-inequality}]}}
+Let $a$ and $b$ be positive numbers. Find the largest number $c$, in
+terms of $a$ and $b$, such that
+\[
+a^x b^{1-x} \leq a \frac{\sinh ux}{\sinh u} + b \frac{\sinh u(1-x)}{\sinh u}
+\]
+for all $u$ with $0 < |u| \leq c$ and for all $x$, $0 < x < 1$. (Note:
+$\sinh u = (e^u - e^{-u})/2$.)
+
+\section*{1992}
+
+\paragraph{1992 A--4 \textnormal{[\texttt{differentiability, limit-sequence}]}}
+Let $f$ be an infinitely differentiable real-valued function
+defined on the real numbers. If
+\[
+f\left( \frac{1}{n} \right) = \frac{n^2}{n^2 + 1}, \qquad n = 1, 2, 3, \dots,
+\]
+compute the values of the derivatives $f^{(k)}(0), k = 1, 2, 3, \dots$.
+
+\paragraph{1992 B--3 \textnormal{[\texttt{iteration, convergence}]}}
+For any pair $(x, y)$ of real numbers, a sequence
+$(a_n(x,y))_{n\geq 0}$ is defined as follows:
+\begin{align*}
+a_0(x, y) &= x, \\
+a_{n+1}(x, y) &= \frac{(a_n(x, y))^2 + y^2}{2}, \qquad \mbox{for $n \geq 0$}.
+\end{align*}
+Find the area of the region
+\[
+\{ (x, y) | (a_n(x, y))_{n \geq 0}\ \mbox{converges}\}.
+\]
+
+\section*{1993}
+
+\paragraph{1993 A--1 \textnormal{[\texttt{integral-evaluation}]}}
+The horizontal line $y=c$ intersects the curve $y = 2x - 3x^3$
+in the first quadrant as in the figure. Find $c$ so that the areas of the
+two shaded regions are equal. [Figure not included. The first region is
+bounded by the $y$-axis, the line $y=c$ and the curve; the other lies
+under the curve and above the line $y=c$ between their two points of
+intersection.]
+
+\paragraph{1993 A--2 \textnormal{[\texttt{iteration}]}}
+Let $(x_n)_{n \geq 0}$ be a sequence of nonzero real numbers
+such that $x_n^2 - x_{n-1}x_{n+1} = 1$ for $n=1,2,3,\dots$. Prove there
+exists a real number $a$ such that $x_{n+1} = ax_n - x_{n-1}$ for all $n
+\geq 1$.
+
+\paragraph{1993 A--5 \textnormal{[\texttt{integral-evaluation}]}}
+Show that
+\begin{gather*}
+\int_{-100}^{-10} \left( \frac{x^2 - x}{x^3 - 3x + 1} \right)^2\,dx + \\
+\int_{\frac{1}{101}}^{\frac{1}{11}} \left( \frac{x^2 - x}{x^3 - 3x + 1} \right)^2\,dx + \\
+\int_{\frac{101}{100}}^{\frac{11}{10}} \left( \frac{x^2 - x}{x^3 - 3x + 1} \right)^2\,dx
+\end{gather*}
+is a rational number.
+
+\paragraph{1993 B--4 \textnormal{[\texttt{continuity, integral-evaluation, functional-real}]}}
+The function $K(x,y)$ is positive and continuous for $0 \leq x \leq 1, 0
+\leq y \leq 1$, and the functions $f(x)$ and $g(x)$ are positive and
+continuous for $0 \leq x \leq 1$. Suppose that for all $x$, $0 \leq x \leq 1$,
+\[
+\int_0^1 f(y)K(x,y)\,dy = g(x)
+\]
+and
+\[
+\int_0^1 g(y)K(x,y)\,dy = f(x).
+\]
+Show that $f(x) = g(x)$ for $0 \leq x \leq 1$.
+
+\section*{1994}
+
+\paragraph{1994 A--1 \textnormal{[\texttt{limit-series, convergence}]}}
+Suppose that a sequence $a_1, a_2, a_3, \dots$ satisfies
+$0 < a_n \leq a_{2n} + a_{2n+1}$ for all $n \geq 1$. Prove that the series
+$\sum_{n=1}^{\infty} a_n$ diverges.
+
+\paragraph{1994 B--3 \textnormal{[\texttt{differentiability, derivative-inequality, asymptotic}]}}
+Find the set of all real numbers $k$ with the following property: For any
+positive, differentiable function $f$ that satisfies $f'(x) > f(x)$
+for all $x$, there is some number $N$ such that
+$f(x) > e^{kx}$ for all $x > N$.
+
+\section*{1995}
+
+\paragraph{1995 A--2 \textnormal{[\texttt{integral-evaluation, convergence}]}}
+For what pairs $(a,b)$ of positive real numbers does the
+improper integral
+\[
+\int_{b}^{\infty} \left( \sqrt{\sqrt{x+a}-\sqrt{x}} -
+\sqrt{\sqrt{x}-\sqrt{x-b}} \right)\,dx
+\]
+converge?
+
+\paragraph{1995 A--5 \textnormal{[\texttt{ode, asymptotic}]}}
+Let $x_{1},x_{2},\dots,x_{n}$ be differentiable
+(real-valued) functions of a single variable $t$ which satisfy
+\begin{align*}
+\frac{dx_{1}}{dt} &= a_{11}x_{1} + a_{12}x_{2} + \cdots + a_{1n}x_{n} \\
+\frac{dx_{2}}{dt} &= a_{21}x_{1} + a_{22}x_{2} + \cdots + a_{2n}x_{n} \\
+&\vdots \\
+\frac{dx_{n}}{dt} &= a_{n1}x_{1} + a_{n2}x_{2} + \cdots + a_{nn}x_{n}
+\end{align*}
+for some constants $a_{ij}>0$. Suppose that for all $i$, $x_{i}(t)
+\to 0$ as $t \to \infty$. Are the functions $x_{1},x_{2},\dots,x_{n}$
+necessarily linearly dependent?
+
+\section*{1996}
+
+\paragraph{1996 A--6 \textnormal{[\texttt{continuity, functional-real}]}}
+Let $c>0$ be a constant. Give a complete description, with proof, of
+the set of all continuous functions $f: \mathbb{R} \to \mathbb{R}$ such that $f(x) =
+f(x^2+c)$ for all $x \in \mathbb{R}$.
+
+\paragraph{1996 B--2 \textnormal{[\texttt{asymptotic, integral-inequality}]}}
+Show that for every positive integer $n$,
+\[
+\left( \frac{2n-1}{e} \right)^{\frac{2n-1}{2}} < 1 \cdot 3 \cdot 5
+\cdots (2n-1) < \left( \frac{2n+1}{e} \right)^{\frac{2n+1}{2}}.
+\]
+
+\section*{1997}
+
+\paragraph{1997 A--3 \textnormal{[\texttt{integral-evaluation, limit-series}]}}
+Evaluate
+\begin{gather*}
+\int_0^\infty \left(x-\frac{x^3}{2}+\frac{x^5}{2\cdot
+4}-\frac{x^7}{2\cdot 4\cdot 6}+\cdots\right) \\
+\left(1+\frac{x^2}{2^2}+
+\frac{x^4}{2^2\cdot 4^2}+\frac{x^6}{2^2\cdot 4^2 \cdot 6^2}+\cdots\right)\,dx.
+\end{gather*}
+
+\paragraph{1997 B--2 \textnormal{[\texttt{differentiability, integral-inequality}]}}
+Let $f$ be a twice-differentiable real-valued function satisfying
+\[
+f(x)+f''(x)=-xg(x)f'(x),
+\]
+where $g(x)\geq 0$ for all real $x$. Prove that $|f(x)|$ is bounded.
+
+\section*{1998}
+
+\paragraph{1998 A--2 \textnormal{[\texttt{integral-evaluation}]}}
+Let $s$ be any arc of the unit circle lying entirely in the first
+quadrant. Let $A$ be the area of the region lying below $s$ and
+above the $x$-axis and let $B$ be the area of the region lying to the
+right of the $y$-axis and to the left of $s$. Prove that $A+B$ depends
+only on the arc length, and not on the position, of $s$.
+
+\paragraph{1998 A--3 \textnormal{[\texttt{differentiability, derivative-inequality}]}}
+Let $f$ be a real function on the real line with continuous third
+derivative. Prove that there exists a point $a$ such that
+\[f(a)\cdot f'(a) \cdot f''(a) \cdot f'''(a)\geq 0 .\]
+
+\section*{1999}
+
+\paragraph{1999 A--5 \textnormal{[\texttt{integral-inequality}]}}
+Prove that there is a constant $C$ such that, if $p(x)$ is a polynomial
+of degree 1999, then
+\[|p(0)|\leq C \int_{-1}^1 |p(x)|\,dx.\]
+
+\paragraph{1999 B--1 \textnormal{[\texttt{limit-sequence}]}}
+Right triangle $ABC$ has right angle at $C$ and $\angle BAC =\theta$;
+the point $D$ is chosen on $AB$ so that $|AC|=|AD|=1$; the point $E$
+is chosen on $BC$ so that $\angle CDE = \theta$. The perpendicular
+to $BC$ at $E$ meets $AB$ at $F$. Evaluate $\lim_{\theta\rightarrow 0}
+|EF|$.
+
+\paragraph{1999 B--3 \textnormal{[\texttt{limit-series}]}}
+Let $A=\{(x,y):0\leq x,y<1\}$. For $(x,y)\in A$, let
+\[S(x,y) = \sum_{\frac{1}{2}\leq \frac{m}{n}\leq 2} x^m y^n,\]
+where the sum ranges over all pairs $(m,n)$ of positive integers
+satisfying the indicated inequalities. Evaluate
+\[\lim_{(x,y)\rightarrow (1,1), (x,y)\in A} (1-xy^2)(1-x^2y)S(x,y).\]
+
+\paragraph{1999 B--4 \textnormal{[\texttt{differentiability, derivative-inequality}]}}
+Let $f$ be a real function with a continuous third derivative such that $f(x),
+f'(x), f''(x), f'''(x)$ are positive for all $x$. Suppose that
+$f'''(x)\leq f(x)$ for all $x$. Show that $f'(x)<2f(x)$ for all $x$.
+
+\section*{2000}
+
+\paragraph{2000 A--1 \textnormal{[\texttt{convergence, limit-series}]}}
+Let $A$ be a positive real number. What are the possible values of
+$\sum_{j=0}^\infty x_j^2$, given that $x_0,x_1,\ldots$ are positive
+numbers
+for which $\sum_{j=0}^\infty x_j=A$?
+
+\paragraph{2000 A--4 \textnormal{[\texttt{integral-evaluation, convergence}]}}
+Show that the improper integral
+\[ \lim_{B\to\infty}\int_{0}^B \sin(x) \sin(x^2)\,dx\]
+converges.
+
+\paragraph{2000 B--3 \textnormal{[\texttt{differentiability, asymptotic}]}}
+Let $f(t)=\sum_{j=1}^N a_j \sin(2\pi jt)$, where each $a_j$ is real
+and
+$a_N$ is not equal to 0. Let $N_k$ denote the number of zeroes (including
+multiplicities) of $\frac{d^k f}{dt^k}$.
+Prove that
+\[N_0\leq N_1\leq N_2\leq \cdots \mbox{ and } \lim_{k\to\infty} N_k = 2N.\]
+[Editorial clarification: only zeroes in $[0, 1)$ should be counted.]
+
+\paragraph{2000 B--4 \textnormal{[\texttt{continuity, functional-real}]}}
+Let $f(x)$ be a continuous function such that $f(2x^2-1)=2xf(x)$ for
+all $x$. Show that $f(x)=0$ for $-1\leq x\leq 1$.
+
+\section*{2001}
+
+\paragraph{2001 B--3 \textnormal{[\texttt{limit-series}]}}
+For any positive integer $n$, let $\langle n\rangle$ denote
+the closest integer to $\sqrt{n}$. Evaluate
+\[\sum_{n=1}^\infty \frac{2^{\langle n\rangle}+2^{-\langle n\rangle}}
+                         {2^n}.\]
+
+\paragraph{2001 B--5 \textnormal{[\texttt{continuity, functional-real}]}}
+Let $a$ and $b$ be real numbers in the interval $(0,1/2)$, and
+let $g$ be a continuous real-valued function such that
+$g(g(x))= ag(x)+bx$ for all real $x$. Prove that
+$g(x)=cx$ for some constant $c$.
+
+\paragraph{2001 B--6 \textnormal{[\texttt{limit-sequence, asymptotic}]}}
+Assume that $(a_n)_{n\geq 1}$ is an increasing sequence of
+positive real numbers such that
+$\lim a_n/n=0$. Must there exist infinitely many positive integers
+$n$ such that $a_{n-i}+a_{n+i}<2a_n$ for $i=1,2,\ldots,n-1$?
+
+\section*{2002}
+
+\paragraph{2002 A--1 \textnormal{[\texttt{differentiability}]}}
+Let $k$ be a fixed positive integer. The $n$-th derivative of
+$\frac{1}{x^k - 1}$ has the form $\frac{P_n(x)}{(x^k - 1)^{n+1}}$
+where $P_n(x)$ is a polynomial. Find $P_n(1)$.
+
+\paragraph{2002 A--6 \textnormal{[\texttt{limit-series, convergence}]}}
+Fix an integer $b \geq 2$. Let $f(1) = 1$, $f(2) = 2$, and for each
+$n \geq 3$, define $f(n) = n f(d)$, where $d$ is the number of
+base-$b$ digits of $n$. For which values of $b$ does
+\[
+\sum_{n=1}^\infty \frac{1}{f(n)}
+\]
+converge?
+
+\paragraph{2002 B--3 \textnormal{[\texttt{asymptotic, limit-sequence}]}}
+Show that, for all integers $n > 1$,
+\[
+\frac{1}{2ne} < \frac{1}{e} - \left( 1 - \frac{1}{n} \right)^n
+< \frac{1}{ne}.
+\]
+
+\section*{2003}
+
+\paragraph{2003 A--3 \textnormal{[\texttt{differentiability}]}}
+Find the minimum value of
+\[
+  | \sin x + \cos x + \tan x + \cot x + \sec x + \csc x |
+\]
+for real numbers $x$.
+
+\paragraph{2003 B--2 \textnormal{[\texttt{limit-sequence, asymptotic}]}}
+Let $n$ be a positive integer. Starting with the sequence
+$1, \frac{1}{2}, \frac{1}{3}, \dots, \frac{1}{n}$,
+form a new sequence of $n-1$ entries
+$\frac{3}{4}, \frac{5}{12}, \dots, \frac{2n-1}{2n(n-1)}$
+by taking the averages of
+two consecutive entries in the first sequence. Repeat the
+averaging of neighbors on the second sequence to obtain a third
+sequence of $n-2$ entries, and continue until the final sequence produced
+consists of a single number $x_n$. Show that $x_n < 2/n$.
+
+\paragraph{2003 B--6 \textnormal{[\texttt{integral-inequality}]}}
+Let $f(x)$ be a continuous real-valued function defined on the interval
+$[0,1]$. Show that
+\[
+   \int_0^1 \int_0^1 | f(x) + f(y) |\,dx\,dy \geq \int_0^1 |f(x)|\,dx.
+\]
+
+\section*{2004}
+
+\paragraph{2004 A--1 \textnormal{[\texttt{continuity}]}}
+Basketball star Shanille O'Keal's team statistician
+keeps track of the number, $S(N)$, of successful free throws she has made
+in her first $N$ attempts of the season.
+Early in the season, $S(N)$  was less than 80\% of $N$,
+but by the end of the season, $S(N)$ was more than 80\% of $N$.
+Was there necessarily a moment in between when $S(N)$ was exactly 80\% of $N$?
+
+\paragraph{2004 A--6 \textnormal{[\texttt{integral-inequality}]}}
+Suppose that $f(x,y)$ is a continuous real-valued function on the unit
+square $0 \le x \le 1, 0 \le y \le 1$. Show that
+\begin{align*}
+& \int_0^1 \left( \int_0^1  f(x,y) dx \right)^2 dy +
+ \int_0^1 \left( \int_0^1  f(x,y) dy \right)^2 dx \\
+&\leq
+\left( \int_0^1 \int_0^1  f(x,y) dx\, dy \right)^2 +
+\int_0^1 \int_0^1 \left[ f(x,y) \right]^2 dx\,dy.
+\end{align*}
+
+\paragraph{2004 B--3 \textnormal{[\texttt{continuity, integral-evaluation}]}}
+Determine all real numbers $a > 0$ for which there exists a nonnegative
+continuous function $f(x)$ defined on $[0,a]$ with the property that the
+region
+\[
+R = \{ (x,y) ; 0 \le x \le a, 0 \le y \le f(x) \}
+\]
+has perimeter $k$ units and area $k$ square units for some real number $k$.
+
+\paragraph{2004 B--5 \textnormal{[\texttt{limit-sequence}]}}
+Evaluate
+\[
+\lim_{x \to 1^-} \prod_{n=0}^\infty \left(\frac{1 + x^{n+1}}{1 +
+x^n}\right)^{x^n}.
+\]
+
+\section*{2005}
+
+\paragraph{2005 A--5 \textnormal{[\texttt{integral-evaluation}]}}
+Evaluate $\int_0^1 \frac{\ln(x+1)}{x^2+1}\,dx$.
+
+\paragraph{2005 B--3 \textnormal{[\texttt{differentiability, ode}]}}
+Find all differentiable functions $f: (0, \infty) \to (0, \infty)$ for which
+there is a positive real number $a$ such that
+\[
+f' \left( \frac{a}{x} \right) = \frac{x}{f(x)}
+\]
+for all $x > 0$.
+
+\section*{2006}
+
+\paragraph{2006 A--1 \textnormal{[\texttt{integral-evaluation}]}}
+Find the volume of the region of points $(x,y,z)$ such that
+\[
+(x^2 + y^2 + z^2 + 8)^2 \leq 36(x^2 + y^2).
+\]
+
+\paragraph{2006 B--5 \textnormal{[\texttt{continuity, integral-inequality}]}}
+For each continuous function $f: [0,1] \to \mathbb{R}$, let $I(f) =
+\int_0^1 x^2 f(x)\,dx$ and $J(x) = \int_0^1 x \left(f(x)\right)^2\,dx$.
+Find the maximum value of $I(f) - J(f)$ over all such functions $f$.
+
+\paragraph{2006 B--6 \textnormal{[\texttt{limit-sequence, asymptotic, iteration}]}}
+Let $k$ be an integer greater than 1. Suppose $a_0 > 0$, and define
+\[
+a_{n+1} = a_n + \frac{1}{\sqrt[k]{a_n}}
+\]
+for $n > 0$. Evaluate
+\[
+\lim_{n \to \infty} \frac{a_n^{k+1}}{n^k}.
+\]
+
+\section*{2007}
+
+\paragraph{2007 B--2 \textnormal{[\texttt{integral-inequality, derivative-inequality}]}}
+Suppose that $f: [0,1] \to \mathbb{R}$ has a continuous derivative
+and that $\int_0^1 f(x)\,dx = 0$. Prove that for every $\alpha \in (0,1)$,
+\[
+\left| \int_0^\alpha f(x)\,dx \right| \leq \frac{1}{8} \max_{0 \leq x
+\leq 1} |f'(x)|.
+\]
+
+\section*{2008}
+
+\paragraph{2008 A--4 \textnormal{[\texttt{limit-series, convergence}]}}
+Define $f: \mathbb{R} \to \mathbb{R}$ by
+\[
+f(x) = \begin{cases} x & \mbox{if $x \leq e$} \\ x f(\ln x) &
+\mbox{if $x > e$.} \end{cases}
+\]
+Does $\sum_{n=1}^\infty \frac{1}{f(n)}$ converge?
+
+\paragraph{2008 B--2 \textnormal{[\texttt{integral-evaluation, asymptotic, limit-sequence}]}}
+Let $F_0(x) = \ln x$. For $n \geq 0$ and $x > 0$, let
+$F_{n+1}(x) = \int_0^x F_n(t)\,dt$. Evaluate
+\[
+\lim_{n \to \infty} \frac{n! F_n(1)}{\ln n}.
+\]
+
+\section*{2009}
+
+\paragraph{2009 A--2 \textnormal{[\texttt{ode, differentiability}]}}
+Functions $f,g,h$ are differentiable on some open interval around $0$
+and satisfy the equations and initial conditions
+\begin{gather*}
+f' = 2f^2gh+\frac{1}{gh},\quad f(0)=1, \\
+g'=fg^2h+\frac{4}{fh}, \quad g(0)=1, \\
+h'=3fgh^2+\frac{1}{fg}, \quad h(0)=1.
+\end{gather*}
+Find an explicit formula for $f(x)$, valid in some open interval around $0$.
+
+\paragraph{2009 A--6 \textnormal{[\texttt{differentiability, continuity}]}}
+Let $f:[0,1]^2 \to \mathbb{R}$ be a continuous function on the closed unit
+square such that $\frac{\partial f}{\partial x}$ and $\frac{\partial f}{\partial y}$ exist
+and are continuous on the interior $(0,1)^2$. Let $a = \int_0^1 f(0,y)\,dy$,
+$b = \int_0^1 f(1,y)\,dy$, $c = \int_0^1 f(x,0)\,dx$, $d = \int_0^1 f(x,1)\,dx$.
+Prove or disprove: There must be a point $(x_0,y_0)$ in $(0,1)^2$ such that
+\[
+\frac{\partial f}{\partial x} (x_0,y_0) = b - a
+\quad \mbox{and} \quad
+\frac{\partial f}{\partial y} (x_0,y_0) = d - c.
+\]
+
+\paragraph{2009 B--5 \textnormal{[\texttt{ode, asymptotic, differentiability}]}}
+Let $f: (1, \infty) \to \mathbb{R}$ be a differentiable function such that
+\[
+ f'(x) = \frac{x^2 - f(x)^2}{x^2 (f(x)^2 + 1)}
+\qquad \mbox{for all $x>1$.}
+\]
+Prove that $\lim_{x \to \infty} f(x) = \infty$.
+
+\section*{2010}
+
+\paragraph{2010 A--2 \textnormal{[\texttt{differentiability, functional-real}]}}
+Find all differentiable functions $f:\mathbb{R} \to \mathbb{R}$ such that
+\[
+f'(x) = \frac{f(x+n)-f(x)}{n}
+\]
+for all real numbers $x$ and all positive integers $n$.
+
+\paragraph{2010 A--3 \textnormal{[\texttt{differentiability, continuity}]}}
+Suppose that the function $h:\mathbb{R}^2\to \mathbb{R}$ has continuous partial
+derivatives and satisfies the equation
+\[
+h(x,y) = a \frac{\partial h}{\partial x}(x,y) +
+b \frac{\partial h}{\partial y}(x,y)
+\]
+for some constants $a,b$. Prove that if there is a constant $M$ such that
+$|h(x,y)|\leq M$ for all $(x,y) \in \mathbb{R}^2$, then $h$ is identically zero.
+
+\paragraph{2010 A--6 \textnormal{[\texttt{integral-evaluation, integral-inequality, convergence}]}}
+Let $f:[0,\infty)\to \mathbb{R}$ be a strictly decreasing continuous function
+such that $\lim_{x\to\infty} f(x) = 0$. Prove that
+$\int_0^\infty \frac{f(x)-f(x+1)}{f(x)}\,dx$ diverges.
+
+\paragraph{2010 B--1 \textnormal{[\texttt{limit-series, convergence}]}}
+Is there an infinite sequence of real numbers $a_1, a_2, a_3, \dots$ such that
+\[
+a_1^m + a_2^m + a_3^m + \cdots = m
+\]
+for every positive integer $m$?
+
+\paragraph{2010 B--5 \textnormal{[\texttt{ode, differentiability}]}}
+Is there a strictly increasing function $f: \mathbb{R} \to \mathbb{R}$ such that $f'(x) = f(f(x))$ for all $x$?
+
+\section*{2011}
+
+\paragraph{2011 A--2 \textnormal{[\texttt{limit-series, convergence}]}}
+Let $a_1,a_2,\dots$ and $b_1,b_2,\dots$ be sequences of positive
+real numbers such that $a_1 = b_1 = 1$ and $b_n = b_{n-1} a_n - 2$ for
+$n=2,3,\dots$. Assume that the sequence $(b_j)$ is bounded. Prove that
+\[
+S = \sum_{n=1}^\infty \frac{1}{a_1...a_n}
+\]
+converges, and evaluate $S$.
+
+\paragraph{2011 A--3 \textnormal{[\texttt{integral-evaluation, asymptotic}]}}
+Find a real number $c$ and a positive number $L$ for which
+\[
+\lim_{r\to\infty} \frac{r^c \int_0^{\pi/2} x^r \sin x \,dx}{\int_0^{\pi/2} x^r \cos x \,dx} = L.
+\]
+
+\paragraph{2011 B--3 \textnormal{[\texttt{differentiability, continuity}]}}
+Let $f$ and $g$ be (real-valued) functions defined on an open
+interval containing $0$, with $g$ nonzero and continuous at $0$. If $fg$
+and $f/g$ are differentiable at $0$, must $f$ be differentiable at 0?
+
+\paragraph{2011 B--5 \textnormal{[\texttt{integral-inequality}]}}
+Let $a_1, a_2, \dots$ be real numbers. Suppose that there is
+a constant $A$ such that for all $n$,
+\[
+\int_{-\infty}^\infty \left( \sum_{i=1}^n \frac{1}{1 + (x-a_i)^2} \right)^2\,dx \leq An.
+\]
+Prove there is a constant $B>0$ such that for all $n$,
+\[
+\sum_{i,j=1}^n (1 + (a_i - a_j)^2) \geq Bn^3.
+\]
+
+\section*{2012}
+
+\paragraph{2012 A--3 \textnormal{[\texttt{continuity, functional-real}]}}
+Let $f: [-1, 1] \to \mathbb{R}$ be a continuous function such that
+\begin{itemize}
+\item[(i)]
+$f(x) = \frac{2-x^2}{2} f \left( \frac{x^2}{2-x^2} \right)$ for every $x$ in $[-1, 1]$,
+\item[(ii)]
+$f(0) = 1$, and
+\item[(iii)]
+$\lim_{x \to 1^-} \frac{f(x)}{\sqrt{1-x}}$ exists and is finite.
+\end{itemize}
+Prove that $f$ is unique, and express $f(x)$ in closed form.
+
+\paragraph{2012 A--6 \textnormal{[\texttt{continuity, integrability}]}}
+Let $f(x,y)$ be a continuous, real-valued function on $\mathbb{R}^2$. Suppose that, for every
+rectangular region $R$ of area $1$, the double integral of $f(x,y)$ over $R$ equals $0$.
+Must $f(x,y)$ be identically 0?
+
+\paragraph{2012 B--4 \textnormal{[\texttt{limit-sequence, asymptotic, iteration}]}}
+Suppose that $a_0 = 1$ and that $a_{n+1} = a_n + e^{-a_n}$ for $n=0,1,2,\dots$. Does $a_n - \log n$
+have a finite limit as $n \to \infty$? (Here $\log n = \log_e n = \ln n$.)
+
+\section*{2013}
+
+\paragraph{2013 A--3 \textnormal{[\texttt{continuity}]}}
+Suppose that the real numbers $a_0, a_1, \dots, a_n$ and
+$x$, with $0 < x < 1$, satisfy
+\[
+\frac{a_0}{1-x} + \frac{a_1}{1-x^2} + \cdots + \frac{a_n}{1 - x^{n+1}} = 0.
+\]
+Prove that there exists a real number $y$ with $0 < y < 1$ such that
+\[
+a_0 + a_1 y + \cdots + a_n y^n = 0.
+\]
+
+\paragraph{2013 B--2 \textnormal{[\texttt{continuity, integral-inequality}]}}
+Let $C = \bigcup_{N=1}^\infty C_N$, where $C_N$ denotes the set of those `cosine polynomials' of the form
+\[
+f(x) = 1 + \sum_{n=1}^N a_n \cos(2 \pi n x)
+\]
+for which:
+\begin{enumerate}
+\item[(i)]
+$f(x) \geq 0$ for all real $x$, and
+\item[(ii)]
+$a_n = 0$ whenever $n$ is a multiple of $3$.
+\end{enumerate}
+Determine the maximum value of $f(0)$ as $f$ ranges through $C$, and
+prove that this maximum is attained.
+
+\paragraph{2013 B--4 \textnormal{[\texttt{continuity, integral-inequality}]}}
+For any continuous real-valued function $f$ defined on the interval $[0,1]$, let
+\begin{gather*}
+\mu(f) = \int_0^1 f(x)\,dx, \,
+\mathrm{Var}(f) = \int_0^1 (f(x) - \mu(f))^2\,dx, \\
+M(f) = \max_{0 \leq x \leq 1} \left| f(x) \right|.
+\end{gather*}
+Show that if $f$ and $g$ are continuous real-valued functions
+defined on the interval $[0,1]$,
+then
+\[
+\mathrm{Var}(fg) \leq 2 \mathrm{Var}(f) M(g)^2 + 2 \mathrm{Var}(g) M(f)^2.
+\]
+
+\section*{2014}
+
+\paragraph{2014 A--3 \textnormal{[\texttt{limit-sequence}]}}
+Let $a_0 = 5/2$ and $a_k = a_{k-1}^2 - 2$ for $k \geq 1$. Compute
+\[
+\prod_{k=0}^\infty \left(1 - \frac{1}{a_k} \right)
+\]
+in closed form.
+
+\paragraph{2014 B--2 \textnormal{[\texttt{integral-inequality}]}}
+Suppose that $f$ is a function on the interval $[1,3]$ such that $-1 \leq f(x) \leq 1$ for all $x$ and $\int_1^3 f(x)\,dx = 0$. How large can $\int_1^3 \frac{f(x)}{x}\,dx$ be?
+
+\paragraph{2014 B--6 \textnormal{[\texttt{continuity, differentiability}]}}
+Let $f: [0,1] \to \mathbb{R}$ be a function for which there exists a constant $K>0$
+such that $\left| f(x) - f(y) \right| \leq K \left| x - y \right|$ for all $x,y \in [0,1]$.
+Suppose also that for each rational number $r \in [0,1]$, there exist integers $a$ and $b$
+such that $f(r) = a + br$. Prove that there exist finitely many intervals $I_1, \dots, I_n$
+such that $f$ is a linear function on each $I_i$ and $[0,1] = \bigcup_{i=1}^n I_i$.
+
+\section*{2015}
+
+\paragraph{2015 A--1 \textnormal{[\texttt{integral-evaluation}]}}
+Let $A$ and $B$ be points on the same branch of the hyperbola $xy=1$. Suppose that $P$ is a point lying between $A$ and $B$ on this hyperbola, such that the area of the triangle $APB$ is as large as possible. Show that the region bounded by the hyperbola and the chord $AP$ has the same area as the region bounded by the hyperbola and the chord $PB$.
+
+\paragraph{2015 B--1 \textnormal{[\texttt{differentiability}]}}
+Let $f$ be a three times differentiable function (defined on $\mathbb{R}$ and real-valued) such that $f$ has at least five distinct real zeros. Prove that $f + 6f' + 12f'' + 8f'''$ has at least two distinct real zeros.
+
+\section*{2016}
+
+\paragraph{2016 A--2 \textnormal{[\texttt{limit-sequence, asymptotic}]}}
+Given a positive integer $n$, let $M(n)$ be the largest integer $m$ such that
+\[
+\binom{m}{n-1} > \binom{m-1}{n}.
+\]
+Evaluate
+\[
+\lim_{n \to \infty} \frac{M(n)}{n}.
+\]
+
+\paragraph{2016 A--3 \textnormal{[\texttt{integral-evaluation, functional-real}]}}
+Suppose that $f$ is a function from $\mathbb{R}$ to $\mathbb{R}$ such that
+\[
+f(x) + f\left( 1 - \frac{1}{x} \right) = \arctan x
+\]
+for all real $x \neq 0$. (As usual, $y = \arctan x$ means $-\pi/2 < y < \pi/2$ and $\tan y = x$.) Find
+\[
+\int_0^1 f(x)\,dx.
+\]
+
+\paragraph{2016 A--6 \textnormal{[\texttt{integral-inequality}]}}
+Find the smallest constant $C$ such that for every real polynomial $P(x)$ of degree 3 that has a root in the interval $[0,1]$,
+\[
+\int_0^1 \left| P(x) \right|\,dx \leq C \max_{x \in [0,1]} \left| P(x) \right|.
+\]
+
+\paragraph{2016 B--1 \textnormal{[\texttt{limit-series, convergence}]}}
+Let $x_0,x_1,x_2,\dots$ be the sequence such that $x_0=1$ and for $n \geq 0$,
+\[
+x_{n+1} = \ln(e^{x_n} - x_n)
+\]
+(as usual, the function $\ln$ is the natural logarithm). Show that the infinite series
+\[
+x_0 + x_1 + x_2 + \cdots
+\]
+converges and find its sum.
+
+\paragraph{2016 B--5 \textnormal{[\texttt{continuity, functional-real}]}}
+Find all functions $f$ from the interval $(1, \infty)$ to $(1, \infty)$ with the following property:
+if $x,y \in (1, \infty)$ and $x^2 \leq y \leq x^3$, then $(f(x))^2 \leq f(y) \leq (f(x))^3$.
+
+\paragraph{2016 B--6 \textnormal{[\texttt{limit-series}]}}
+Evaluate
+\[
+\sum_{k=1}^\infty \frac{(-1)^{k-1}}{k} \sum_{n=0}^\infty \frac{1}{k2^n + 1}.
+\]
+
+\section*{2017}
+
+\paragraph{2017 A--3 \textnormal{[\texttt{integral-evaluation, integral-inequality, limit-sequence, asymptotic}]}}
+Let $a$ and $b$ be real numbers with $a<b$, and let $f$ and $g$ be continuous functions from $[a,b]$ to $(0, \infty)$
+such that $\int_a^b f(x)\,dx = \int_a^b g(x)\,dx$ but $f \neq g$. For every positive integer $n$, define
+\[
+I_n = \int_a^b \frac{(f(x))^{n+1}}{(g(x))^n}\,dx.
+\]
+Show that $I_1, I_2, I_3, \dots$ is an increasing sequence with $\lim_{n \to \infty} I_n = \infty$.
+
+\paragraph{2017 B--4 \textnormal{[\texttt{limit-series}]}}
+Evaluate the sum
+\begin{gather*}
+\sum_{k=0}^\infty \left( 3 \cdot \frac{\ln(4k+2)}{4k+2} - \frac{\ln(4k+3)}{4k+3} - \frac{\ln(4k+4)}{4k+4} - \frac{\ln(4k+5)}{4k+5} \right) \\
+= 3 \cdot \frac{\ln 2}{2} - \frac{\ln 3}{3} - \frac{\ln 4}{4} - \frac{\ln 5}{5}
++ 3 \cdot \frac{\ln 6}{6} - \frac{\ln 7}{7} \\ - \frac{\ln 8}{8} - \frac{\ln 9}{9}
++ 3 \cdot \frac{\ln 10}{10} - \cdots .
+\end{gather*}
+(As usual, $\ln x$ denotes the natural logarithm of $x$.)
+
+\section*{2018}
+
+\paragraph{2018 A--3 \textnormal{[\texttt{differentiability}]}}
+Determine the greatest possible value of $\sum_{i=1}^{10} \cos(3x_i)$ for real numbers $x_1,x_2,\dots,x_{10}$
+satisfying $\sum_{i=1}^{10} \cos(x_i) = 0$.
+
+\paragraph{2018 A--5 \textnormal{[\texttt{differentiability}]}}
+Let $f: \mathbb{R} \to \mathbb{R}$ be an infinitely differentiable function satisfying $f(0) = 0$, $f(1)= 1$,
+and $f(x) \geq 0$ for all $x \in \mathbb{R}$. Show that there exist a positive integer $n$ and a real number $x$
+such that $f^{(n)}(x) < 0$.
+
+\paragraph{2018 B--5 \textnormal{[\texttt{differentiability, continuity}]}}
+Let $f = (f_1, f_2)$ be a function from $\mathbb{R}^2$ to $\mathbb{R}^2$ with continuous partial derivatives
+$\frac{\partial f_i}{\partial x_j}$ that are positive everywhere. Suppose that
+\[
+\frac{\partial f_1}{\partial x_1} \frac{\partial f_2}{\partial x_2} - \frac{1}{4} \left( \frac{\partial f_1}{\partial x_2}  + \frac{\partial f_2}{\partial x_1} \right)^2 > 0
+\]
+everywhere. Prove that $f$ is one-to-one.
+
+\section*{2019}
+
+\paragraph{2019 A--4 \textnormal{[\texttt{continuity, integral-evaluation}]}}
+Let $f$ be a continuous real-valued function on $\mathbb{R}^3$. Suppose that for every sphere $S$ of radius 1,
+the integral of $f(x,y,z)$ over the surface of $S$ equals 0. Must $f(x,y,z)$ be identically 0?
+
+\paragraph{2019 A--6 \textnormal{[\texttt{differentiability, asymptotic}]}}
+Let $g$ be a real-valued function that is continuous on the closed interval $[0,1]$ and twice differentiable on
+the open interval $(0,1)$. Suppose that for some real number $r>1$,
+\[
+\lim_{x \to 0^+} \frac{g(x)}{x^r} = 0.
+\]
+Prove that either
+\[
+\lim_{x \to 0^+} g'(x) = 0 \qquad \mbox{or} \qquad \limsup_{x \to 0^+} x^r |g''(x)| = \infty.
+\]
+
+\paragraph{2019 B--2 \textnormal{[\texttt{limit-sequence, asymptotic}]}}
+For all $n \geq 1$, let
+\[
+a_n = \sum_{k=1}^{n-1} \frac{\sin \left( \frac{(2k-1)\pi}{2n} \right)}{\cos^2 \left( \frac{(k-1)\pi}{2n} \right) \cos^2 \left( \frac{k\pi}{2n} \right)}.
+\]
+Determine
+\[
+\lim_{n \to \infty} \frac{a_n}{n^3}.
+\]
+
+\paragraph{2019 B--4 \textnormal{[\texttt{differentiability, integral-evaluation}]}}
+Let $\mathcal{F}$ be the set of functions $f(x,y)$ that are twice continuously differentiable for $x \geq 1$, $y \geq 1$ and that satisfy the following two equations (where subscripts denote partial derivatives):
+\begin{gather*}
+xf_x + yf_y = xy \ln(xy), \\
+x^2 f_{xx} + y^2 f_{yy} = xy.
+\end{gather*}
+For each $f \in \mathcal{F}$, let
+\[
+m(f) = \min_{s \geq 1} \left(f(s+1,s+1) - f(s+1,s) - f(s,s+1) + f(s,s) \right).
+\]
+Determine $m(f)$, and show that it is independent of the choice of $f$.
+
+\section*{2020 (held February 2021)}
+
+\paragraph{2020 A--3 \textnormal{[\texttt{limit-series, iteration}]}}
+Let $a_0 = \pi/2$, and let $a_n = \sin(a_{n-1})$ for $n \geq 1$. Determine whether
+\[
+\sum_{n=1}^\infty a_n^2
+\]
+converges.
+
+\paragraph{2020 A--6 \textnormal{[\texttt{integral-evaluation, continuity}]}}
+For a positive integer $N$, let $f_N$ be the function defined by
+\[
+f_N(x) = \sum_{n=0}^N \frac{N+1/2-n}{(N+1)(2n+1)} \sin((2n+1)x).
+\]
+Determine the smallest constant $M$ such that $f_N(x) \leq M$ for all $N$ and all real $x$.
+
+\section*{2021}
+
+\paragraph{2021 A--2 \textnormal{[\texttt{limit-sequence, asymptotic}]}}
+For every positive real number $x$, let
+\[
+g(x) = \lim_{r \to 0} ((x+1)^{r+1} - x^{r+1})^{\frac{1}{r}}.
+\]
+Find $\lim_{x \to \infty} \frac{g(x)}{x}$.
+
+\paragraph{2021 A--4 \textnormal{[\texttt{integral-evaluation, convergence}]}}
+Let
+\[
+I(R) = \iint_{x^2+y^2 \leq R^2} \left( \frac{1+2x^2}{1+x^4+6x^2y^2+y^4} - \frac{1+y^2}{2+x^4+y^4} \right)\,dx\,dy.
+\]
+Find
+\[
+\lim_{R \to \infty} I(R),
+\]
+or show that this limit does not exist.
+
+\section*{2022}
+
+\paragraph{2022 A--1 \textnormal{[\texttt{differentiability}]}}
+Determine all ordered pairs of real numbers $(a,b)$ such that the line $y = ax+b$ intersects the curve $y = \ln(1+x^2)$ in exactly one point.
+
+\paragraph{2022 B--6 \textnormal{[\texttt{continuity, functional-real}]}}
+Find all continuous functions $f: \mathbb{R}^+ \to \mathbb{R}^+$ such that
+\[
+f(xf(y)) + f(yf(x)) = 1 + f(x+y)
+\]
+for all $x,y > 0$.
+
+\section*{2023}
+
+\paragraph{2023 A--1 \textnormal{[\texttt{differentiability}]}}
+For a positive integer $n$, let $f_n(x) = \cos(x) \cos(2x) \cos(3x) \cdots \cos(nx)$. Find the smallest $n$ such that $|f_n''(0)| > 2023$.
+
+\paragraph{2023 A--3 \textnormal{[\texttt{differentiability, ode, derivative-inequality}]}}
+Determine the smallest positive real number $r$ such that there exist differentiable functions $f\colon \mathbb{R} \to \mathbb{R}$ and
+$g\colon \mathbb{R} \to \mathbb{R}$ satisfying
+\begin{enumerate}
+\item[(a)] $f(0) > 0$,
+\item[(b)] $g(0) = 0$,
+\item[(c)] $|f'(x)| \leq |g(x)|$ for all $x$,
+\item[(d)] $|g'(x)| \leq |f(x)|$ for all $x$, and
+\item[(e)] $f(r) = 0$.
+\end{enumerate}
+
+\paragraph{2023 B--4 \textnormal{[\texttt{differentiability, ode}]}}
+For a nonnegative integer $n$ and a strictly increasing sequence of real numbers $t_0,t_1,\dots,t_n$, let $f(t)$ be the corresponding real-valued function defined for $t \geq t_0$ by the following properties:
+\begin{enumerate}
+\item[(a)] $f(t)$ is continuous for $t \geq t_0$, and is twice differentiable for all $t>t_0$ other than $t_1,\dots,t_n$;
+\item[(b)] $f(t_0) = 1/2$;
+\item[(c)] $\lim_{t \to t_k^+} f'(t) = 0$ for $0 \leq k \leq n$;
+\item[(d)] For $0 \leq k \leq n-1$, we have $f''(t) = k+1$ when $t_k < t< t_{k+1}$, and $f''(t) = n+1$ when $t>t_n$.
+\end{enumerate}
+Considering all choices of $n$ and $t_0,t_1,\dots,t_n$ such that $t_k \geq t_{k-1}+1$ for $1 \leq k \leq n$, what is the least possible value of $T$ for which $f(t_0+T) = 2023$?
+
+\section*{2024}
+
+\paragraph{2024 B--3 \textnormal{[\texttt{asymptotic, limit-sequence}]}}
+Let $r_n$ be the $n$th smallest positive solution to $\tan x = x$, where the argument of tangent is in radians. Prove that
+\[
+0 < r_{n+1} - r_n - \pi < \frac{1}{(n^2+n)\pi}
+\]
+for $n \geq 1$.
+
+\paragraph{2024 B--6 \textnormal{[\texttt{asymptotic, limit-series}]}}
+For a real number $a$, let $F_a(x) = \sum_{n \geq 1} n^a e^{2n} x^{n^2}$ for $0 \leq x < 1$.
+Find a real number $c$ such that
+\begin{align*}
+& \lim_{x \to 1^-} F_a(x) e^{-1/(1-x)} = 0 \qquad \mbox{for all $a < c$, and} \\
+& \lim_{x \to 1^-} F_a(x) e^{-1/(1-x)} = \infty \qquad \mbox{for all $a > c$.}
+\end{align*}
+
+\section*{2025}
+
+\paragraph{2025 A--2 \textnormal{[\texttt{differentiability}]}}
+Find the largest real number $a$ and the smallest real number $b$ such that
+\[
+ax(\pi-x) \leq \sin x \leq bx(\pi-x)
+\]
+for all $x$ in the interval $[0, \pi]$.
+
+\paragraph{2025 B--2 \textnormal{[\texttt{continuity, integral-inequality}]}}
+Let $f\colon [0,1] \to [0, \infty)$ be strictly increasing and continuous. Let $R$ be the region bounded by $x=0$, $x=1$, $y=0$, and $y=f(x)$. Let $x_1$ be the $x$-coordinate of the centroid of $R$. Let $x_2$ be the $x$-coordinate of the centroid of the solid generated by rotating $R$ around the $x$-axis. Prove that $x_1 < x_2$.
+
+\end{document}
