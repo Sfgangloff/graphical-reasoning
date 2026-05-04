@@ -91,3 +91,8 @@ import Putnam.Y2016.A6
 import Putnam.Y2016.B1
 import Putnam.Y2016.B5
 import Putnam.Y2016.B6
+import Putnam.Y2017.A3
+import Putnam.Y2017.B4
+import Putnam.Y2018.A3
+import Putnam.Y2018.A5
+import Putnam.Y2018.B5
