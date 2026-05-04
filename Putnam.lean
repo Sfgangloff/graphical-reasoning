@@ -77,3 +77,9 @@ import Putnam.Y2011.B5
 import Putnam.Y2012.A3
 import Putnam.Y2012.A6
 import Putnam.Y2012.B4
+import Putnam.Y2013.A3
+import Putnam.Y2013.B2
+import Putnam.Y2013.B4
+import Putnam.Y2014.A3
+import Putnam.Y2014.B2
+import Putnam.Y2014.B6
