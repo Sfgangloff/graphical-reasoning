@@ -111,3 +111,5 @@ import Putnam.Y2023.A3
 import Putnam.Y2023.B4
 import Putnam.Y2024.B3
 import Putnam.Y2024.B6
+import Putnam.Y2025.A2
+import Putnam.Y2025.B2
