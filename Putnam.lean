@@ -70,3 +70,10 @@ import Putnam.Y2010.A3
 import Putnam.Y2010.A6
 import Putnam.Y2010.B1
 import Putnam.Y2010.B5
+import Putnam.Y2011.A2
+import Putnam.Y2011.A3
+import Putnam.Y2011.B3
+import Putnam.Y2011.B5
+import Putnam.Y2012.A3
+import Putnam.Y2012.A6
+import Putnam.Y2012.B4
