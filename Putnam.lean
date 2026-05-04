@@ -19,3 +19,9 @@ import Putnam.Y1991.B2
 import Putnam.Y1991.B6
 import Putnam.Y1992.A4
 import Putnam.Y1992.B3
+import Putnam.Y1993.A1
+import Putnam.Y1993.A2
+import Putnam.Y1993.A5
+import Putnam.Y1993.B4
+import Putnam.Y1994.A1
+import Putnam.Y1994.B3
