@@ -62,3 +62,11 @@ import Putnam.Y2006.B6
 import Putnam.Y2007.B2
 import Putnam.Y2008.A4
 import Putnam.Y2008.B2
+import Putnam.Y2009.A2
+import Putnam.Y2009.A6
+import Putnam.Y2009.B5
+import Putnam.Y2010.A2
+import Putnam.Y2010.A3
+import Putnam.Y2010.A6
+import Putnam.Y2010.B1
+import Putnam.Y2010.B5
