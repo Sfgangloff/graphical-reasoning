@@ -47,3 +47,10 @@ import Putnam.Y2001.B6
 import Putnam.Y2002.A1
 import Putnam.Y2002.A6
 import Putnam.Y2002.B3
+import Putnam.Y2003.A3
+import Putnam.Y2003.B2
+import Putnam.Y2003.B6
+import Putnam.Y2004.A1
+import Putnam.Y2004.A6
+import Putnam.Y2004.B3
+import Putnam.Y2004.B5
