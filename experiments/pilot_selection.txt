@@ -1,0 +1,11 @@
+# Pilot subset of 5 problems for budget calibration.
+# 3 graph-friendly + 2 not. Run k=1 in each condition (10 attempts total).
+
+# graph-friendly
+1993.A1    # short integral-evaluation
+2006.A1    # short integral-evaluation
+1996.B2    # asymptotic + integral-inequality
+
+# not graph-friendly
+2022.A1    # differentiability (A1)
+1994.A1    # limit-series + convergence (A1)
