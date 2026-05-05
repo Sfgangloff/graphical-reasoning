@@ -41,6 +41,20 @@ The discipline isolates the *visualization* tool. If the agent solves
 a problem (or, just as informatively, *catches an error in the
 problem statement*) thanks to a plot, the log will show it.
 
+### Where the tools come from
+
+The `math-viz` MCP server (and the related `math-compute`,
+`math-search`, `proof-explorer`, etc. servers that are deliberately
+*not* used here) live in a separate repository:
+
+> [Sfgangloff/math-reasoning-tools](https://github.com/Sfgangloff/math-reasoning-tools)
+
+That repo contains the source for the MCP servers and the setup
+instructions (how to install them, how to wire them into Claude Code's
+MCP configuration). To reproduce the experiments in `pilot/solutions/`,
+clone and set up `math-reasoning-tools` first, then point Claude Code
+at the relevant servers.
+
 ## Reading the experiment
 
 Each pilot ships two artifacts:
