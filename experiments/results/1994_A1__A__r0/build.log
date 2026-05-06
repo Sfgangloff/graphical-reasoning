@@ -1,0 +1,7 @@
+⚠ [8387/8388] Built Solution (82s)
+warning: Solution.lean:70:6: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (8388 jobs).
+
+--- stderr ---

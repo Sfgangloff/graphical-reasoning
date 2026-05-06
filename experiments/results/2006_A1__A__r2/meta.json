@@ -1,0 +1,47 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778014781.517386,
+  "ended_at": 1778015118.8885272,
+  "wall_clock_s": 337.37114119529724,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 8,
+      "succeeded": 8
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "decisive_tool": null,
+    "notes": "Answer term 6*\u03c0^2 is correct (computed via cylindrical coords: \u222b\u2082\u2074 4\u03c0r\u221a(-(r-2)(r-4))dr = 6\u03c0\u00b2) and well-typed; file builds clean. Proof left as sorry \u2014 full integration in Mathlib would exceed budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__A__r2_vmocwqk3/workspace"
+}

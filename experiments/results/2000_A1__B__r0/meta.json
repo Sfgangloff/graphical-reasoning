@@ -1,0 +1,48 @@
+{
+  "problem_id": "2000.A1",
+  "condition": "B",
+  "run_index": 0,
+  "tags": "convergence|limit-series",
+  "category": "not",
+  "started_at": 1778049177.217985,
+  "ended_at": 1778049519.277935,
+  "wall_clock_s": 342.0599501132965,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "2000.A1",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 6,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Answer term `Set.Ioo 0 (A^2)` is in place and the file compiles; proof left as sorry due to build-time budget (one lake build was 219s)."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2000_A1__B__r0_iplexmv6/workspace"
+}

@@ -1,0 +1,44 @@
+{
+  "problem_id": "2018.A3",
+  "condition": "B",
+  "run_index": 2,
+  "tags": "differentiability",
+  "category": "not",
+  "started_at": 1778066369.198581,
+  "ended_at": 1778066736.619997,
+  "wall_clock_s": 367.42141604423523,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "2018.A3",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 4,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Derived answer 480/49 by hand using cos(3x)=4cos^3 x - 3cos x and KKT analysis (3 values at +1, 7 at -3/7); answer term is well-typed and file builds; proof left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2018_A3__B__r2_4lpq6fa0/workspace"
+}

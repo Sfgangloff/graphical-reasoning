@@ -8,3 +8,5 @@ experiments/workspace_template/.lake/
 experiments/workspace_template/lake-manifest.json
 __pycache__/
 *.pyc
+tests.txt
+.DS_Store

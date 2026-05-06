@@ -1,0 +1,44 @@
+{
+  "problem_id": "2015.A1",
+  "condition": "B",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778018048.873605,
+  "ended_at": 1778018369.544717,
+  "wall_clock_s": 320.6711120605469,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "2015.A1",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 6,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Wrote a faithful theorem statement (positive branch case): given the maximization hypothesis on the triangle area, the two integrals between hyperbola and chords are equal. Build succeeds with one sorry; the calculus proof (deriving p^2=ab via AM-GM, then evaluating two log-integrals) was too long for the remaining budget after the slow ~150s lake build."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__B__r0_2zl65ahr/workspace"
+}

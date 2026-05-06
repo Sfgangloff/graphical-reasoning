@@ -1,0 +1,43 @@
+{
+  "problem_id": "2004.A1",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "continuity",
+  "category": "not",
+  "started_at": 1778055385.676642,
+  "ended_at": 1778055709.820524,
+  "wall_clock_s": 324.1438820362091,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "2004.A1",
+    "condition": "A",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 5,
+    "decisive_tool": "lake build",
+    "notes": "Formalized using integer form 5*S(N) vs 4*N; used Nat.find for the smallest N with 5*S(N) \u2265 4*N, then case-split on increment to force equality."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2004_A1__A__r2_5_xjaoyj/workspace"
+}

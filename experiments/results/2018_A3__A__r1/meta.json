@@ -1,0 +1,51 @@
+{
+  "problem_id": "2018.A3",
+  "condition": "A",
+  "run_index": 1,
+  "tags": "differentiability",
+  "category": "not",
+  "started_at": 1778064382.2448819,
+  "ended_at": 1778065042.858002,
+  "wall_clock_s": 660.6131200790405,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_multi_attempt": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 11,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2018_A3__A__r1_f60a15lm/workspace"
+}

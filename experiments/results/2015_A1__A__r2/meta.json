@@ -1,0 +1,51 @@
+{
+  "problem_id": "2015.A1",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778017452.8074398,
+  "ended_at": 1778018041.171425,
+  "wall_clock_s": 588.3639853000641,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 14,
+      "succeeded": 13
+    },
+    "Monitor": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 20,
+  "tool_calls_succeeded": 17,
+  "self_report": {
+    "problem_id": "2015.A1",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 14,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Statement formalized faithfully (geometric triangle area via shoelace + integrals for chord-bounded regions); lake build succeeds with one sorry warning; full proof (derive p\u00b2=ab via AM-GM applied at q=\u221a(ab), then evaluate both integrals to (b/p \u2212 p/b)/2 \u2212 log(b/p)) was beyond the time budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r2__qfo9ip3/workspace"
+}

@@ -1,0 +1,7 @@
+⚠ [8387/8388] Built Solution (127s)
+warning: Solution.lean:9:5: unused variable `h₁`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8388 jobs).
+
+--- stderr ---

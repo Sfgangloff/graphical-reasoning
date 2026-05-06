@@ -1,0 +1,51 @@
+{
+  "problem_id": "2003.B2",
+  "condition": "A",
+  "run_index": 0,
+  "tags": "limit-sequence|asymptotic",
+  "category": "graph-friendly",
+  "started_at": 1778036433.996705,
+  "ended_at": 1778036896.221334,
+  "wall_clock_s": 462.2246289253235,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 12,
+      "succeeded": 11
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 19,
+  "tool_calls_succeeded": 18,
+  "self_report": {
+    "problem_id": "2003.B2",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "decisive_tool": null,
+    "notes": "Statement formalized faithfully (averaging recurrence with bound seq (n-1) 0 < 2/n) and compiles cleanly; proof left as sorry due to budget \u2014 full proof requires the explicit binomial formula seq j i = (1/2^j) \u2211 C(j,k)/(i+k+1) plus the identity \u2211 C(n,k+1) = 2^n - 1."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__A__r0_47x3baqf/workspace"
+}

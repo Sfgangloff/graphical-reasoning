@@ -1,0 +1,56 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "B",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1777991180.448887,
+  "ended_at": 1777991618.063738,
+  "wall_clock_s": 437.6148509979248,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 10,
+      "succeeded": 9
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 17,
+  "tool_calls_succeeded": 15,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Statement and answer term (e^(a\u00b2b\u00b2)-1)/(ab) compile cleanly; full Fubini-based proof of the 2D max integral was beyond the time budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__B__r2_bnkywcdf/workspace"
+}

@@ -1,0 +1,47 @@
+{
+  "problem_id": "1986.A1",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "differentiability",
+  "category": "not",
+  "started_at": 1778042203.460404,
+  "ended_at": 1778042537.460203,
+  "wall_clock_s": 333.9997990131378,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 8,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "1986.A1",
+    "condition": "A",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 6,
+    "decisive_tool": "nlinarith",
+    "notes": "Factored x^4-13x^2+36=(x^2-4)(x^2-9); witness x=3 gives 18, upper bound x^3-3x\u226418 closed by nlinarith with sq_nonneg hints."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1986_A1__A__r2_m_c8bktl/workspace"
+}

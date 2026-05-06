@@ -1,0 +1,64 @@
+{
+  "problem_id": "1995.A5",
+  "condition": "B",
+  "run_index": 0,
+  "tags": "ode|asymptotic",
+  "category": "graph-friendly",
+  "started_at": 1778040984.134092,
+  "ended_at": 1778041366.071102,
+  "wall_clock_s": 381.93700981140137,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 4
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "TaskOutput": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "TaskStop": {
+      "attempted": 1,
+      "succeeded": 0
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 14,
+  "self_report": {
+    "problem_id": "1995.A5",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 10,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Statement formalized faithfully; answer term `True` (yes, necessarily linearly dependent) defined and well-typed; file builds cleanly with Mathlib; proof of dependence (Perron-Frobenius argument) left as sorry due to time/complexity."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1995_A5__B__r0_hc9em70q/workspace"
+}

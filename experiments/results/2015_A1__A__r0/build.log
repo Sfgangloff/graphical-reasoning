@@ -1,0 +1,229 @@
+✖ [8387/8388] Building Solution (112s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_A1__A__r0_rjg_cyfd/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:84:23: unexpected token '('; expected ']'
+error: Solution.lean:57:41: Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_left ?m.736
+of type
+  ∀ (a : ?m.730), ?m.734 * a ≤ ?m.735 * a
+error: Solution.lean:57:31: Application type mismatch: The argument
+  h_ba_pos
+has type
+  0 < b - a
+but is expected to have type
+  ?m.734 ≤ ?m.735
+in the application
+  mul_le_mul_left h_ba_pos
+error: Solution.lean:71:71: unsolved goals
+a p b : ℝ
+h1 : 0 < a
+h2 : a < p
+h3 : p < b
+hmax :
+  ∀ (q : ℝ),
+    a < q →
+      q < b →
+        a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) ≤
+          a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+hp : 0 < p
+hb : 0 < b
+hab : 0 < a * b
+hap : 0 < a * p
+hpb : 0 < p * b
+ha' : a ≠ 0
+hp' : p ≠ 0
+hb' : b ≠ 0
+hab' : a * b ≠ 0
+h_ba_pos : 0 < b - a
+s : ℝ := √(a * b)
+hs_def : s = √(a * b)
+hs_pos : 0 < s
+hs_sq : s * s = a * b
+h_a_lt_s : a < s
+h_s_lt_b : s < b
+hmax_s :
+  a * (1 / s - 1 / b) + s * (1 / b - 1 / a) + b * (1 / a - 1 / s) ≤
+    a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+eq_factor :
+  ∀ (q : ℝ),
+    q ≠ 0 →
+      a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) =
+        (b - a) * ((a + b) / (a * b) - 1 / q - q / (a * b))
+key_ineq : 1 / p + p / (a * b) ≤ 2 / s
+eq_s : 1 / s + s / (a * b) = 2 / s
+hineq : 0 ≤ (1 / p - p / (a * b)) ^ 2
+h_pos : 0 < 1 / p + p / (a * b)
+h_2s_pos : 0 < 2 / s
+h_prod : 1 / p * (p / (a * b)) = 1 / (a * b)
+this : (1 / p + p / (a * b)) ^ 2 = (1 / p - p / (a * b)) ^ 2 + 4 * (1 / p * (p / (a * b)))
+⊢ (1 / p - p / (a * b)) ^ 2 + 4 * (1 / (a * b)) = (1 / p - p / (a * b)) ^ 2 + 4 / (a * b)
+error: Solution.lean:77:8: No goals to be solved
+error: Solution.lean:81:71: Application type mismatch: The argument
+  abs_of_pos h_pos
+has type
+  |1 / p + p / (a * b)| = 1 / p + p / (a * b)
+but is expected to have type
+  ((1 / p + p / (a * b)) ^ 2) ^ 2 = ?m.1249
+in the application
+  LE.le.trans_eq (sq_le_sq' ?m.1245 sq_le) (abs_of_pos h_pos)
+error: Solution.lean:81:27: linarith failed to find a contradiction
+case h
+a p b : ℝ
+h1 : 0 < a
+h2 : a < p
+h3 : p < b
+hmax :
+  ∀ (q : ℝ),
+    a < q →
+      q < b →
+        a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) ≤
+          a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+hp : 0 < p
+hb : 0 < b
+hab : 0 < a * b
+hap : 0 < a * p
+hpb : 0 < p * b
+ha' : a ≠ 0
+hp' : p ≠ 0
+hb' : b ≠ 0
+hab' : a * b ≠ 0
+h_ba_pos : 0 < b - a
+s : ℝ := √(a * b)
+hs_def : s = √(a * b)
+hs_pos : 0 < s
+hs_sq : s * s = a * b
+h_a_lt_s : a < s
+h_s_lt_b : s < b
+hmax_s :
+  a * (1 / s - 1 / b) + s * (1 / b - 1 / a) + b * (1 / a - 1 / s) ≤
+    a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+eq_factor :
+  ∀ (q : ℝ),
+    q ≠ 0 →
+      a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) =
+        (b - a) * ((a + b) / (a * b) - 1 / q - q / (a * b))
+key_ineq : 1 / p + p / (a * b) ≤ 2 / s
+eq_s : 1 / s + s / (a * b) = 2 / s
+hineq : 0 ≤ (1 / p - p / (a * b)) ^ 2
+h_pos : 0 < 1 / p + p / (a * b)
+h_2s_pos : 0 < 2 / s
+h_prod : 1 / p * (p / (a * b)) = 1 / (a * b)
+sq_lhs : (1 / p + p / (a * b)) ^ 2 = (1 / p - p / (a * b)) ^ 2 + 4 / (a * b)
+sq_rhs : (2 / s) ^ 2 = 4 / (a * b)
+sq_le : (2 / s) ^ 2 ≤ (1 / p + p / (a * b)) ^ 2
+a✝ : (2 / s) ^ 2 < -(1 / p + p / (a * b)) ^ 2
+⊢ False
+failed
+error: Solution.lean:83:21: unsolved goals
+a p b : ℝ
+h1 : 0 < a
+h2 : a < p
+h3 : p < b
+hmax :
+  ∀ (q : ℝ),
+    a < q →
+      q < b →
+        a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) ≤
+          a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+hp : 0 < p
+hb : 0 < b
+hab : 0 < a * b
+hap : 0 < a * p
+hpb : 0 < p * b
+ha' : a ≠ 0
+hp' : p ≠ 0
+hb' : b ≠ 0
+hab' : a * b ≠ 0
+h_ba_pos : 0 < b - a
+s : ℝ := √(a * b)
+hs_def : s = √(a * b)
+hs_pos : 0 < s
+hs_sq : s * s = a * b
+h_a_lt_s : a < s
+h_s_lt_b : s < b
+hmax_s :
+  a * (1 / s - 1 / b) + s * (1 / b - 1 / a) + b * (1 / a - 1 / s) ≤
+    a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+eq_factor :
+  ∀ (q : ℝ),
+    q ≠ 0 →
+      a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) =
+        (b - a) * ((a + b) / (a * b) - 1 / q - q / (a * b))
+key_ineq : 1 / p + p / (a * b) ≤ 2 / s
+eq_s : 1 / s + s / (a * b) = 2 / s
+hineq : 0 ≤ (1 / p - p / (a * b)) ^ 2
+h_pos : 0 < 1 / p + p / (a * b)
+h_2s_pos : 0 < 2 / s
+h_prod : 1 / p * (p / (a * b)) = 1 / (a * b)
+sq_lhs : (1 / p + p / (a * b)) ^ 2 = (1 / p - p / (a * b)) ^ 2 + 4 / (a * b)
+sq_rhs : (2 / s) ^ 2 = 4 / (a * b)
+sq_le : (2 / s) ^ 2 ≤ (1 / p + p / (a * b)) ^ 2
+x✝ : ?m.1234
+⊢ 2 / s ≤ 1 / p + p / (a * b)
+error: Solution.lean:34:30: unsolved goals
+a p b : ℝ
+h1 : 0 < a
+h2 : a < p
+h3 : p < b
+hmax :
+  ∀ (q : ℝ),
+    a < q →
+      q < b →
+        a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) ≤
+          a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+hp : 0 < p
+hb : 0 < b
+hab : 0 < a * b
+hap : 0 < a * p
+hpb : 0 < p * b
+ha' : a ≠ 0
+hp' : p ≠ 0
+hb' : b ≠ 0
+hab' : a * b ≠ 0
+h_ba_pos : 0 < b - a
+s : ℝ := √(a * b)
+hs_def : s = √(a * b)
+hs_pos : 0 < s
+hs_sq : s * s = a * b
+h_a_lt_s : a < s
+h_s_lt_b : s < b
+hmax_s :
+  a * (1 / s - 1 / b) + s * (1 / b - 1 / a) + b * (1 / a - 1 / s) ≤
+    a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+eq_factor :
+  ∀ (q : ℝ),
+    q ≠ 0 →
+      a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) =
+        (b - a) * ((a + b) / (a * b) - 1 / q - q / (a * b))
+key_ineq : 1 / p + p / (a * b) ≤ 2 / s
+eq_s : 1 / s + s / (a * b) = 2 / s
+amgm : 2 / s ≤ 1 / p + p / (a * b)
+⊢ p * p = a * b
+error: Solution.lean:21:50: unsolved goals
+a p b : ℝ
+h1 : 0 < a
+h2 : a < p
+h3 : p < b
+hmax :
+  ∀ (q : ℝ),
+    a < q →
+      q < b →
+        a * (1 / q - 1 / b) + q * (1 / b - 1 / a) + b * (1 / a - 1 / q) ≤
+          a * (1 / p - 1 / b) + p * (1 / b - 1 / a) + b * (1 / a - 1 / p)
+hp : 0 < p
+hb : 0 < b
+hab : 0 < a * b
+hap : 0 < a * p
+hpb : 0 < p * b
+ha' : a ≠ 0
+hp' : p ≠ 0
+hb' : b ≠ 0
+hab' : a * b ≠ 0
+h_ba_pos : 0 < b - a
+hp2 : p * p = a * b
+⊢ ∫ (x : ℝ) in a..p, (a + p - x) / (a * p) - 1 / x = ∫ (x : ℝ) in p..b, (p + b - x) / (p * b) - 1 / x
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

@@ -1,0 +1,44 @@
+{
+  "problem_id": "2014.A3",
+  "condition": "B",
+  "run_index": 0,
+  "tags": "limit-sequence",
+  "category": "not",
+  "started_at": 1778058552.3321338,
+  "ended_at": 1778058908.550263,
+  "wall_clock_s": 356.21812915802,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "self_report": {
+    "problem_id": "2014.A3",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 4,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Statement formalized faithfully; answer 3/7 (closed-form derived via substitution a_k = 2^{2^k} + 2^{-2^k} yielding telescoping). Proof left as sorry due to ~3min build cycles consuming the budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2014_A3__B__r0_iwtaymfx/workspace"
+}

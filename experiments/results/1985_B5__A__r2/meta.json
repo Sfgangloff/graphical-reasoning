@@ -1,0 +1,43 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1777983364.436042,
+  "ended_at": 1777983526.076756,
+  "wall_clock_s": 161.64071393013,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 4,
+    "decisive_tool": null,
+    "notes": "Provided correct closed-form answer sqrt(\u03c0/1985)\u00b7exp(-3970) as a typed Lean term; proof left as sorry due to complexity of Gaussian integral manipulation within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__A__r2_uxzzj7kh/workspace"
+}

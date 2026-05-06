@@ -1,0 +1,52 @@
+{
+  "problem_id": "2014.A3",
+  "condition": "B",
+  "run_index": 1,
+  "tags": "limit-sequence",
+  "category": "not",
+  "started_at": 1778058917.0150368,
+  "ended_at": 1778059218.3964942,
+  "wall_clock_s": 301.3814573287964,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 12,
+      "succeeded": 11
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 15,
+  "self_report": {
+    "problem_id": "2014.A3",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 14,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Statement and closed-form answer 3/7 compile; proof left as sorry. Solution uses a_k = 2^{2^k} + 2^{-2^k} with telescoping product = (x^2-1)/(x^2+x+1) = 3/7."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2014_A3__B__r1_3qsuoyc0/workspace"
+}

@@ -20,6 +20,7 @@ Example:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import csv
 import json
 import os
@@ -33,6 +34,26 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 EXPS = REPO / "experiments"
+REFERENCE_LOCK_DIR = REPO / "putnam"
+
+
+@contextlib.contextmanager
+def lock_reference_dir(path: Path = REFERENCE_LOCK_DIR):
+    """While the body runs, make `path` untraversable so a sandboxed
+    Claude (which has unrestricted Bash under bypassPermissions) cannot
+    `cat` the reference formalizations even with absolute paths.
+    Locking the top-level dir is sufficient — children become
+    unreachable without touching their individual perms.
+    """
+    if not path.exists():
+        yield
+        return
+    original_mode = path.stat().st_mode
+    os.chmod(path, 0o000)
+    try:
+        yield
+    finally:
+        os.chmod(path, original_mode)
 
 
 def load_manifest_row(problem_id: str) -> dict:
@@ -71,21 +92,43 @@ def setup_workspace(tag: str, excerpt_path: Path,
     return workspace
 
 
-def run_claude(workspace: Path, prompt: str, timeout_s: int) -> tuple[int, str, str]:
-    """Invoke `claude --print` from the workspace; return (rc, stdout, stderr)."""
+def run_claude(workspace: Path, prompt: str, results_dir: Path,
+               budget_s: int, grace_s: int = 20) -> tuple[int, bool]:
+    """Invoke `claude --print` from the workspace, streaming stdout/stderr to
+    disk so partial output survives a kill. SIGTERM at the budget; SIGKILL
+    after `grace_s` if the process hasn't exited.
+
+    Returns (rc, timed_out). Stream-json output lands at
+    `results_dir/claude_stdout.json` (one JSONL event per line).
+    """
     cmd = [
         "claude", "--print",
-        "--output-format", "json",
+        "--output-format", "stream-json",
+        "--verbose",
         prompt,
     ]
-    proc = subprocess.run(
-        cmd,
-        cwd=workspace,
-        capture_output=True,
-        text=True,
-        timeout=timeout_s,
-    )
-    return proc.returncode, proc.stdout, proc.stderr
+    stdout_path = results_dir / "claude_stdout.json"
+    stderr_path = results_dir / "claude_stderr.log"
+    timed_out = False
+    with stdout_path.open("w") as out_f, stderr_path.open("w") as err_f:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=workspace,
+            stdout=out_f,
+            stderr=err_f,
+            text=True,
+        )
+        try:
+            rc = proc.wait(timeout=budget_s)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            proc.terminate()
+            try:
+                rc = proc.wait(timeout=grace_s)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                rc = proc.wait()
+    return rc, timed_out
 
 
 def lake_build(workspace: Path, timeout_s: int = 600) -> tuple[bool, str]:
@@ -100,43 +143,74 @@ def lake_build(workspace: Path, timeout_s: int = 600) -> tuple[bool, str]:
     return (proc.returncode == 0), log
 
 
-def extract_self_report(transcript: str) -> dict | None:
-    """Find the last fenced ```json ... ``` block in Claude's transcript."""
+def _iter_stream_events(stream_path: Path):
+    """Yield each JSONL event from a stream-json transcript on disk.
+    Skips malformed lines (e.g. a truncated tail when claude was killed)."""
+    if not stream_path.exists():
+        return
+    with stream_path.open() as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                yield json.loads(line)
+            except json.JSONDecodeError:
+                continue
+
+
+def extract_self_report(stream_path: Path) -> dict | None:
+    """Find the last fenced ```json ... ``` block across all assistant text."""
+    chunks: list[str] = []
+    for ev in _iter_stream_events(stream_path):
+        if ev.get("type") != "assistant":
+            continue
+        for block in (ev.get("message") or {}).get("content", []) or []:
+            if block.get("type") == "text":
+                chunks.append(block.get("text", ""))
+    transcript = "\n".join(chunks)
     blocks = re.findall(r"```json\s*(\{.*?\})\s*```", transcript, re.S)
-    if not blocks:
-        return None
-    try:
-        return json.loads(blocks[-1])
-    except Exception:
-        return None
+    for raw in reversed(blocks):
+        try:
+            return json.loads(raw)
+        except Exception:
+            continue
+    return None
 
 
-def count_tool_calls(transcript_json_str: str) -> dict:
-    """When --output-format json is used, claude returns a structured
-    transcript. Extract per-tool counts. Resilient to schema drift:
-    falls back to {} if the structure is unexpected."""
-    counts: dict[str, int] = {}
-    try:
-        obj = json.loads(transcript_json_str)
-    except Exception:
-        return counts
-    # Claude Code's print-json output has variants; walk all dicts looking
-    # for keys that look like tool-use records.
-    def walk(x):
-        if isinstance(x, dict):
-            tname = x.get("name") or x.get("tool_name") or x.get("tool")
-            if tname and (
-                "type" in x and "use" in str(x.get("type", ""))
-                or "input" in x
-            ):
-                counts[tname] = counts.get(tname, 0) + 1
-            for v in x.values():
-                walk(v)
-        elif isinstance(x, list):
-            for v in x:
-                walk(v)
-    walk(obj)
-    return counts
+def count_tool_calls(stream_path: Path) -> dict:
+    """Per-tool {attempted, succeeded} from a stream-json transcript.
+
+    `attempted` counts every `tool_use` block. `succeeded` counts those whose
+    matching `tool_result` (by `tool_use_id`) is not flagged `is_error: true`
+    — so permission denials and runtime failures don't masquerade as real
+    tool usage in the meta.json totals.
+    """
+    name_by_id: dict[str, str] = {}
+    attempted: dict[str, int] = {}
+    succeeded: dict[str, int] = {}
+    for ev in _iter_stream_events(stream_path):
+        kind = ev.get("type")
+        content = (ev.get("message") or {}).get("content", []) or []
+        if kind == "assistant":
+            for block in content:
+                if block.get("type") == "tool_use":
+                    name = block.get("name") or "<unknown>"
+                    tid = block.get("id")
+                    if tid:
+                        name_by_id[tid] = name
+                    attempted[name] = attempted.get(name, 0) + 1
+        elif kind == "user":
+            for block in content:
+                if block.get("type") != "tool_result":
+                    continue
+                tid = block.get("tool_use_id")
+                name = name_by_id.get(tid)
+                if name and not block.get("is_error"):
+                    succeeded[name] = succeeded.get(name, 0) + 1
+    names = set(attempted) | set(succeeded)
+    return {n: {"attempted": attempted.get(n, 0),
+                "succeeded": succeeded.get(n, 0)} for n in sorted(names)}
 
 
 def run_one(problem_id: str, condition: str, run_index: int,
@@ -146,11 +220,13 @@ def run_one(problem_id: str, condition: str, run_index: int,
     excerpt_path = REPO / row["excerpt_path"]
 
     template_path = EXPS / "prompts" / f"condition_{condition.lower()}.template.md"
+    wrapup_minutes = max(1, budget_minutes - 1)
     prompt = render(
         template_path.read_text(),
         PROBLEM_ID=problem_id,
         EXCERPT_PATH=excerpt_path.name,
         BUDGET_MINUTES=str(budget_minutes),
+        WRAPUP_MINUTES=str(wrapup_minutes),
         BUDGET_TOOL_CALLS=str(budget_calls),
     )
     settings_src = EXPS / "settings" / f"condition_{condition.lower()}.settings.json"
@@ -159,26 +235,17 @@ def run_one(problem_id: str, condition: str, run_index: int,
     workspace = setup_workspace(tag, excerpt_path, settings_src, prompt)
     print(f"[{tag}] workspace = {workspace}")
 
-    started = time.time()
-    try:
-        rc, stdout, stderr = run_claude(
-            workspace, prompt,
-            timeout_s=budget_minutes * 60 + 120,
-        )
-        timed_out = False
-    except subprocess.TimeoutExpired as e:
-        rc = -1
-        stdout = (e.stdout or b"").decode("utf-8", errors="replace") if isinstance(e.stdout, (bytes, bytearray)) else (e.stdout or "")
-        stderr = (e.stderr or b"").decode("utf-8", errors="replace") if isinstance(e.stderr, (bytes, bytearray)) else (e.stderr or "")
-        timed_out = True
-    ended = time.time()
-
-    # Save artifacts.
     results_dir = EXPS / "results" / tag
     results_dir.mkdir(parents=True, exist_ok=True)
-    (results_dir / "claude_stdout.json").write_text(stdout)
-    (results_dir / "claude_stderr.log").write_text(stderr)
     (results_dir / "prompt.md").write_text(prompt)
+
+    started = time.time()
+    with lock_reference_dir():
+        rc, timed_out = run_claude(
+            workspace, prompt, results_dir,
+            budget_s=budget_minutes * 60 + 60,
+        )
+    ended = time.time()
 
     # Copy Solution.lean if Claude wrote one.
     sol_in = workspace / "Solution.lean"
@@ -196,11 +263,9 @@ def run_one(problem_id: str, condition: str, run_index: int,
         build_ok, build_log = False, "Solution.lean not produced."
     (results_dir / "build.log").write_text(build_log)
 
-    # Self-report JSON from Claude.
-    self_report = extract_self_report(stdout)
-
-    # Tool counts (best-effort).
-    tool_counts = count_tool_calls(stdout)
+    stream_path = results_dir / "claude_stdout.json"
+    self_report = extract_self_report(stream_path)
+    tool_counts = count_tool_calls(stream_path)
 
     meta = {
         "problem_id": problem_id,
@@ -219,7 +284,8 @@ def run_one(problem_id: str, condition: str, run_index: int,
         "build_ok": build_ok,
         "sorries_remaining": sorries,
         "tool_counts": tool_counts,
-        "tool_calls_total": sum(tool_counts.values()),
+        "tool_calls_attempted": sum(c["attempted"] for c in tool_counts.values()),
+        "tool_calls_succeeded": sum(c["succeeded"] for c in tool_counts.values()),
         "self_report": self_report,
         "workspace": str(workspace),
     }
@@ -227,7 +293,8 @@ def run_one(problem_id: str, condition: str, run_index: int,
 
     flag = "OK" if (build_ok and sorries == 0) else "X"
     print(f"[{tag}] {flag}  build={build_ok}  sorries={sorries}  "
-          f"wall={meta['wall_clock_s']:.1f}s  tools={meta['tool_calls_total']}")
+          f"wall={meta['wall_clock_s']:.1f}s  "
+          f"tools={meta['tool_calls_succeeded']}/{meta['tool_calls_attempted']}")
     print(f"  -> {results_dir.relative_to(REPO)}")
     return results_dir
 

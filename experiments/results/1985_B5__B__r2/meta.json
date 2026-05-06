@@ -1,0 +1,44 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "B",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1777984184.1570828,
+  "ended_at": 1777984373.139411,
+  "wall_clock_s": 188.9823281764984,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 5,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Stated theorem and computed closed-form answer \u221a(\u03c0/1985)\u00b7e^(-3970); proof via t=u\u00b2 substitution and v=u-u\u207b\u00b9 Glasser-style trick is mathematically clear but the formalized integral-substitution chain in Mathlib is too large for the budget, so proof is sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__B__r2_d4e9gzlm/workspace"
+}

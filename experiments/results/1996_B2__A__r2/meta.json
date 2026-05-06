@@ -1,0 +1,55 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "A",
+  "run_index": 2,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778012160.040355,
+  "ended_at": 1778012497.9906611,
+  "wall_clock_s": 337.9503061771393,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_goal": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "decisive_tool": null,
+    "notes": "Statement formalized with rpow and the (2n-1)!! product as \u220f i \u2208 range n, (2i+1); compiles cleanly. Proof requires trapezoidal/midpoint integral bounds on concave ln(2t-1) \u2014 too long for the 9-min budget, left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__A__r2_gs2u7zdd/workspace"
+}

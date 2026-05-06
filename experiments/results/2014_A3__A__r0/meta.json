@@ -1,0 +1,51 @@
+{
+  "problem_id": "2014.A3",
+  "condition": "A",
+  "run_index": 0,
+  "tags": "limit-sequence",
+  "category": "not",
+  "started_at": 1778057283.7919948,
+  "ended_at": 1778057785.544985,
+  "wall_clock_s": 501.7529902458191,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 7,
+      "succeeded": 7
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "2014.A3",
+    "condition": "A",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 8,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Statement and answer term (3/7) compile cleanly; proof left as sorry due to complexity of formalizing the telescoping argument via a_k = 2^(2^k) + 2^(-2^k) within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2014_A3__A__r0_xvglzlyo/workspace"
+}

@@ -1,0 +1,48 @@
+{
+  "problem_id": "2018.A3",
+  "condition": "B",
+  "run_index": 1,
+  "tags": "differentiability",
+  "category": "not",
+  "started_at": 1778066029.4747388,
+  "ended_at": 1778066361.7961972,
+  "wall_clock_s": 332.32145833969116,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 6,
+      "succeeded": 5
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 9,
+  "self_report": {
+    "problem_id": "2018.A3",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 8,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Statement and closed-form answer 480/49 typecheck; full optimization proof left as sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2018_A3__B__r1_i9qzpjil/workspace"
+}

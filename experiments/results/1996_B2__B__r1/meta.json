@@ -1,0 +1,52 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "B",
+  "run_index": 1,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778013078.462652,
+  "ended_at": 1778013411.4911711,
+  "wall_clock_s": 333.02851915359497,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 8,
+      "succeeded": 7
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Wrote correct theorem statement that builds cleanly; proof left as `sorry` due to budget \u2014 proof would require ~50+ lines of induction with rpow/log bounds (log(1+x) \u2264 x and (1+x)log(1+x) \u2265 x), and each lake build takes ~164s leaving no room for iteration."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r1_zaeunij4/workspace"
+}

@@ -1,0 +1,56 @@
+{
+  "problem_id": "2015.B1",
+  "condition": "B",
+  "run_index": 0,
+  "tags": "differentiability",
+  "category": "not",
+  "started_at": 1778061062.354159,
+  "ended_at": 1778061645.762965,
+  "wall_clock_s": 583.408805847168,
+  "budget_minutes": 10,
+  "budget_tool_calls": 50,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 9,
+      "succeeded": 8
+    },
+    "Monitor": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "TaskStop": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 21,
+  "tool_calls_succeeded": 19,
+  "self_report": {
+    "problem_id": "2015.B1",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 0,
+    "decisive_tool": null,
+    "notes": "Faithful statement compiles cleanly; proof (Rolle's theorem applied to e^(x/2)\u00b7f iteratively to peel off the (1+2D)^3 operator) left as sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2015_B1__B__r0_hgl6vsij/workspace"
+}

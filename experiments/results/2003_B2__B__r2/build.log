@@ -1,0 +1,67 @@
+✖ [8387/8388] Building Solution (86s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2003_B2__B__r2__vwtpoi3/workspace/.lake/build/ir/Solution.setup.json --json
+warning: Solution.lean:15:18: This simp argument is unused:
+  avg
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵a̵v̵g̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Solution.lean:51:12: This simp argument is unused:
+  hself
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵s̵e̵l̵f̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Solution.lean:83:2: Type mismatch
+  Nat.add_one_mul_choose_eq m l
+has type
+  (m + 1) * m.choose l = (m + 1).choose (l + 1) * (l + 1)
+but is expected to have type
+  (m + 1) * m.choose l = (l + 1) * (m + 1).choose (l + 1)
+error: Solution.lean:100:52: unsolved goals
+n : ℕ
+hn : n ≥ 1
+hn1 : n - 1 + 1 = n
+hnpos : 0 < ↑n
+hnne : ↑n ≠ 0
+h2n1pos : 0 < 2 ^ (n - 1)
+l : ℕ
+a✝ : l ∈ range n
+⊢ ↑((n - 1).choose l) + ↑((n - 1).choose l) * (↑l)⁻¹ = ↑((n - 1).choose l) * (1 + ↑l)⁻¹
+info: Solution.lean:145:27: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: Solution.lean:143:38: unsolved goals
+n : ℕ
+hn : n ≥ 1
+hn1 : n - 1 + 1 = n
+hnpos : 0 < ↑n
+hnne : ↑n ≠ 0
+h2n1pos : 0 < 2 ^ (n - 1)
+keyterm : ∀ l ∈ range n, ↑((n - 1).choose l) * (1 / ↑(0 + l) + 1) = ↑((n - 1).choose l) * (1 / (↑l + 1))
+hkey : ∑ l ∈ range n, ↑((n - 1).choose l) * (1 / (↑(0 + l) + 1)) = (2 ^ n - 1) / ↑n
+this : n - 1 + 1 = n
+⊢ 2 ^ (n - 1) * 2 = 2 ^ (1 + (n - 1) - 1) * 2
+error: Solution.lean:147:6: Unknown identifier `div_lt_div_iff`
+error: Solution.lean:89:49: unsolved goals
+n : ℕ
+hn : n ≥ 1
+hn1 : n - 1 + 1 = n
+hnpos : 0 < ↑n
+hnne : ↑n ≠ 0
+h2n1pos : 0 < 2 ^ (n - 1)
+keyterm : ∀ l ∈ range n, ↑((n - 1).choose l) * (1 / ↑(0 + l) + 1) = ↑((n - 1).choose l) * (1 / (↑l + 1))
+hkey : ∑ l ∈ range n, ↑((n - 1).choose l) * (1 / (↑(0 + l) + 1)) = (2 ^ n - 1) / ↑n
+h2n : 2 ^ n = 2 * 2 ^ (n - 1)
+⊢ 1 / 2 ^ (n - 1) * ((2 * 2 ^ (n - 1) - 1) / ↑n) < 2 / ↑n
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed
