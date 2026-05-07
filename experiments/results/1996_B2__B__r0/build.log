@@ -1,5 +1,10 @@
-⚠ [8387/8388] Replayed Solution
-warning: Solution.lean:5:8: declaration uses `sorry`
-Build completed successfully (8388 jobs).
+✖ [8387/8388] Building Solution (225s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:50:8: Unknown identifier `lt_div_iff`
+warning: Solution.lean:55:8: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
 
 --- stderr ---
+error: build failed

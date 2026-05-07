@@ -4,11 +4,11 @@
   "run_index": 0,
   "tags": "integral-evaluation",
   "category": "graph-friendly",
-  "started_at": 1777982699.3073611,
-  "ended_at": 1777982915.0258172,
-  "wall_clock_s": 215.71845602989197,
-  "budget_minutes": 10,
-  "budget_tool_calls": 50,
+  "started_at": 1778145330.7095082,
+  "ended_at": 1778145857.34673,
+  "wall_clock_s": 526.6372218132019,
+  "budget_minutes": 15,
+  "budget_tool_calls": 80,
   "claude_exit_code": 0,
   "claude_timed_out": false,
   "solution_produced": true,
@@ -16,16 +16,16 @@
   "sorries_remaining": 1,
   "tool_counts": {
     "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
       "attempted": 2,
       "succeeded": 2
     },
-    "Read": {
-      "attempted": 1,
-      "succeeded": 1
-    },
     "ToolSearch": {
-      "attempted": 1,
-      "succeeded": 1
+      "attempted": 2,
+      "succeeded": 2
     },
     "Write": {
       "attempted": 1,
@@ -36,16 +36,16 @@
       "succeeded": 1
     }
   },
-  "tool_calls_attempted": 6,
-  "tool_calls_succeeded": 6,
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
   "self_report": {
     "problem_id": "1985.B5",
     "condition": "A",
     "outcome": "partial",
     "sorries_remaining": 1,
-    "tool_calls_total": 5,
+    "tool_calls_total": 9,
     "decisive_tool": "lean_diagnostic_messages",
-    "notes": "Statement and closed-form answer sqrt(\u03c0/1985)\u00b7exp(-3970) compile cleanly; full integral-evaluation proof skipped (sorry) as the substitution chain is too elaborate for the budget."
+    "notes": "Closed-form answer Real.sqrt (\u03c0/1985) * exp(-3970) is well-typed and the statement faithfully captures the LaTeX integral; lake build succeeds with one sorry \u2014 full Glasser-substitution proof is beyond the budget."
   },
-  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__A__r0_4mmlyq6j/workspace"
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__A__r0_vog108u1/workspace"
 }

@@ -61,22 +61,14 @@ optional.
 - `Bash` only for `lake build` (and trivial filesystem operations like
   `ls`, `cat`).
 
-You may **not** use:
-
-- Any visualization or plotting tools.
-- Any symbolic-math tools (`sympy_*`, `z3_*`, `conjecture_test`,
-  `find_counterexample`, OEIS lookup, etc.).
-- Any web search, external lookup, or agent delegation.
-- Files outside this working directory. Specifically: do **not** read
-  files in any `putnam/` directory, even if you find one. The reference
-  formalization is *not* available in this experiment.
+You may **not** use other tools
 
 ## Budget
 
-Stop work and emit the final JSON below by **9 minutes
-wall-clock** OR **50 tool calls**, whichever comes
-first. The harness will hard-stop at 10 minutes, so if
-you blow past 9 the self-report will be lost. If
+Stop work and emit the final JSON below by **14 minutes
+wall-clock** OR **80 tool calls**, whichever comes
+first. The harness will hard-stop at 15 minutes, so if
+you blow past 14 the self-report will be lost. If
 unsolved when the budget is hit, save partial progress and report.
 
 ## Final output

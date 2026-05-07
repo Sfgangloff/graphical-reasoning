@@ -4,11 +4,11 @@
   "run_index": 0,
   "tags": "integral-evaluation",
   "category": "graph-friendly",
-  "started_at": 1777983532.697685,
-  "ended_at": 1777983755.39135,
-  "wall_clock_s": 222.6936650276184,
-  "budget_minutes": 10,
-  "budget_tool_calls": 50,
+  "started_at": 1778145865.428015,
+  "ended_at": 1778146140.322488,
+  "wall_clock_s": 274.8944730758667,
+  "budget_minutes": 15,
+  "budget_tool_calls": 80,
   "claude_exit_code": 0,
   "claude_timed_out": false,
   "solution_produced": true,
@@ -16,33 +16,29 @@
   "sorries_remaining": 1,
   "tool_counts": {
     "Bash": {
-      "attempted": 1,
-      "succeeded": 1
+      "attempted": 3,
+      "succeeded": 3
     },
     "Read": {
-      "attempted": 2,
-      "succeeded": 2
+      "attempted": 1,
+      "succeeded": 1
     },
     "Write": {
       "attempted": 1,
       "succeeded": 1
-    },
-    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
-      "attempted": 2,
-      "succeeded": 1
     }
   },
-  "tool_calls_attempted": 6,
+  "tool_calls_attempted": 5,
   "tool_calls_succeeded": 5,
   "self_report": {
     "problem_id": "1985.B5",
     "condition": "B",
     "outcome": "partial",
     "sorries_remaining": 1,
-    "tool_calls_total": 5,
+    "tool_calls_total": 4,
     "tool_calls_viz": 0,
-    "decisive_tool": "lean_diagnostic_messages",
-    "notes": "Closed form sqrt(pi/1985)*exp(-3970) is supplied and well-typed; full proof (substitutions u=sqrt(t), v=u-1/u, Gaussian) too long to formalize in budget."
+    "decisive_tool": null,
+    "notes": "Closed form sqrt(pi/1985)*exp(-3970) derived via t=u^2 then w=u-1/u substitution; statement compiles, proof left as sorry."
   },
-  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__B__r0_sxy9xg4b/workspace"
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__B__r0_pxlop4b_/workspace"
 }

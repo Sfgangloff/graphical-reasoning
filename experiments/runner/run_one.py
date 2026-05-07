@@ -215,7 +215,7 @@ def count_tool_calls(stream_path: Path) -> dict:
 
 def run_one(problem_id: str, condition: str, run_index: int,
             budget_minutes: int, budget_calls: int) -> Path:
-    assert condition in {"A", "B"}, "condition must be 'A' or 'B'"
+    assert condition in {"A", "B", "C"}, "condition must be 'A', 'B', or 'C'"
     row = load_manifest_row(problem_id)
     excerpt_path = REPO / row["excerpt_path"]
 
@@ -302,7 +302,7 @@ def run_one(problem_id: str, condition: str, run_index: int,
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("problem_id")
-    ap.add_argument("condition", choices=["A", "B"])
+    ap.add_argument("condition", choices=["A", "B", "C"])
     ap.add_argument("run_index", type=int)
     ap.add_argument("--budget-minutes", type=int, default=30)
     ap.add_argument("--budget-calls", type=int, default=80)

@@ -4,53 +4,44 @@
   "run_index": 0,
   "tags": "asymptotic|integral-inequality",
   "category": "graph-friendly",
-  "started_at": 1778012617.820004,
-  "ended_at": 1778013073.562716,
-  "wall_clock_s": 455.742712020874,
-  "budget_minutes": 10,
-  "budget_tool_calls": 50,
-  "claude_exit_code": 0,
-  "claude_timed_out": false,
+  "started_at": 1778147945.887082,
+  "ended_at": 1778152663.9507499,
+  "wall_clock_s": 4718.0636677742,
+  "budget_minutes": 15,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
   "solution_produced": true,
-  "build_ok": true,
+  "build_ok": false,
   "sorries_remaining": 1,
   "tool_counts": {
+    "Agent": {
+      "attempted": 1,
+      "succeeded": 1
+    },
     "Bash": {
-      "attempted": 8,
-      "succeeded": 7
+      "attempted": 16,
+      "succeeded": 15
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Grep": {
+      "attempted": 9,
+      "succeeded": 9
     },
     "Read": {
-      "attempted": 1,
-      "succeeded": 1
-    },
-    "ToolSearch": {
-      "attempted": 2,
-      "succeeded": 2
+      "attempted": 9,
+      "succeeded": 9
     },
     "Write": {
-      "attempted": 1,
-      "succeeded": 1
-    },
-    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
-      "attempted": 1,
-      "succeeded": 1
-    },
-    "mcp__lean-lsp-mcp__lean_leansearch": {
-      "attempted": 1,
-      "succeeded": 1
+      "attempted": 2,
+      "succeeded": 2
     }
   },
-  "tool_calls_attempted": 14,
-  "tool_calls_succeeded": 13,
-  "self_report": {
-    "problem_id": "1996.B2",
-    "condition": "B",
-    "outcome": "partial",
-    "sorries_remaining": 1,
-    "tool_calls_total": 11,
-    "tool_calls_viz": 0,
-    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
-    "notes": "Statement formalized faithfully and builds cleanly; full proof requires Hermite-Hadamard concavity inequalities for log over too many subintervals to formalize within the time budget, so left as sorry."
-  },
-  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_wsy9owjh/workspace"
+  "tool_calls_attempted": 38,
+  "tool_calls_succeeded": 37,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__B__r0_riq3nb6a/workspace"
 }

@@ -4,11 +4,11 @@
   "run_index": 0,
   "tags": "integral-evaluation",
   "category": "graph-friendly",
-  "started_at": 1777988993.919762,
-  "ended_at": 1777989262.517754,
-  "wall_clock_s": 268.59799218177795,
-  "budget_minutes": 10,
-  "budget_tool_calls": 50,
+  "started_at": 1778146149.172566,
+  "ended_at": 1778146434.484941,
+  "wall_clock_s": 285.31237506866455,
+  "budget_minutes": 15,
+  "budget_tool_calls": 80,
   "claude_exit_code": 0,
   "claude_timed_out": false,
   "solution_produced": true,
@@ -16,10 +16,18 @@
   "sorries_remaining": 1,
   "tool_counts": {
     "Bash": {
-      "attempted": 4,
-      "succeeded": 4
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
     },
     "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
       "attempted": 1,
       "succeeded": 1
     },
@@ -28,16 +36,16 @@
       "succeeded": 1
     }
   },
-  "tool_calls_attempted": 6,
-  "tool_calls_succeeded": 6,
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
   "self_report": {
     "problem_id": "1989.A2",
     "condition": "A",
     "outcome": "partial",
     "sorries_remaining": 1,
-    "tool_calls_total": 5,
-    "decisive_tool": null,
-    "notes": "Statement and answer term (e^(a\u00b2b\u00b2)-1)/(ab) compile cleanly; proof left as sorry due to complexity of formalizing the domain-split + substitution argument within the budget."
+    "tool_calls_total": 7,
+    "decisive_tool": "lake build",
+    "notes": "Closed-form answer (e^(a\u00b2b\u00b2)-1)/(ab) verified via substitution u=bx, v=ay reducing to symmetric max integral; statement compiles cleanly with Mathlib import, but proof left as sorry due to the complexity of formalizing Fubini-style splitting by max threshold y=bx/a, change of variables, and order swap within the build-time budget."
   },
-  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__A__r0_9y906d2_/workspace"
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__A__r0_r62frfok/workspace"
 }

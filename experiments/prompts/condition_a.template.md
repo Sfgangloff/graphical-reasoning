@@ -61,15 +61,7 @@ optional.
 - `Bash` only for `lake build` (and trivial filesystem operations like
   `ls`, `cat`).
 
-You may **not** use:
-
-- Any visualization or plotting tools.
-- Any symbolic-math tools (`sympy_*`, `z3_*`, `conjecture_test`,
-  `find_counterexample`, OEIS lookup, etc.).
-- Any web search, external lookup, or agent delegation.
-- Files outside this working directory. Specifically: do **not** read
-  files in any `putnam/` directory, even if you find one. The reference
-  formalization is *not* available in this experiment.
+You may **not** use other tools
 
 ## Budget
 
