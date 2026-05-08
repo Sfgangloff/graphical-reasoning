@@ -1,0 +1,18 @@
+probe matrix: 3 cells (1 problems × 3 framings × 1 runs)  budget=10min/cell
+
+=== cell 1/3  1985.B5 / probe_prose / r0  (elapsed 0.0min) ===
+[1985_B5__probe_prose__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_prose__r0_oj74ezzr/workspace
+[1985_B5__probe_prose__r0] X  build=True  sorries=1  wall=517.2s  tools=9/9
+  -> experiments/probe_framing/results/1985_B5__probe_prose__r0
+
+=== cell 2/3  1985.B5 / probe_nudge / r0  (elapsed 8.7min) ===
+[1985_B5__probe_nudge__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r0_tcw_gfcc/workspace
+[1985_B5__probe_nudge__r0] X  build=True  sorries=1  wall=295.9s  tools=7/7
+  -> experiments/probe_framing/results/1985_B5__probe_nudge__r0
+
+=== cell 3/3  1985.B5 / probe_lean / r0  (elapsed 13.8min) ===
+[1985_B5__probe_lean__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_lean__r0_2nrkq_5g/workspace
+[1985_B5__probe_lean__r0] X  build=True  sorries=1  wall=6766.6s  tools=16/16
+  -> experiments/probe_framing/results/1985_B5__probe_lean__r0
+
+probe complete in 126.7 min

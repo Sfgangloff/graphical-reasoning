@@ -313,6 +313,47 @@ Concrete prompt edits that would test the actual hypothesis:
   followed by a `Read` of the produced PNG before the final JSON
   block.
 
+## Followup observation (2026-05-07) and probe (2026-05-08)
+
+Anecdotal observation worth checking: when a problem is presented in
+natural language, the model tends not to reach for any of the
+available math tools (sympy, math-viz, batch_examples); when the
+*same* problem is presented as a Lean `theorem` statement, it
+appears to also pull in unrelated general-purpose tools. If real,
+that would be a confound for the present sweep, where problems were
+delivered as prose LaTeX excerpts.
+
+A controlled probe was run on 2026-05-08 to test it: 3 problems × 3
+input framings (prose / prose+nudge / Lean stub) × 3 runs = 27
+attempts, with identical tool surface (`lean-lsp` + `math-viz` +
+`math-compute`), 10-min budget, output format held constant
+(`Solution.lean`). See `experiments/probe_framing/REPORT.md` for
+the full writeup.
+
+**The hypothesis did not survive.** `math-viz` was invoked zero
+times across all 27 runs, in all three framings. `math-compute` use
+was small (3–7 calls per 9-run cell) and *not* elevated under the
+Lean framing — actually slightly lower (3/9 vs 4/9 with the nudge).
+Mean total tool calls were lowest under the Lean framing (7.3) and
+highest under the nudge (10.9), with prose in the middle (9.0).
+When the problem arrives as a typed Lean stub, the model treats it
+as a syntax-completion task and explores less, not more.
+
+What this means for the next viz study: input framing is not the
+lever. Soft "use tools as appropriate" nudging raises Bash and
+ToolSearch activity but does not move viz invocation off zero. The
+recommendation in the previous section — make at least one
+`math-viz` call (followed by a `Read` of the produced PNG) a
+*requirement* of the prompt — stands, and is reinforced by the
+probe.
+
+Separate finding from the probe worth flagging on its own:
+Lean-LSP usage is also nearly absent (7 calls total across all 27
+runs). Models in one-shot `--print` mode prefer `Bash → lake build`
+over LSP queries by an order of magnitude, regardless of framing.
+If the overall goal is to evaluate Mathlib proof workflows under
+MCP tools, this is a bigger bottleneck than viz invocation.
+
 ## TL;DR
 
 - Math-viz was never invoked in 60 condition-B runs.

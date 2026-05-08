@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "probe_lean",
+  "run_index": 1,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778218552.2407281,
+  "ended_at": 1778218874.121166,
+  "wall_clock_s": 321.88043785095215,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "framing": "lean-stmt",
+    "outcome": "failed",
+    "sorries_remaining": 1,
+    "tool_calls_total": 5,
+    "notes": "Theorem has no answer stub; proof requires integral comparison via g(x)=(x/2)(ln x - 1) and concavity of ln, too long for budget \u2014 submitted with sorry; file builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r1_kols2f73/workspace"
+}

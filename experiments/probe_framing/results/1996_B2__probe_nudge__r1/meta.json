@@ -1,0 +1,50 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "probe_nudge",
+  "run_index": 1,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778215708.54576,
+  "ended_at": 1778216369.1575072,
+  "wall_clock_s": 660.6117472648621,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 18,
+      "succeeded": 16
+    },
+    "Monitor": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 26,
+  "tool_calls_succeeded": 24,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "framing": "prose+nudge",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 19,
+    "notes": "Statement formalized and compiles cleanly; proof left as sorry due to build-time budget (Mathlib import ~4min per build); proof outline (induction using log(1+x)<x and log(1+x)>x/(1+x)) is noted in comments."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r1_77v2bzff/workspace"
+}

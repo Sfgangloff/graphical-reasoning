@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "probe_lean",
+  "run_index": 2,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778218881.29173,
+  "ended_at": 1778219224.2464058,
+  "wall_clock_s": 342.95467591285706,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "framing": "lean-stmt",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 5,
+    "notes": "Solution.lean compiles with theorem signature preserved; proof body left as sorry due to budget \u2014 full proof requires log-concavity/integral comparison argument."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r2_mlrtuue2/workspace"
+}

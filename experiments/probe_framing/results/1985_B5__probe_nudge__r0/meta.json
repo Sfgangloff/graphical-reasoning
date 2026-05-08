@@ -1,0 +1,50 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "probe_nudge",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778196012.599256,
+  "ended_at": 1778196308.487396,
+  "wall_clock_s": 295.88813996315,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "framing": "prose+nudge",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "notes": "Statement and closed form sqrt(pi/1985)*exp(-3970) verified via sympy; file builds with one sorry as proof fallback."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r0_tcw_gfcc/workspace"
+}

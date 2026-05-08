@@ -1,0 +1,126 @@
+probe matrix: 6 cells (1 problems × 3 framings × 2 runs)  budget=10min/cell
+
+=== cell 1/6  1985.B5 / probe_prose / r1  (elapsed 0.0min) ===
+[1985_B5__probe_prose__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_prose__r1_0x3yfa2v/workspace
+[1985_B5__probe_prose__r1] X  build=True  sorries=1  wall=280.8s  tools=16/17
+  -> experiments/probe_framing/results/1985_B5__probe_prose__r1
+
+=== cell 2/6  1985.B5 / probe_prose / r2  (elapsed 4.8min) ===
+[1985_B5__probe_prose__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_prose__r2_ljirx51h/workspace
+[1985_B5__probe_prose__r2] X  build=True  sorries=1  wall=299.1s  tools=4/4
+  -> experiments/probe_framing/results/1985_B5__probe_prose__r2
+
+=== cell 3/6  1985.B5 / probe_nudge / r1  (elapsed 9.9min) ===
+[1985_B5__probe_nudge__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r1_uacmvdrv/workspace
+[1985_B5__probe_nudge__r1] X  build=True  sorries=1  wall=662.1s  tools=11/11
+  -> experiments/probe_framing/results/1985_B5__probe_nudge__r1
+
+=== cell 4/6  1985.B5 / probe_nudge / r2  (elapsed 25.2min) ===
+[1985_B5__probe_nudge__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r2_y_45t0zs/workspace
+[1985_B5__probe_nudge__r2] X  build=True  sorries=1  wall=293.4s  tools=14/14
+  -> experiments/probe_framing/results/1985_B5__probe_nudge__r2
+
+=== cell 5/6  1985.B5 / probe_lean / r1  (elapsed 30.2min) ===
+[1985_B5__probe_lean__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_lean__r1_8w7txboa/workspace
+[1985_B5__probe_lean__r1] X  build=True  sorries=1  wall=300.6s  tools=7/7
+  -> experiments/probe_framing/results/1985_B5__probe_lean__r1
+
+=== cell 6/6  1985.B5 / probe_lean / r2  (elapsed 35.4min) ===
+[1985_B5__probe_lean__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_lean__r2_yuacxv3j/workspace
+[1985_B5__probe_lean__r2] X  build=True  sorries=1  wall=282.5s  tools=6/6
+  -> experiments/probe_framing/results/1985_B5__probe_lean__r2
+
+probe complete in 40.3 min
+probe matrix: 18 cells (2 problems × 3 framings × 3 runs)  budget=10min/cell
+
+=== cell 1/18  1989.A2 / probe_prose / r0  (elapsed 0.0min) ===
+[1989_A2__probe_prose__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_prose__r0_7s7f8nxq/workspace
+[1989_A2__probe_prose__r0] X  build=True  sorries=1  wall=268.8s  tools=5/5
+  -> experiments/probe_framing/results/1989_A2__probe_prose__r0
+
+=== cell 2/18  1989.A2 / probe_prose / r1  (elapsed 4.6min) ===
+[1989_A2__probe_prose__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_prose__r1_yz6qtg13/workspace
+[1989_A2__probe_prose__r1] X  build=True  sorries=1  wall=456.8s  tools=9/10
+  -> experiments/probe_framing/results/1989_A2__probe_prose__r1
+
+=== cell 3/18  1989.A2 / probe_prose / r2  (elapsed 12.4min) ===
+[1989_A2__probe_prose__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_prose__r2_s5j1ahvj/workspace
+[1989_A2__probe_prose__r2] X  build=True  sorries=1  wall=316.5s  tools=9/9
+  -> experiments/probe_framing/results/1989_A2__probe_prose__r2
+
+=== cell 4/18  1989.A2 / probe_nudge / r0  (elapsed 17.8min) ===
+[1989_A2__probe_nudge__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_nudge__r0_c_x_6bi6/workspace
+[1989_A2__probe_nudge__r0] X  build=True  sorries=1  wall=472.5s  tools=8/8
+  -> experiments/probe_framing/results/1989_A2__probe_nudge__r0
+
+=== cell 5/18  1989.A2 / probe_nudge / r1  (elapsed 25.8min) ===
+[1989_A2__probe_nudge__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_nudge__r1_318tgq3d/workspace
+[1989_A2__probe_nudge__r1] X  build=True  sorries=1  wall=383.0s  tools=10/10
+  -> experiments/probe_framing/results/1989_A2__probe_nudge__r1
+
+=== cell 6/18  1989.A2 / probe_nudge / r2  (elapsed 32.3min) ===
+[1989_A2__probe_nudge__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_nudge__r2_s0zqv8i0/workspace
+[1989_A2__probe_nudge__r2] X  build=True  sorries=1  wall=337.7s  tools=7/7
+  -> experiments/probe_framing/results/1989_A2__probe_nudge__r2
+
+=== cell 7/18  1989.A2 / probe_lean / r0  (elapsed 38.1min) ===
+[1989_A2__probe_lean__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_lean__r0_9s2x1pzg/workspace
+[1989_A2__probe_lean__r0] X  build=True  sorries=1  wall=280.4s  tools=6/7
+  -> experiments/probe_framing/results/1989_A2__probe_lean__r0
+
+=== cell 8/18  1989.A2 / probe_lean / r1  (elapsed 42.9min) ===
+[1989_A2__probe_lean__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_lean__r1_urpqdrqk/workspace
+[1989_A2__probe_lean__r1] X  build=True  sorries=1  wall=314.5s  tools=5/5
+  -> experiments/probe_framing/results/1989_A2__probe_lean__r1
+
+=== cell 9/18  1989.A2 / probe_lean / r2  (elapsed 48.3min) ===
+[1989_A2__probe_lean__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_lean__r2_lr6256o4/workspace
+[1989_A2__probe_lean__r2] X  build=True  sorries=1  wall=329.9s  tools=6/6
+  -> experiments/probe_framing/results/1989_A2__probe_lean__r2
+
+=== cell 10/18  1996.B2 / probe_prose / r0  (elapsed 54.0min) ===
+[1996_B2__probe_prose__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_prose__r0_4weqzenu/workspace
+[1996_B2__probe_prose__r0] X  build=True  sorries=1  wall=660.7s  tools=15/16
+  -> experiments/probe_framing/results/1996_B2__probe_prose__r0
+
+=== cell 11/18  1996.B2 / probe_prose / r1  (elapsed 67.1min) ===
+[1996_B2__probe_prose__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_prose__r1_3f8a4uff/workspace
+[1996_B2__probe_prose__r1] X  build=True  sorries=1  wall=437.3s  tools=7/7
+  -> experiments/probe_framing/results/1996_B2__probe_prose__r1
+
+=== cell 12/18  1996.B2 / probe_prose / r2  (elapsed 74.6min) ===
+[1996_B2__probe_prose__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_prose__r2_7ah19v3h/workspace
+[1996_B2__probe_prose__r2] X  build=True  sorries=1  wall=1834.3s  tools=7/7
+  -> experiments/probe_framing/results/1996_B2__probe_prose__r2
+
+=== cell 13/18  1996.B2 / probe_nudge / r0  (elapsed 105.3min) ===
+[1996_B2__probe_nudge__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace
+[1996_B2__probe_nudge__r0] X  build=False  sorries=0  wall=660.7s  tools=10/12
+  -> experiments/probe_framing/results/1996_B2__probe_nudge__r0
+
+=== cell 14/18  1996.B2 / probe_nudge / r1  (elapsed 123.4min) ===
+[1996_B2__probe_nudge__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r1_77v2bzff/workspace
+[1996_B2__probe_nudge__r1] X  build=True  sorries=1  wall=660.6s  tools=24/26
+  -> experiments/probe_framing/results/1996_B2__probe_nudge__r1
+
+=== cell 15/18  1996.B2 / probe_nudge / r2  (elapsed 138.5min) ===
+[1996_B2__probe_nudge__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r2_ekp6fl4m/workspace
+[1996_B2__probe_nudge__r2] X  build=True  sorries=1  wall=660.7s  tools=7/9
+  -> experiments/probe_framing/results/1996_B2__probe_nudge__r2
+
+=== cell 16/18  1996.B2 / probe_lean / r0  (elapsed 164.7min) ===
+[1996_B2__probe_lean__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r0_uvf9x15y/workspace
+[1996_B2__probe_lean__r0] X  build=True  sorries=1  wall=358.0s  tools=8/8
+  -> experiments/probe_framing/results/1996_B2__probe_lean__r0
+
+=== cell 17/18  1996.B2 / probe_lean / r1  (elapsed 170.8min) ===
+[1996_B2__probe_lean__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r1_kols2f73/workspace
+[1996_B2__probe_lean__r1] X  build=True  sorries=1  wall=321.9s  tools=6/6
+  -> experiments/probe_framing/results/1996_B2__probe_lean__r1
+
+=== cell 18/18  1996.B2 / probe_lean / r2  (elapsed 176.2min) ===
+[1996_B2__probe_lean__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r2_mlrtuue2/workspace
+[1996_B2__probe_lean__r2] X  build=True  sorries=1  wall=343.0s  tools=6/6
+  -> experiments/probe_framing/results/1996_B2__probe_lean__r2
+
+probe complete in 182.1 min

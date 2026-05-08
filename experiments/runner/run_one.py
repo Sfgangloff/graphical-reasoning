@@ -71,8 +71,15 @@ def render(template: str, **kwargs) -> str:
 
 
 def setup_workspace(tag: str, excerpt_path: Path,
-                    settings_src: Path, prompt: str) -> Path:
-    """Create the per-attempt workspace and return its path."""
+                    settings_src: Path, prompt: str,
+                    condition: str, problem_id: str) -> Path:
+    """Create the per-attempt workspace and return its path.
+
+    For the `probe_lean` framing (condition `probe_lean`), drop a
+    `Theorem.lean` containing the theorem signature instead of the
+    LaTeX excerpt — the framing is exactly the difference between
+    these two presentations of the same problem.
+    """
     tmpdir = Path(tempfile.mkdtemp(prefix=f"exp_{tag}_"))
     workspace = tmpdir / "workspace"
     template = EXPS / "workspace_template"
@@ -84,8 +91,15 @@ def setup_workspace(tag: str, excerpt_path: Path,
     if template_lake.exists():
         (workspace / ".lake").symlink_to(template_lake.resolve())
 
-    # Drop the LaTeX excerpt, the prompt, and the settings.
-    shutil.copy2(excerpt_path, workspace / excerpt_path.name)
+    if condition == "probe_lean":
+        stub = (EXPS / "probe_framing" / "lean_stmts"
+                / f"{problem_id.replace('.', '_')}.lean")
+        if not stub.exists():
+            sys.exit(f"missing lean stub for {problem_id}: {stub}")
+        shutil.copy2(stub, workspace / "Theorem.lean")
+    else:
+        shutil.copy2(excerpt_path, workspace / excerpt_path.name)
+
     (workspace / "PROMPT.md").write_text(prompt)
     (workspace / ".claude").mkdir()
     shutil.copy2(settings_src, workspace / ".claude" / "settings.json")
@@ -213,9 +227,14 @@ def count_tool_calls(stream_path: Path) -> dict:
                 "succeeded": succeeded.get(n, 0)} for n in sorted(names)}
 
 
+CONDITION_RE = re.compile(r"^[A-Za-z][A-Za-z0-9_]*$")
+
+
 def run_one(problem_id: str, condition: str, run_index: int,
-            budget_minutes: int, budget_calls: int) -> Path:
-    assert condition in {"A", "B", "C"}, "condition must be 'A', 'B', or 'C'"
+            budget_minutes: int, budget_calls: int,
+            results_root: Path | None = None) -> Path:
+    if not CONDITION_RE.match(condition):
+        sys.exit(f"condition {condition!r} must match {CONDITION_RE.pattern}")
     row = load_manifest_row(problem_id)
     excerpt_path = REPO / row["excerpt_path"]
 
@@ -232,10 +251,11 @@ def run_one(problem_id: str, condition: str, run_index: int,
     settings_src = EXPS / "settings" / f"condition_{condition.lower()}.settings.json"
 
     tag = f"{problem_id.replace('.', '_')}__{condition}__r{run_index}"
-    workspace = setup_workspace(tag, excerpt_path, settings_src, prompt)
+    workspace = setup_workspace(tag, excerpt_path, settings_src, prompt,
+                                condition, problem_id)
     print(f"[{tag}] workspace = {workspace}")
 
-    results_dir = EXPS / "results" / tag
+    results_dir = (results_root or (EXPS / "results")) / tag
     results_dir.mkdir(parents=True, exist_ok=True)
     (results_dir / "prompt.md").write_text(prompt)
 
@@ -302,13 +322,17 @@ def run_one(problem_id: str, condition: str, run_index: int,
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("problem_id")
-    ap.add_argument("condition", choices=["A", "B", "C"])
+    ap.add_argument("condition")
     ap.add_argument("run_index", type=int)
     ap.add_argument("--budget-minutes", type=int, default=30)
     ap.add_argument("--budget-calls", type=int, default=80)
+    ap.add_argument("--results-root",
+                    help="override results dir (default: experiments/results)")
     args = ap.parse_args()
+    results_root = Path(args.results_root) if args.results_root else None
     run_one(args.problem_id, args.condition, args.run_index,
-            args.budget_minutes, args.budget_calls)
+            args.budget_minutes, args.budget_calls,
+            results_root=results_root)
 
 
 if __name__ == "__main__":

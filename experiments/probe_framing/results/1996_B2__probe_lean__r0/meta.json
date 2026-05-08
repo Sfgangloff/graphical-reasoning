@@ -1,0 +1,50 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "probe_lean",
+  "run_index": 0,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1778218185.916828,
+  "ended_at": 1778218543.870563,
+  "wall_clock_s": 357.9537351131439,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 8,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "framing": "lean-stmt",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "notes": "Solution.lean compiles with `sorry`; full real-analysis proof of the Stirling-style double-factorial bounds was infeasible within the budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_lean__r0_uvf9x15y/workspace"
+}

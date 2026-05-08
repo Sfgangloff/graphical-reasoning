@@ -1,0 +1,168 @@
+✖ [8387/8388] Building Solution (413s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__probe_nudge__r0_62j4x9b7/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:31:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  2 * (0 + 1) - 1
+in the target expression
+  (2 - 1) / 2 * (log (2 - 1) - 1) < 0
+
+case zero.refine_1
+h1 : ∏ k ∈ range 1, (2 * ↑k + 1) = 1
+this : log (2 * ↑0 + 1) = 0
+⊢ (2 - 1) / 2 * (log (2 - 1) - 1) < 0
+error: Solution.lean:35:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  2 * (0 + 1) + 1
+in the target expression
+  0 < (2 + 1) / 2 * (log (2 + 1) - 1)
+
+case zero.refine_2
+h1 : ∏ k ∈ range 1, (2 * ↑k + 1) = 1
+⊢ 0 < (2 + 1) / 2 * (log (2 + 1) - 1)
+error: Solution.lean:70:23: Unknown identifier `lt_div_iff`
+error: Solution.lean:77:8: Unknown constant `Real.log_lt_sub_one_of_ne`
+error: Solution.lean:83:41: unsolved goals
+k : ℕ
+ih_low : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) - 1) - 1) < log (∏ k ∈ range (k + 1), (2 * ↑k + 1))
+ih_up : log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) < (2 * (↑k + 1) + 1) / 2 * (log (2 * (↑k + 1) + 1) - 1)
+h2k3pos : 0 < 2 * (↑k + 1) + 1
+h2k1pos : 0 < 2 * (↑k + 1) - 1
+h2k5pos : 0 < 2 * (↑k + 1 + 1) + 1
+h2k3pos' : 0 < 2 * (↑k + 1 + 1) - 1
+hu : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) > 1
+hu_pos : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) > 0
+hu_ne : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) ≠ 1
+hlog : log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1) - 1) < (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) - 1
+hlog_split : log ((2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1)) = log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1) - 1)
+⊢ 2 * (↑k + 1) + 1 - (2 * (↑k + 1) - 1) = 2
+error: Solution.lean:94:17: failed to synthesize instance of type class
+  MulRightStrictMono ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Solution.lean:102:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  2 * (↑k + 1 + 1) - 1
+in the target expression
+  (2 * (↑(k + 1) + 1) - 1) / 2 * (log (2 * (↑(k + 1) + 1) - 1) - 1) <
+    log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) + log (2 * ↑(k + 1) + 1)
+
+case succ.refine_1
+k : ℕ
+ih_low : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) - 1) - 1) < log (∏ k ∈ range (k + 1), (2 * ↑k + 1))
+ih_up : log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) < (2 * (↑k + 1) + 1) / 2 * (log (2 * (↑k + 1) + 1) - 1)
+h2k3pos : 0 < 2 * (↑k + 1) + 1
+h2k1pos : 0 < 2 * (↑k + 1) - 1
+h2k5pos : 0 < 2 * (↑k + 1 + 1) + 1
+h2k3pos' : 0 < 2 * (↑k + 1 + 1) - 1
+hu : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) > 1
+hu_pos : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) > 0
+hu_ne : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) ≠ 1
+hlog : log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1) - 1) < 2 / (2 * (↑k + 1) - 1)
+hlog_split : log ((2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1)) = log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1) - 1)
+hsub_eq : (2 * (↑k + 1) + 1) / (2 * (↑k + 1) - 1) - 1 = 2 / (2 * (↑k + 1) - 1)
+hmul : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1) - 1)) < 1
+eq1 : 2 * (↑k + 1 + 1) - 1 = 2 * (↑k + 1) + 1
+⊢ (2 * (↑(k + 1) + 1) - 1) / 2 * (log (2 * (↑(k + 1) + 1) - 1) - 1) <
+    log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) + log (2 * ↑(k + 1) + 1)
+error: Solution.lean:130:8: Unknown constant `Real.log_lt_sub_one_of_ne`
+error: Solution.lean:136:46: unsolved goals
+k : ℕ
+ih_low : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) - 1) - 1) < log (∏ k ∈ range (k + 1), (2 * ↑k + 1))
+ih_up : log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) < (2 * (↑k + 1) + 1) / 2 * (log (2 * (↑k + 1) + 1) - 1)
+h2k3pos : 0 < 2 * (↑k + 1) + 1
+h2k1pos : 0 < 2 * (↑k + 1) - 1
+h2k5pos : 0 < 2 * (↑k + 1 + 1) + 1
+h2k3pos' : 0 < 2 * (↑k + 1 + 1) - 1
+hv : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) < 1
+hv_pos : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) > 0
+hv_ne : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) ≠ 1
+hlog : log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1) < (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) - 1
+hlog_split : log ((2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1)) = log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1)
+⊢ 2 * (↑k + 1) + 1 - (2 * (↑k + 1 + 1) + 1) = -2
+error: Solution.lean:147:50: linarith failed to find a contradiction
+case h
+k : ℕ
+ih_low : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) - 1) - 1) < log (∏ k ∈ range (k + 1), (2 * ↑k + 1))
+ih_up : log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) < (2 * (↑k + 1) + 1) / 2 * (log (2 * (↑k + 1) + 1) - 1)
+h2k3pos : 0 < 2 * (↑k + 1) + 1
+h2k1pos : 0 < 2 * (↑k + 1) - 1
+h2k5pos : 0 < 2 * (↑k + 1 + 1) + 1
+h2k3pos' : 0 < 2 * (↑k + 1 + 1) - 1
+hv : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) < 1
+hv_pos : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) > 0
+hv_ne : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) ≠ 1
+hlog : log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1) < -2 / (2 * (↑k + 1 + 1) + 1)
+hlog_split : log ((2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1)) = log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1)
+hsub_eq : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) - 1 = -2 / (2 * (↑k + 1 + 1) + 1)
+h2k5pos' : 0 < 2 * (↑k + 1 + 1) + 1
+a✝ : log (2 * (↑k + 1 + 1) + 1) - log (2 * (↑k + 1) + 1) ≤ 2 / (2 * (↑k + 1 + 1) + 1)
+⊢ False
+failed
+error: Solution.lean:154:17: failed to synthesize instance of type class
+  MulRightStrictMono ℝ
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+error: Solution.lean:156:6: linarith failed to find a contradiction
+case succ.refine_2.h
+k : ℕ
+ih_low : (2 * (↑k + 1) - 1) / 2 * (log (2 * (↑k + 1) - 1) - 1) < log (∏ k ∈ range (k + 1), (2 * ↑k + 1))
+ih_up : log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) < (2 * (↑k + 1) + 1) / 2 * (log (2 * (↑k + 1) + 1) - 1)
+h2k3pos : 0 < 2 * (↑k + 1) + 1
+h2k1pos : 0 < 2 * (↑k + 1) - 1
+h2k5pos : 0 < 2 * (↑k + 1 + 1) + 1
+h2k3pos' : 0 < 2 * (↑k + 1 + 1) - 1
+hv : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) < 1
+hv_pos : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) > 0
+hv_ne : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) ≠ 1
+hlog : log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1) < -2 / (2 * (↑k + 1 + 1) + 1)
+hlog_split : log ((2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1)) = log (2 * (↑k + 1) + 1) - log (2 * (↑k + 1 + 1) + 1)
+hsub_eq : (2 * (↑k + 1) + 1) / (2 * (↑k + 1 + 1) + 1) - 1 = -2 / (2 * (↑k + 1 + 1) + 1)
+h2k5pos' : 0 < 2 * (↑k + 1 + 1) + 1
+hmul : (2 * (↑k + 1 + 1) + 1) / 2 * (log (2 * (↑k + 1 + 1) + 1) - log (2 * (↑k + 1) + 1)) > 1
+a✝ :
+  (2 * (↑(k + 1) + 1) + 1) / 2 * (log (2 * (↑(k + 1) + 1) + 1) - 1) ≤
+    log (∏ k ∈ range (k + 1), (2 * ↑k + 1)) + log (2 * ↑(k + 1) + 1)
+⊢ False
+failed
+warning: Solution.lean:26:12: This simp argument is unused:
+  Finset.prod_range_succ
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵F̵i̵n̵s̵e̵t̵.̵p̵r̵o̵d̵_̵r̵a̵n̵g̵e̵_̵s̵u̵c̵c̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Solution.lean:187:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  log ((2 * (↑m + 1) - 1) / rexp 1)
+in the target expression
+  log ((2 * ↑(m + 1) - 1) / rexp 1) * ((2 * ↑(m + 1) - 1) / 2) = (2 * ↑(m + 1) - 1) / 2 * (log (2 * ↑(m + 1) - 1) - 1)
+
+case e_x
+m : ℕ
+hn : 0 < m.succ
+hlow : (2 * (↑m + 1) - 1) / 2 * (log (2 * (↑m + 1) - 1) - 1) < log (∏ k ∈ range (m + 1), (2 * ↑k + 1))
+hup : log (∏ k ∈ range (m + 1), (2 * ↑k + 1)) < (2 * (↑m + 1) + 1) / 2 * (log (2 * (↑m + 1) + 1) - 1)
+hP_pos : 0 < ∏ k ∈ range (m + 1), (2 * ↑k + 1)
+h2m1pos : 0 < 2 * (↑m + 1) - 1
+h2m3pos : 0 < 2 * (↑m + 1) + 1
+hn_eq : ↑(m + 1) = ↑m + 1
+hbase_pos : 0 < (2 * ↑(m + 1) - 1) / rexp 1
+⊢ log ((2 * ↑(m + 1) - 1) / rexp 1) * ((2 * ↑(m + 1) - 1) / 2) = (2 * ↑(m + 1) - 1) / 2 * (log (2 * ↑(m + 1) - 1) - 1)
+error: Solution.lean:210:10: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  log ((2 * (↑m + 1) + 1) / rexp 1)
+in the target expression
+  log ((2 * ↑(m + 1) + 1) / rexp 1) * ((2 * ↑(m + 1) + 1) / 2) = (2 * ↑(m + 1) + 1) / 2 * (log (2 * ↑(m + 1) + 1) - 1)
+
+case e_x
+m : ℕ
+hn : 0 < m.succ
+hlow : (2 * (↑m + 1) - 1) / 2 * (log (2 * (↑m + 1) - 1) - 1) < log (∏ k ∈ range (m + 1), (2 * ↑k + 1))
+hup : log (∏ k ∈ range (m + 1), (2 * ↑k + 1)) < (2 * (↑m + 1) + 1) / 2 * (log (2 * (↑m + 1) + 1) - 1)
+hP_pos : 0 < ∏ k ∈ range (m + 1), (2 * ↑k + 1)
+h2m1pos : 0 < 2 * (↑m + 1) - 1
+h2m3pos : 0 < 2 * (↑m + 1) + 1
+hn_eq : ↑(m + 1) = ↑m + 1
+hbase_pos : 0 < (2 * ↑(m + 1) + 1) / rexp 1
+⊢ log ((2 * ↑(m + 1) + 1) / rexp 1) * ((2 * ↑(m + 1) + 1) / 2) = (2 * ↑(m + 1) + 1) / 2 * (log (2 * ↑(m + 1) + 1) - 1)
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

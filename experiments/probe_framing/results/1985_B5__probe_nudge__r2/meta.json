@@ -1,0 +1,50 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "probe_nudge",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778207403.1192472,
+  "ended_at": 1778207696.4718342,
+  "wall_clock_s": 293.3525869846344,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 7,
+      "succeeded": 7
+    },
+    "Monitor": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 14,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "framing": "prose+nudge",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "notes": "Answer term sqrt(pi/1985)*exp(-3970) defined and statement compiles cleanly; proof left as sorry given the difficulty of formalizing the change-of-variable / Glasser-style trick within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r2_y_45t0zs/workspace"
+}

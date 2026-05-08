@@ -1,0 +1,50 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "probe_lean",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778207705.716686,
+  "ended_at": 1778208006.296847,
+  "wall_clock_s": 300.5801610946655,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "framing": "lean-stmt",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 6,
+    "notes": "Closed-form answer Real.sqrt (Real.pi / 1985) * Real.exp (-3970) verified via SymPy and compiles; proof left as sorry due to integral's Bessel-function character being beyond Mathlib's current reach."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_lean__r1_8w7txboa/workspace"
+}

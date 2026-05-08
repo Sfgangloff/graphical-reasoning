@@ -1,0 +1,54 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "probe_prose",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778208584.41347,
+  "ended_at": 1778209041.21908,
+  "wall_clock_s": 456.80560994148254,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 9,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "framing": "prose",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 8,
+    "notes": "Stated the theorem and provided the closed-form answer (exp(a^2*b^2)-1)/(a*b), verified by sympy; proof left as sorry due to complexity of the splitting/Fubini argument."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_prose__r1_yz6qtg13/workspace"
+}

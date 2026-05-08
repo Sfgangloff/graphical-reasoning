@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "probe_prose",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778206180.64774,
+  "ended_at": 1778206479.7041988,
+  "wall_clock_s": 299.0564589500427,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "framing": "prose",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 4,
+    "notes": "Statement and closed-form answer provided; proof left as sorry due to complexity of substitution argument and build-time budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_prose__r2_ljirx51h/workspace"
+}

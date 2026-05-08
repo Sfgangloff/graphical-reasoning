@@ -1,0 +1,50 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "probe_nudge",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778206487.874851,
+  "ended_at": 1778207149.943396,
+  "wall_clock_s": 662.0685451030731,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "framing": "prose+nudge",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "notes": "Statement and answer term sqrt(\u03c0/1985)\u00b7exp(-3970) compile cleanly; proof left as sorry due to integral being non-trivial."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__probe_nudge__r1_uacmvdrv/workspace"
+}

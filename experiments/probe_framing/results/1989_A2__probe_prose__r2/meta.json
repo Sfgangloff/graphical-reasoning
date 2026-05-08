@@ -1,0 +1,50 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "probe_prose",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1778209048.6508899,
+  "ended_at": 1778209365.153978,
+  "wall_clock_s": 316.5030882358551,
+  "budget_minutes": 10,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "framing": "prose",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "notes": "Statement and answer term ((exp(a^2*b^2)-1)/(a*b)) compile cleanly; proof of iterated integral with max-split left as sorry due to build-time and complexity constraints."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__probe_prose__r2_s5j1ahvj/workspace"
+}
