@@ -1,15 +1,8 @@
 # Do visualization tools help an LLM agent solve Putnam problems? A negative result, and what it actually measures
 
-**Draft — 2026-05-21.** Status: Studies 1–2 complete; Study 3
-(forced-treatment) complete; diagnostic Studies 4a / 4a' (recall
-without and with prose chain-of-thought) complete and substantially
-reframe the interpretation of Study 3 — see §8.2; **Study 5
-(adversarial false-claim ablation, §9) complete and closes out the
-"forced viz has unique value" hypothesis — visualization, numerical
-checking, and tool-free prose reflection catch deliberately false
-claims at indistinguishable rates (7/8 / 8/8 / 7/8).** Full 54-cell
-forced-viz matrix in §8.1, recall findings in §8.2, 48-cell adversarial
-matrix in §9.
+**Draft — 2026-05-21.** Studies 1–5 complete: 147 forced/optional
+print-mode runs, 36 recall probes, 48 adversarial cells. Headline
+matrix §8.1, interpretive reframe §8.2, final adversarial test §9.
 
 ---
 
@@ -19,42 +12,41 @@ A competent human's first move on many analysis problems is to *draw
 something*: sketch the integrand, plot both sides of an inequality,
 look at the asymptotics. We ask whether giving the same affordance to
 an autonomous LLM coding agent — Claude Code with MCP plotting tools
-(`math-viz`) — changes what it can solve. Using a corpus of
+(`math-viz`) — changes what it can solve, on a corpus of
 statement-level Lean 4 / Mathlib formalizations of Putnam
-real-analysis problems (1985–2025) and a sandboxed harness, we ran a
-120-attempt A/B sweep (visualization tools available vs not) and a
-27-attempt input-framing probe. **The headline result is negative and
-sharp: across 147 unattended `--print`-mode runs the agent invoked a
+real-analysis problems (1985–2025).
+
+**Across 147 unattended `--print`-mode runs spanning a 120-attempt
+A/B sweep and a 27-attempt input-framing probe, the agent invoked a
 visualization tool exactly zero times**, including on the
-integral/asymptotic problems most amenable to a picture, and solve
-rates were statistically indistinguishable between arms (31.7% vs
-28.3%). Yet in *manual, interactive* pilot sessions the same model
-used the same tools and the use was decisive — in one case a single
-plot revealed the stated theorem was false and reversed the entire
-solution strategy. We argue the experiments as run did not measure
-"does visualization help"; they measured "does an unattended agent in
-one-shot print mode spontaneously discover a two-step
-plot-then-read-back workflow under time pressure," and the answer to
-*that* is robustly no. We identify the concrete mechanism (the
-plotting tool returns a filesystem path, not an image; the
-plot→`Read`→reason loop must be self-initiated with no human nudge)
-and report a third study (54 attempts) that converts the dead variable
-into a live one by *requiring* the loop: requirement lifts viz
-adoption from ~10% to 100% with full read-back, but on a corpus of
-true-stated claims the delivered visualization is confirmatory only,
-producing no measurable build/sorry effect while eliminating the
-"failed to produce a theorem at all" mode. A fourth (recall-with-CoT)
-and fifth (adversarial false-claim ablation, 48 attempts) study then
-isolate the active ingredient: prose chain-of-thought *alone* matches
-forced-viz on the true-claim corpus (18/18), and on deliberately
-false claims a *required pause with no tools at all* catches the lie
-at the same rate (7/8) as a required plot or a required SymPy check.
-The corrective work is the required verification step, not the
-modality used to satisfy it; visualization is sufficient but not
-necessary. The methodological point generalizes beyond visualization:
-**voluntary-use evaluations of advertised agent tools conflate tool
-value with tool discovery, and in unattended print mode the discovery
-term dominates.**
+integral/asymptotic subset most amenable to a picture; solve rates
+were statistically indistinguishable between arms (31.7% vs 28.3%).
+Yet in *manual, interactive* pilot sessions the same model used the
+same tools and the use was decisive — in one case a single plot
+revealed the stated theorem was false. The experiments did not
+measure *does visualization help*; they measured *does an unattended
+one-shot agent spontaneously discover a two-step plot-then-read-back
+workflow under time pressure*, and that answer is robustly no.
+
+Three follow-up studies isolate what the value actually depends on.
+Study 3 (54 attempts) *requires* the loop: adoption goes 10% → 100%
+with full PNG read-back, but solve rates do not move — on a corpus of
+true claims the delivered visualization is confirmatory only. Study 4
+(36 attempts) compares against zero-tool prose CoT alone: multi-
+paragraph CoT recovers the same 100% answer-term correctness as forced
+viz, so the corpus has no CoT-incompetence headroom for any tool to
+demonstrate value. Study 5 (48 attempts) constructs the missing
+adversarial corpus — *deliberately mis-stated* canonical answers —
+and runs a three-arm forced ablation: required visualization (7/8),
+required numerical check (8/8), and required tool-free prose
+reflection (7/8) catch false claims at indistinguishable rates.
+**The corrective work is the required verification step, not the
+modality that satisfies it; visualization is sufficient but not
+necessary.** The methodological generalization:
+voluntary-use evaluations of advertised agent tools conflate tool
+value with tool discovery, and unattended evaluations on a corpus
+where the model's CoT already suffices cannot detect the value of any
+tool at all.
 
 ---
 
@@ -210,33 +202,14 @@ discover and execute a two-step plot-then-read-back workflow under a
 answer is robustly no across 147 runs, 3 input framings, and the
 picture-amenable subset.
 
-Mechanisms, ranked by how strongly the data supports them:
-
-1. **No human nudge in print mode.** Every session where viz fired had
-   a human implicitly or explicitly asking to sanity-check the problem.
-   In `--print` mode the agent must pre-decide *both* halves of the
-   plot→`Read` loop with no mid-rollout prompt; it defaults to its
-   strongest known workflow (translate → `lake build` → patch).
-2. **Path-not-image friction, buried in the prompt.** `math-viz`
-   returns a path; the carve-out permitting a `Read` of that path
-   (which lands outside the sandboxed workspace) was a parenthetical
-   in a prompt that otherwise says "files in this working directory
-   only." A literal reading concludes the PNG is unreadable and the
-   loop is pointless.
-3. **Time pressure + opt-out language.** A 10-minute budget plus
-   "no requirement to use the visualization tools" biases against any
-   exploratory step whose payoff is not immediate.
-4. **Task confound.** The sorry-stub fallback meant most runs never
-   reached the proof loop, and the corpus skewed toward problems no
-   configuration solved.
-
-The methodological generalization: **a voluntary-use evaluation of an
-advertised agent tool conflates the tool's value with the agent's
-propensity to discover it from a flat tool list. In unattended print
-mode the discovery term dominates and can be identically zero, making
-the value term unmeasurable.** Reporting "tool X did not improve
-performance" from such a design is unsupported; the supportable claim
-is "tool X was not adopted."
+Four mechanisms plausibly contribute: no mid-rollout nudge to switch
+workflows (in interactive sessions the human supplies one); path-not-
+image friction (the `Read`-the-PNG step is buried in a parenthetical
+that contradicts the prompt's "files in this working directory only");
+time pressure under opt-out language; and a task confound (the
+sorry-stub fallback meant most runs never exercised the proof loop,
+where viz might otherwise help). Study 3 below pins which of these
+are the binding constraint.
 
 ## 8. Study 3 — forcing the treatment
 
@@ -298,33 +271,20 @@ visually geometric in the set: 2/3 there, 0/3 everywhere else).
 `vizprimed` ever follows up with a `Read` of the PNG — voluntary
 plots are *never* read back.
 
-Five findings, now on the full 54-cell dataset:
+Three findings, on the full 54-cell dataset:
 
 1. **Adoption is governed by *requirement*, not *information*.**
    `vizprimed` (path-not-image friction removed, `Read`-the-PNG
-   carve-out promoted, worked plot→`Read`→conclude primer added,
-   viz still *optional*) moved voluntary invocation from 6%→11% — a
-   negligible bump of two extra spontaneous plots, both on the single
-   most visually geometric problem. A near-perfect tool description
-   under opt-out language barely changes adoption. By contrast,
-   `forced` lifts invocation to **100%** universally. This decisively
-   settles one of the three original hypotheses: tool descriptions
-   are *not* the lever.
-2. **The second step (`Read`-the-PNG) is *never* self-discovered.**
-   Across `b` and `vizprimed` combined, 3 spontaneous viz calls
-   occurred. None was followed by a `Read` of the returned PNG path
-   (0/3, PNG-read-back rate 0%). Only the explicit forced instruction
-   produces the full two-step loop. This is the cleanest possible
-   confirmation of the path-not-image mechanism: even when the agent
-   volunteers a plot, in unattended print mode it does not realize
-   that the tool returned a path and that there is a second action to
-   take.
-3. **Forcing works mechanically and completely.** `forced` achieved
-   100% viz invocation *and* 100% PNG read-back across all 18 runs
-   covering 6 problems. The earlier worry that an unattended print-
-   mode agent might ignore or fake the requirement is not borne out:
-   it complies fully, every time.
-4. **Forced viz does not change build/sorry outcomes.** `solved*`
+   carve-out promoted, worked plot→`Read`→conclude primer added, viz
+   still *optional*) moved voluntary invocation from 6% → 11% — a
+   negligible bump, both extra plots on 2006.A1, the single most
+   visually geometric problem. By contrast, `forced` lifts invocation
+   to **100%** universally with **100%** PNG read-back, every run,
+   every problem. The 3 spontaneous viz calls across `b` + `vizprimed`
+   were *never* followed by a `Read` of the returned PNG: the loop's
+   second step is never self-discovered. Tool descriptions are not the
+   lever — requirement is, and the agent complies with it cleanly.
+2. **Forced viz does not change build/sorry outcomes.** `solved*`
    rates are statistically indistinguishable across all three arms
    (`b` 33%, `vizprimed` 28%, `forced` 33%; binomial 95% CI ≈ ±23 pts
    at n=18). The agent self-reported `viz_changed_approach = false`
@@ -337,7 +297,7 @@ Five findings, now on the full 54-cell dataset:
    (2006.A1), and the directional sandwich (1996.B2). So forced viz
    reliably *de-risks the answer term* but, on this corpus, never
    reverses an approach. The visualization is *confirmatory only*.
-5. **A small, real quality effect on statement faithfulness.**
+3. **A small, real quality effect on statement faithfulness.**
    Forced viz produced **18/18 "match" verdicts** with no
    non-statements; `b` and `vizprimed` produced 1 and 2
    "non-statement" outcomes respectively (failures to write any
@@ -451,26 +411,20 @@ ours had a CoT baseline of 100%.
 
 ## 9. Study 5 — adversarial sanity check (false-claim ablation)
 
-Studies 3 and 4 left a single sharply specified gap. §8.1 (forced viz
-on the 6-problem corpus) was *confirmatory only*; the agent's
-plot-derived verdicts never reversed a course because none of the
-corpus problems contained a false stated claim. §8.2 (recall-with-CoT)
-showed *why*: the corpus is CoT-competent end-to-end (18/18), leaving
-no headroom for any tool to demonstrate value. The condition under
-which forced visualization is plausibly decisive — and that the
-pilot's 2025 A-2 episode exemplified — is a problem **where CoT alone
-confidently gets the wrong answer**. The cheapest way to engineer
-that condition without finding genuinely-CoT-incompetent Putnam
-problems (a hard search problem itself) is to *deliberately mis-state*
-the answer in a problem the agent would otherwise solve.
+§8.2 left a sharp open question: would forced visualization beat
+zero-tool prose CoT on the *one* class of problem where CoT plausibly
+fails — when the stated answer is wrong and CoT would tend to ratify
+it? Finding genuinely CoT-incompetent Putnam problems is itself a
+hard search problem; the cheapest way to engineer the condition is to
+*deliberately mis-state* the canonical answer in problems the agent
+would otherwise solve.
 
-This study constructs that case. From the §8.1 corpus we take the four
-analytic / integral problems whose canonical answer is easy to perturb
-cleanly: 1985.B5, 1991.A5, 1993.A1, 1996.B2. For each, the agent is
-shown a LaTeX excerpt asserting a closed-form answer that *may or may
-not* be correct, and must commit to a verdict (`correct` /
-`incorrect`) plus a stated correct answer. Two variants of each
-problem:
+From the §8.1 corpus we take the four analytic / integral problems
+whose canonical answer is easy to perturb cleanly: 1985.B5, 1991.A5,
+1993.A1, 1996.B2. For each, the agent is shown a LaTeX excerpt
+asserting a closed-form answer that *may or may not* be correct, and
+must commit to a verdict (`correct` / `incorrect`) plus a stated
+correct answer. Two variants of each problem:
 
 - **`true`** — the canonical Putnam answer (√(π/a)·e^{−2a}, 1/3, 4/9,
   the canonical 1·3·5⋯(2n−1) sandwich).
@@ -598,17 +552,12 @@ text channel always works.
 ### 9.4 Net effect on the paper's central claim
 
 Study 5 was the test the program needed to either rescue or close out
-the "forced visualization has unique value" hypothesis. The result
-closes it. On this corpus, visualization is one of several
-interchangeable ways to satisfy a forced-verification requirement,
-and the laziest of the three (a prose pause, no tools) does the same
-work. The pilot's 2025 A-2 episode remains a clean *interactive*-mode
-demonstration that the picture *can* be decisive, but the present
-evidence does not single out the picture as the cause — a forced
-numeric check or a forced prose argument would, on this evidence,
-have done the same work. The actionable lever this paper identifies
-is unchanged from §8.2: **session shape and verification structure**,
-not tool catalogue.
+the "forced visualization has unique value" hypothesis, and the result
+closes it. The pilot's 2025 A-2 episode remains a clean
+*interactive*-mode demonstration that the picture *can* be decisive,
+but on the present evidence a forced numeric check or a forced prose
+argument would equally well have done the work. The actionable lever
+is **session shape and verification structure**, not tool catalogue.
 
 ## 10. Threats to validity
 
@@ -682,24 +631,16 @@ adoption failures as capability ceilings.
    *autonomous-mode agent tools cannot be evaluated on a corpus
    where the model's CoT already suffices*. This generalizes beyond
    visualization to any agent-tool study.
-5. The condition under which forced visualization is most plausibly
-   decisive — and that the pilot's 2025 A-2 episode exemplified — is
-   precisely a problem **where CoT alone gets the wrong answer**.
-   Study 5 (§9) operationalized this with deliberate false-claim
-   variants on four analytic problems and the pre-registered
-   three-arm forced ablation (`forced_visual`, `forced_textual`
-   numerical check, `forced_reflection` pause-only). The result:
-   forced verification *does* catch the false claim — but
-   visualization, numerical checking, and tool-free prose reflection
-   do so at indistinguishable rates (7/8, 8/8, 7/8, with the two
-   non-catches both operational losses rather than ratifications).
-   The corrective work is **the required pause and commitment to
-   verify**, not the picture and not the numerics; visualization is
-   sufficient but not necessary. A separate finding from the same
-   study: even when the prompt explicitly required PNG `Read`,
-   the agent skipped it and used the viz tool's text return — the
-   image channel remains dead even in conditions designed to bring
-   it alive.
+5. Study 5 (§9) tests the condition where forced viz is most plausibly
+   decisive — *a deliberately false stated claim*. Required
+   visualization, required numerical check, and required tool-free
+   prose reflection catch the lie at indistinguishable rates (7/8,
+   8/8, 7/8; the two non-catches are operational losses, not
+   ratifications). The corrective work is **the required pause and
+   commitment to verify**, not the picture and not the numerics;
+   visualization is sufficient but not necessary. A side finding from
+   the same study: even when the prompt explicitly required PNG
+   `Read`, the agent skipped it and used the viz tool's text return.
 6. Two independent design issues identified along the way are worth
    reporting on their own:
    - **Path-not-content friction.** `math-viz` returns a path; the
