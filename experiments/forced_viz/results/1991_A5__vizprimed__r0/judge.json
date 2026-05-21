@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The IsGreatest statement over the closed interval [0,1] with the exact integrand and bounds, equal to 1/3, faithfully captures the maximization problem and its correct answer."
+}

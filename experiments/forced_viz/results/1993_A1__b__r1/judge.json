@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Correct solution 4/9, correct first-quadrant intersection bounds (0 < c < 4\u221a2/9), two intersection points, and the two integral expressions exactly match the two shaded regions described."
+}

@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement faithfully encodes the integral over (0,\u221e) and equates it to the correct closed form \u221a(\u03c0/1985)\u00b7e^(-3970); the Gaussian-integral hint is only a permitted assumption, not a required hypothesis."
+}

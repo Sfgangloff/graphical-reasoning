@@ -1,0 +1,9 @@
+{
+  "problem_id": "2006.A1",
+  "run_index": 2,
+  "wall_s": 6.9,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "The minimum value of f(x,y) is 3, attained at (x,y)=(1,1).",
+  "confidence": "low"
+}

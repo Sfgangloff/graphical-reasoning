@@ -1,0 +1,22 @@
+✖ [8387/8388] Building Solution (267s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:54:8: `ring_nf` made no progress on the goal
+error: Solution.lean:57:51: unsolved goals
+case h.e'_9.h.e'_6
+hs : √3 ^ 2 = 3
+hs1 : 1 < √3
+hs2 : √3 < 2
+cont1 : Continuous fun x => 4 / 9 - (2 * x - 3 * x ^ 3)
+cont2 : Continuous fun x => 2 * x - 3 * x ^ 3 - 4 / 9
+D : ∀ (x : ℝ), HasDerivAt (fun x => 4 / 9 * x ^ 1 - x ^ 2 + 3 / 4 * x ^ 4) (4 / 9 - (2 * x - 3 * x ^ 3)) x
+x : ℝ
+h :
+  HasDerivAt (((fun x => x ^ 2) - fun y => 3 / 4 * y ^ 4) - fun y => 4 / 9 * y ^ 1)
+    (↑2 * x ^ (2 - 1) - 3 / 4 * (↑4 * x ^ (4 - 1)) - 4 / 9 * (↑1 * x ^ (1 - 1))) x
+⊢ 4 / 9 = 4 / 9 * (↑1 * x ^ (1 - 1))
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

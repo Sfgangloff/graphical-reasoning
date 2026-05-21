@@ -1,0 +1,9 @@
+{
+  "problem_id": "1989.A2",
+  "run_index": 1,
+  "wall_s": 8.6,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "(e-1)/2 \u00b7 \u221a(\u03c0)... actually e^(1/2) related; from memory: \u222b\u2080\u00b9 x^x dx-style? Putnam 1989 A2: Evaluate \u222b_a^b e^{max(b\u00b2x\u00b2,a\u00b2y\u00b2)} \u2014 answer (e^(b\u00b2)-1)/b...",
+  "confidence": "low"
+}

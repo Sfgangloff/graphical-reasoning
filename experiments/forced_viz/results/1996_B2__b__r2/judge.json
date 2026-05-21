@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Both strict inequalities, the odd-number product, the rpow exponents, and the positive-integer hypothesis are captured exactly with no extra or missing assumptions."
+}

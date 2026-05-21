@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Hypothesis n>0 and both strict inequalities are faithfully rendered, with \u220f i\u2208range n (2i+1) correctly equal to 1\u00b73\u00b7\u00b7\u00b7(2n-1) and the real-power bounds matching exactly."
+}

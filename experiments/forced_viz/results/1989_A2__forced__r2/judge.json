@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Hypotheses (a,b>0), the iterated integral of e^{max{b\u00b2x\u00b2,a\u00b2y\u00b2}}, and the closed-form answer (e^{a\u00b2b\u00b2}\u22121)/(ab) all match; Ioo vs closed interval is immaterial for the Lebesgue set integral."
+}

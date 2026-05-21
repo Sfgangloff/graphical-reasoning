@@ -1,0 +1,85 @@
+✖ [8387/8388] Building Solution (346s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:50:12: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  gB2 (2 * 1 - 1)
+in the target expression
+  gB2 (2 * ↑1 - 1) < 0
+
+case base.left
+n : ℕ
+hn : 0 < n
+P : ℕ → ℝ := fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hP : P = fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hPpos : ∀ (m : ℕ), 0 < P m
+m : ℕ
+hP1 : P 1 = 1
+hg : gB2 (2 * 1 - 1) = -(1 / 2)
+⊢ gB2 (2 * ↑1 - 1) < 0
+error: Solution.lean:56:12: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  gB2 (2 * 1 + 1)
+in the target expression
+  0 < gB2 (2 * ↑1 + 1)
+
+case base.right
+n : ℕ
+hn : 0 < n
+P : ℕ → ℝ := fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hP : P = fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hPpos : ∀ (m : ℕ), 0 < P m
+m : ℕ
+hP1 : P 1 = 1
+h3 : 1 < log 3
+hg : gB2 (2 * 1 + 1) = 3 / 2 * log 3 - 3 / 2
+⊢ 0 < gB2 (2 * ↑1 + 1)
+error: Solution.lean:104:15: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  P n
+in the target expression
+  rexp (gB2 (2 * ↑n - 1)) < ∏ i ∈ range n, (2 * ↑i + 1)
+
+case left
+n : ℕ
+hn : 0 < n
+P : ℕ → ℝ := fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hP : P = fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hPpos : ∀ (m : ℕ), 0 < P m
+main : ∀ (m : ℕ), 1 ≤ m → gB2 (2 * ↑m - 1) < log (P m) ∧ log (P m) < gB2 (2 * ↑m + 1)
+hD : gB2 (2 * ↑n - 1) < log (P n)
+hU : log (P n) < gB2 (2 * ↑n + 1)
+hnpos : 1 ≤ ↑n
+hApos : 0 < 2 * ↑n - 1
+hBpos : 0 < 2 * ↑n + 1
+hLlog : log (((2 * ↑n - 1) / rexp 1) ^ ((2 * ↑n - 1) / 2)) = gB2 (2 * ↑n - 1)
+hRlog : log (((2 * ↑n + 1) / rexp 1) ^ ((2 * ↑n + 1) / 2)) = gB2 (2 * ↑n + 1)
+hLexp : ((2 * ↑n - 1) / rexp 1) ^ ((2 * ↑n - 1) / 2) = rexp (gB2 (2 * ↑n - 1))
+hRexp : ((2 * ↑n + 1) / rexp 1) ^ ((2 * ↑n + 1) / 2) = rexp (gB2 (2 * ↑n + 1))
+hPexp : P n = rexp (log (P n))
+⊢ rexp (gB2 (2 * ↑n - 1)) < ∏ i ∈ range n, (2 * ↑i + 1)
+error: Solution.lean:106:15: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  P n
+in the target expression
+  ∏ i ∈ range n, (2 * ↑i + 1) < rexp (gB2 (2 * ↑n + 1))
+
+case right
+n : ℕ
+hn : 0 < n
+P : ℕ → ℝ := fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hP : P = fun m => ∏ i ∈ range m, (2 * ↑i + 1)
+hPpos : ∀ (m : ℕ), 0 < P m
+main : ∀ (m : ℕ), 1 ≤ m → gB2 (2 * ↑m - 1) < log (P m) ∧ log (P m) < gB2 (2 * ↑m + 1)
+hD : gB2 (2 * ↑n - 1) < log (P n)
+hU : log (P n) < gB2 (2 * ↑n + 1)
+hnpos : 1 ≤ ↑n
+hApos : 0 < 2 * ↑n - 1
+hBpos : 0 < 2 * ↑n + 1
+hLlog : log (((2 * ↑n - 1) / rexp 1) ^ ((2 * ↑n - 1) / 2)) = gB2 (2 * ↑n - 1)
+hRlog : log (((2 * ↑n + 1) / rexp 1) ^ ((2 * ↑n + 1) / 2)) = gB2 (2 * ↑n + 1)
+hLexp : ((2 * ↑n - 1) / rexp 1) ^ ((2 * ↑n - 1) / 2) = rexp (gB2 (2 * ↑n - 1))
+hRexp : ((2 * ↑n + 1) / rexp 1) ^ ((2 * ↑n + 1) / 2) = rexp (gB2 (2 * ↑n + 1))
+hPexp : P n = rexp (log (P n))
+⊢ ∏ i ∈ range n, (2 * ↑i + 1) < rexp (gB2 (2 * ↑n + 1))
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

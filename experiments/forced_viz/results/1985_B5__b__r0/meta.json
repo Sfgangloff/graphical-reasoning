@@ -1,0 +1,56 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "b",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779075040.465499,
+  "ended_at": 1779075349.853634,
+  "wall_clock_s": 309.38813519477844,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 8,
+  "tool_calls_succeeded": 7,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Faithful statement and correct closed-form answer term (\u221a(\u03c0/1985)\u00b7e^{-3970}) compile cleanly; full proof needs a Cauchy\u2013Schl\u00f6milch transformation absent from Mathlib, so proof left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__b__r0_nx519mqo/workspace"
+}

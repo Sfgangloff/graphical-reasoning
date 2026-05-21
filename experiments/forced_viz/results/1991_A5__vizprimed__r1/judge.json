@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "IsGreatest over the set of integral values for y \u2208 [0,1] with solution 1/3 exactly captures the problem's request for the maximum value."
+}

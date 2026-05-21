@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The conjunction of strict inequalities with the product of the first n odd numbers and the rpow bounds (2n\u22131)/e raised to (2n\u22131)/2 exactly captures the LaTeX statement under the hypothesis 0 < n."
+}

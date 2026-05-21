@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Closed interval, integrand, integral bounds, and the maximum value 1/3 (via IsGreatest) all faithfully capture the problem with no extra or missing assumptions."
+}

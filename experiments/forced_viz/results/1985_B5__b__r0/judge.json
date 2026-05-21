@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The integrand, domain (0,\u221e), and closed-form value \u221a(\u03c0/1985)\u00b7e^{-3970} all correctly capture the problem; the e^{-x\u00b2} hint is a solving aid not requiring formalization."
+}

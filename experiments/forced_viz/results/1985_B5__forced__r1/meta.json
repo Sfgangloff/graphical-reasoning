@@ -1,0 +1,67 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "forced",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779080781.6473129,
+  "ended_at": 1779081403.445472,
+  "wall_clock_s": 621.798159122467,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 7,
+      "succeeded": 7
+    },
+    "ToolSearch": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 21,
+  "tool_calls_succeeded": 20,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "forced",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 23,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "For the a=2 test case the numeric integral 0.0229552 matches sqrt(pi/2)*e^-4 = 0.0229553 to six digits, confirming the closed form integral = sqrt(pi/a)*e^(-2a), so for a=1985 the answer is sqrt(pi/1985)*e^(-3970).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_integrand_with_shading",
+    "notes": "Correct answer term sqrt(pi/1985)*exp(-3970) and faithful statement compile cleanly (lake build completed successfully, only the sorry warning at Solution.lean:13); full proof needs the Glasser master theorem which is not in Mathlib, so the proof is left as sorry within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced__r1_9ntdouaw/workspace"
+}

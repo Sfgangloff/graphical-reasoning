@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "IsGreatest over y\u2208[0,1] of the exact integral, with the correct maximum 1/3, faithfully captures 'find the maximum value'."
+}

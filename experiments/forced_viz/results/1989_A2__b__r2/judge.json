@@ -1,0 +1,4 @@
+{
+  "verdict": "close",
+  "reason": "Statement faithfully captures hypotheses, integral, and correct answer; only deviation is open Set.Ioo intervals instead of the closed [0,a],[0,b] of the LaTeX bounds (measure-theoretically equivalent)."
+}

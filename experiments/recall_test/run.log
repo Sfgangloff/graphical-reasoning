@@ -1,0 +1,21 @@
+Study 4a — recall test: 6 problems × 3 runs = 18 calls
+  1985_B5__recall__r0  wall=  6.5s  conf='low'       answer='(π/2) · ln 2'
+  1985_B5__recall__r1  wall=  9.1s  conf='high'      answer='√(π/1985) · e^(-3970)'
+  1985_B5__recall__r2  wall=  5.7s  conf='low'       answer='π^(3/2)/2'
+  1989_A2__recall__r0  wall=  8.1s  conf='low'       answer='2^((n-1)/2) for odd n, 0 for even n (i.e., the determinant of the n×n matrix with entries |i-j| evaluated appropriately) — specifically Putnam 1989 A2: ∫₀ᵃ∫₀ᵇ e^(max(b²x², a²y²)) dy dx = (e^(a²b²) - 1)/(ab) · ab = ... = (e^(a²b²)-1)'
+  1989_A2__recall__r1  wall=  8.6s  conf='low'       answer='(e-1)/2 · √(π)... actually e^(1/2) related; from memory: ∫₀¹ x^x dx-style? Putnam 1989 A2: Evaluate ∫_a^b e^{max(b²x²,a²y²)} — answer (e^(b²)-1)/b...'
+  1989_A2__recall__r2  wall=  8.4s  conf='low'       answer='(e-1)/2 · (so ∫₀¹ x^x dx evaluated... actually) Putnam 1989 A2: ∫₀^a ∫₀^b e^(max(b²x², a²y²)) dy dx = (e^(a²b²) - 1)/(ab)... = (e^(a²b²)−1)/(ab)'
+  1991_A5__recall__r0  wall=  5.7s  conf='low'       answer='true'
+  1991_A5__recall__r1  wall=  5.4s  conf='low'       answer='true'
+  1991_A5__recall__r2  wall=  5.5s  conf='low'       answer='true'
+  1993_A1__recall__r0  wall=  5.4s  conf='high'      answer='c = 4/9'
+  1993_A1__recall__r1  wall=  6.2s  conf='medium'    answer='c = 2/9'
+  1993_A1__recall__r2  wall=  6.3s  conf='medium'    answer='c = 3/2'
+  1996_B2__recall__r0  wall=  8.3s  conf='low'       answer='3/2'
+  1996_B2__recall__r1  wall=  8.5s  conf='high'      answer='True: ((2n-1)/e)^((2n-1)/2) < 1·3·5···(2n-1) < ((2n+1)/e)^((2n+1)/2)'
+  1996_B2__recall__r2  wall= 10.9s  conf='low'       answer='2/π < (1 - 1/n)^n · (something)... true as stated; specifically n[(1+1/n)^n - e·(1-1/(2(n+1)))] is bounded, i.e., e/2 < n(e - (1+1/n)^n) < e/2 · (n/(n+1))... the Putnam 1996 B2 claim (2n-1)!! / (2n)!! < 1/√(3n+1) etc. — best recall: ((2n-1)/e)^((2n-1)/2) · ((2n+1)/e)^((2n+1)/2) < 1·3·5···(2n-1) < ((2n+1)/e)^((2n+1)/2) · ((2n-1)/e)^((2n-1)/2)... true'
+  2006_A1__recall__r0  wall=  6.1s  conf='medium'    answer='3'
+  2006_A1__recall__r1  wall=  6.7s  conf='high'      answer='6π²'
+  2006_A1__recall__r2  wall=  6.9s  conf='low'       answer='The minimum value of f(x,y) is 3, attained at (x,y)=(1,1).'
+
+Done in 2.1 min. Results in /Users/silveregangloff/Desktop/graphical-reasoning/experiments/recall_test/results

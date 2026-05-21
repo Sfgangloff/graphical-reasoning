@@ -1,0 +1,9 @@
+{
+  "problem_id": "1989.A2",
+  "run_index": 0,
+  "wall_s": 8.1,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "2^((n-1)/2) for odd n, 0 for even n (i.e., the determinant of the n\u00d7n matrix with entries |i-j| evaluated appropriately) \u2014 specifically Putnam 1989 A2: \u222b\u2080\u1d43\u222b\u2080\u1d47 e^(max(b\u00b2x\u00b2, a\u00b2y\u00b2)) dy dx = (e^(a\u00b2b\u00b2) - 1)/(ab) \u00b7 ab = ... = (e^(a\u00b2b\u00b2)-1)",
+  "confidence": "low"
+}

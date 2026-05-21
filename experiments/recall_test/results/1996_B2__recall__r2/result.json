@@ -1,0 +1,9 @@
+{
+  "problem_id": "1996.B2",
+  "run_index": 2,
+  "wall_s": 10.9,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "2/\u03c0 < (1 - 1/n)^n \u00b7 (something)... true as stated; specifically n[(1+1/n)^n - e\u00b7(1-1/(2(n+1)))] is bounded, i.e., e/2 < n(e - (1+1/n)^n) < e/2 \u00b7 (n/(n+1))... the Putnam 1996 B2 claim (2n-1)!! / (2n)!! < 1/\u221a(3n+1) etc. \u2014 best recall: ((2n-1)/e)^((2n-1)/2) \u00b7 ((2n+1)/e)^((2n+1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) \u00b7 ((2n-1)/e)^((2n-1)/2)... true",
+  "confidence": "low"
+}

@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean integral, domain, integrand, and the (correctly computed) closed-form value all faithfully capture the LaTeX evaluation problem."
+}

@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The range bound 0 < c < 4\u221a2/9 correctly encodes two first-quadrant intersections, both shaded regions are integrated exactly as described, the equal-area condition is faithful, and the constant 4/9 is the correct answer."
+}

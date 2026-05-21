@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement faithfully encodes the positive-integer hypothesis, the product of the first n odd numbers, and both strict real-power bounds exactly as in the LaTeX."
+}

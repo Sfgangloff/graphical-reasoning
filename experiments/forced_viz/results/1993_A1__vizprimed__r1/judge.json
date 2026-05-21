@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The statement fixes c = 4/9, picks the two first-quadrant intersection points a < b as roots of 2x \u2212 3x\u00b3 = c, and equates \u222b\u2080\u1d43(c \u2212 curve) with \u222b\u2090\u1d47(curve \u2212 c), faithfully capturing both shaded-region areas and the target constant."
+}

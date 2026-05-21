@@ -1,0 +1,59 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "forced",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779199925.9755871,
+  "ended_at": 1779200240.6624691,
+  "wall_clock_s": 314.68688201904297,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_implicit": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "forced",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 2,
+    "viz_read_back": true,
+    "viz_verdict": "The y=0 cross-section is two unit circles centered at (\u00b13,0), so the region is a solid torus (tube radius 1, center-circle radius 3); by Pappus the volume is \u03c0\u00b71\u00b2\u00b72\u03c0\u00b73 = 6\u03c0\u00b2 (\u224859.2), matching the area under the [2,4] integrand plot.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_implicit",
+    "notes": "Correct closed-form answer 6*Real.pi^2 defined and the faithful volume.toReal statement type-checks; full 3D volume-integral proof is infeasible in budget so the proof is left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r1_3igm1bid/workspace"
+}

@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Integrand, domain (0,\u221e), and the closed-form value \u221a(\u03c0/1985)\u00b7e^{-3970} all correctly capture the problem; the Gaussian hint is non-essential."
+}

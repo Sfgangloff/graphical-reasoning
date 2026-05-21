@@ -1,0 +1,4 @@
+{
+  "verdict": "close",
+  "reason": "All hypotheses, integrand, integration order, and the closed-form answer match; the only deviation is using open intervals Ioo instead of the closed [0,a],[0,b] implied by the integral bounds, which is value-equivalent for the Lebesgue integral."
+}

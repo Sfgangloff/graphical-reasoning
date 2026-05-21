@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Hypotheses, nested integral bounds/order, integrand, and the closed-form value (e^{a\u00b2b\u00b2}\u22121)/(ab) all faithfully capture the LaTeX evaluate problem."
+}

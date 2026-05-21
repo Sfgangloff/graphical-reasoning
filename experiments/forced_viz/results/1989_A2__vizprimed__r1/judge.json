@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Integrand, integration order, positivity hypotheses, and the closed-form answer (e^{a\u00b2b\u00b2}\u22121)/(ab) all match; Ioo vs closed interval is measure-zero and changes nothing."
+}

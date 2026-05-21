@@ -1,0 +1,39 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "vizprimed",
+  "run_index": 2,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1779170941.243317,
+  "ended_at": 1779171722.158986,
+  "wall_clock_s": 780.9156692028046,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 0
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 4,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r2_cp9kk3n_/workspace"
+}

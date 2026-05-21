@@ -67,10 +67,13 @@ Output exactly one JSON block as your final message:
 
 def run_judge(latex: str, lean: str) -> dict | None:
     prompt = JUDGE_PROMPT.format(LATEX=latex, LEAN=lean)
-    proc = subprocess.run(
-        ["claude", "--print", "--output-format", "text", prompt],
-        capture_output=True, text=True, timeout=300,
-    )
+    try:
+        proc = subprocess.run(
+            ["claude", "--print", "--output-format", "text", prompt],
+            capture_output=True, text=True, timeout=300,
+        )
+    except subprocess.TimeoutExpired:
+        return {"verdict": "error", "reason": "judge timed out (300s)"}
     out = proc.stdout
     blocks = re.findall(r"```json\s*(\{.*?\})\s*```", out, re.S)
     if not blocks:
@@ -87,10 +90,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rejudge", action="store_true",
                     help="Re-judge results that already have judge.json")
+    ap.add_argument("--results-root", type=Path, default=RESULTS,
+                    help="results dir to judge (default experiments/results)")
     args = ap.parse_args()
 
+    results_dir = args.results_root
+    if not results_dir.is_absolute():
+        results_dir = (REPO / results_dir).resolve()
+
     n_judged, n_skipped = 0, 0
-    for d in sorted(RESULTS.iterdir()):
+    for d in sorted(results_dir.iterdir()):
         if not d.is_dir():
             continue
         meta_p = d / "meta.json"

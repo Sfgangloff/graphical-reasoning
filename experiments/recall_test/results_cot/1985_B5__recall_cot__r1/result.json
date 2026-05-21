@@ -1,0 +1,9 @@
+{
+  "problem_id": "1985.B5",
+  "run_index": 1,
+  "wall_s": 35.4,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "$\\sqrt{\\pi/1985}\\,e^{-3970}$",
+  "confidence": "high"
+}

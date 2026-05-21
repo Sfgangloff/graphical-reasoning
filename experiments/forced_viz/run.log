@@ -1,0 +1,927 @@
+forced-viz matrix: 54 cells (6 problems × 3 conditions × 3 runs)  budget=12min/cell
+
+=== cell 1/54  1985.B5 / b / r0  (elapsed 0.0min) ===
+  already done (1985_B5__b__r0), skipping.
+
+=== cell 2/54  1985.B5 / b / r1  (elapsed 0.0min) ===
+  already done (1985_B5__b__r1), skipping.
+
+=== cell 3/54  1985.B5 / b / r2  (elapsed 0.0min) ===
+  already done (1985_B5__b__r2), skipping.
+
+=== cell 4/54  1985.B5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r0), skipping.
+
+=== cell 5/54  1985.B5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r1), skipping.
+
+=== cell 6/54  1985.B5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r2), skipping.
+
+=== cell 7/54  1985.B5 / forced / r0  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r0), skipping.
+
+=== cell 8/54  1985.B5 / forced / r1  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r1), skipping.
+
+=== cell 9/54  1985.B5 / forced / r2  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r2), skipping.
+
+=== cell 10/54  1989.A2 / b / r0  (elapsed 0.0min) ===
+[1989_A2__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__b__r0_7fkwcziz/workspace
+[1989_A2__b__r0] X  build=True  sorries=1  wall=663.5s  tools=14/16
+  -> experiments/forced_viz/results/1989_A2__b__r0
+
+=== cell 11/54  1989.A2 / b / r1  (elapsed 11.2min) ===
+[1989_A2__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__b__r1_5zgsulic/workspace
+[1989_A2__b__r1] X  build=True  sorries=1  wall=618.1s  tools=11/12
+  -> experiments/forced_viz/results/1989_A2__b__r1
+
+=== cell 12/54  1989.A2 / b / r2  (elapsed 21.6min) ===
+[1989_A2__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__b__r2_gwbvanks/workspace
+[1989_A2__b__r2] X  build=True  sorries=1  wall=608.5s  tools=12/12
+  -> experiments/forced_viz/results/1989_A2__b__r2
+
+=== cell 13/54  1989.A2 / vizprimed / r0  (elapsed 31.9min) ===
+[1989_A2__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__vizprimed__r0_n3czgn2d/workspace
+[1989_A2__vizprimed__r0] X  build=True  sorries=1  wall=1558.8s  tools=10/11
+  -> experiments/forced_viz/results/1989_A2__vizprimed__r0
+
+=== cell 14/54  1989.A2 / vizprimed / r1  (elapsed 58.0min) ===
+[1989_A2__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__vizprimed__r1_c62rpn0b/workspace
+[1989_A2__vizprimed__r1] X  build=True  sorries=1  wall=379.0s  tools=6/6
+  -> experiments/forced_viz/results/1989_A2__vizprimed__r1
+
+=== cell 15/54  1989.A2 / vizprimed / r2  (elapsed 66.7min) ===
+[1989_A2__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__vizprimed__r2_n6gikir1/workspace
+[1989_A2__vizprimed__r2] X  build=True  sorries=1  wall=385.2s  tools=7/7
+  -> experiments/forced_viz/results/1989_A2__vizprimed__r2
+
+=== cell 16/54  1989.A2 / forced / r0  (elapsed 78.3min) ===
+[1989_A2__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r0_49uy4s9m/workspace
+[1989_A2__forced__r0] X  build=True  sorries=1  wall=4.5s  tools=0/0
+  -> experiments/forced_viz/results/1989_A2__forced__r0
+
+=== cell 17/54  1989.A2 / forced / r1  (elapsed 82.6min) ===
+[1989_A2__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r1_e81gwuql/workspace
+[1989_A2__forced__r1] X  build=True  sorries=1  wall=4.5s  tools=0/0
+  -> experiments/forced_viz/results/1989_A2__forced__r1
+
+=== cell 18/54  1989.A2 / forced / r2  (elapsed 82.8min) ===
+[1989_A2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r2_euep9ynf/workspace
+[1989_A2__forced__r2] X  build=True  sorries=1  wall=4.3s  tools=0/0
+  -> experiments/forced_viz/results/1989_A2__forced__r2
+
+=== cell 19/54  1991.A5 / b / r0  (elapsed 83.0min) ===
+[1991_A5__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r0_1c6lfbuc/workspace
+[1991_A5__b__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__b__r0
+
+=== cell 20/54  1991.A5 / b / r1  (elapsed 83.2min) ===
+[1991_A5__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r1_t1ri9kgz/workspace
+[1991_A5__b__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__b__r1
+
+=== cell 21/54  1991.A5 / b / r2  (elapsed 83.4min) ===
+[1991_A5__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r2_9j8m6_ip/workspace
+[1991_A5__b__r2] X  build=True  sorries=1  wall=4.2s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__b__r2
+
+=== cell 22/54  1991.A5 / vizprimed / r0  (elapsed 83.6min) ===
+[1991_A5__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r0_xmf8kqay/workspace
+[1991_A5__vizprimed__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r0
+
+=== cell 23/54  1991.A5 / vizprimed / r1  (elapsed 83.7min) ===
+[1991_A5__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r1_ayj6do41/workspace
+[1991_A5__vizprimed__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r1
+
+=== cell 24/54  1991.A5 / vizprimed / r2  (elapsed 83.9min) ===
+[1991_A5__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r2_ntfs69ti/workspace
+[1991_A5__vizprimed__r2] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r2
+
+=== cell 25/54  1991.A5 / forced / r0  (elapsed 84.1min) ===
+[1991_A5__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r0_ytcgb_fe/workspace
+[1991_A5__forced__r0] X  build=True  sorries=1  wall=3.7s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__forced__r0
+
+=== cell 26/54  1991.A5 / forced / r1  (elapsed 84.3min) ===
+[1991_A5__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r1_t8ihf37b/workspace
+[1991_A5__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__forced__r1
+
+=== cell 27/54  1991.A5 / forced / r2  (elapsed 84.4min) ===
+[1991_A5__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r2_j6qa22wp/workspace
+[1991_A5__forced__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1991_A5__forced__r2
+
+=== cell 28/54  1993.A1 / b / r0  (elapsed 84.6min) ===
+[1993_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r0_i86wvi0c/workspace
+[1993_A1__b__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__b__r0
+
+=== cell 29/54  1993.A1 / b / r1  (elapsed 84.8min) ===
+[1993_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r1_aehumyw0/workspace
+[1993_A1__b__r1] X  build=True  sorries=1  wall=4.5s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__b__r1
+
+=== cell 30/54  1993.A1 / b / r2  (elapsed 85.0min) ===
+[1993_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r2_xyw0gfq_/workspace
+[1993_A1__b__r2] X  build=True  sorries=1  wall=4.3s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__b__r2
+
+=== cell 31/54  1993.A1 / vizprimed / r0  (elapsed 85.2min) ===
+[1993_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r0_98u76lua/workspace
+[1993_A1__vizprimed__r0] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r0
+
+=== cell 32/54  1993.A1 / vizprimed / r1  (elapsed 85.4min) ===
+[1993_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r1_lhqv0j6_/workspace
+[1993_A1__vizprimed__r1] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r1
+
+=== cell 33/54  1993.A1 / vizprimed / r2  (elapsed 85.5min) ===
+[1993_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r2_hbih8_c6/workspace
+[1993_A1__vizprimed__r2] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r2
+
+=== cell 34/54  1993.A1 / forced / r0  (elapsed 85.7min) ===
+[1993_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_6p2dmhpa/workspace
+[1993_A1__forced__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r0
+
+=== cell 35/54  1993.A1 / forced / r1  (elapsed 85.9min) ===
+[1993_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r1_fwpf_ltf/workspace
+[1993_A1__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r1
+
+=== cell 36/54  1993.A1 / forced / r2  (elapsed 86.0min) ===
+[1993_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r2_cxr5ggor/workspace
+[1993_A1__forced__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r2
+
+=== cell 37/54  1996.B2 / b / r0  (elapsed 86.2min) ===
+[1996_B2__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r0_4perfvyg/workspace
+[1996_B2__b__r0] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r0
+
+=== cell 38/54  1996.B2 / b / r1  (elapsed 86.4min) ===
+[1996_B2__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r1_71sf20k_/workspace
+[1996_B2__b__r1] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r1
+
+=== cell 39/54  1996.B2 / b / r2  (elapsed 86.5min) ===
+[1996_B2__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_bx1qm80e/workspace
+[1996_B2__b__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r2
+
+=== cell 40/54  1996.B2 / vizprimed / r0  (elapsed 86.7min) ===
+[1996_B2__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r0_x947abd7/workspace
+[1996_B2__vizprimed__r0] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r0
+
+=== cell 41/54  1996.B2 / vizprimed / r1  (elapsed 86.8min) ===
+[1996_B2__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_cxvvinds/workspace
+[1996_B2__vizprimed__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r1
+
+=== cell 42/54  1996.B2 / vizprimed / r2  (elapsed 87.0min) ===
+[1996_B2__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r2_9zah4txw/workspace
+[1996_B2__vizprimed__r2] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r2
+
+=== cell 43/54  1996.B2 / forced / r0  (elapsed 87.2min) ===
+[1996_B2__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r0_p4honq6f/workspace
+[1996_B2__forced__r0] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r0
+
+=== cell 44/54  1996.B2 / forced / r1  (elapsed 87.3min) ===
+[1996_B2__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r1_3bpjbdjl/workspace
+[1996_B2__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r1
+
+=== cell 45/54  1996.B2 / forced / r2  (elapsed 87.5min) ===
+[1996_B2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r2_5zv6_p34/workspace
+[1996_B2__forced__r2] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r2
+
+=== cell 46/54  2006.A1 / b / r0  (elapsed 87.6min) ===
+[2006_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r0_916p8c24/workspace
+[2006_A1__b__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r0
+
+=== cell 47/54  2006.A1 / b / r1  (elapsed 87.8min) ===
+[2006_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r1_7qvmm6iz/workspace
+[2006_A1__b__r1] X  build=True  sorries=1  wall=4.2s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r1
+
+=== cell 48/54  2006.A1 / b / r2  (elapsed 88.0min) ===
+[2006_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r2_hzwbbi7u/workspace
+[2006_A1__b__r2] X  build=True  sorries=1  wall=3.6s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r2
+
+=== cell 49/54  2006.A1 / vizprimed / r0  (elapsed 88.1min) ===
+[2006_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r0_d32lp_60/workspace
+[2006_A1__vizprimed__r0] X  build=True  sorries=1  wall=4.4s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r0
+
+=== cell 50/54  2006.A1 / vizprimed / r1  (elapsed 88.3min) ===
+[2006_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r1_bns8y9hg/workspace
+[2006_A1__vizprimed__r1] X  build=True  sorries=1  wall=5.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r1
+
+=== cell 51/54  2006.A1 / vizprimed / r2  (elapsed 88.5min) ===
+[2006_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r2_2mhnclfu/workspace
+[2006_A1__vizprimed__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r2
+
+=== cell 52/54  2006.A1 / forced / r0  (elapsed 88.6min) ===
+[2006_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r0_rdyv_qje/workspace
+[2006_A1__forced__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r0
+
+=== cell 53/54  2006.A1 / forced / r1  (elapsed 88.8min) ===
+[2006_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r1_s2vr2vp1/workspace
+[2006_A1__forced__r1] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r1
+
+=== cell 54/54  2006.A1 / forced / r2  (elapsed 88.9min) ===
+[2006_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r2_2hdri612/workspace
+[2006_A1__forced__r2] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r2
+
+forced-viz study complete in 89.1 min
+forced-viz matrix: 54 cells (6 problems × 3 conditions × 3 runs)  budget=12min/cell
+
+=== cell 1/54  1985.B5 / b / r0  (elapsed 0.0min) ===
+  already done (1985_B5__b__r0), skipping.
+
+=== cell 2/54  1985.B5 / b / r1  (elapsed 0.0min) ===
+  already done (1985_B5__b__r1), skipping.
+
+=== cell 3/54  1985.B5 / b / r2  (elapsed 0.0min) ===
+  already done (1985_B5__b__r2), skipping.
+
+=== cell 4/54  1985.B5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r0), skipping.
+
+=== cell 5/54  1985.B5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r1), skipping.
+
+=== cell 6/54  1985.B5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r2), skipping.
+
+=== cell 7/54  1985.B5 / forced / r0  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r0), skipping.
+
+=== cell 8/54  1985.B5 / forced / r1  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r1), skipping.
+
+=== cell 9/54  1985.B5 / forced / r2  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r2), skipping.
+
+=== cell 10/54  1989.A2 / b / r0  (elapsed 0.0min) ===
+  already done (1989_A2__b__r0), skipping.
+
+=== cell 11/54  1989.A2 / b / r1  (elapsed 0.0min) ===
+  already done (1989_A2__b__r1), skipping.
+
+=== cell 12/54  1989.A2 / b / r2  (elapsed 0.0min) ===
+  already done (1989_A2__b__r2), skipping.
+
+=== cell 13/54  1989.A2 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r0), skipping.
+
+=== cell 14/54  1989.A2 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r1), skipping.
+
+=== cell 15/54  1989.A2 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r2), skipping.
+
+=== cell 16/54  1989.A2 / forced / r0  (elapsed 0.0min) ===
+[1989_A2__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r0_p7hkfxqt/workspace
+[1989_A2__forced__r0] X  build=True  sorries=1  wall=781.0s  tools=14/15
+  -> experiments/forced_viz/results/1989_A2__forced__r0
+
+=== cell 17/54  1989.A2 / forced / r1  (elapsed 19.3min) ===
+[1989_A2__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r1_vv9fljda/workspace
+[1989_A2__forced__r1] X  build=True  sorries=1  wall=688.1s  tools=13/13
+  -> experiments/forced_viz/results/1989_A2__forced__r1
+
+=== cell 18/54  1989.A2 / forced / r2  (elapsed 30.9min) ===
+[1989_A2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced__r2_qwonqkrl/workspace
+[1989_A2__forced__r2] X  build=True  sorries=1  wall=389.4s  tools=9/9
+  -> experiments/forced_viz/results/1989_A2__forced__r2
+
+=== cell 19/54  1991.A5 / b / r0  (elapsed 39.9min) ===
+[1991_A5__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r0_62wdmlis/workspace
+[1991_A5__b__r0] OK  build=True  sorries=0  wall=725.6s  tools=27/29
+  -> experiments/forced_viz/results/1991_A5__b__r0
+
+=== cell 20/54  1991.A5 / b / r1  (elapsed 52.1min) ===
+[1991_A5__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r1_xbnlb1h8/workspace
+[1991_A5__b__r1] OK  build=True  sorries=0  wall=733.4s  tools=15/17
+  -> experiments/forced_viz/results/1991_A5__b__r1
+
+=== cell 21/54  1991.A5 / b / r2  (elapsed 64.5min) ===
+[1991_A5__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r2_ogfsfox6/workspace
+[1991_A5__b__r2] OK  build=True  sorries=0  wall=742.8s  tools=9/10
+  -> experiments/forced_viz/results/1991_A5__b__r2
+
+=== cell 22/54  1991.A5 / vizprimed / r0  (elapsed 77.0min) ===
+[1991_A5__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r0_17_ciuky/workspace
+[1991_A5__vizprimed__r0] OK  build=True  sorries=0  wall=746.5s  tools=7/8
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r0
+
+=== cell 23/54  1991.A5 / vizprimed / r1  (elapsed 89.6min) ===
+[1991_A5__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r1_x_6crjy7/workspace
+[1991_A5__vizprimed__r1] OK  build=True  sorries=0  wall=940.1s  tools=6/6
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r1
+
+=== cell 24/54  1991.A5 / vizprimed / r2  (elapsed 105.4min) ===
+[1991_A5__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__vizprimed__r2_letjr7rq/workspace
+[1991_A5__vizprimed__r2] OK  build=True  sorries=0  wall=752.1s  tools=8/9
+  -> experiments/forced_viz/results/1991_A5__vizprimed__r2
+
+=== cell 25/54  1991.A5 / forced / r0  (elapsed 118.1min) ===
+[1991_A5__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r0_e4qij0qf/workspace
+[1991_A5__forced__r0] OK  build=True  sorries=0  wall=478.0s  tools=10/10
+  -> experiments/forced_viz/results/1991_A5__forced__r0
+
+=== cell 26/54  1991.A5 / forced / r1  (elapsed 126.2min) ===
+[1991_A5__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r1_2vvsqwdq/workspace
+[1991_A5__forced__r1] OK  build=True  sorries=0  wall=781.0s  tools=11/13
+  -> experiments/forced_viz/results/1991_A5__forced__r1
+
+=== cell 27/54  1991.A5 / forced / r2  (elapsed 142.9min) ===
+[1991_A5__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r2_9gh6la6g/workspace
+[1991_A5__forced__r2] OK  build=True  sorries=0  wall=760.5s  tools=9/10
+  -> experiments/forced_viz/results/1991_A5__forced__r2
+
+=== cell 28/54  1993.A1 / b / r0  (elapsed 155.7min) ===
+[1993_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r0_pgrhf2pu/workspace
+[1993_A1__b__r0] X  build=True  sorries=1  wall=780.9s  tools=1/1
+  -> experiments/forced_viz/results/1993_A1__b__r0
+
+=== cell 29/54  1993.A1 / b / r1  (elapsed 172.9min) ===
+[1993_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r1_g49ldb18/workspace
+[1993_A1__b__r1] OK  build=True  sorries=0  wall=780.9s  tools=9/11
+  -> experiments/forced_viz/results/1993_A1__b__r1
+
+=== cell 30/54  1993.A1 / b / r2  (elapsed 189.1min) ===
+[1993_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__b__r2_kcdoow7a/workspace
+[1993_A1__b__r2] OK  build=True  sorries=0  wall=780.7s  tools=13/15
+  -> experiments/forced_viz/results/1993_A1__b__r2
+
+=== cell 31/54  1993.A1 / vizprimed / r0  (elapsed 205.2min) ===
+[1993_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r0_7dhoy34b/workspace
+[1993_A1__vizprimed__r0] X  build=True  sorries=1  wall=372.0s  tools=1/2
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r0
+
+=== cell 32/54  1993.A1 / vizprimed / r1  (elapsed 214.6min) ===
+[1993_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r1__fs3krgd/workspace
+[1993_A1__vizprimed__r1] X  build=True  sorries=1  wall=4.7s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r1
+
+=== cell 33/54  1993.A1 / vizprimed / r2  (elapsed 214.8min) ===
+[1993_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r2_ahs1flbw/workspace
+[1993_A1__vizprimed__r2] X  build=True  sorries=1  wall=3.7s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r2
+
+=== cell 34/54  1993.A1 / forced / r0  (elapsed 214.9min) ===
+[1993_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_f37uu176/workspace
+[1993_A1__forced__r0] X  build=True  sorries=1  wall=4.3s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r0
+
+=== cell 35/54  1993.A1 / forced / r1  (elapsed 215.1min) ===
+[1993_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r1_60dze11z/workspace
+[1993_A1__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r1
+
+=== cell 36/54  1993.A1 / forced / r2  (elapsed 215.3min) ===
+[1993_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r2_fe_ka5yb/workspace
+[1993_A1__forced__r2] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/forced_viz/results/1993_A1__forced__r2
+
+=== cell 37/54  1996.B2 / b / r0  (elapsed 215.5min) ===
+[1996_B2__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r0_d0trfaws/workspace
+[1996_B2__b__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r0
+
+=== cell 38/54  1996.B2 / b / r1  (elapsed 215.6min) ===
+[1996_B2__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r1_lr4997v6/workspace
+[1996_B2__b__r1] X  build=True  sorries=1  wall=3.7s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r1
+
+=== cell 39/54  1996.B2 / b / r2  (elapsed 215.8min) ===
+[1996_B2__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2__zmosmeq/workspace
+[1996_B2__b__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__b__r2
+
+=== cell 40/54  1996.B2 / vizprimed / r0  (elapsed 216.0min) ===
+[1996_B2__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r0_3t8i2i33/workspace
+[1996_B2__vizprimed__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r0
+
+=== cell 41/54  1996.B2 / vizprimed / r1  (elapsed 216.1min) ===
+[1996_B2__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_2ro79kp3/workspace
+[1996_B2__vizprimed__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r1
+
+=== cell 42/54  1996.B2 / vizprimed / r2  (elapsed 216.3min) ===
+[1996_B2__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r2_obzh4lg6/workspace
+[1996_B2__vizprimed__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r2
+
+=== cell 43/54  1996.B2 / forced / r0  (elapsed 216.5min) ===
+[1996_B2__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r0_s4b4cztt/workspace
+[1996_B2__forced__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r0
+
+=== cell 44/54  1996.B2 / forced / r1  (elapsed 216.7min) ===
+[1996_B2__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r1_uzw5tvtn/workspace
+[1996_B2__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r1
+
+=== cell 45/54  1996.B2 / forced / r2  (elapsed 216.9min) ===
+[1996_B2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r2_euo25ea5/workspace
+[1996_B2__forced__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r2
+
+=== cell 46/54  2006.A1 / b / r0  (elapsed 217.0min) ===
+[2006_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r0_sies995p/workspace
+[2006_A1__b__r0] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r0
+
+=== cell 47/54  2006.A1 / b / r1  (elapsed 217.2min) ===
+[2006_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r1_qw2cy3nc/workspace
+[2006_A1__b__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r1
+
+=== cell 48/54  2006.A1 / b / r2  (elapsed 217.4min) ===
+[2006_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r2_uxb4jb_m/workspace
+[2006_A1__b__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r2
+
+=== cell 49/54  2006.A1 / vizprimed / r0  (elapsed 217.6min) ===
+[2006_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r0_rxdkjl_o/workspace
+[2006_A1__vizprimed__r0] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r0
+
+=== cell 50/54  2006.A1 / vizprimed / r1  (elapsed 217.8min) ===
+[2006_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r1_li__len4/workspace
+[2006_A1__vizprimed__r1] X  build=True  sorries=1  wall=3.7s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r1
+
+=== cell 51/54  2006.A1 / vizprimed / r2  (elapsed 217.9min) ===
+[2006_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r2_0wmxl0vw/workspace
+[2006_A1__vizprimed__r2] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r2
+
+=== cell 52/54  2006.A1 / forced / r0  (elapsed 218.1min) ===
+[2006_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r0_x5rnoerr/workspace
+[2006_A1__forced__r0] X  build=True  sorries=1  wall=4.2s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r0
+
+=== cell 53/54  2006.A1 / forced / r1  (elapsed 218.3min) ===
+[2006_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r1_s53cgcx1/workspace
+[2006_A1__forced__r1] X  build=True  sorries=1  wall=4.0s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r1
+
+=== cell 54/54  2006.A1 / forced / r2  (elapsed 218.5min) ===
+[2006_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r2_ze8wiu4f/workspace
+[2006_A1__forced__r2] X  build=True  sorries=1  wall=3.9s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r2
+
+forced-viz study complete in 218.6 min
+forced-viz matrix: 54 cells (6 problems × 3 conditions × 3 runs)  budget=12min/cell
+
+=== cell 1/54  1985.B5 / b / r0  (elapsed 0.0min) ===
+  already done (1985_B5__b__r0), skipping.
+
+=== cell 2/54  1985.B5 / b / r1  (elapsed 0.0min) ===
+  already done (1985_B5__b__r1), skipping.
+
+=== cell 3/54  1985.B5 / b / r2  (elapsed 0.0min) ===
+  already done (1985_B5__b__r2), skipping.
+
+=== cell 4/54  1985.B5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r0), skipping.
+
+=== cell 5/54  1985.B5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r1), skipping.
+
+=== cell 6/54  1985.B5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r2), skipping.
+
+=== cell 7/54  1985.B5 / forced / r0  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r0), skipping.
+
+=== cell 8/54  1985.B5 / forced / r1  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r1), skipping.
+
+=== cell 9/54  1985.B5 / forced / r2  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r2), skipping.
+
+=== cell 10/54  1989.A2 / b / r0  (elapsed 0.0min) ===
+  already done (1989_A2__b__r0), skipping.
+
+=== cell 11/54  1989.A2 / b / r1  (elapsed 0.0min) ===
+  already done (1989_A2__b__r1), skipping.
+
+=== cell 12/54  1989.A2 / b / r2  (elapsed 0.0min) ===
+  already done (1989_A2__b__r2), skipping.
+
+=== cell 13/54  1989.A2 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r0), skipping.
+
+=== cell 14/54  1989.A2 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r1), skipping.
+
+=== cell 15/54  1989.A2 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r2), skipping.
+
+=== cell 16/54  1989.A2 / forced / r0  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r0), skipping.
+
+=== cell 17/54  1989.A2 / forced / r1  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r1), skipping.
+
+=== cell 18/54  1989.A2 / forced / r2  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r2), skipping.
+
+=== cell 19/54  1991.A5 / b / r0  (elapsed 0.0min) ===
+  already done (1991_A5__b__r0), skipping.
+
+=== cell 20/54  1991.A5 / b / r1  (elapsed 0.0min) ===
+  already done (1991_A5__b__r1), skipping.
+
+=== cell 21/54  1991.A5 / b / r2  (elapsed 0.0min) ===
+  already done (1991_A5__b__r2), skipping.
+
+=== cell 22/54  1991.A5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r0), skipping.
+
+=== cell 23/54  1991.A5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r1), skipping.
+
+=== cell 24/54  1991.A5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r2), skipping.
+
+=== cell 25/54  1991.A5 / forced / r0  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r0), skipping.
+
+=== cell 26/54  1991.A5 / forced / r1  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r1), skipping.
+
+=== cell 27/54  1991.A5 / forced / r2  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r2), skipping.
+
+=== cell 28/54  1993.A1 / b / r0  (elapsed 0.0min) ===
+  already done (1993_A1__b__r0), skipping.
+
+=== cell 29/54  1993.A1 / b / r1  (elapsed 0.0min) ===
+  already done (1993_A1__b__r1), skipping.
+
+=== cell 30/54  1993.A1 / b / r2  (elapsed 0.0min) ===
+  already done (1993_A1__b__r2), skipping.
+
+=== cell 31/54  1993.A1 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1993_A1__vizprimed__r0), skipping.
+
+=== cell 32/54  1993.A1 / vizprimed / r1  (elapsed 0.0min) ===
+  poisoned record (1993_A1__vizprimed__r1) — deleting, will retry.
+[1993_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r1_64ydk3_7/workspace
+[1993_A1__vizprimed__r1] OK  build=True  sorries=0  wall=781.0s  tools=7/9
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r1
+
+=== cell 33/54  1993.A1 / vizprimed / r2  (elapsed 18.8min) ===
+  poisoned record (1993_A1__vizprimed__r2) — deleting, will retry.
+[1993_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__vizprimed__r2_p96olb72/workspace
+[1993_A1__vizprimed__r2] OK  build=True  sorries=0  wall=781.2s  tools=8/10
+  -> experiments/forced_viz/results/1993_A1__vizprimed__r2
+
+=== cell 34/54  1993.A1 / forced / r0  (elapsed 35.9min) ===
+  poisoned record (1993_A1__forced__r0) — deleting, will retry.
+[1993_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r0_d_44ai3j/workspace
+[1993_A1__forced__r0] X  build=False  sorries=0  wall=780.8s  tools=10/11
+  -> experiments/forced_viz/results/1993_A1__forced__r0
+
+=== cell 35/54  1993.A1 / forced / r1  (elapsed 53.5min) ===
+  poisoned record (1993_A1__forced__r1) — deleting, will retry.
+[1993_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r1_sfoukylm/workspace
+[1993_A1__forced__r1] OK  build=True  sorries=0  wall=780.8s  tools=14/16
+  -> experiments/forced_viz/results/1993_A1__forced__r1
+
+=== cell 36/54  1993.A1 / forced / r2  (elapsed 70.6min) ===
+  poisoned record (1993_A1__forced__r2) — deleting, will retry.
+[1993_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced__r2_jyxq5c7r/workspace
+[1993_A1__forced__r2] OK  build=True  sorries=0  wall=2666.9s  tools=11/13
+  -> experiments/forced_viz/results/1993_A1__forced__r2
+
+=== cell 37/54  1996.B2 / b / r0  (elapsed 117.3min) ===
+  poisoned record (1996_B2__b__r0) — deleting, will retry.
+[1996_B2__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r0_ku2hxvlo/workspace
+[1996_B2__b__r0] X  build=False  sorries=0  wall=889.7s  tools=7/8
+  -> experiments/forced_viz/results/1996_B2__b__r0
+
+=== cell 38/54  1996.B2 / b / r1  (elapsed 136.7min) ===
+  poisoned record (1996_B2__b__r1) — deleting, will retry.
+[1996_B2__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r1_sknzo9sb/workspace
+[1996_B2__b__r1] OK  build=True  sorries=0  wall=781.8s  tools=10/12
+  -> experiments/forced_viz/results/1996_B2__b__r1
+
+=== cell 39/54  1996.B2 / b / r2  (elapsed 162.7min) ===
+  poisoned record (1996_B2__b__r2) — deleting, will retry.
+[1996_B2__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace
+[1996_B2__b__r2] X  build=False  sorries=0  wall=3299.4s  tools=7/8
+  -> experiments/forced_viz/results/1996_B2__b__r2
+
+=== cell 40/54  1996.B2 / vizprimed / r0  (elapsed 223.8min) ===
+  poisoned record (1996_B2__vizprimed__r0) — deleting, will retry.
+[1996_B2__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r0_z2oqf08g/workspace
+[1996_B2__vizprimed__r0] X  build=True  sorries=1  wall=433.6s  tools=5/6
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r0
+
+=== cell 41/54  1996.B2 / vizprimed / r1  (elapsed 235.6min) ===
+  poisoned record (1996_B2__vizprimed__r1) — deleting, will retry.
+[1996_B2__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r1_k9wmas_q/workspace
+[1996_B2__vizprimed__r1] X  build=False  sorries=0  wall=781.2s  tools=5/7
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r1
+
+=== cell 42/54  1996.B2 / vizprimed / r2  (elapsed 254.6min) ===
+  poisoned record (1996_B2__vizprimed__r2) — deleting, will retry.
+[1996_B2__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__vizprimed__r2_cp9kk3n_/workspace
+[1996_B2__vizprimed__r2] X  build=True  sorries=1  wall=780.9s  tools=4/5
+  -> experiments/forced_viz/results/1996_B2__vizprimed__r2
+
+=== cell 43/54  1996.B2 / forced / r0  (elapsed 273.4min) ===
+  poisoned record (1996_B2__forced__r0) — deleting, will retry.
+[1996_B2__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r0_2htt4vqz/workspace
+[1996_B2__forced__r0] X  build=True  sorries=1  wall=436.3s  tools=11/13
+  -> experiments/forced_viz/results/1996_B2__forced__r0
+
+=== cell 44/54  1996.B2 / forced / r1  (elapsed 283.8min) ===
+  poisoned record (1996_B2__forced__r1) — deleting, will retry.
+[1996_B2__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r1_s6y6o8_6/workspace
+[1996_B2__forced__r1] X  build=True  sorries=1  wall=653.4s  tools=14/16
+  -> experiments/forced_viz/results/1996_B2__forced__r1
+
+=== cell 45/54  1996.B2 / forced / r2  (elapsed 294.8min) ===
+  poisoned record (1996_B2__forced__r2) — deleting, will retry.
+[1996_B2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r2_ihezovtu/workspace
+[1996_B2__forced__r2] X  build=True  sorries=1  wall=4.8s  tools=0/0
+  -> experiments/forced_viz/results/1996_B2__forced__r2
+
+=== cell 46/54  2006.A1 / b / r0  (elapsed 298.4min) ===
+  poisoned record (2006_A1__b__r0) — deleting, will retry.
+[2006_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r0__z47xmy2/workspace
+[2006_A1__b__r0] X  build=True  sorries=1  wall=5.1s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r0
+
+=== cell 47/54  2006.A1 / b / r1  (elapsed 298.6min) ===
+  poisoned record (2006_A1__b__r1) — deleting, will retry.
+[2006_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r1_drqc5l6x/workspace
+[2006_A1__b__r1] X  build=True  sorries=1  wall=4.6s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r1
+
+=== cell 48/54  2006.A1 / b / r2  (elapsed 298.8min) ===
+  poisoned record (2006_A1__b__r2) — deleting, will retry.
+[2006_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r2_57jve5dk/workspace
+[2006_A1__b__r2] X  build=True  sorries=1  wall=4.8s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__b__r2
+
+=== cell 49/54  2006.A1 / vizprimed / r0  (elapsed 299.0min) ===
+  poisoned record (2006_A1__vizprimed__r0) — deleting, will retry.
+[2006_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r0_4xzvkkit/workspace
+[2006_A1__vizprimed__r0] X  build=True  sorries=1  wall=4.3s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r0
+
+=== cell 50/54  2006.A1 / vizprimed / r1  (elapsed 299.2min) ===
+  poisoned record (2006_A1__vizprimed__r1) — deleting, will retry.
+[2006_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r1_pn1vyg2_/workspace
+[2006_A1__vizprimed__r1] X  build=True  sorries=1  wall=4.6s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r1
+
+=== cell 51/54  2006.A1 / vizprimed / r2  (elapsed 299.4min) ===
+  poisoned record (2006_A1__vizprimed__r2) — deleting, will retry.
+[2006_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r2_qsgq5zcm/workspace
+[2006_A1__vizprimed__r2] X  build=True  sorries=1  wall=4.8s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r2
+
+=== cell 52/54  2006.A1 / forced / r0  (elapsed 299.6min) ===
+  poisoned record (2006_A1__forced__r0) — deleting, will retry.
+[2006_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r0_et8j92ap/workspace
+[2006_A1__forced__r0] X  build=True  sorries=1  wall=5.1s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r0
+
+=== cell 53/54  2006.A1 / forced / r1  (elapsed 299.8min) ===
+  poisoned record (2006_A1__forced__r1) — deleting, will retry.
+[2006_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r1_wwrimyff/workspace
+[2006_A1__forced__r1] X  build=True  sorries=1  wall=4.6s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r1
+
+=== cell 54/54  2006.A1 / forced / r2  (elapsed 300.0min) ===
+  poisoned record (2006_A1__forced__r2) — deleting, will retry.
+[2006_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r2_amgwm56q/workspace
+[2006_A1__forced__r2] X  build=True  sorries=1  wall=5.8s  tools=0/0
+  -> experiments/forced_viz/results/2006_A1__forced__r2
+
+forced-viz study complete in 300.2 min
+forced-viz matrix: 54 cells (6 problems × 3 conditions × 3 runs)  budget=12min/cell
+
+=== cell 1/54  1985.B5 / b / r0  (elapsed 0.0min) ===
+  already done (1985_B5__b__r0), skipping.
+
+=== cell 2/54  1985.B5 / b / r1  (elapsed 0.0min) ===
+  already done (1985_B5__b__r1), skipping.
+
+=== cell 3/54  1985.B5 / b / r2  (elapsed 0.0min) ===
+  already done (1985_B5__b__r2), skipping.
+
+=== cell 4/54  1985.B5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r0), skipping.
+
+=== cell 5/54  1985.B5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r1), skipping.
+
+=== cell 6/54  1985.B5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1985_B5__vizprimed__r2), skipping.
+
+=== cell 7/54  1985.B5 / forced / r0  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r0), skipping.
+
+=== cell 8/54  1985.B5 / forced / r1  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r1), skipping.
+
+=== cell 9/54  1985.B5 / forced / r2  (elapsed 0.0min) ===
+  already done (1985_B5__forced__r2), skipping.
+
+=== cell 10/54  1989.A2 / b / r0  (elapsed 0.0min) ===
+  already done (1989_A2__b__r0), skipping.
+
+=== cell 11/54  1989.A2 / b / r1  (elapsed 0.0min) ===
+  already done (1989_A2__b__r1), skipping.
+
+=== cell 12/54  1989.A2 / b / r2  (elapsed 0.0min) ===
+  already done (1989_A2__b__r2), skipping.
+
+=== cell 13/54  1989.A2 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r0), skipping.
+
+=== cell 14/54  1989.A2 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r1), skipping.
+
+=== cell 15/54  1989.A2 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1989_A2__vizprimed__r2), skipping.
+
+=== cell 16/54  1989.A2 / forced / r0  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r0), skipping.
+
+=== cell 17/54  1989.A2 / forced / r1  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r1), skipping.
+
+=== cell 18/54  1989.A2 / forced / r2  (elapsed 0.0min) ===
+  already done (1989_A2__forced__r2), skipping.
+
+=== cell 19/54  1991.A5 / b / r0  (elapsed 0.0min) ===
+  already done (1991_A5__b__r0), skipping.
+
+=== cell 20/54  1991.A5 / b / r1  (elapsed 0.0min) ===
+  already done (1991_A5__b__r1), skipping.
+
+=== cell 21/54  1991.A5 / b / r2  (elapsed 0.0min) ===
+  already done (1991_A5__b__r2), skipping.
+
+=== cell 22/54  1991.A5 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r0), skipping.
+
+=== cell 23/54  1991.A5 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r1), skipping.
+
+=== cell 24/54  1991.A5 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1991_A5__vizprimed__r2), skipping.
+
+=== cell 25/54  1991.A5 / forced / r0  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r0), skipping.
+
+=== cell 26/54  1991.A5 / forced / r1  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r1), skipping.
+
+=== cell 27/54  1991.A5 / forced / r2  (elapsed 0.0min) ===
+  already done (1991_A5__forced__r2), skipping.
+
+=== cell 28/54  1993.A1 / b / r0  (elapsed 0.0min) ===
+  already done (1993_A1__b__r0), skipping.
+
+=== cell 29/54  1993.A1 / b / r1  (elapsed 0.0min) ===
+  already done (1993_A1__b__r1), skipping.
+
+=== cell 30/54  1993.A1 / b / r2  (elapsed 0.0min) ===
+  already done (1993_A1__b__r2), skipping.
+
+=== cell 31/54  1993.A1 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1993_A1__vizprimed__r0), skipping.
+
+=== cell 32/54  1993.A1 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1993_A1__vizprimed__r1), skipping.
+
+=== cell 33/54  1993.A1 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1993_A1__vizprimed__r2), skipping.
+
+=== cell 34/54  1993.A1 / forced / r0  (elapsed 0.0min) ===
+  already done (1993_A1__forced__r0), skipping.
+
+=== cell 35/54  1993.A1 / forced / r1  (elapsed 0.0min) ===
+  already done (1993_A1__forced__r1), skipping.
+
+=== cell 36/54  1993.A1 / forced / r2  (elapsed 0.0min) ===
+  already done (1993_A1__forced__r2), skipping.
+
+=== cell 37/54  1996.B2 / b / r0  (elapsed 0.0min) ===
+  already done (1996_B2__b__r0), skipping.
+
+=== cell 38/54  1996.B2 / b / r1  (elapsed 0.0min) ===
+  already done (1996_B2__b__r1), skipping.
+
+=== cell 39/54  1996.B2 / b / r2  (elapsed 0.0min) ===
+  already done (1996_B2__b__r2), skipping.
+
+=== cell 40/54  1996.B2 / vizprimed / r0  (elapsed 0.0min) ===
+  already done (1996_B2__vizprimed__r0), skipping.
+
+=== cell 41/54  1996.B2 / vizprimed / r1  (elapsed 0.0min) ===
+  already done (1996_B2__vizprimed__r1), skipping.
+
+=== cell 42/54  1996.B2 / vizprimed / r2  (elapsed 0.0min) ===
+  already done (1996_B2__vizprimed__r2), skipping.
+
+=== cell 43/54  1996.B2 / forced / r0  (elapsed 0.0min) ===
+  already done (1996_B2__forced__r0), skipping.
+
+=== cell 44/54  1996.B2 / forced / r1  (elapsed 0.0min) ===
+  already done (1996_B2__forced__r1), skipping.
+
+=== cell 45/54  1996.B2 / forced / r2  (elapsed 0.0min) ===
+  poisoned record (1996_B2__forced__r2) — deleting, will retry.
+[1996_B2__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r2_mhqq0e8l/workspace
+[1996_B2__forced__r2] OK  build=True  sorries=0  wall=780.7s  tools=20/21
+  -> experiments/forced_viz/results/1996_B2__forced__r2
+
+=== cell 46/54  2006.A1 / b / r0  (elapsed 16.8min) ===
+  poisoned record (2006_A1__b__r0) — deleting, will retry.
+[2006_A1__b__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r0_h7j8zj3g/workspace
+[2006_A1__b__r0] X  build=True  sorries=1  wall=781.2s  tools=7/9
+  -> experiments/forced_viz/results/2006_A1__b__r0
+
+=== cell 47/54  2006.A1 / b / r1  (elapsed 33.3min) ===
+  poisoned record (2006_A1__b__r1) — deleting, will retry.
+[2006_A1__b__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r1_e74bkmhf/workspace
+[2006_A1__b__r1] X  build=True  sorries=1  wall=310.3s  tools=6/6
+  -> experiments/forced_viz/results/2006_A1__b__r1
+
+=== cell 48/54  2006.A1 / b / r2  (elapsed 38.7min) ===
+  poisoned record (2006_A1__b__r2) — deleting, will retry.
+[2006_A1__b__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__b__r2__as6uoe7/workspace
+[2006_A1__b__r2] X  build=True  sorries=1  wall=386.8s  tools=7/7
+  -> experiments/forced_viz/results/2006_A1__b__r2
+
+=== cell 49/54  2006.A1 / vizprimed / r0  (elapsed 47.5min) ===
+  poisoned record (2006_A1__vizprimed__r0) — deleting, will retry.
+[2006_A1__vizprimed__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r0_l_4o1jzf/workspace
+[2006_A1__vizprimed__r0] X  build=True  sorries=1  wall=740.2s  tools=9/9
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r0
+
+=== cell 50/54  2006.A1 / vizprimed / r1  (elapsed 60.2min) ===
+  poisoned record (2006_A1__vizprimed__r1) — deleting, will retry.
+[2006_A1__vizprimed__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r1_4dvrw3ka/workspace
+[2006_A1__vizprimed__r1] X  build=True  sorries=1  wall=347.4s  tools=6/7
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r1
+
+=== cell 51/54  2006.A1 / vizprimed / r2  (elapsed 68.1min) ===
+  poisoned record (2006_A1__vizprimed__r2) — deleting, will retry.
+[2006_A1__vizprimed__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r2_orcpp5bb/workspace
+[2006_A1__vizprimed__r2] X  build=True  sorries=1  wall=384.7s  tools=8/9
+  -> experiments/forced_viz/results/2006_A1__vizprimed__r2
+
+=== cell 52/54  2006.A1 / forced / r0  (elapsed 76.5min) ===
+  poisoned record (2006_A1__forced__r0) — deleting, will retry.
+[2006_A1__forced__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r0_18ia1zpy/workspace
+[2006_A1__forced__r0] X  build=True  sorries=1  wall=576.6s  tools=11/12
+  -> experiments/forced_viz/results/2006_A1__forced__r0
+
+=== cell 53/54  2006.A1 / forced / r1  (elapsed 86.3min) ===
+  poisoned record (2006_A1__forced__r1) — deleting, will retry.
+[2006_A1__forced__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r1_3igm1bid/workspace
+[2006_A1__forced__r1] X  build=True  sorries=1  wall=314.7s  tools=10/11
+  -> experiments/forced_viz/results/2006_A1__forced__r1
+
+=== cell 54/54  2006.A1 / forced / r2  (elapsed 93.9min) ===
+  poisoned record (2006_A1__forced__r2) — deleting, will retry.
+[2006_A1__forced__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced__r2_dt43rfr1/workspace
+[2006_A1__forced__r2] X  build=True  sorries=1  wall=696.0s  tools=11/11
+  -> experiments/forced_viz/results/2006_A1__forced__r2
+
+forced-viz study complete in 105.6 min

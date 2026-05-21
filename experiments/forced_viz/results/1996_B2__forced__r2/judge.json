@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean theorem states exactly the double inequality for the product 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) = \u220f_{i<n}(2i+1) with the correct ((2n\u00b11)/e)^((2n\u00b11)/2) bounds for all positive n."
+}

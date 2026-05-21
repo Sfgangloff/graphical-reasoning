@@ -1,0 +1,67 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "forced",
+  "run_index": 0,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1779172067.745857,
+  "ended_at": 1779172504.016397,
+  "wall_clock_s": 436.2705399990082,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 0
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_partial_sums": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "forced",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 13,
+    "tool_calls_viz": 2,
+    "viz_read_back": true,
+    "viz_verdict": "The log of the product 1\u00b73\u00b7\u00b7\u00b7(2n-1) (\u224814.52 at n=8, 0 at n=1) sits strictly between the lower log-bound (\u224812.8 / -0.5) and the upper log-bound (\u224815.6 / +0.15), confirming the stated sandwich inequality is TRUE and correctly oriented for all n\u22651.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Faithful Lean statement (double factorial as \u220f i\u2208range n, (2i+1), rpow bounds) compiles cleanly with only the sorry warning; viz confirmed inequality direction, but the integral/concavity proof is too heavy for the remaining time so the proof is left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced__r0_2htt4vqz/workspace"
+}

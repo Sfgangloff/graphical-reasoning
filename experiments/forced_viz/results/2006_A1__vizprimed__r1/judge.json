@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement encodes the same region via the inequality on \u211d\u00b3 and asserts its Lebesgue volume equals 6\u03c0\u00b2, matching the LaTeX problem."
+}

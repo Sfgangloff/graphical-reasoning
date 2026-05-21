@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement integrates t^(-1/2)\u00b7e^(-1985(t+t\u207b\u00b9)) over (0,\u221e) and equates it to \u221a(\u03c0/1985)\u00b7e^(-3970), which is exactly the problem's integral and its correct closed-form value."
+}

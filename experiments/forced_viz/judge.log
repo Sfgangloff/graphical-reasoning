@@ -1,0 +1,80 @@
+[1985_B5__b__r0] verdict = match
+[1985_B5__b__r1] verdict = match
+[1985_B5__b__r2] verdict = match
+[1985_B5__forced__r0] verdict = match
+[1985_B5__forced__r1] verdict = match
+[1985_B5__forced__r2] verdict = match
+[1985_B5__vizprimed__r0] verdict = match
+[1985_B5__vizprimed__r1] verdict = match
+[1985_B5__vizprimed__r2] verdict = match
+[1989_A2__b__r0] verdict = close
+[1989_A2__b__r1] verdict = close
+[1989_A2__b__r2] verdict = close
+[1989_A2__forced__r0] verdict = match
+[1989_A2__forced__r1] verdict = match
+[1989_A2__forced__r2] verdict = match
+[1989_A2__vizprimed__r0] verdict = match
+[1989_A2__vizprimed__r1] verdict = match
+[1989_A2__vizprimed__r2] verdict = match
+[1991_A5__b__r0] verdict = match
+[1991_A5__b__r1] verdict = match
+[1991_A5__b__r2] verdict = match
+[1991_A5__forced__r0] verdict = match
+[1991_A5__forced__r1] verdict = match
+[1991_A5__forced__r2] verdict = match
+[1991_A5__vizprimed__r0] verdict = match
+[1991_A5__vizprimed__r1] verdict = match
+[1991_A5__vizprimed__r2] verdict = match
+[1993_A1__b__r0] verdict = non-statement
+[1993_A1__b__r1] verdict = match
+[1993_A1__b__r2] verdict = match
+[1993_A1__forced__r0] verdict = match
+[1993_A1__forced__r1] verdict = match
+[1993_A1__forced__r2] verdict = match
+[1993_A1__vizprimed__r0] verdict = non-statement
+[1993_A1__vizprimed__r1] verdict = match
+[1993_A1__vizprimed__r2] verdict = match
+[1996_B2__b__r0] verdict = match
+[1996_B2__b__r1] verdict = match
+[1996_B2__b__r2] verdict = match
+[1996_B2__forced__r0] verdict = match
+Traceback (most recent call last):
+  File "/Users/silveregangloff/Desktop/graphical-reasoning/experiments/runner/judge.py", line 128, in <module>
+    main()
+    ~~~~^^
+  File "/Users/silveregangloff/Desktop/graphical-reasoning/experiments/runner/judge.py", line 119, in main
+    verdict = run_judge(excerpt.read_text(), sol_p.read_text())
+  File "/Users/silveregangloff/Desktop/graphical-reasoning/experiments/runner/judge.py", line 70, in run_judge
+    proc = subprocess.run(
+        ["claude", "--print", "--output-format", "text", prompt],
+        capture_output=True, text=True, timeout=300,
+    )
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 2154, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1268, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['claude', '--print', '--output-format', 'text', 'You are judging whether a Lean 4 / Mathlib formalization\nfaithfully captures the natural-language problem statement below.\n\n## Original problem (LaTeX)\n\n```latex\n\\paragraph{1996 B--2 \\textnormal{[\\texttt{asymptotic, integral-inequality}]}}\nShow that for every positive integer $n$,\n\\[\n\\left( \\frac{2n-1}{e} \\right)^{\\frac{2n-1}{2}} < 1 \\cdot 3 \\cdot 5\n\\cdots (2n-1) < \\left( \\frac{2n+1}{e} \\right)^{\\frac{2n+1}{2}}.\n\\]\n\n```\n\n## Candidate formalization (Lean 4)\n\n```lean\nimport Mathlib\n\nopen scoped BigOperators\n\n/-- 1996 B2. For every positive integer `n`,\n`((2n-1)/e)^((2n-1)/2) < 1·3·5···(2n-1) < ((2n+1)/e)^((2n+1)/2)`.\nThe product `1·3·5···(2n-1)` is written as `∏ i ∈ range n, (2 i + 1)`. -/\ntheorem putnam_1996_b2\n    (n : ℕ) (npos : 0 < n)\n    (prod1 : ℝ)\n    (hprod1 : prod1 = ∏ i ∈ Finset.range n, (2 * (i : ℝ) + 1)) :\n    ((2 * (n : ℝ) - 1) / Real.exp 1) ^ ((2 * (n : ℝ) - 1) / 2) < prod1 ∧\n      prod1 < ((2 * (n : ℝ) + 1) / Real.exp 1) ^ ((2 * (n : ℝ) + 1) / 2) := by\n  sorry\n\n```\n\nScore the formalization on **statement match only** (ignore proof\nquality):\n\n- "match"     — the Lean theorem statement captures every hypothesis\n                and every conclusion of the LaTeX problem, with no\n                strengthening or weakening, no missing cases, and no\n                extra assumptions.\n- "close"     — minor issues (e.g. an open vs closed interval, a typo\n                in a constant, a slightly different phrasing of the\n                same conclusion) but the mathematical content matches.\n- "mismatch"  — the Lean statement diverges materially: missing or\n                spurious hypotheses, different conclusion, wrong\n                quantifiers, wrong constants in a "compute X" problem.\n- "non-statement" — there is no plausible candidate theorem statement\n                    in the file at all.\n\nOutput exactly one JSON block as your final message:\n\n```json\n{\n  "verdict": "match" | "close" | "mismatch" | "non-statement",\n  "reason": "<one short sentence>"\n}\n```\n']' timed out after 300 seconds
+[1996_B2__forced__r1] verdict = match
+[1996_B2__forced__r2] verdict = match
+[1996_B2__vizprimed__r0] verdict = match
+[1996_B2__vizprimed__r1] verdict = match
+[1996_B2__vizprimed__r2] verdict = non-statement
+[2006_A1__b__r0] verdict = match
+[2006_A1__b__r1] verdict = match
+[2006_A1__b__r2] verdict = match
+[2006_A1__forced__r0] verdict = match
+[2006_A1__forced__r1] verdict = match
+[2006_A1__forced__r2] verdict = match
+[2006_A1__vizprimed__r0] verdict = match
+[2006_A1__vizprimed__r1] verdict = match
+[2006_A1__vizprimed__r2] verdict = match
+Judged 14, skipped 40.

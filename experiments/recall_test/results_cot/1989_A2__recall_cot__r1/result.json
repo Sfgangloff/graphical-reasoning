@@ -1,0 +1,9 @@
+{
+  "problem_id": "1989.A2",
+  "run_index": 1,
+  "wall_s": 33.2,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "$(e^{a^2 b^2} - 1)/(ab)$",
+  "confidence": "high"
+}

@@ -1,0 +1,57 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "vizprimed",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779076207.364706,
+  "ended_at": 1779079039.6149209,
+  "wall_clock_s": 2832.2502148151398,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_leansearch": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "vizprimed",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 0,
+    "viz_read_back": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Faithful statement and correct well-typed answer \u221a(\u03c0/1985)\u00b7e^(-3970) delivered with a clean lake build (exit 0); proof left as sorry since the required Cauchy\u2013Schl\u00f6milch transformation is not in Mathlib and infeasible to derive within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__vizprimed__r0_nkg_9dvv/workspace"
+}

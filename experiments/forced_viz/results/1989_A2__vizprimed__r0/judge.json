@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Integration order, domains, positivity hypotheses, integrand, and the closed-form value (e^{a\u00b2b\u00b2}\u22121)/(ab) all correctly capture the original problem."
+}

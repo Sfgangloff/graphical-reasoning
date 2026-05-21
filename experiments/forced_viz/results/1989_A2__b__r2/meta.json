@@ -1,0 +1,56 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "b",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779091253.18158,
+  "ended_at": 1779091861.635315,
+  "wall_clock_s": 608.4537348747253,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz__plot_region": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 1,
+    "decisive_tool": "mcp__math-viz__plot_region",
+    "notes": "Correct well-typed answer term (e^(a^2b^2)-1)/(ab) and faithful statement build cleanly via lake build (exit 0); plot_region confirmed the diagonal region split, but the full Fubini/change-of-variables proof was too large to finish in budget so the proof is a single sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__b__r2_gwbvanks/workspace"
+}

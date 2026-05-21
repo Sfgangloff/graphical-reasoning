@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "IsGreatest over the set of integral values on the closed interval [0,1] with the correct maximum 1/3 faithfully captures the problem."
+}

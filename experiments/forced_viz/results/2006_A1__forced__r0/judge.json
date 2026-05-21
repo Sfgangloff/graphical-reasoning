@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement asks for the Lebesgue volume of exactly the set defined by the LaTeX inequality and equates it to 6\u03c0\u00b2, matching the problem."
+}

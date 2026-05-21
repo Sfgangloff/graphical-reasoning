@@ -1,0 +1,4 @@
+{
+  "verdict": "close",
+  "reason": "Statement faithfully captures hypotheses, integrand, integration order, and the correct closed-form answer; only deviation is open (Ioo) vs the implied closed integration intervals, a measure-zero/minor issue."
+}

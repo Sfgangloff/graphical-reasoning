@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement faithfully encodes both shaded-region areas as the correct integrals over the two genuine intersection points and pins down the unique solution c = 4/9 within the intrinsic admissible range (0, 4\u221a2/9)."
+}

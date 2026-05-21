@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The integrand, domain (0,\u221e), and the correct closed-form constant \u221a(\u03c0/1985)\u00b7e^(\u22123970) all faithfully match the LaTeX evaluation problem."
+}

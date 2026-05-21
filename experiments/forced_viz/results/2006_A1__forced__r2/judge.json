@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement encodes the same region {(x,y,z) : (x\u00b2+y\u00b2+z\u00b2+8)\u00b2 \u2264 36(x\u00b2+y\u00b2)} and asserts its volume equals 6\u03c0\u00b2, matching the LaTeX problem."
+}

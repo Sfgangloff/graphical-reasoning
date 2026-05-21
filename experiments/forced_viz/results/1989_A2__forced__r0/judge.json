@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "Positivity hypotheses, the iterated integral bounds/order, the max-exponential integrand, and the closed-form value (e^{a\u00b2b\u00b2}\u22121)/(ab) all faithfully match the LaTeX problem."
+}

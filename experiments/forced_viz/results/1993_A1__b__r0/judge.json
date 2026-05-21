@@ -1,0 +1,4 @@
+{
+  "verdict": "non-statement",
+  "reason": "The candidate file contains only comments and an import with no theorem statement at all."
+}

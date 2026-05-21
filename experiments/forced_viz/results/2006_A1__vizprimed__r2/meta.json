@@ -1,0 +1,57 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "vizprimed",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779198837.994941,
+  "ended_at": 1779199222.6459022,
+  "wall_clock_s": 384.6509611606598,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_region": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "vizprimed",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "decisive_tool": "mcp__math-viz__plot_region",
+    "notes": "Faithful statement and correct well-typed answer term 6*\u03c0\u00b2 delivered; plot_region confirmed the region is a solid torus (R=3, \u03c1=1) giving 6\u03c0\u00b2, but the full 3D Lebesgue volume proof was too large for the budget so the proof remains sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__vizprimed__r2_orcpp5bb/workspace"
+}

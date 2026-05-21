@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The statement fixes c = 4/9, constrains 0 < c < 4\u221a2/9 (curve's max, ensuring two first-quadrant intersections), and equates \u222b\u2080^x1(c\u2212curve) with \u222b_{x1}^{x2}(curve\u2212c), faithfully encoding both shaded regions; the two non-negative roots are unique so the existential pins down the intended intersection points."
+}

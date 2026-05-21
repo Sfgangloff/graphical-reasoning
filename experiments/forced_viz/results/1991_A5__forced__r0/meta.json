@@ -1,0 +1,55 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779115482.34188,
+  "ended_at": 1779115960.332671,
+  "wall_clock_s": 477.9907908439636,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 10,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper-bound function g(y)=y^2-(2/3)y^3 rises monotonically on [0,1] from 0 to exactly 1/3 at y=1, and since the integrand equals x^2 exactly at y=1, the maximum value is 1/3 attained at y=1.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lake build",
+    "notes": "Formalized as IsGreatest; membership via y=1 with sqrt(x^4)=x^2 and integral_pow, upper bound via sqrt(a^2+b^2)<=|a|+b plus intervalIntegral.integral_mono_on and an nlinarith with the (y-1)^2(2y+1)>=0 hint; built clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced__r0_e4qij0qf/workspace"
+}

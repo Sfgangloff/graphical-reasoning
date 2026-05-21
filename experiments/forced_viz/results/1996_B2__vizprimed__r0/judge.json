@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement correctly encodes both inequalities with the product 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) as \u220f k \u2208 range n, (2k+1) and the positive integer hypothesis 0 < n."
+}

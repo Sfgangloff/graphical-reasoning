@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The integral over (0,\u221e) of t^(-1/2)\u00b7e^(-1985(t+1/t)) is faithfully transcribed and equated to the correct closed form \u221a(\u03c0/1985)\u00b7e^(-3970)."
+}

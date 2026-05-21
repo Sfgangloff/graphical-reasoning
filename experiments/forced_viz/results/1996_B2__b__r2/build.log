@@ -1,0 +1,47 @@
+✖ [8387/8388] Building Solution (360s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__b__r2_j1lhjm20/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:47:90: unsolved goals
+n : ℕ
+hn : 0 < n
+lt_of_log_lt : ∀ (a b : ℝ), 0 < a → 0 < b → Real.log a < Real.log b → a < b
+m k : ℕ
+hk : 1 ≤ k
+ih :
+  (2 * ↑k - 1) / 2 * (Real.log (2 * ↑k - 1) - 1) < Real.log (∏ i ∈ range k, (2 * ↑i + 1)) ∧
+    Real.log (∏ i ∈ range k, (2 * ↑i + 1)) < (2 * ↑k + 1) / 2 * (Real.log (2 * ↑k + 1) - 1)
+hkk : 1 ≤ ↑k
+hd1 : 0 < 2 * ↑k - 1
+hd2 : 0 < 2 * ↑k + 1
+hd3 : 0 < 2 * ↑k + 3
+hlow : Real.log (2 * ↑k + 1) - Real.log (2 * ↑k - 1) ≤ (2 * ↑k + 1) / (2 * ↑k - 1) - 1
+⊢ 2 * ↑k + 1 - (2 * ↑k - 1) = 2
+error: Solution.lean:56:91: unsolved goals
+n : ℕ
+hn : 0 < n
+lt_of_log_lt : ∀ (a b : ℝ), 0 < a → 0 < b → Real.log a < Real.log b → a < b
+m k : ℕ
+hk : 1 ≤ k
+ih :
+  (2 * ↑k - 1) / 2 * (Real.log (2 * ↑k - 1) - 1) < Real.log (∏ i ∈ range k, (2 * ↑i + 1)) ∧
+    Real.log (∏ i ∈ range k, (2 * ↑i + 1)) < (2 * ↑k + 1) / 2 * (Real.log (2 * ↑k + 1) - 1)
+hkk : 1 ≤ ↑k
+hd1 : 0 < 2 * ↑k - 1
+hd2 : 0 < 2 * ↑k + 1
+hd3 : 0 < 2 * ↑k + 3
+hlow : Real.log (2 * ↑k + 1) - Real.log (2 * ↑k - 1) ≤ (2 * ↑k + 1) / (2 * ↑k - 1) - 1
+hab : (2 * ↑k - 1) * (Real.log (2 * ↑k + 1) - Real.log (2 * ↑k - 1)) ≤ 2
+hhig : Real.log (2 * ↑k + 1) - Real.log (2 * ↑k + 3) ≤ (2 * ↑k + 1) / (2 * ↑k + 3) - 1
+⊢ 2 * ↑k + 1 - (2 * ↑k + 3) = -2
+warning: Solution.lean:25:16: This simp argument is unused:
+  Finset.prod_range_one
+
+Hint: Omit it from the simp argument list.
+  simp [F̵i̵n̵s̵e̵t̵.̵p̵r̵o̵d̵_̵r̵a̵n̵g̵e̵_̵o̵n̵e̵,̵ ̵Real.log_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

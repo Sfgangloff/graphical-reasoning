@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "IsGreatest over the set of integral values for y in the closed interval [0,1] faithfully captures 'find the maximum value', with the correct constant 1/3."
+}

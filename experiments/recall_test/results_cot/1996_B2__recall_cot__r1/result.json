@@ -1,0 +1,9 @@
+{
+  "problem_id": "1996.B2",
+  "run_index": 1,
+  "wall_s": 121.0,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "true (the inequality holds as stated for every positive integer $n$)",
+  "confidence": "high"
+}

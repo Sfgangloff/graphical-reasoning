@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement faithfully encodes the curve, the two first-quadrant intersection points, both shaded-region integrals, the equal-area condition, and the correct value c = 4/9."
+}

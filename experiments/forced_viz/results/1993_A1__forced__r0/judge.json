@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The statement correctly fixes c=4/9, bounds it to the first-quadrant two-intersection regime (0<c<4\u221a2/9), and the two interval integrals faithfully encode the two shaded regions and the equal-area condition."
+}

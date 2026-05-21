@@ -1,0 +1,68 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "b",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779110789.472703,
+  "ended_at": 1779111515.02973,
+  "wall_clock_s": 725.5570271015167,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 13,
+      "succeeded": 13
+    },
+    "ScheduleWakeup": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__lean-lsp-mcp__lean_goal": {
+      "attempted": 3,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 29,
+  "tool_calls_succeeded": 27,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "B",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 28,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Bounded \u221a(x\u2074+(y-y\u00b2)\u00b2) \u2264 x\u00b2+(y-y\u00b2) for y\u2208[0,1], integrated to y\u00b3/3+(y-y\u00b2)y, used (y-1)\u00b2(2y+1)\u22650 for \u22641/3 with equality at y=1; lake build succeeded with 0 sorries."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__b__r0_62wdmlis/workspace"
+}

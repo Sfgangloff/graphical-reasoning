@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean theorem encodes the product 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) as \u220f i \u2208 range n, (2i+1) and states the two strict inequalities with the same exponents as the LaTeX, under the hypothesis n \u2265 1."
+}

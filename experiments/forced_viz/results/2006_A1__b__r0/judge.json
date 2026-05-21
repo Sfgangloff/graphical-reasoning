@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "The Lean statement defines the volume of the exact region described by the inequality and equates it to 6\u03c0\u00b2, matching the LaTeX problem."
+}

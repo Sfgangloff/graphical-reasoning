@@ -1,0 +1,9 @@
+{
+  "problem_id": "1989.A2",
+  "run_index": 2,
+  "wall_s": 8.4,
+  "exit_code": 0,
+  "timed_out": false,
+  "answer": "(e-1)/2 \u00b7 (so \u222b\u2080\u00b9 x^x dx evaluated... actually) Putnam 1989 A2: \u222b\u2080^a \u222b\u2080^b e^(max(b\u00b2x\u00b2, a\u00b2y\u00b2)) dy dx = (e^(a\u00b2b\u00b2) - 1)/(ab)... = (e^(a\u00b2b\u00b2)\u22121)/(ab)",
+  "confidence": "low"
+}

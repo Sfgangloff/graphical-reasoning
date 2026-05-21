@@ -1,0 +1,52 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "b",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779089954.684577,
+  "ended_at": 1779090618.1551292,
+  "wall_clock_s": 663.4705522060394,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 7,
+      "succeeded": 7
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 14,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "B",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 15,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Statement and correct closed-form answer term ((e^{a^2b^2}-1)/(ab)) are well-typed and confirmed by a clean `lake build` (only the expected sorry warning); full proof needs a Fubini region-swap for the non-elementary exp(a^2 y^2) integral, left as sorry due to the 11-minute budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__b__r0_7fkwcziz/workspace"
+}

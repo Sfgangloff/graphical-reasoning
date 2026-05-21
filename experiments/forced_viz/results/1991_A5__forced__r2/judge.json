@@ -1,0 +1,4 @@
+{
+  "verdict": "match",
+  "reason": "IsGreatest over the set of integral values for y \u2208 [0,1] faithfully encodes the maximum, with correct integrand, bounds, and constant 1/3."
+}
