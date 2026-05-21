@@ -1,0 +1,30 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 1,
+  "started_at": 1779284725.592622,
+  "wall_clock_s": 22.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "false",
+    "condition": "forced_reflection",
+    "verdict": "incorrect",
+    "correct_answer": "1/3",
+    "reflection": "At y=1, y-y^2=0 so the integral becomes \u222b_0^1 x^2 dx = 1/3, which already exceeds the claimed 1/4. The upper bound \u221a(a\u00b2+b\u00b2) \u2264 |a|+|b| gives f(y) \u2264 y\u00b2 - 2y\u00b3/3, maximized at y=1 with value 1/3, and equality holds there since (y-y\u00b2)=0. So the true maximum is 1/3, not 1/4.",
+    "confidence": "high",
+    "notes": "Direct evaluation at y=1 gives 1/3 > 1/4, immediately falsifying the claim, and a sharp upper bound confirms 1/3 is exact."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__false__forced_reflection__r1_3q1yjonl"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 1,
+  "started_at": 1779280451.0540109,
+  "wall_clock_s": 53.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 5,
+      "succeeded": 5
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "At a=1,2,3 the integral and the asserted formula agree to >100 decimal digits (e.g., a=1 gives 0.23987554393612289474 for both; differences at a=2,3 are <10^{-140}).",
+    "confidence": "high",
+    "notes": "Standard identity: sub t=u^2 then use u^2+1/u^2=(u-1/u)^2+2 with the u\u21921/u symmetry, giving exactly \u221a(\u03c0/a)\u00b7e^{-2a}; numerics confirm at three values of a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_textual__r1_l6lw5kb1"
+}

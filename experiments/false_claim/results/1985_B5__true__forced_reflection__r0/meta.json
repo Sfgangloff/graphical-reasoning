@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 0,
+  "started_at": 1779280504.943743,
+  "wall_clock_s": 28.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "reflection": "Substituting t = u^2 converts the integral to 2 e^{-2a} \u222b_0^\u221e e^{-a(u-1/u)^2} du. The symmetry u \u2192 1/u together with dv = (1+1/u^2)du, v = u - 1/u, turns the remaining integral into (1/2)\u221a(\u03c0/a) via the given Gaussian. Multiplying gives \u221a(\u03c0/a) e^{-2a}, exactly the asserted closed form.",
+    "confidence": "high",
+    "notes": "Classical Putnam 1985 B5; standard t=u^2 plus Glasser u\u21941/u symmetry reproduces the stated answer."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_reflection__r0_iac4es3_"
+}

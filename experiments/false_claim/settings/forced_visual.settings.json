@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "mcp__math-compute",
+      "mcp__math-search",
+      "mcp__lean-lsp-mcp",
+      "mcp__proof-explorer",
+      "mcp__commutative-diagrams",
+      "mcp__symdyn-shifts",
+      "mcp__symdyn-tilings",
+      "mcp__symdyn-viz",
+      "mcp__symdyn-complexity",
+      "mcp__meta-tools",
+      "mcp__ide",
+      "WebFetch",
+      "WebSearch",
+      "Edit",
+      "Write",
+      "NotebookEdit",
+      "Task"
+    ]
+  }
+}

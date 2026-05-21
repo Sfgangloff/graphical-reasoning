@@ -1,0 +1,21 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 0,
+  "started_at": 1779286080.5862038,
+  "wall_clock_s": 780.9,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_reflection__r0_zh5tz_qr"
+}

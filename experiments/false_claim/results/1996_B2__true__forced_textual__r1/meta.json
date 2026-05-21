@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 1,
+  "started_at": 1779285713.695368,
+  "wall_clock_s": 57.6,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 7,
+      "succeeded": 7
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) holds for all positive integers n",
+    "numeric_verdict": "At n=1: 0.607 < 1 < 1.159 \u2713; at n=2: 1.159 < 3 < 4.589 \u2713; at n=5: 218.66 < 945 < 2182.93 \u2713; at n=10: 1.053e8 < 6.547e8 < 2.105e9 \u2713 \u2014 all match the asserted direction.",
+    "confidence": "high",
+    "notes": "Classic Putnam 1996 B2; numerics at n=1,2,5,10 all satisfy the double inequality with comfortable margins, consistent with the known proof via comparing the sum of ln(2k-1) to the integral of ln(2x-1)."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_textual__r1_hkgutd8e"
+}

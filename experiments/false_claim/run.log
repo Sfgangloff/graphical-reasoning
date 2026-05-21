@@ -1,0 +1,333 @@
+Study 5 — false-claim ablation: 48 cells (4 probs × 2 variants × 3 conditions × 2 runs)  budget=12min/cell
+
+=== cell 1/48  1985.B5 / true / forced_visual / r0  (elapsed 0.0min) ===
+  1985_B5__true__forced_visual__r0                         wall= 45.5s  tools= 3  verdict=correct
+
+=== cell 2/48  1985.B5 / true / forced_visual / r1  (elapsed 0.8min) ===
+  1985_B5__true__forced_visual__r1                         wall= 36.1s  tools= 3  verdict=correct
+
+=== cell 3/48  1985.B5 / true / forced_textual / r0  (elapsed 1.4min) ===
+  1985_B5__true__forced_textual__r0                        wall= 43.3s  tools= 8  verdict=correct
+
+=== cell 4/48  1985.B5 / true / forced_textual / r1  (elapsed 2.1min) ===
+  1985_B5__true__forced_textual__r1                        wall= 53.9s  tools= 7  verdict=correct
+
+=== cell 5/48  1985.B5 / true / forced_reflection / r0  (elapsed 3.0min) ===
+  1985_B5__true__forced_reflection__r0                     wall= 28.0s  tools= 1  verdict=correct
+
+=== cell 6/48  1985.B5 / true / forced_reflection / r1  (elapsed 3.5min) ===
+  1985_B5__true__forced_reflection__r1                     wall= 25.1s  tools= 1  verdict=correct
+
+=== cell 7/48  1985.B5 / false / forced_visual / r0  (elapsed 3.9min) ===
+  1985_B5__false__forced_visual__r0                        wall= 53.1s  tools= 4  verdict=incorrect
+
+=== cell 8/48  1985.B5 / false / forced_visual / r1  (elapsed 4.8min) ===
+  1985_B5__false__forced_visual__r1                        wall= 29.6s  tools= 3  verdict=?
+
+=== cell 9/48  1985.B5 / false / forced_textual / r0  (elapsed 5.2min) ===
+  1985_B5__false__forced_textual__r0                       wall=  3.9s  tools= 0  verdict=?
+
+=== cell 10/48  1985.B5 / false / forced_textual / r1  (elapsed 5.3min) ===
+  1985_B5__false__forced_textual__r1                       wall=  3.8s  tools= 0  verdict=?
+
+=== cell 11/48  1985.B5 / false / forced_reflection / r0  (elapsed 5.4min) ===
+  1985_B5__false__forced_reflection__r0                    wall=  3.6s  tools= 0  verdict=?
+
+=== cell 12/48  1985.B5 / false / forced_reflection / r1  (elapsed 5.4min) ===
+  1985_B5__false__forced_reflection__r1                    wall=  3.7s  tools= 0  verdict=?
+
+=== cell 13/48  1991.A5 / true / forced_visual / r0  (elapsed 5.5min) ===
+  1991_A5__true__forced_visual__r0                         wall=  4.5s  tools= 0  verdict=?
+
+=== cell 14/48  1991.A5 / true / forced_visual / r1  (elapsed 5.6min) ===
+  1991_A5__true__forced_visual__r1                         wall=  3.7s  tools= 0  verdict=?
+
+=== cell 15/48  1991.A5 / true / forced_textual / r0  (elapsed 5.6min) ===
+  1991_A5__true__forced_textual__r0                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 16/48  1991.A5 / true / forced_textual / r1  (elapsed 5.7min) ===
+  1991_A5__true__forced_textual__r1                        wall=  3.6s  tools= 0  verdict=?
+
+=== cell 17/48  1991.A5 / true / forced_reflection / r0  (elapsed 5.8min) ===
+  1991_A5__true__forced_reflection__r0                     wall=  3.6s  tools= 0  verdict=?
+
+=== cell 18/48  1991.A5 / true / forced_reflection / r1  (elapsed 5.8min) ===
+  1991_A5__true__forced_reflection__r1                     wall=  3.6s  tools= 0  verdict=?
+
+=== cell 19/48  1991.A5 / false / forced_visual / r0  (elapsed 5.9min) ===
+  1991_A5__false__forced_visual__r0                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 20/48  1991.A5 / false / forced_visual / r1  (elapsed 5.9min) ===
+  1991_A5__false__forced_visual__r1                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 21/48  1991.A5 / false / forced_textual / r0  (elapsed 6.0min) ===
+  1991_A5__false__forced_textual__r0                       wall=  3.8s  tools= 0  verdict=?
+
+=== cell 22/48  1991.A5 / false / forced_textual / r1  (elapsed 6.1min) ===
+  1991_A5__false__forced_textual__r1                       wall=  3.7s  tools= 0  verdict=?
+
+=== cell 23/48  1991.A5 / false / forced_reflection / r0  (elapsed 6.1min) ===
+  already done (1991_A5__false__forced_reflection__r0), skipping.
+
+=== cell 24/48  1991.A5 / false / forced_reflection / r1  (elapsed 6.1min) ===
+  1991_A5__false__forced_reflection__r1                    wall=  3.9s  tools= 0  verdict=?
+
+=== cell 25/48  1993.A1 / true / forced_visual / r0  (elapsed 6.2min) ===
+  1993_A1__true__forced_visual__r0                         wall=  3.8s  tools= 0  verdict=?
+
+=== cell 26/48  1993.A1 / true / forced_visual / r1  (elapsed 6.3min) ===
+  1993_A1__true__forced_visual__r1                         wall=  3.6s  tools= 0  verdict=?
+
+=== cell 27/48  1993.A1 / true / forced_textual / r0  (elapsed 6.3min) ===
+  1993_A1__true__forced_textual__r0                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 28/48  1993.A1 / true / forced_textual / r1  (elapsed 6.4min) ===
+  1993_A1__true__forced_textual__r1                        wall=  3.6s  tools= 0  verdict=?
+
+=== cell 29/48  1993.A1 / true / forced_reflection / r0  (elapsed 6.4min) ===
+  1993_A1__true__forced_reflection__r0                     wall=  3.7s  tools= 0  verdict=?
+
+=== cell 30/48  1993.A1 / true / forced_reflection / r1  (elapsed 6.5min) ===
+  1993_A1__true__forced_reflection__r1                     wall=  3.7s  tools= 0  verdict=?
+
+=== cell 31/48  1993.A1 / false / forced_visual / r0  (elapsed 6.6min) ===
+  1993_A1__false__forced_visual__r0                        wall=  3.6s  tools= 0  verdict=?
+
+=== cell 32/48  1993.A1 / false / forced_visual / r1  (elapsed 6.6min) ===
+  1993_A1__false__forced_visual__r1                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 33/48  1993.A1 / false / forced_textual / r0  (elapsed 6.7min) ===
+  1993_A1__false__forced_textual__r0                       wall=  3.7s  tools= 0  verdict=?
+
+=== cell 34/48  1993.A1 / false / forced_textual / r1  (elapsed 6.7min) ===
+  1993_A1__false__forced_textual__r1                       wall=  3.9s  tools= 0  verdict=?
+
+=== cell 35/48  1993.A1 / false / forced_reflection / r0  (elapsed 6.8min) ===
+  1993_A1__false__forced_reflection__r0                    wall=  3.7s  tools= 0  verdict=?
+
+=== cell 36/48  1993.A1 / false / forced_reflection / r1  (elapsed 6.9min) ===
+  1993_A1__false__forced_reflection__r1                    wall=  4.2s  tools= 0  verdict=?
+
+=== cell 37/48  1996.B2 / true / forced_visual / r0  (elapsed 6.9min) ===
+  1996_B2__true__forced_visual__r0                         wall=  3.8s  tools= 0  verdict=?
+
+=== cell 38/48  1996.B2 / true / forced_visual / r1  (elapsed 7.0min) ===
+  1996_B2__true__forced_visual__r1                         wall=  3.8s  tools= 0  verdict=?
+
+=== cell 39/48  1996.B2 / true / forced_textual / r0  (elapsed 7.1min) ===
+  1996_B2__true__forced_textual__r0                        wall=  3.8s  tools= 0  verdict=?
+
+=== cell 40/48  1996.B2 / true / forced_textual / r1  (elapsed 7.1min) ===
+  1996_B2__true__forced_textual__r1                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 41/48  1996.B2 / true / forced_reflection / r0  (elapsed 7.2min) ===
+  1996_B2__true__forced_reflection__r0                     wall=  3.7s  tools= 0  verdict=?
+
+=== cell 42/48  1996.B2 / true / forced_reflection / r1  (elapsed 7.3min) ===
+  1996_B2__true__forced_reflection__r1                     wall=  4.2s  tools= 0  verdict=?
+
+=== cell 43/48  1996.B2 / false / forced_visual / r0  (elapsed 7.3min) ===
+  1996_B2__false__forced_visual__r0                        wall=  3.7s  tools= 0  verdict=?
+
+=== cell 44/48  1996.B2 / false / forced_visual / r1  (elapsed 7.4min) ===
+  1996_B2__false__forced_visual__r1                        wall=  3.9s  tools= 0  verdict=?
+
+=== cell 45/48  1996.B2 / false / forced_textual / r0  (elapsed 7.4min) ===
+  1996_B2__false__forced_textual__r0                       wall=  4.2s  tools= 0  verdict=?
+
+=== cell 46/48  1996.B2 / false / forced_textual / r1  (elapsed 7.5min) ===
+  1996_B2__false__forced_textual__r1                       wall=  4.2s  tools= 0  verdict=?
+
+=== cell 47/48  1996.B2 / false / forced_reflection / r0  (elapsed 7.6min) ===
+  1996_B2__false__forced_reflection__r0                    wall=  3.6s  tools= 0  verdict=?
+
+=== cell 48/48  1996.B2 / false / forced_reflection / r1  (elapsed 7.7min) ===
+  1996_B2__false__forced_reflection__r1                    wall=  4.3s  tools= 0  verdict=?
+
+Done in 7.7 min
+Study 5 — false-claim ablation: 48 cells (4 probs × 2 variants × 3 conditions × 2 runs)  budget=12min/cell
+
+=== cell 1/48  1985.B5 / true / forced_visual / r0  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_visual__r0), skipping.
+
+=== cell 2/48  1985.B5 / true / forced_visual / r1  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_visual__r1), skipping.
+
+=== cell 3/48  1985.B5 / true / forced_textual / r0  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_textual__r0), skipping.
+
+=== cell 4/48  1985.B5 / true / forced_textual / r1  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_textual__r1), skipping.
+
+=== cell 5/48  1985.B5 / true / forced_reflection / r0  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_reflection__r0), skipping.
+
+=== cell 6/48  1985.B5 / true / forced_reflection / r1  (elapsed 0.0min) ===
+  already done (1985_B5__true__forced_reflection__r1), skipping.
+
+=== cell 7/48  1985.B5 / false / forced_visual / r0  (elapsed 0.0min) ===
+  already done (1985_B5__false__forced_visual__r0), skipping.
+
+=== cell 8/48  1985.B5 / false / forced_visual / r1  (elapsed 0.0min) ===
+  already done (1985_B5__false__forced_visual__r1), skipping.
+
+=== cell 9/48  1985.B5 / false / forced_textual / r0  (elapsed 0.0min) ===
+  poisoned record (1985_B5__false__forced_textual__r0) — deleting, will retry.
+  1985_B5__false__forced_textual__r0                       wall= 46.3s  tools= 6  verdict=incorrect
+
+=== cell 10/48  1985.B5 / false / forced_textual / r1  (elapsed 0.8min) ===
+  poisoned record (1985_B5__false__forced_textual__r1) — deleting, will retry.
+  1985_B5__false__forced_textual__r1                       wall= 61.9s  tools= 8  verdict=incorrect
+
+=== cell 11/48  1985.B5 / false / forced_reflection / r0  (elapsed 1.8min) ===
+  poisoned record (1985_B5__false__forced_reflection__r0) — deleting, will retry.
+  1985_B5__false__forced_reflection__r0                    wall= 28.1s  tools= 1  verdict=incorrect
+
+=== cell 12/48  1985.B5 / false / forced_reflection / r1  (elapsed 2.3min) ===
+  poisoned record (1985_B5__false__forced_reflection__r1) — deleting, will retry.
+  1985_B5__false__forced_reflection__r1                    wall= 37.8s  tools= 1  verdict=incorrect
+
+=== cell 13/48  1991.A5 / true / forced_visual / r0  (elapsed 2.9min) ===
+  poisoned record (1991_A5__true__forced_visual__r0) — deleting, will retry.
+  1991_A5__true__forced_visual__r0                         wall= 67.3s  tools= 3  verdict=correct
+
+=== cell 14/48  1991.A5 / true / forced_visual / r1  (elapsed 4.0min) ===
+  poisoned record (1991_A5__true__forced_visual__r1) — deleting, will retry.
+  1991_A5__true__forced_visual__r1                         wall= 68.1s  tools= 8  verdict=correct
+
+=== cell 15/48  1991.A5 / true / forced_textual / r0  (elapsed 5.2min) ===
+  poisoned record (1991_A5__true__forced_textual__r0) — deleting, will retry.
+  1991_A5__true__forced_textual__r0                        wall= 54.8s  tools= 8  verdict=correct
+
+=== cell 16/48  1991.A5 / true / forced_textual / r1  (elapsed 6.1min) ===
+  poisoned record (1991_A5__true__forced_textual__r1) — deleting, will retry.
+  1991_A5__true__forced_textual__r1                        wall= 53.3s  tools= 7  verdict=correct
+
+=== cell 17/48  1991.A5 / true / forced_reflection / r0  (elapsed 7.0min) ===
+  poisoned record (1991_A5__true__forced_reflection__r0) — deleting, will retry.
+  1991_A5__true__forced_reflection__r0                     wall= 30.8s  tools= 1  verdict=correct
+
+=== cell 18/48  1991.A5 / true / forced_reflection / r1  (elapsed 7.5min) ===
+  poisoned record (1991_A5__true__forced_reflection__r1) — deleting, will retry.
+  1991_A5__true__forced_reflection__r1                     wall= 32.3s  tools= 1  verdict=correct
+
+=== cell 19/48  1991.A5 / false / forced_visual / r0  (elapsed 8.0min) ===
+  poisoned record (1991_A5__false__forced_visual__r0) — deleting, will retry.
+  1991_A5__false__forced_visual__r0                        wall= 45.1s  tools= 4  verdict=incorrect
+
+=== cell 20/48  1991.A5 / false / forced_visual / r1  (elapsed 8.8min) ===
+  poisoned record (1991_A5__false__forced_visual__r1) — deleting, will retry.
+  1991_A5__false__forced_visual__r1                        wall= 45.8s  tools= 5  verdict=incorrect
+
+=== cell 21/48  1991.A5 / false / forced_textual / r0  (elapsed 9.5min) ===
+  poisoned record (1991_A5__false__forced_textual__r0) — deleting, will retry.
+  1991_A5__false__forced_textual__r0                       wall= 43.3s  tools= 8  verdict=incorrect
+
+=== cell 22/48  1991.A5 / false / forced_textual / r1  (elapsed 10.3min) ===
+  poisoned record (1991_A5__false__forced_textual__r1) — deleting, will retry.
+  1991_A5__false__forced_textual__r1                       wall= 40.9s  tools= 6  verdict=incorrect
+
+=== cell 23/48  1991.A5 / false / forced_reflection / r0  (elapsed 10.9min) ===
+  already done (1991_A5__false__forced_reflection__r0), skipping.
+
+=== cell 24/48  1991.A5 / false / forced_reflection / r1  (elapsed 10.9min) ===
+  poisoned record (1991_A5__false__forced_reflection__r1) — deleting, will retry.
+  1991_A5__false__forced_reflection__r1                    wall= 22.4s  tools= 1  verdict=incorrect
+
+=== cell 25/48  1993.A1 / true / forced_visual / r0  (elapsed 11.3min) ===
+  poisoned record (1993_A1__true__forced_visual__r0) — deleting, will retry.
+  1993_A1__true__forced_visual__r0                         wall= 46.5s  tools= 5  verdict=correct
+
+=== cell 26/48  1993.A1 / true / forced_visual / r1  (elapsed 12.1min) ===
+  poisoned record (1993_A1__true__forced_visual__r1) — deleting, will retry.
+  1993_A1__true__forced_visual__r1                         wall= 52.4s  tools= 4  verdict=correct
+
+=== cell 27/48  1993.A1 / true / forced_textual / r0  (elapsed 13.0min) ===
+  poisoned record (1993_A1__true__forced_textual__r0) — deleting, will retry.
+  1993_A1__true__forced_textual__r0                        wall= 64.6s  tools=11  verdict=correct
+
+=== cell 28/48  1993.A1 / true / forced_textual / r1  (elapsed 14.0min) ===
+  poisoned record (1993_A1__true__forced_textual__r1) — deleting, will retry.
+  1993_A1__true__forced_textual__r1                        wall= 61.7s  tools= 7  verdict=correct
+
+=== cell 29/48  1993.A1 / true / forced_reflection / r0  (elapsed 15.1min) ===
+  poisoned record (1993_A1__true__forced_reflection__r0) — deleting, will retry.
+  1993_A1__true__forced_reflection__r0                     wall= 26.6s  tools= 1  verdict=correct
+
+=== cell 30/48  1993.A1 / true / forced_reflection / r1  (elapsed 15.5min) ===
+  poisoned record (1993_A1__true__forced_reflection__r1) — deleting, will retry.
+  1993_A1__true__forced_reflection__r1                     wall= 44.8s  tools= 1  verdict=correct
+
+=== cell 31/48  1993.A1 / false / forced_visual / r0  (elapsed 16.3min) ===
+  poisoned record (1993_A1__false__forced_visual__r0) — deleting, will retry.
+  1993_A1__false__forced_visual__r0                        wall= 84.7s  tools= 6  verdict=incorrect
+
+=== cell 32/48  1993.A1 / false / forced_visual / r1  (elapsed 17.7min) ===
+  poisoned record (1993_A1__false__forced_visual__r1) — deleting, will retry.
+  1993_A1__false__forced_visual__r1                        wall= 68.1s  tools= 5  verdict=incorrect
+
+=== cell 33/48  1993.A1 / false / forced_textual / r0  (elapsed 18.8min) ===
+  poisoned record (1993_A1__false__forced_textual__r0) — deleting, will retry.
+  1993_A1__false__forced_textual__r0                       wall= 80.5s  tools=14  verdict=incorrect
+
+=== cell 34/48  1993.A1 / false / forced_textual / r1  (elapsed 20.1min) ===
+  poisoned record (1993_A1__false__forced_textual__r1) — deleting, will retry.
+  1993_A1__false__forced_textual__r1                       wall= 76.0s  tools=15  verdict=incorrect
+
+=== cell 35/48  1993.A1 / false / forced_reflection / r0  (elapsed 21.4min) ===
+  poisoned record (1993_A1__false__forced_reflection__r0) — deleting, will retry.
+  1993_A1__false__forced_reflection__r0                    wall= 32.7s  tools= 1  verdict=incorrect
+
+=== cell 36/48  1993.A1 / false / forced_reflection / r1  (elapsed 22.0min) ===
+  poisoned record (1993_A1__false__forced_reflection__r1) — deleting, will retry.
+  1993_A1__false__forced_reflection__r1                    wall= 34.3s  tools= 1  verdict=incorrect
+
+=== cell 37/48  1996.B2 / true / forced_visual / r0  (elapsed 22.5min) ===
+  poisoned record (1996_B2__true__forced_visual__r0) — deleting, will retry.
+  1996_B2__true__forced_visual__r0                         wall=154.7s  tools= 6  verdict=correct
+
+=== cell 38/48  1996.B2 / true / forced_visual / r1  (elapsed 25.1min) ===
+  poisoned record (1996_B2__true__forced_visual__r1) — deleting, will retry.
+  1996_B2__true__forced_visual__r1                         wall= 91.6s  tools= 6  verdict=correct
+
+=== cell 39/48  1996.B2 / true / forced_textual / r0  (elapsed 26.6min) ===
+  poisoned record (1996_B2__true__forced_textual__r0) — deleting, will retry.
+  1996_B2__true__forced_textual__r0                        wall= 46.3s  tools=13  verdict=correct
+
+=== cell 40/48  1996.B2 / true / forced_textual / r1  (elapsed 27.4min) ===
+  poisoned record (1996_B2__true__forced_textual__r1) — deleting, will retry.
+  1996_B2__true__forced_textual__r1                        wall= 57.6s  tools=10  verdict=correct
+
+=== cell 41/48  1996.B2 / true / forced_reflection / r0  (elapsed 28.4min) ===
+  poisoned record (1996_B2__true__forced_reflection__r0) — deleting, will retry.
+  1996_B2__true__forced_reflection__r0                     wall= 66.1s  tools= 1  verdict=correct
+
+=== cell 42/48  1996.B2 / true / forced_reflection / r1  (elapsed 29.5min) ===
+  poisoned record (1996_B2__true__forced_reflection__r1) — deleting, will retry.
+  1996_B2__true__forced_reflection__r1                     wall= 59.9s  tools= 1  verdict=correct
+
+=== cell 43/48  1996.B2 / false / forced_visual / r0  (elapsed 30.5min) ===
+  poisoned record (1996_B2__false__forced_visual__r0) — deleting, will retry.
+  1996_B2__false__forced_visual__r0                        wall= 38.7s  tools= 3  verdict=incorrect
+
+=== cell 44/48  1996.B2 / false / forced_visual / r1  (elapsed 31.1min) ===
+  poisoned record (1996_B2__false__forced_visual__r1) — deleting, will retry.
+  1996_B2__false__forced_visual__r1                        wall= 50.3s  tools= 5  verdict=incorrect
+
+=== cell 45/48  1996.B2 / false / forced_textual / r0  (elapsed 31.9min) ===
+  poisoned record (1996_B2__false__forced_textual__r0) — deleting, will retry.
+  1996_B2__false__forced_textual__r0                       wall= 33.4s  tools= 5  verdict=incorrect
+
+=== cell 46/48  1996.B2 / false / forced_textual / r1  (elapsed 32.5min) ===
+  poisoned record (1996_B2__false__forced_textual__r1) — deleting, will retry.
+  1996_B2__false__forced_textual__r1                       wall= 60.7s  tools= 9  verdict=incorrect
+
+=== cell 47/48  1996.B2 / false / forced_reflection / r0  (elapsed 33.5min) ===
+  poisoned record (1996_B2__false__forced_reflection__r0) — deleting, will retry.
+  1996_B2__false__forced_reflection__r0                    wall=780.9s  tools= 1  verdict=?
+
+=== cell 48/48  1996.B2 / false / forced_reflection / r1  (elapsed 46.5min) ===
+  poisoned record (1996_B2__false__forced_reflection__r1) — deleting, will retry.
+  1996_B2__false__forced_reflection__r1                    wall= 30.6s  tools= 1  verdict=incorrect
+
+Done in 47.0 min

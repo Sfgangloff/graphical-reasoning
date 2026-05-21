@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 0,
+  "started_at": 1779280558.068983,
+  "wall_clock_s": 53.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "Shaded integrand for a=1 gives \u22480.2399, which matches \u221a\u03c0\u00b7e^{-2} not the claimed \u221a\u03c0\u00b7e^{-1}\u22480.6522.",
+    "confidence": "high",
+    "notes": "Substituting t=u\u00b2 gives I = 2e^{-2a}\u222b\u2080^\u221e e^{-a(u-1/u)\u00b2}du, and the (1+1/u\u00b2)-symmetry trick gives \u222b=\u00bd\u221a(\u03c0/a), so I = \u221a(\u03c0/a)\u00b7e^{-2a}; numerics confirm."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_visual__r0_hs5at75i"
+}

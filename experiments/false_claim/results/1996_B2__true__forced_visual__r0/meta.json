@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 0,
+  "started_at": 1779285421.099573,
+  "wall_clock_s": 154.7,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__math-viz__plot_partial_sums": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "The inequality ((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) holds for all positive integers n.",
+    "viz_verdict": "The two bound curves L(n) and U(n) sandwich the partial-sum values S_n = sum_{k=1}^n ln(2k-1) at every integer n checked (e.g., n=10: 18.47 < 20.30 < 21.47; n=20: 51.94 < 54.12 < 55.63), and the U\u2212L gap is strictly positive.",
+    "confidence": "high",
+    "notes": "This is the classic Putnam 1996 B2 inequality; visual comparison of L(n), U(n) against the partial sum of ln(2k-1) confirms strict containment for all checked n."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_visual__r0_b0xya8vd"
+}

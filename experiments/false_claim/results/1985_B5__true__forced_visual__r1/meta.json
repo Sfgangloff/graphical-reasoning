@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 1,
+  "started_at": 1779280371.627699,
+  "wall_clock_s": 36.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 3,
+  "tool_calls_succeeded": 3,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\, e^{-2a}",
+    "viz_verdict": "For a=1 the shaded area is \u22480.23988, matching \u221a\u03c0\u00b7e^{-2}\u22480.23987 to four decimals.",
+    "confidence": "high",
+    "notes": "Substitution t=u\u00b2 then w=u-1/u (with u\u00b2+u\u207b\u00b2=w\u00b2+2) reduces the integral to e^{-2a}\u222b_{-\u221e}^{\u221e}e^{-aw\u00b2}dw = \u221a(\u03c0/a)e^{-2a}, confirmed numerically by the plot."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_visual__r1_gvx3mby0"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 0,
+  "started_at": 1779285986.394881,
+  "wall_clock_s": 33.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2)",
+    "numeric_verdict": "At n=1,2,3 the product 1,3,15 lies between ((2n-1)/e)^((2n-1)/2)=0.607,1.159,4.589 and ((2n+1)/e)^((2n+1)/2)=1.159,4.589,27.4 \u2014 the asserted direction (with (2n+1) bound on the left) reverses this and fails at every n.",
+    "confidence": "high",
+    "notes": "The asserted claim swaps the two bounds; the standard Putnam 1996 B-2 inequality has (2n-1)/e on the lower side and (2n+1)/e on the upper side."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_textual__r0_6n9j28rt"
+}

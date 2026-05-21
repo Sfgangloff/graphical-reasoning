@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 1,
+  "started_at": 1779280532.915881,
+  "wall_clock_s": 25.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "reflection": "Substituting t=u^2 gives I(a)=2e^{-2a}\\int_0^\\infty e^{-a(u-1/u)^2}du. Using the involution u->1/u and adding yields 2J=\\int_{-\\infty}^\\infty e^{-av^2}dv=\\sqrt{\\pi/a} where v=u-1/u. Thus I(a)=\\sqrt{\\pi/a}\\,e^{-2a}, matching the asserted closed form.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1985 B-5 derivation via t=u^2 substitution and the u->1/u symmetry trick reproduces the claim exactly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_reflection__r1_slc4l_tm"
+}

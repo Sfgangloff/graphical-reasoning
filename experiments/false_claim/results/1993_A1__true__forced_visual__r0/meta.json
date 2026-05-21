@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 0,
+  "started_at": 1779284747.985564,
+  "wall_clock_s": 46.5,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "Both shaded integrals evaluated numerically to \u2248 0.0515668, confirming area(A) = area(B) at c = 4/9.",
+    "confidence": "high",
+    "notes": "Analytic derivation gives x_2 = 2/3 from c\u00b7x_2 = \u222b\u2080^{x_2}(2x\u22123x\u00b3)dx, hence c = 4/9; visualization confirms equal areas."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_visual__r0_pdzlxdez"
+}

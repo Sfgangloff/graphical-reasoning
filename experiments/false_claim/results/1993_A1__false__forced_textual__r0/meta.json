@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 0,
+  "started_at": 1779285197.551308,
+  "wall_clock_s": 80.5,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 11,
+      "succeeded": 11
+    },
+    "mcp__math-compute__sympy_solve": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 14,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "numeric_verdict": "At c = 2/9, Area A \u2248 0.01246 and Area B \u2248 0.17102 (clearly unequal); at c = 4/9, Area A = Area B \u2248 0.05157, confirming the correct value.",
+    "confidence": "high",
+    "notes": "Setting \u222b\u2080^{x\u2082}(c \u2212 2x + 3x\u00b3)dx = 0 with c = 2x\u2082 \u2212 3x\u2082\u00b3 yields x\u2082\u00b2 = 4/9, so x\u2082 = 2/3 and c = 4/9, not 2/9."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_textual__r0_k1phm2fz"
+}

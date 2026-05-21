@@ -1,0 +1,30 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 0,
+  "started_at": 1779285771.3097222,
+  "wall_clock_s": 66.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2} holds for all positive integers n",
+    "reflection": "Setting g(t)=(t/2)ln(t/e) with g'(t)=(1/2)ln t, both bounds reduce to induction steps comparing ln(2n\u00b11) with (1/2)\u222bln t over a length-2 interval; monotonicity of ln gives strict inequalities in the right directions. Base cases at n=1 and n=2 verify by hand, and Stirling shows ln P_n sits between the two bounds with slack ~ (1/2)ln(2n).",
+    "confidence": "high",
+    "notes": "This matches the classical Putnam 1996 B2 statement; both inequalities follow by induction using strict monotonicity of ln."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_reflection__r0_a3shjp1v"
+}

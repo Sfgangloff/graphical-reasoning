@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 0,
+  "started_at": 1779285667.425439,
+  "wall_clock_s": 46.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 8,
+      "succeeded": 8
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 13,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) for all positive integers n.",
+    "numeric_verdict": "At n=1: 0.6065 < 1 < 1.1594; at n=3: 4.589 < 15 < 27.40; at n=6: 2182.9 < 10395 < 26164.8 \u2014 the asserted two-sided inequality holds in the stated direction at every tested value.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1996 B-2 statement; numerics at n=1,3,6 confirm both bounds hold strictly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_textual__r0_yn5nk28e"
+}

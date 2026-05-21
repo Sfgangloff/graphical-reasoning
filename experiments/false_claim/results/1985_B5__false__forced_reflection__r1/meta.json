@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 1,
+  "started_at": 1779284205.9424121,
+  "wall_clock_s": 37.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_reflection",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\, e^{-2a}",
+    "reflection": "Substituting u=sqrt(at) reduces the integral to (2/sqrt(a)) \u222b_0^\u221e e^{-(u^2+a^2/u^2)} du. The standard identity (via u\u2194a/u and w=u\u2212a/u with u^2+a^2/u^2=w^2+2a) gives \u222b_0^\u221e e^{-(u^2+a^2/u^2)} du = (\u221a\u03c0/2) e^{-2a}. So the integral equals \u221a(\u03c0/a)\u00b7e^{-2a}, not e^{-a}.",
+    "confidence": "high",
+    "notes": "The +2a constant shift from completing the square in u\u2212a/u forces exponent \u22122a, not \u2212a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_reflection__r1_pk4p1poy"
+}

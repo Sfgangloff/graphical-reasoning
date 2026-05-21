@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 0,
+  "started_at": 1779280407.731932,
+  "wall_clock_s": 43.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 8,
+  "tool_calls_succeeded": 8,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "Sympy integration at a=1,2,3 yields sqrt(pi)(cosh(2a)-sinh(2a))/sqrt(a) = sqrt(pi/a)\u00b7e^{-2a}, matching the asserted formula to ~0.23988, 0.02296, 0.002537 respectively.",
+    "confidence": "high",
+    "notes": "Standard substitution u = sqrt(a)(sqrt(t) - 1/sqrt(t)) reduces the integral to sqrt(pi/a)\u00b7e^{-2a}; sympy's closed-form output confirms this for three test values of a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_textual__r0_dwb3lwcf"
+}

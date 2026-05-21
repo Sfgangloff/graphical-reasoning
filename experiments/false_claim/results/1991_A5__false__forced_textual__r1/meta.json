@@ -1,0 +1,42 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 1,
+  "started_at": 1779284684.655227,
+  "wall_clock_s": 40.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "1/3",
+    "numeric_verdict": "Computed integral values: 0.136 at y=1/2, 0.218 at y=3/4, and exactly 1/3 \u2248 0.333 at y=1; since 1/3 > 1/4, the asserted maximum 1/4 cannot be correct.",
+    "confidence": "high",
+    "notes": "At y=1, integrand is x^2 and integral is 1/3, exceeding the claimed 1/4; upper bound x^2+(y-y^2) confirms 1/3 is the true max."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__false__forced_textual__r1_kpuh51d6"
+}

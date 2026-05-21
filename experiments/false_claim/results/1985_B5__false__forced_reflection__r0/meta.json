@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 0,
+  "started_at": 1779284177.796767,
+  "wall_clock_s": 28.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_reflection",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "reflection": "Substituting u=sqrt(t) reduces the integral to 2\u222b\u2080^\u221e e^{-a(u\u00b2+1/u\u00b2)}du. Using u\u00b2+1/u\u00b2 = (u-1/u)\u00b2 + 2 factors out e^{-2a}, and the remaining integral evaluates to (1/2)\u221a(\u03c0/a) via the u\u21941/u symmetry trick with w=u-1/u. The correct value is \u221a(\u03c0/a)\u00b7e^{-2a}; the claim's e^{-a} is wrong by a factor of 2 in the exponent.",
+    "confidence": "high",
+    "notes": "The constant term from (u-1/u)\u00b2+2 contributes -2a to the exponent, not -a \u2014 a well-known Putnam result."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_reflection__r0_5lzbe5gl"
+}

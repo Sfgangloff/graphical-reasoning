@@ -1,0 +1,46 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 0,
+  "started_at": 1779284846.954495,
+  "wall_clock_s": 64.6,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-compute__sympy_solve": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "numeric_verdict": "At c=4/9, Area(A)-Area(B) = 0 with both areas equal to ~0.05157; at c=1/2 difference is +0.0362 and at c=3/10 difference is -0.101, so c=4/9 is exactly the balancing value.",
+    "confidence": "high",
+    "notes": "Symbolic integration confirms equality at c=4/9; the equation Area(A)=Area(B) reduces to x_2 = 2/3 on the curve, giving c = 2(2/3)-3(2/3)^3 = 4/9."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_textual__r0_8o1ma5go"
+}

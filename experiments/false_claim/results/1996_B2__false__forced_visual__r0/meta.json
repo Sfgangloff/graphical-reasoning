@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 0,
+  "started_at": 1779285897.313727,
+  "wall_clock_s": 38.7,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 3,
+  "tool_calls_succeeded": 3,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2)",
+    "viz_verdict": "The plot shows ((2n+1)/e)^((2n+1)/2) lies far above ((2n-1)/e)^((2n-1)/2) for all n\u22651, so the asserted inequality direction is reversed.",
+    "confidence": "high",
+    "notes": "The claim swaps the standard Putnam 1996 B-2 bounds; at n=1 it asserts 1.159 < 1 < 0.607, which is false."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_visual__r0_8_w1dl63"
+}

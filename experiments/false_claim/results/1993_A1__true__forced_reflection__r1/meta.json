@@ -1,0 +1,30 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 1,
+  "started_at": 1779284999.879779,
+  "wall_clock_s": 44.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "reflection": "Setting up Area(A) = Area(B) and combining the integrals leads to c\u00b7x\u2082 \u2212 x\u2082\u00b2 + (3/4)x\u2082\u2074 = 0, i.e. c = x\u2082 \u2212 (3/4)x\u2082\u00b3. Together with c = 2x\u2082 \u2212 3x\u2082\u00b3 (the on-curve condition at x\u2082), this forces x\u2082\u00b2 = 4/9, so x\u2082 = 2/3 and c = 4/3 \u2212 8/9 = 4/9. The value lies below the curve's maximum 4\u221a2/9 \u2248 0.628, so the geometry is valid.",
+    "confidence": "high",
+    "notes": "Direct algebraic derivation reproduces c = 4/9 exactly, matching the standard Putnam 1993 A1 answer."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_reflection__r1_7oedstr2"
+}
