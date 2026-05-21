@@ -45,15 +45,24 @@ problem statement*) thanks to a plot, the log will show it.
 
 The `math-viz` MCP server (and the related `math-compute`,
 `math-search`, `proof-explorer`, etc. servers that are deliberately
-*not* used here) live in a separate repository:
+*not* used here) live in a separate repository, vendored here as a
+git submodule pinned to the exact commit used for these experiments:
 
+> [`external/math-reasoning-tools/`](external/math-reasoning-tools) →
 > [Sfgangloff/math-reasoning-tools](https://github.com/Sfgangloff/math-reasoning-tools)
 
-That repo contains the source for the MCP servers and the setup
-instructions (how to install them, how to wire them into Claude Code's
-MCP configuration). To reproduce the experiments in `pilot/solutions/`,
-clone and set up `math-reasoning-tools` first, then point Claude Code
-at the relevant servers.
+To check out the pinned tool sources alongside this repo:
+
+```
+git clone --recurse-submodules https://github.com/Sfgangloff/graphical-reasoning.git
+# or, if already cloned:
+git submodule update --init --recursive
+```
+
+`external/math-reasoning-tools/README.md` contains setup instructions
+(install, wire into Claude Code's MCP config). To reproduce the
+experiments, initialize the submodule, set up the servers it provides,
+then point Claude Code at the relevant servers.
 
 ## Reading the experiment
 
