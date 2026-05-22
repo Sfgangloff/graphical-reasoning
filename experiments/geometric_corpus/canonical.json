@@ -1,0 +1,68 @@
+{
+  "_doc": "Per-problem metadata for the geometric adversarial corpus. See README.md.",
+  "geom_01": {
+    "title": "Transverse vs tangent intersection of sin(πx) and x²(2−x)",
+    "true_claim":  "On (0, 1) the equation f = g has exactly one solution and the curves *cross transversally* there (f − g changes sign).",
+    "false_claim": "On (0, 1) the equation f = g has exactly one solution and the curves *touch without crossing* there (f − g does not change sign).",
+    "canonical_evidence": "f − g is positive on (0, x*) and negative on (x*, 1) for x* ≈ 0.74; one transverse crossing.",
+    "viz_check": "plot_function with both curves overlaid on [0, 1]; the single transverse crossing is visible.",
+    "sympy_naive_strategy": "sample (f − g) at x ∈ {0, 0.1, ..., 1.0}; ONE sign change observed between x = 0.7 and x = 0.8.",
+    "STATUS": "FAILS sampling-fragile criterion — naive grid catches the transversality. Kept as a worked-example demonstration of the verify.py flow. The user should REPLACE this with a tangency problem where the sign change is below grid resolution (e.g., f(x) = e^{-100(x-0.5)^2} vs f(x) + (x-0.5)^4)."
+  },
+  "geom_02": {
+    "title": "Self-intersection of (cos t, sin 2t)",
+    "true_claim":  "The parametric curve (cos t, sin 2t), t ∈ [0, 2π], has a *self-intersection* at (0, 0).",
+    "false_claim": "The parametric curve (cos t, sin 2t), t ∈ [0, 2π], is simple (no self-intersection).",
+    "canonical_evidence": "At t = π/2 and t = 3π/2 the curve passes through (0, 0). Figure-eight lemniscate-shaped.",
+    "viz_check": "plot_parametric; the crossing at the origin is unmissable.",
+    "sympy_naive_strategy": "sample 50 points and pairwise-distance with tol = 0.05; the crossing at t=π/2, 3π/2 is at exactly the same point but only those two indices realize it, so a naïve dedup misses or flags it as a duplicate sample, not a crossing."
+  },
+  "geom_03": {
+    "title": "Convexity of x⁴ − 2x² + 1 + 0.01·e^(−100(x−0.5)²)",
+    "true_claim":  "f(x) = x⁴ − 2x² + 1 + 0.01·exp(−100(x − 0.5)²) is *not* convex on [−1, 1]; f''(x) takes negative values near x = 0.5.",
+    "false_claim": "f(x) = x⁴ − 2x² + 1 + 0.01·exp(−100(x − 0.5)²) is convex on [−1, 1].",
+    "canonical_evidence": "f''(0.5) ≈ −1.86 (Gaussian bump dominates); convex elsewhere on [−1, 1].",
+    "viz_check": "plot_function of f''(x) on [−1, 1]; the dip below 0 around x=0.5 is sharp and visible.",
+    "sympy_naive_strategy": "sample f''(x) at 11 uniform grid points {−1, −0.8, …, 0.8, 1}; the dip at 0.5 is narrow (~0.1 wide) and the closest grid points (0.4, 0.6) both give f''(x) > 0."
+  },
+  "geom_04": {
+    "title": "Simple-connectedness of disk with high-frequency boundary",
+    "true_claim":  "The region R = {(x,y) : x² + y² ≤ 1 and y ≥ sin(8x)/4} is *not* simply connected (has a hole).",
+    "false_claim": "The region R = {(x,y) : x² + y² ≤ 1 and y ≥ sin(8x)/4} is simply connected.",
+    "canonical_evidence": "The boundary y = sin(8x)/4 oscillates between ±0.25; near the bottom of the disk it creates small disconnected components.",
+    "viz_check": "plot_region or plot_implicit; the island(s) at the bottom of the disk are visible.",
+    "sympy_naive_strategy": "containment checks at a 5×5 grid; the main component is hit but the small islands are not sampled, so no evidence of disconnection."
+  },
+  "geom_05": {
+    "title": "Monotonicity of 1/n + sin(n)/n²",
+    "true_claim":  "a_n = 1/n + sin(n)/n² is *not* monotonically decreasing for n ≥ 1 (there are indices where a_n < a_{n+1}).",
+    "false_claim": "a_n = 1/n + sin(n)/n² is monotonically decreasing for n ≥ 1.",
+    "canonical_evidence": "a_4 ≈ 0.203, a_5 ≈ 0.161, a_6 ≈ 0.159, a_7 ≈ 0.156 — but a_3 ≈ 0.349 < a_2 + sin(2)/4 etc.; explicit calculation shows non-monotonicity around n ∈ {4, 5}.",
+    "viz_check": "plot_function over n ∈ [1, 30]; the wiggle near n=4–6 is visible.",
+    "sympy_naive_strategy": "compute a_n − a_{n+1} at n ∈ {1, 5, 10, 50, 100}; all positive (sampling lands on the smoothed-out region), missing the wiggle."
+  },
+  "geom_06": {
+    "title": "Inequality e^x − x − 1 vs x²/2 + x³/10",
+    "true_claim":  "On [0, 1], the inequality e^x − x − 1 ≥ x²/2 + x³/10 *fails* on a subinterval (the LHS dips below the RHS near x = 0.1).",
+    "false_claim": "On [0, 1], e^x − x − 1 ≥ x²/2 + x³/10.",
+    "canonical_evidence": "Define h(x) = e^x − x − 1 − x²/2 − x³/10; h(0) = 0, h'(0) = 0, h''(0) = 0, h'''(0) = 1 − 6/10 = 0.4 > 0; but the −x³/10 term dominates for small x making h negative on (0, ε). Numerically h(0.1) ≈ −0.000017.",
+    "viz_check": "plot_function of h(x) on [0, 0.2] with shading or zoomed y-range; the dip below 0 is visible.",
+    "sympy_naive_strategy": "`sympy.solve(h(x), x, Interval(0, 1))` with default tolerance returns no real root; the dip is below numerical precision."
+  },
+  "geom_09": {
+    "title": "Differentiability of x·sin(1/x) at 0",
+    "true_claim":  "The function f(x) = x · sin(1/x), extended by f(0) = 0, is *not* differentiable at 0 (the difference quotient oscillates).",
+    "false_claim": "The function f(x) = x · sin(1/x), extended by f(0) = 0, is differentiable at 0 with f'(0) = 0.",
+    "canonical_evidence": "The difference quotient (f(h) − f(0))/h = sin(1/h) oscillates in [−1, 1] as h → 0; no limit.",
+    "viz_check": "plot_function of (f(h) − 0)/h as a function of h on (0, 0.5]; oscillation visible.",
+    "sympy_naive_strategy": "evaluate (f(h) − 0)/h at h ∈ {0.1, 0.01, 0.001, 0.0001}; these all hit near-zero crossings of sin(1/h) and the values look like they're → 0."
+  },
+  "geom_10": {
+    "title": "Intersection structure of z=x²+y² and z=2−x²−y²",
+    "true_claim":  "The surfaces z = x² + y² and z = 2 − x² − y² intersect in a *single circle* (the circle x² + y² = 1 at z = 1).",
+    "false_claim": "The surfaces z = x² + y² and z = 2 − x² − y² intersect in *two disjoint circles*.",
+    "canonical_evidence": "Setting them equal: 2x² + 2y² = 2, i.e. x² + y² = 1, at z = 1. A single circle.",
+    "viz_check": "plot_surface or plot_implicit (3D); the single ring intersection is visible.",
+    "sympy_naive_strategy": "sample the difference z₁ − z₂ at z = 0 and z = 1; sign-change at z=1 is found, giving 'an intersection at z=1' but not its dimension/cardinality."
+  }
+}

@@ -1,0 +1,131 @@
+% AAAI 2027 main-track submission — skeleton.
+% Source-of-truth narrative: paper/visualization-tools-putnam.md
+% Operating plan:             paper/publication_plan.md
+% Pre-registration:           paper/pre_registration.md
+%
+% NOTE: the AAAI 2027 author kit (`aaai27.sty`, `aaai27.bst`) is not
+% yet available at the time of authoring (2026-05-21). When released,
+% drop the files into `aaai-style/` and switch the documentclass /
+% packages below. Until then the article-class fallback lets us draft.
+
+\documentclass[letterpaper]{article}
+% \usepackage{aaai27}   % uncomment when style file is in place
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath, amssymb}
+\usepackage{microtype}
+
+\frenchspacing
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+
+\title{Discovery dominates value: \\
+  why advertised visualization tools go unused by an autonomous LLM
+  agent, and what to do about it}
+
+% Author block — replace with the AAAI author block when submitting.
+\author{
+  Silvere Gangloff
+}
+
+\begin{document}
+\maketitle
+
+% ----------------------------------------------------------------------
+\begin{abstract}
+% Target: 200 words. Lead with the decomposition; instantiate it.
+%
+% Draft (to be tightened):
+We study whether giving an autonomous LLM coding agent access to
+visualization tools changes what it can solve. On a corpus of
+statement-level Lean~4 formalizations of Putnam real-analysis
+problems and a sandboxed harness, an A/B sweep finds that an
+unattended \texttt{--print}-mode agent invokes the visualization tool
+\emph{exactly zero times} across 147 runs, including on the
+integral / asymptotic subset most amenable to a picture. We attribute
+this to a general
+\emph{discovery--value decomposition}: an advertised but optional
+agent tool affects end-task performance by
+$\text{tool\_value} \times P(\text{adopted} \mid \text{prompt, mode})$,
+and in unattended mode the adoption term can be identically zero.
+A forced-loop ablation lifts adoption to $100\%$ without changing
+solve rates; a zero-tool prose-CoT control matches forced-viz on the
+same corpus, showing the test set has no headroom for any tool. An
+adversarial false-claim study finds that required visualization,
+required SymPy evaluation, and required tool-free prose reflection
+catch deliberately mis-stated answers at indistinguishable rates: the
+corrective work is the required verification step, not its modality.
+A constructive remedy --- returning inline content instead of file
+paths --- lifts voluntary adoption by $X\%$. Implications for
+agent-tool evaluation design are discussed.
+\end{abstract}
+
+% ----------------------------------------------------------------------
+\section{Introduction}
+% TODO: 1 page.
+% - Hook (1 par): humans plot first; does an LLM agent?
+% - Negative result (1 par): the answer is "no in autonomous mode."
+% - The decomposition (1 par): tool_value x P(adopted | prompt, mode).
+%   Name it. State it. This is the framing contribution.
+% - Contributions (4 bullets): decomposition; empirical landscape;
+%   constructive recommendation (inline content); methodological
+%   point about CoT-incompetence baselines.
+
+\section{The discovery--value decomposition}
+% Crisp statement of the formula + assumptions. ~0.5 page.
+% Position as a methodological contribution that survives outside the
+% paper's specific empirics.
+
+\section{Setup}
+% Corpus, model, harness, judge, scoring. ~0.75 page.
+% Refer to appendix for full details on Studies 1--5.
+
+\section{Studies 6 \& 7 \& 8: power, design, modality}
+% This is the empirical spine. ~3 pages.
+%
+% 6.1 Scaled adversarial (Study 6): modality equivalence on analytic
+%     corpus at n=24/condition. Result table.
+% 6.2 Inline-content design ablation (Study 7): adoption lift, with
+%     hand-coded grounding analysis. Headline figure.
+% 6.3 Geometric adversarial (Study 8): does picture beat numerics on
+%     a corpus designed to favor pictures? Headline figure.
+
+\section{Discussion}
+% ~0.75 page.
+% - What the decomposition implies for benchmarks.
+% - Why "modality doesn't matter when verification is required" is
+%   the right reading of Studies 6 and 8.
+% - The MCP-tool-design lesson from Study 7.
+
+\section{Threats to validity}
+% ~0.25 page.
+% - Single model (Claude family). Be explicit; cite the existence
+%   case argument from the pre-reg.
+% - LLM judge: cite kappa from human audit in appendix.
+% - N, corpus narrowness.
+
+\section{Related work}
+% ~0.75 page.
+% - ReAct, Toolformer, ToolLLM (tool-use evaluation).
+% - MM-Math, MathVista (mathematical visual reasoning).
+% - GAIA, AgentBench (autonomous-agent benchmarks).
+% - Tool-use eval workshops 2024--2025.
+% - Position contribution: most prior work measures end-task
+%   performance with advertised tools; we expose the adoption
+%   confound.
+
+\section{Conclusion}
+% ~0.25 page.
+% One paragraph restating decomposition + one-line summary of each
+% empirical contribution + the constructive recommendation.
+
+% Bibliography
+% \bibliographystyle{aaai27}     % uncomment with style file
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
