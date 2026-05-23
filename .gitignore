@@ -11,3 +11,12 @@ __pycache__/
 tests.txt
 .DS_Store
 .venv*/
+
+# Claude Code per-machine state. settings.json and hooks/ are
+# committed; only the per-clone runtime files are ignored.
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/ide/
+.claude/cache/
+.claude/paste-cache/
+.claude/history.jsonl

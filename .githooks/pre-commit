@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# Pre-commit guard.
+# Blocks:
+#   - staged files > 5 MB
+#   - staged files matching secret-name patterns
+#   - staged files inside the math-reasoning-tools submodule path
+
+set -eu
+
+RED=$'\033[31m'
+RESET=$'\033[0m'
+err() { printf '%spre-commit:%s %s\n' "$RED" "$RESET" "$*" >&2; }
+
+staged="$(git diff --cached --name-only --diff-filter=AM 2>/dev/null || true)"
+[ -z "$staged" ] && exit 0
+
+# 1. Oversized files.
+oversized="$(
+  printf '%s\n' "$staged" | while IFS= read -r f; do
+    [ -f "$f" ] || continue
+    sz="$(stat -f%z "$f" 2>/dev/null || stat -c%s "$f" 2>/dev/null || echo 0)"
+    if [ "$sz" -gt 5242880 ]; then
+      printf '  %s (%s bytes)\n' "$f" "$sz"
+    fi
+  done
+)"
+if [ -n "$oversized" ]; then
+  err "files larger than 5 MB are not allowed:"
+  printf '%s\n' "$oversized" >&2
+  err "use git lfs, .gitignore, or relocate the file."
+  exit 1
+fi
+
+# 2. Secret-looking filenames. Allow paper/aaai27/references.bib (it
+# matches "credential" via a false positive on bibliography keys).
+secrets="$(
+  printf '%s\n' "$staged" | grep -iE '(^|/)\.env([.-]|$)|(^|/)[^/]*\.key$|(^|/)[^/]*\.pem$|secret|credential|password' \
+    | grep -v '^paper/aaai27/references.bib$' || true
+)"
+if [ -n "$secrets" ]; then
+  err "staged file(s) look like secrets:"
+  printf '%s\n' "$secrets" | sed 's/^/  /' >&2
+  err "remove from staging, or rename if false positive."
+  exit 1
+fi
+
+# 3. Submodule-internal files. The submodule's own .git tracks its
+# files; never commit them into the parent repo's tree.
+submod="$(
+  printf '%s\n' "$staged" | grep '^external/math-reasoning-tools/' || true
+)"
+if [ -n "$submod" ]; then
+  err "do not commit submodule-internal files in the parent repo:"
+  printf '%s\n' "$submod" | sed 's/^/  /' >&2
+  err "those changes belong in the math-reasoning-tools submodule itself."
+  exit 1
+fi
+
+exit 0

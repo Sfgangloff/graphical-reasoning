@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Pre-push guard. Blocks non-fast-forward pushes to main/master
+# (catches --force in practice without parsing flags).
+
+set -eu
+
+RED=$'\033[31m'
+RESET=$'\033[0m'
+err() { printf '%spre-push:%s %s\n' "$RED" "$RESET" "$*" >&2; }
+
+zero=0000000000000000000000000000000000000000
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/main|refs/heads/master)
+      # Branch deletion — block. Force-deleting main is dangerous.
+      if [ "$local_sha" = "$zero" ]; then
+        err "deleting $remote_ref is blocked."
+        exit 1
+      fi
+      # First push of a new branch — allow.
+      if [ "$remote_sha" = "$zero" ]; then
+        continue
+      fi
+      # Non-fast-forward push — block.
+      if ! git merge-base --is-ancestor "$remote_sha" "$local_sha" 2>/dev/null; then
+        err "non-fast-forward push to $remote_ref blocked"
+        err "(would overwrite remote history — almost always a --force)."
+        exit 1
+      fi
+      ;;
+  esac
+done
+
+exit 0
