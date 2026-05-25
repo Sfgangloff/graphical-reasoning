@@ -33,7 +33,7 @@ here.
 | 4 — Recall probes 4a, 4a' (36) | No (exploratory) | Complete, committed |
 | 5 — Adversarial pilot (48) | No (exploratory) | Complete, committed |
 | **6 — Scaled adversarial (96 new)** | **Yes (this doc)** | Not yet run |
-| **7 — Inline-content tool ablation (144)** | **Yes (this doc)** | Not yet run |
+| **7 — Path-only regression on inline `math-viz` (144)** | **Yes (this doc)** | Not yet run |
 | **8 — Geometric adversarial corpus (240)** | **Yes (this doc)** | Not yet run |
 | **HJ — Human judge audit (120 cells)** | **Yes (this doc)** | Not yet run |
 
@@ -67,9 +67,23 @@ Pairwise Fisher's exact (3 pairs) with Bonferroni correction
 hypothesis test is computed. The cell-by-cell grades are computed
 only after all 96 runs are recorded.
 
-### H7a — Inline-content lifts voluntary adoption
+### Study 7 design note (revised 2026-05-23)
 
-**Hypothesis:** In the `optional × inline-content` arm of Study 7,
+The original Study 7 design proposed *adding* an inline-content
+mode to a path-returning `math-viz`. That design is moot: upstream
+`math-viz` already returns inline image content as of commit
+`1622bac` on 2026-05-07, and Studies 2–5 in the long-form paper all
+ran post-switch. Study 7 is therefore reframed as a **path-only
+regression**. We build a thin wrapper around the current `math-viz`
+that strips the inline image content block from each tool result,
+leaving only the filesystem path as text. The baseline arm is the
+unmodified upstream tool (inline image returned); the manipulated
+arm is the wrapped tool (path-only). Hypothesis direction and
+sample size are unchanged from the pre-revision draft.
+
+### H7a — Inline-image return lifts voluntary adoption
+
+**Hypothesis:** In the `optional × inline` arm of Study 7,
 voluntary `math-viz` adoption (fraction of cells with ≥1 successful
 `math-viz` invocation) is ≥ 15 absolute percentage points higher
 than in the `optional × path-only` arm.
@@ -77,26 +91,37 @@ than in the `optional × path-only` arm.
 **Primary outcome:** binary adoption per cell.
 
 **Test:** Paired binomial across the 6 problems
-(`optional × inline-content` vs `optional × path-only` adoption rates
-per problem). Test statistic: one-sided sign test on the per-problem
+(`optional × inline` vs `optional × path-only` adoption rates per
+problem). Test statistic: one-sided sign test on the per-problem
 difference; α = 0.05.
 
 **Decision rule:**
-- *H7a supported* iff sign test reaches p < 0.05 *and* the mean
-  per-problem lift is ≥ 15 absolute points.
+- *H7a supported* iff the one-sided sign test reaches p < 0.05
+  *and* the mean per-problem lift is ≥ 15 absolute points.
 
-### H7b — Inline-content shifts grounding from metadata to image
+### H7b — Inline-image return shifts grounding from metadata to image
 
-**Hypothesis:** Conditional on adoption, agents in the
-inline-content arm reference image features (e.g., shape, curve
-crossing, slope visible, region position) in ≥ 50% of emitted
-verdicts; agents in the path-only arm reference image features in
-≤ 20% of emitted verdicts.
+**Hypothesis:** Conditional on adoption, agents in the inline arm
+reference image features (e.g., shape, curve crossing, slope
+visible, region position) in ≥ 50% of emitted verdicts; agents in
+the path-only arm reference image features in ≤ 20% of emitted
+verdicts.
+
+**Caveat from prior data.** §9.2 of the long-form paper (Studies
+2–5, post-switch, `forced_visual` arm) finds that even with inline
+images delivered automatically, the agent grounds verdicts in the
+plotting tool's *numerical metadata* rather than in image features.
+Those cells were *forced* uses; Study 7 measures *voluntary* uses,
+where the prior probability of image grounding may differ. We
+pre-register the directional hypothesis but report both
+possibilities — *inline lifts grounding* (H7b supported) and
+*neither arm grounds in images* (H7b refuted in an informative
+direction) — as primary findings of the study.
 
 **Primary outcome:** binary "image-feature reference" per verdict,
 hand-coded by the author on 20 random adopted cells per arm (40
-total) using a fixed coding rubric committed alongside the data
-before coding begins.
+total) using the fixed coding rubric below, committed before any
+hand-coding begins.
 
 **Test:** Fisher's exact on the 2 × 2 (arm × {image-feature, no})
 table; α = 0.05.
@@ -104,6 +129,9 @@ table; α = 0.05.
 **Decision rule:**
 - *H7b supported* iff Fisher's exact p < 0.05 *and* the empirical
   proportions match the directional hypothesis.
+- *H7b refuted (informative null)* iff both arms have ≤ 25%
+  image-feature reference rate. This is the §9.2-consistent
+  outcome and is reported as such.
 
 **Coding rubric (committed before coding):**
 - An "image-feature reference" requires the verdict text to invoke
@@ -183,7 +211,12 @@ abstention reported in appendix).
   - Study 6: `experiments/false_claim/run_false_claim.py`
     (re-invoked with `--n-additional 4`)
   - Study 7: `experiments/inline_content/run_inline_content.py`
-    (to be created)
+    (to be created) plus
+    `experiments/inline_content/path_only_wrapper.py` — the thin
+    wrapper that strips inline image content blocks from each
+    `math-viz` tool result before the agent sees it. The baseline
+    arm calls upstream `math-viz` directly; the manipulated arm
+    routes through the wrapper.
   - Study 8: `experiments/geometric_corpus/run_geometric.py`
     (to be created)
 - Corpora:

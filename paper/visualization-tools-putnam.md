@@ -83,10 +83,18 @@ proof, which matters below.
 search, and diagnostics. `math-viz` exposes plotting and diagram
 rendering (`plot_function`, `plot_implicit`, `plot_region`,
 `plot_phase_portrait`, `draw_graph`, …). A crucial implementation
-detail: **`math-viz` tools do not return an image content block. They
-write a PNG to disk and return its filesystem path as text.** To
-consume a plot the agent must take a second, separate step — `Read`
-the returned path. This two-step structure is central to the result.
+detail *through Study 1*: **`math-viz` tools wrote a PNG to disk
+and returned only its filesystem path as text.** To consume a plot
+the agent had to take a second, separate step — `Read` the returned
+path. Upstream `math-viz` was changed on 2026-05-07 (commit
+`1622bac`) so that every plotting tool *also* returns the rendered
+PNG inline as an MCP image content block alongside the path;
+Studies 2–5 all ran after that change. The two-step structure
+remains a load-bearing observation for Study 1 and for the framing
+question of how tools should announce their outputs; §9.2 covers
+what changed for the later studies, and why the headline negative
+finding survives — and arguably strengthens — under inline
+delivery.
 
 ## 3. Experimental setup
 
@@ -486,38 +494,54 @@ without emitting a final JSON. **No cell that emitted a verdict ever
 sided with the false claim** (`WRONG_VERDICT` = 0 across all 48 cells;
 `V_OK_A_X` = 0 also).
 
-### 9.2 The agent never actually looked at the pictures
+### 9.2 The agent had the pictures and still didn't use them
 
 A behavioral footnote that changes how the `forced_visual` row should
-be read: across the 16 `forced_visual` cells (true + false), the
-PNG-read-back rate was **0%**. The prompt explicitly required the loop
-*plot → `Read` the returned PNG → state verdict*, but in every run the
-agent skipped step 2 — it called `math-viz` (2× on average), then
-went directly to the verdict without ever issuing a `Read` on the
-returned PNG path.
+be read. As of upstream commit `1622bac` (2026-05-07), `math-viz`
+returns the rendered PNG **inline as an MCP image content block**
+alongside the filesystem path. Studies 2–5 all ran after that
+switch, so every `math-viz` invocation in `forced_visual` delivered
+the image directly into the agent's tool result — no `Read` second
+step required. The "PNG-read-back rate = 0%" figure that would
+parallel §8.1 therefore measures *compliance with a now-redundant
+prompt step*, not whether the agent ever saw the plot. It did.
 
-Yet the `viz_verdict` text is *grounded*. Sample (1985.B5 false r0):
+What the agent did with the picture, having received it, is the
+finding. Across the 16 `forced_visual` cells (true + false), every
+emitted verdict grounds in the *numerical metadata* the plotting
+tool returns alongside the PNG, not in any visual property of the
+plot. Sample (1985.B5 false r0):
 
 > Shaded integrand for a=1 gives ≈ 0.2399, which matches √π·e^{−2},
 > not the claimed √π·e^{−1} ≈ 0.6522.
 
-The numerical value `0.2399` does not come from the picture; it comes
-from the textual / JSON return of `plot_integrand_with_shading`, which
-(like most `math-viz` tools) returns numerical metadata alongside the
-PNG path. So `forced_visual` in this study reduced, behaviorally, to
-*forced numerical-metadata-via-viz-tool*. The agent did not "see" a
-plot; it parsed numbers from a tool that happened to also write a
-PNG.
+The number `0.2399` is the numerical integral that
+`plot_integrand_with_shading` reports in its textual return; it is
+not read off the image. No verdict in any of the 16 cells invokes
+shape, slope, curvature, a crossing point read by eye, or region
+containment from the figure. Behaviorally, `forced_visual` in this
+study reduced to *forced numerical-metadata-via-viz-tool*. The
+agent had the plot in hand and chose to ratify (or overturn) the
+claim using the tool's numbers instead.
 
-This is the §8.1 path-not-image failure mode reappearing in a slightly
-different shape: even with an explicit prompt requirement to `Read`
-the PNG, the agent declines, because the tool's text return already
-gives it enough to answer. We did not observe this in §8.1 because
-there the harness's worked-example primer and the heavier framing
-("a plot you never `Read` tells you nothing") were enough to elicit
-compliance; here the shorter prompt was not. The print-mode agent's
-default is to use the cheapest information channel that works, and a
-text channel always works.
+This is the §8.1 path-not-image story in a stronger form. In §8.1
+the tool returned only a path and the agent's failure to `Read` it
+was at least consistent with "I never got the image." Here the
+image *was* delivered, automatically, and the verdict still routes
+through the numerical channel. The print-mode agent's default is
+the cheapest information channel that does the job, and a textual
+numeric return always does.
+
+*Note on the §8.1 metric.* The `% PNG read-back` column in §8.1
+measures whether the agent issued a `Read` of the returned PNG
+path. For Study 1 — which ran before the 2026-05-07 upstream
+switch — that metric tracked actual image consumption. For
+Studies 2–5 it tracks compliance with a prompt step that has become
+operationally redundant; the inline image is in the tool result
+already. We retain the metric for continuity with the earlier
+analysis but flag it here as no longer the right proxy for
+*image-feature reasoning*. Studies 7 and 8 in the AAAI 2027
+campaign measure the latter directly.
 
 ### 9.3 What the result says
 
@@ -541,13 +565,16 @@ text channel always works.
    That structural constraint — *check the claim before ratifying it*
    — is what defeats anchoring. The picture, the SymPy check, and the
    pause are *interchangeable* ways to satisfy the constraint.
-4. **The visualization tool's image channel still goes unused.** Even
-   when the prompt explicitly required PNG read-back, the agent used
-   the tool's text return and skipped the image. So *forced
-   visualization* in print mode, prompt-only, is not actually
-   delivering image inspection; it is delivering "you called a viz
-   tool, which happens to return some numbers." The picture is dead
-   even in conditions designed to bring it alive.
+4. **The picture is delivered and ignored.** Studies 2–5 ran with
+   inline-image return, so the PNG lands in the agent's tool result
+   automatically — no `Read` step required. Yet no verdict in any
+   of the 16 `forced_visual` cells invokes a visual property; every
+   verdict grounds in the numerical metadata the tool emits
+   alongside the image. *Forced visualization* in print mode, then,
+   is not delivering image inspection; it is delivering "you called
+   a viz tool, which also returned some numbers, and you used
+   those." The picture is dead even when it is handed directly to
+   the model.
 
 ### 9.4 Net effect on the paper's central claim
 
@@ -643,11 +670,16 @@ adoption failures as capability ceilings.
    `Read`, the agent skipped it and used the viz tool's text return.
 6. Two independent design issues identified along the way are worth
    reporting on their own:
-   - **Path-not-content friction.** `math-viz` returns a path; the
-     agent never self-discovers the `Read` second step (0 / 3
-     spontaneous viz calls were read back). This is a clean MCP-tool-
-     design lesson and is plausibly general to any tool returning
-     references rather than inline content.
+   - **Path-not-content friction (Study 1; superseded mid-campaign).**
+     Through Study 1, `math-viz` returned only a path; the agent
+     never self-discovered the `Read` second step (0 / 3 spontaneous
+     viz calls were read back). Upstream `math-viz` subsequently
+     moved to inline-image return (commit `1622bac`, 2026-05-07);
+     on the post-change studies the picture *is* delivered, and the
+     agent grounds its verdicts in the tool's numerical metadata
+     anyway (§9.2). The MCP-tool-design lesson sharpens: inline
+     return is necessary but not sufficient; the cheapest
+     information channel still wins.
    - **Session shape.** Across 174 unattended print-mode runs,
      `lean-lsp-mcp` received well under one call per run on average;
      the agent defaults to `Bash → lake build` regardless of input

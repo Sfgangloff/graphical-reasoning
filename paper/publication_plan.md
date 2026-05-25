@@ -29,11 +29,13 @@ and what to do about it."* Single contribution split into three legs:
    verification step is *required*; the picture is sufficient but not
    necessary.
 3. **A constructive design recommendation** (positive contribution).
-   The `math-viz` path-returning interface systematically suppresses
-   voluntary adoption. Returning inline-content lifts adoption from
-   ~10% to (target: ≥40%) without changing the underlying model
-   (Study 7, this campaign). This is a generalizable MCP-tool-design
-   lesson.
+   The path-returning MCP interface systematically suppresses
+   voluntary adoption: a *path-only regression* on the now-inline
+   `math-viz` (Study 7, this campaign) is predicted to *drop*
+   adoption by ≥ 15 absolute points relative to the upstream
+   inline-image return. Equivalently, inline image return lifts
+   voluntary adoption without changing the underlying model. This
+   is a generalizable MCP-tool-design lesson.
 
 **Single-model scoping.** The paper is honest from the abstract
 forward that all results are with the Claude family in `--print` mode.
@@ -51,7 +53,7 @@ against background-running agent rollouts.
 |--:|---|---|
 | 1 | 05-21 → 05-28 | Pre-reg on OSF (§4). Warm-up 20-cell batch on `math-viz` to confirm subscription rate-limit headroom. Start geometric corpus construction (§6). Begin LaTeX skeleton on AAAI template. |
 | 2 | 05-29 → 06-04 | Study 6 (scale Study 5 to n=6/cell) launches in background. 96 new cells. Continue corpus construction. |
-| 3 | 06-05 → 06-11 | Study 6 wraps. **Decision gate 1.** Begin Study 7 prep: fork math-reasoning-tools, add `--inline-content` mode. |
+| 3 | 06-05 → 06-11 | Study 6 wraps. **Decision gate 1.** Begin Study 7 prep: build the path-only wrapper around upstream `math-viz` (`experiments/inline_content/path_only_wrapper.py`). |
 | 4 | 06-12 → 06-18 | Study 7 (inline-content ablation) launches. 144 cells. Geometric corpus finalized — 8 problems, 16 excerpts. |
 | 5 | 06-19 → 06-25 | Study 7 finishes. **Decision gate 2.** Study 8 (geometric adversarial) launches. 240 cells. |
 | 6 | 06-26 → 07-02 | Study 8 background-runs. Begin judge-audit sampling (§5). |
@@ -88,17 +90,24 @@ Re-run Study 5 with n=6 runs per cell (was n=2). New cells:
 Driver: `experiments/false_claim/run_false_claim.py` — already
 configured. Update `auto_resume_state.json` to plan the extra 96.
 
-### Study 7 — Inline-content tool design ablation (Weeks 3–5)
-Fork `external/math-reasoning-tools`, modify `math-viz` so that each
-plot tool *also* returns a `content` block containing the rendered PNG
-as base64. Add a flag to the server config to toggle path-only vs
-path+inline. New harness condition: 2×2 = {forced, optional} ×
-{path-only, inline-content}. Run on the 6 Study-3 problems × 4
-conditions × 6 runs = **144 cells**. Primary outcome: voluntary
-adoption rate. Secondary outcome: in the inline-content arms, does
-the agent's verdict text reference *image features* (curve crossings,
-shape, slope visible) vs *metadata-only* features (numerical sample
-values)? Qualitative coding on 20 transcripts.
+### Study 7 — Path-only regression on the inline tool (Weeks 3–5)
+Upstream `math-viz` already returns inline image content (commit
+`1622bac`, 2026-05-07); Studies 2–5 ran post-switch. Study 7 is
+therefore a *regression* in the opposite direction: build a thin
+wrapper that strips the inline image content block from each
+`math-viz` tool result, leaving only the filesystem path as text.
+Run a 2×2 = {forced, optional} × {inline (upstream), path-only
+(wrapped)} on the 6 Study-3 problems × 4 conditions × 6 runs =
+**144 cells**. Primary outcome: voluntary adoption rate
+(`optional × inline` vs `optional × path-only`). Secondary outcome:
+conditional on adoption, does the verdict text reference *image
+features* (curve crossings, shape, slope visible) vs *metadata-only*
+features (numerical sample values)? Qualitative coding on 20
+transcripts per arm. **Plausibility caveat:** §9.2 of the long-form
+paper already finds metadata-only grounding in the `forced_visual`
+arm despite inline images; H7b therefore has a non-trivial null
+hypothesis. See `paper/pre_registration.md` for the H7a/H7b
+pre-registration.
 
 ### Study 8 — Geometric adversarial corpus (Weeks 5–7)
 Run the three-arm forced ablation (`forced_visual` / `forced_textual`
@@ -348,7 +357,7 @@ Redesign.
 | Risk | Likelihood | Mitigation |
 |---|---|---|
 | Rate limits hit on subscription during Study 8 | medium | Stagger runs across days; harness's auto_resume already handles partial completion. |
-| `math-viz` fork to add inline-content turns out non-trivial | medium | Timebox to 3 days. If it fails, descope Study 7 to a side-finding ("we tried this and it broke the harness in interesting ways") and lean on the methodological-decomposition contribution. |
+| Path-only wrapper around `math-viz` is harder to keep faithful than expected (e.g. removing the inline block silently corrupts other content) | low | Timebox to 2 days. The wrapper only has to strip one MCP content block type from each tool result; if it proves fragile, fall back to a pinned older `math-viz` commit (pre-`1622bac`) as the path-only arm and document the version difference. |
 | Geometric corpus turns out *not* picture-decisive (SymPy catches all of them) | medium | This is a real failure mode. Acceptance criterion above forces detection early. If it happens, the paper's positive viz result evaporates — pivot Section 5 to "even on a corpus designed to favor pictures, modality doesn't matter" which is still publishable but different. |
 | Judge audit shows κ < 0.5 on a study | low | Pre-budget Week 8 for the 3-judge majority re-grade fallback. |
 | Decision-gate result reverses the paper's framing | medium | Each gate has a pre-specified "if not, then…" pivot. Don't defer; rewrite the affected section the same week. |
