@@ -31,28 +31,33 @@
     "verify_status": "PASS (verified 2026-05-23 by verify_geom_03)"
   },
   "geom_04": {
-    "title": "Simple-connectedness of disk with high-frequency boundary",
-    "true_claim":  "The region R = {(x,y) : x² + y² ≤ 1 and y ≥ sin(8x)/4} is *not* simply connected (has a hole).",
-    "false_claim": "The region R = {(x,y) : x² + y² ≤ 1 and y ≥ sin(8x)/4} is simply connected.",
-    "canonical_evidence": "The boundary y = sin(8x)/4 oscillates between ±0.25; near the bottom of the disk it creates small disconnected components.",
-    "viz_check": "plot_region or plot_implicit; the island(s) at the bottom of the disk are visible.",
-    "sympy_naive_strategy": "containment checks at a 5×5 grid; the main component is hit but the small islands are not sampled, so no evidence of disconnection."
+    "title": "Simple-connectedness of unit disk with a small off-grid circular hole",
+    "true_claim":  "R = {(x,y) : x² + y² ≤ 1 AND (x − 0.27)² + (y − 0.13)² ≥ 0.05²} is NOT simply connected (loops around the hole cannot be contracted).",
+    "false_claim": "R is simply connected.",
+    "canonical_evidence": "R is the unit disk with a small disk of radius 0.05 centered at (0.27, 0.13) removed; topologically an annulus, hence π₁(R) = ℤ, not trivial.",
+    "viz_check": "plot_region or plot_implicit on R; the hole is clearly visible.",
+    "sympy_naive_strategy": "containment check at a 5×5 uniform grid on [−1,1]². The hole's nearest grid point ((0.5, 0)) is at distance ~0.265 from the hole center, while the hole radius is only 0.05. None of the 25 grid points lands in the hole, so a naive 'is every sample in R?' check ratifies the FALSE 'simply connected' claim.",
+    "sampling_fragile_against": "uniform-grid containment checks. To catch the hole, the agent would need to know to densify sampling near suspected hole regions — which it cannot identify without first looking at the picture.",
+    "verify_status": "PASS (verified 2026-05-25 by verify_geom_04)"
   },
   "geom_05": {
-    "title": "Monotonicity of 1/n + sin(n)/n²",
-    "true_claim":  "a_n = 1/n + sin(n)/n² is *not* monotonically decreasing for n ≥ 1 (there are indices where a_n < a_{n+1}).",
-    "false_claim": "a_n = 1/n + sin(n)/n² is monotonically decreasing for n ≥ 1.",
-    "canonical_evidence": "a_4 ≈ 0.203, a_5 ≈ 0.161, a_6 ≈ 0.159, a_7 ≈ 0.156 — but a_3 ≈ 0.349 < a_2 + sin(2)/4 etc.; explicit calculation shows non-monotonicity around n ∈ {4, 5}.",
-    "viz_check": "plot_function over n ∈ [1, 30]; the wiggle near n=4–6 is visible.",
-    "sympy_naive_strategy": "compute a_n − a_{n+1} at n ∈ {1, 5, 10, 50, 100}; all positive (sampling lands on the smoothed-out region), missing the wiggle."
+    "title": "Monotonicity of a sequence (DRAFT — original canonical was algebraically wrong)",
+    "true_claim":  "TBD",
+    "false_claim": "TBD",
+    "canonical_evidence": "The draft sequence a_n = 1/n + sin(n)/n² was checked numerically (verify_geom_05 fragment): it IS monotone decreasing for n ∈ [1, 200], so the original 'not monotone' claim is false. Need a redesigned sequence whose non-monotonicity is real but only at indices a naive sparse sample misses (e.g. a smooth-decay-plus-Gaussian-bump at n=50).",
+    "viz_check": "TBD",
+    "sympy_naive_strategy": "TBD",
+    "verify_status": "TODO — redesign needed"
   },
   "geom_06": {
-    "title": "Inequality e^x − x − 1 vs x²/2 + x³/10",
-    "true_claim":  "On [0, 1], the inequality e^x − x − 1 ≥ x²/2 + x³/10 *fails* on a subinterval (the LHS dips below the RHS near x = 0.1).",
-    "false_claim": "On [0, 1], e^x − x − 1 ≥ x²/2 + x³/10.",
-    "canonical_evidence": "Define h(x) = e^x − x − 1 − x²/2 − x³/10; h(0) = 0, h'(0) = 0, h''(0) = 0, h'''(0) = 1 − 6/10 = 0.4 > 0; but the −x³/10 term dominates for small x making h negative on (0, ε). Numerically h(0.1) ≈ −0.000017.",
-    "viz_check": "plot_function of h(x) on [0, 0.2] with shading or zoomed y-range; the dip below 0 is visible.",
-    "sympy_naive_strategy": "`sympy.solve(h(x), x, Interval(0, 1))` with default tolerance returns no real root; the dip is below numerical precision."
+    "title": "Inequality h(x) ≥ 0 on [0,1] with a narrow negative dip near x = 0.43",
+    "true_claim":  "h(x) = (e^x − 1 − x − x²/2) − (2/100)·exp(−10000(x − 0.43)²) takes a negative value on [0, 1]; specifically h(0.43) ≈ −0.00519.",
+    "false_claim": "h(x) ≥ 0 for every x ∈ [0, 1].",
+    "canonical_evidence": "The smooth part p(x) = e^x − 1 − x − x²/2 = x³/6 + x⁴/24 + … is strictly positive on (0, 1] with p(0.43) ≈ 0.01451. The Gaussian subtracts 0.02 at x = 0.43, dragging h(0.43) down to ≈ −0.00549. The dip has half-width 1/√10000 = 0.01, much narrower than the 11-pt grid spacing 0.1, and the center 0.43 is off-grid.",
+    "viz_check": "plot_function of h(x) on [0, 1] with a zoom panel near x ∈ [0.40, 0.46]; the sharp negative spike is unmissable.",
+    "sympy_naive_strategy": "sample h(x) on the 11-pt grid {0, 0.1, ..., 1.0}: all values ≥ −1e−7 (the dip is missed entirely; min on grid ≈ 0 at x = 0). Naive concludes 'h ≥ 0 everywhere on the grid' and ratifies the FALSE claim.",
+    "sampling_fragile_against": "both uniform-grid sampling AND sympy.solve(h(x), x) — the exp(−10000·(x − 0.43)²) term is transcendental, so symbolic root-finding produces no closed-form roots either.",
+    "verify_status": "PASS (verified 2026-05-25 by verify_geom_06)"
   },
   "geom_09": {
     "title": "Differentiability of x·sin(1/x) at 0",

@@ -85,25 +85,44 @@ transversally} (i.e.\ one passes from below to above the other).
 The *only* difference between `true` and `false` variants is the
 structural-claim sentence. Keep the setup identical.
 
-## Status (2026-05-23)
+## Status (2026-05-25)
 
-Three problems are designed and verified end-to-end:
+Five problems are designed and verified end-to-end:
 
 | ID | Type | verify_status |
 |---|---|---|
 | `geom_01` | Tangent touch of two parabolas at off-grid point | PASS |
 | `geom_02` | Self-intersection of (cos t, sin 2t) | PASS |
 | `geom_03` | Convexity violated by narrow Gaussian bump | PASS |
+| `geom_04` | Unit disk minus a small off-grid circular hole | PASS |
+| `geom_06` | Inequality h(x) ≥ 0 broken by narrow off-grid dip | PASS |
 
 `verify.py --problem <id>` for each of those runs the picture step
 (saves a PNG to `verify_plots/` for human inspection) and the
-sampling-fragile step (asserts the naive grid strategy ratifies the
-FALSE claim).
+sampling-fragile step (asserts the naive grid / containment strategy
+ratifies the FALSE claim).
 
-Five problems remain (`geom_04`, `geom_05`, `geom_06`, `geom_09`,
-`geom_10`): `canonical.json` has draft entries; `excerpts/` and
-`verify.py` are TODOs. Follow the `geom_01`–`geom_03` pattern when
-filling them in.
+Three problems remain — each requires a per-problem redesign:
+
+- `geom_05`: original sequence `a_n = 1/n + sin(n)/n²` is in fact
+  monotone decreasing for n ∈ [1, 200] (verified numerically); the
+  draft canonical was algebraically wrong. A working replacement
+  needs a sequence whose non-monotonicity is real but at indices a
+  naive sparse sample misses (e.g. `1/n + 0.033·exp(−(n−50)²/9)`,
+  bump-around-n=50 — works but feels contrived). Drop or redesign.
+- `geom_09`: differentiability of `x sin(1/x)` at 0. The natural
+  naive sample `h ∈ {0.1, 0.01, 0.001, 0.0001}` returns
+  `sin(1/h) ∈ {−0.544, −0.506, 0.827, −0.306}` — not approaching
+  zero, so naive *does* catch the non-differentiability. Not
+  inherently sampling-fragile; needs reframing.
+- `geom_10`: surface intersection cardinality. A 3D picture-decisive
+  problem; needs 3D visualization plumbing and a sampling-fragile
+  variant for `forced_textual`.
+
+Pre-registered N for Study 8 was 8 problems × 30 cells = 240; with
+5 problems it would be 5 × 30 = 150 cells. If the remaining three
+cannot be made picture-decisive AND sampling-fragile, the
+pre-registration's H8 sample size needs revision before Study 8 runs.
 
 ## Time budget
 
