@@ -85,23 +85,25 @@ transversally} (i.e.\ one passes from below to above the other).
 The *only* difference between `true` and `false` variants is the
 structural-claim sentence. Keep the setup identical.
 
-## Note on the shipped `geom_01` worked example
+## Status (2026-05-23)
 
-`geom_01` ships as a *deliberate failure* of the sampling-fragile
-criterion: `sin(πx)` and `x²(2-x)` cross transversally on (0, 1),
-and naïve 11-point grid sampling catches that crossing easily.
-`canonical.json` flags it with `STATUS: FAILS sampling-fragile`,
-and `verify.py --problem geom_01` reports the failure explicitly.
+Three problems are designed and verified end-to-end:
 
-This is intentional — it shows you both (a) the file format and
-(b) the verify-flow detecting a bad problem. Your first task in
-the corpus construction is to *replace* `geom_01` with a real
-tangency: for example, `f(x) = e^{-100(x-0.5)^2}` versus
-`f(x) + (x-0.5)^4`. They touch at x=0.5 and the (x-0.5)^4 term is
-below 1e-4 on the 11-point grid, so naïve sampling sees no
-distinguishable difference.
+| ID | Type | verify_status |
+|---|---|---|
+| `geom_01` | Tangent touch of two parabolas at off-grid point | PASS |
+| `geom_02` | Self-intersection of (cos t, sin 2t) | PASS |
+| `geom_03` | Convexity violated by narrow Gaussian bump | PASS |
 
-Then build problems 02 through 10 following the same protocol.
+`verify.py --problem <id>` for each of those runs the picture step
+(saves a PNG to `verify_plots/` for human inspection) and the
+sampling-fragile step (asserts the naive grid strategy ratifies the
+FALSE claim).
+
+Five problems remain (`geom_04`, `geom_05`, `geom_06`, `geom_09`,
+`geom_10`): `canonical.json` has draft entries; `excerpts/` and
+`verify.py` are TODOs. Follow the `geom_01`–`geom_03` pattern when
+filling them in.
 
 ## Time budget
 

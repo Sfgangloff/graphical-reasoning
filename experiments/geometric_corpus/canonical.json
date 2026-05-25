@@ -1,29 +1,34 @@
 {
   "_doc": "Per-problem metadata for the geometric adversarial corpus. See README.md.",
   "geom_01": {
-    "title": "Transverse vs tangent intersection of sin(πx) and x²(2−x)",
-    "true_claim":  "On (0, 1) the equation f = g has exactly one solution and the curves *cross transversally* there (f − g changes sign).",
-    "false_claim": "On (0, 1) the equation f = g has exactly one solution and the curves *touch without crossing* there (f − g does not change sign).",
-    "canonical_evidence": "f − g is positive on (0, x*) and negative on (x*, 1) for x* ≈ 0.74; one transverse crossing.",
-    "viz_check": "plot_function with both curves overlaid on [0, 1]; the single transverse crossing is visible.",
-    "sympy_naive_strategy": "sample (f − g) at x ∈ {0, 0.1, ..., 1.0}; ONE sign change observed between x = 0.7 and x = 0.8.",
-    "STATUS": "FAILS sampling-fragile criterion — naive grid catches the transversality. Kept as a worked-example demonstration of the verify.py flow. The user should REPLACE this with a tangency problem where the sign change is below grid resolution (e.g., f(x) = e^{-100(x-0.5)^2} vs f(x) + (x-0.5)^4)."
+    "title": "Tangent touch of f = x² + 1/2 and g = f − 2(x − 0.43)² on [0, 1]",
+    "true_claim":  "f(x) ≥ g(x) for every x ∈ [0, 1], with equality at exactly one point in (0, 1).",
+    "false_claim": "f(x) > g(x) strictly for every x ∈ [0, 1].",
+    "canonical_evidence": "f − g = 2(x − 0.43)² is a perfect square with a double zero at x = 0.43 (the off-grid tangent touch point) and is strictly positive everywhere else.",
+    "viz_check": "plot_function with both curves on [0, 1]; the tangent touch at x = 0.43 is visible as the curves converging to a single contact point.",
+    "sympy_naive_strategy": "sample (f − g) at x ∈ {0.0, 0.1, ..., 1.0}; minimum value is 1.8e-3 at x = 0.4, all samples strictly positive and above the typical numerical tolerance 1e-3 — the naive grid sees 'f > g strictly' and ratifies the FALSE claim.",
+    "sampling_fragile_against": "uniform 11-point grid sample of (f − g). NOT sympy.solve — symbolic factorization would catch the double root at 0.43 instantly. The realistic naive forced_textual check the agent runs is sampling, not symbolic root-finding.",
+    "verify_status": "PASS (verified 2026-05-23 by verify_geom_01)"
   },
   "geom_02": {
-    "title": "Self-intersection of (cos t, sin 2t)",
-    "true_claim":  "The parametric curve (cos t, sin 2t), t ∈ [0, 2π], has a *self-intersection* at (0, 0).",
-    "false_claim": "The parametric curve (cos t, sin 2t), t ∈ [0, 2π], is simple (no self-intersection).",
-    "canonical_evidence": "At t = π/2 and t = 3π/2 the curve passes through (0, 0). Figure-eight lemniscate-shaped.",
-    "viz_check": "plot_parametric; the crossing at the origin is unmissable.",
-    "sympy_naive_strategy": "sample 50 points and pairwise-distance with tol = 0.05; the crossing at t=π/2, 3π/2 is at exactly the same point but only those two indices realize it, so a naïve dedup misses or flags it as a duplicate sample, not a crossing."
+    "title": "Self-intersection of γ(t) = (cos t, sin 2t) on [0, 2π]",
+    "true_claim":  "The curve γ has a self-intersection: there exist t₁ ≠ t₂ in [0, 2π) with γ(t₁) = γ(t₂).",
+    "false_claim": "The curve γ is simple: γ(t₁) ≠ γ(t₂) for all t₁ ≠ t₂ in [0, 2π).",
+    "canonical_evidence": "γ(π/2) = γ(3π/2) = (0, 0). Lemniscate-of-Gerono / figure-eight shape with the self-intersection at the origin.",
+    "viz_check": "plot_parametric on t ∈ [0, 2π]; the figure-eight crossing at the origin is unmissable.",
+    "sympy_naive_strategy": "sample N=37 points uniformly with an irrational offset (sqrt(2)/200) and check for pairwise distances < 0.05 between non-adjacent samples. Odd prime N kills the spurious 'antipodal' pairs that even N would generate (γ has t↔t+π symmetry on the x-coordinate). With N=37 the naive check finds ZERO near-pairs and ratifies the FALSE 'simple curve' claim.",
+    "sampling_fragile_against": "pairwise-distance sampling strategies that the agent would naturally try when asked to numerically check for self-intersection.",
+    "verify_status": "PASS (verified 2026-05-23 by verify_geom_02)"
   },
   "geom_03": {
-    "title": "Convexity of x⁴ − 2x² + 1 + 0.01·e^(−100(x−0.5)²)",
-    "true_claim":  "f(x) = x⁴ − 2x² + 1 + 0.01·exp(−100(x − 0.5)²) is *not* convex on [−1, 1]; f''(x) takes negative values near x = 0.5.",
-    "false_claim": "f(x) = x⁴ − 2x² + 1 + 0.01·exp(−100(x − 0.5)²) is convex on [−1, 1].",
-    "canonical_evidence": "f''(0.5) ≈ −1.86 (Gaussian bump dominates); convex elsewhere on [−1, 1].",
-    "viz_check": "plot_function of f''(x) on [−1, 1]; the dip below 0 around x=0.5 is sharp and visible.",
-    "sympy_naive_strategy": "sample f''(x) at 11 uniform grid points {−1, −0.8, …, 0.8, 1}; the dip at 0.5 is narrow (~0.1 wide) and the closest grid points (0.4, 0.6) both give f''(x) > 0."
+    "title": "Convexity of f(x) = x² + (1/100)·exp(−500(x − 0.43)²) on [−1, 1]",
+    "true_claim":  "f is NOT convex on [−1, 1]: there exists x₀ with f''(x₀) < 0.",
+    "false_claim": "f is convex on [−1, 1]: f''(x) ≥ 0 for every x ∈ [−1, 1].",
+    "canonical_evidence": "The base x² has f'' = 2 > 0 (strictly convex). The narrow Gaussian bump of width ~1/√500 ≈ 0.045 centered at x = 0.43 contributes a large negative second-derivative term locally; f''(0.43) ≈ −8 (sharp negative spike) while f''(x) > 0 outside a ±0.05 window of 0.43.",
+    "viz_check": "plot_function of f''(x) on [−1, 1]; the sharp negative spike near x = 0.43 is unmissable.",
+    "sympy_naive_strategy": "sample f''(x) at 11 uniform grid points {−1, −0.8, …, 0.8, 1}. The bump center 0.43 falls between grid points 0.4 and 0.6; the bump half-width (~0.045) is much smaller than the grid spacing (0.2). All 11 grid samples give f''(x) ≥ 1.36, ratifying the FALSE 'convex' claim.",
+    "sampling_fragile_against": "uniform-grid sampling of f''. Sympy.solve for f''=0 would find the negative-f'' region symbolically; the agent's naive textual check is grid-based, not symbolic.",
+    "verify_status": "PASS (verified 2026-05-23 by verify_geom_03)"
   },
   "geom_04": {
     "title": "Simple-connectedness of disk with high-frequency boundary",
