@@ -59,9 +59,12 @@ adversarial false-claim study finds that required visualization,
 required SymPy evaluation, and required tool-free prose reflection
 catch deliberately mis-stated answers at indistinguishable rates: the
 corrective work is the required verification step, not its modality.
-A constructive remedy --- returning inline content instead of file
-paths --- lifts voluntary adoption by $X\%$. Implications for
-agent-tool evaluation design are discussed.
+A path-only-regression study --- where a wrapper strips the inline
+image content that upstream \texttt{math-viz} returns, leaving only
+a file path --- predicts a $\geq 15$ percentage-point \emph{drop} in
+voluntary adoption, isolating the inline-content channel as the
+adoption-relevant design choice. Implications for agent-tool
+evaluation design are discussed.
 \end{abstract}
 
 % ----------------------------------------------------------------------
@@ -80,18 +83,55 @@ agent-tool evaluation design are discussed.
 % Position as a methodological contribution that survives outside the
 % paper's specific empirics.
 
+For an advertised but \emph{optional} agent tool $T$ exposed to a
+model $M$ under prompt $\rho$ and mode $\mu$ (interactive, autonomous
+\texttt{--print}, batch), the measurable change in end-task
+performance $\Delta_{T}$ on a held-out evaluation set $\mathcal{E}$
+decomposes multiplicatively:
+\begin{equation}
+\label{eq:dv}
+\Delta_{T}(M, \rho, \mu, \mathcal{E})
+\;=\;
+\underbrace{V_{T}(M, \mathcal{E})}_{\text{tool value}}
+\;\times\;
+\underbrace{P\!\left(T\ \text{adopted}\ \mid\ M, \rho, \mu\right)}_{\text{adoption}}.
+\end{equation}
+The adoption term is bounded by the tool surface the prompt
+\emph{requires} the model to traverse, not the tool surface the prompt
+\emph{advertises}. In unattended \texttt{--print} mode without a
+required traversal, adoption can be identically zero, in which case
+$V_{T}$ is unmeasurable from end-task metrics on $\mathcal{E}$
+regardless of its true value. The discovery--value decomposition
+makes this confound explicit and motivates the experimental designs
+that follow: each study isolates one factor of
+Equation~\ref{eq:dv}.
+
 \section{Setup}
 % Corpus, model, harness, judge, scoring. ~0.75 page.
 % Refer to appendix for full details on Studies 1--5.
 
-\section{Studies 6 \& 7 \& 8: power, design, modality}
+\section{Preliminary observations (Studies 1--5)}
+% ~0.5 page. Compressed pointer to the long-form draft.
+% - Study 1 (A/B sweep, 120 attempts): zero math-viz invocations.
+% - Study 2 (input framing, 27): framing doesn't move adoption.
+% - Study 3 (forced loop, 54): adoption forced to 100%; solve rates
+%   unchanged.
+% - Study 4 (zero-tool CoT, 36): prose CoT alone matches forced-viz.
+% - Study 5 (adversarial pilot, 48): modality equivalence on
+%   deliberately-false analytic claims.
+% Refer to appendix for full numbers; this section sets up Studies
+% 6/7/8 as the principal contributions.
+
+\section{Studies 6, 7, 8: power, design, modality}
 % This is the empirical spine. ~3 pages.
 %
-% 6.1 Scaled adversarial (Study 6): modality equivalence on analytic
+% 4.1 Scaled adversarial (Study 6): modality equivalence on analytic
 %     corpus at n=24/condition. Result table.
-% 6.2 Inline-content design ablation (Study 7): adoption lift, with
-%     hand-coded grounding analysis. Headline figure.
-% 6.3 Geometric adversarial (Study 8): does picture beat numerics on
+% 4.2 Path-only regression on the inline math-viz (Study 7):
+%     stripping the inline image content block reduces voluntary
+%     adoption; hand-coded grounding analysis on adopted cells.
+%     Headline figure.
+% 4.3 Geometric adversarial (Study 8): does picture beat numerics on
 %     a corpus designed to favor pictures? Headline figure.
 
 \section{Discussion}
