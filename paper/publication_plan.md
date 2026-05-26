@@ -51,7 +51,7 @@ against background-running agent rollouts.
 
 | Wk | Date range | What's happening |
 |--:|---|---|
-| 1 | 05-21 → 05-28 | Pre-reg on OSF (§4). Warm-up 20-cell batch on `math-viz` to confirm subscription rate-limit headroom. Start geometric corpus construction (§6). Begin LaTeX skeleton on AAAI template. |
+| 1 | 05-21 → 05-28 | Lock in pre-reg via repo commit before any Study 6 cell (§4). Warm-up 20-cell batch on `math-viz` to confirm subscription rate-limit headroom. Start geometric corpus construction (§6). Begin LaTeX skeleton on AAAI template. |
 | 2 | 05-29 → 06-04 | Study 6 (scale Study 5 to n=6/cell) launches in background. 96 new cells. Continue corpus construction. |
 | 3 | 06-05 → 06-11 | Study 6 wraps. **Decision gate 1.** Begin Study 7 prep: build the path-only wrapper around upstream `math-viz` (`experiments/inline_content/path_only_wrapper.py`). |
 | 4 | 06-12 → 06-18 | Study 7 (inline-content ablation) launches. 144 cells. Geometric corpus finalized — 8 problems, 16 excerpts. |
@@ -116,8 +116,11 @@ Run the three-arm forced ablation (`forced_visual` / `forced_textual`
 
 ## 4. Pre-registration (Week 1)
 
-Before any new data is run, post a 2-page pre-registration document on
-OSF (osf.io, free). Include:
+Before any new data is run, commit a 2-page pre-registration document
+to this repo. The git commit timestamp is the evidence trail. (We
+considered a third-party timestamp via OSF; decided the marginal
+strength is not worth the friction for this paper. See
+`paper/pre_registration.md` §7 for the rationale.) Include:
 
 - The exact hypotheses for Studies 6, 7, 8 in declarative form.
 - Primary outcome metric + statistical test for each.
@@ -150,9 +153,10 @@ Template to copy:
 > false claims at a strictly higher rate than `forced_textual`
 > (one-sided, α = 0.05). Test: paired binomial across the 8 problems.
 
-Commit the pre-reg as `paper/pre_registration.md` in this repo *and*
-upload to OSF on the same day. The OSF timestamp is the defensible
-evidence.
+Commit the pre-reg as `paper/pre_registration.md` in this repo
+*before* the first Study-6 cell is run. The git commit timestamp on
+that file is the defensible evidence: `git log
+paper/pre_registration.md` is one command for any reviewer.
 
 ## 5. Judge audit protocol — your 8 hours of hand-grading
 

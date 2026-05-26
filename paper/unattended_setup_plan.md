@@ -414,7 +414,14 @@ While drafting this setup we found two items that need attention
    strips the inline `Image` block from the tool result, leaving
    only the path; compare against the current inline behavior. The
    pre-registration in `paper/pre_registration.md` needs to be
-   revised before it is posted to OSF.
+   revised before it is locked in via the repo's git history.
 
 These two items belong in the next iteration of the publication
 plan, after the unattended setup is in place.
+
+**Update 2026-05-25.** Both items are now resolved. The
+inline-images correction landed in commit `1cfc1f2`; the Study 7
+redesign landed in the same commit. A third item was decided on the
+same day: third-party timestamping via OSF was considered and
+declined; the in-repo git history is the evidence trail (see
+`paper/pre_registration.md` §7).

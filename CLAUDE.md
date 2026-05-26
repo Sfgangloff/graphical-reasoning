@@ -81,17 +81,16 @@ no-ops on other platforms).
    negative result is unaffected (actually strengthened). Full
    diagnosis: `paper/unattended_setup_plan.md` §9.
 
-2. **Study 7 redesign.** The proposed "inline-content fork" is moot
-   — upstream already returns inline content. Study 7 must be
-   redesigned as a *path-only regression* (strip the inline image
-   block, leave only the path; compare against current inline
-   behavior). The pre-registration needs revision before OSF upload.
+2. **Study 7 redesign — RESOLVED 2026-05-23.** The "inline-content
+   fork" was moot; Study 7 has been reframed as a path-only regression
+   in `paper/pre_registration.md` and the publication plan.
 
 ## Useful files
 
 - `paper/publication_plan.md` — the 13-week AAAI 2027 plan.
 - `paper/pre_registration.md` — Studies 6/7/8 + judge audit
-  hypotheses (revise per pending corrections before OSF upload).
+  hypotheses; in-repo git history is the timestamping evidence trail
+  (no third-party registration; see §7 of that file for rationale).
 - `paper/unattended_setup_plan.md` — the agent-safety plan and the
   back-of-mind items.
 - `experiments/judge_audit/README.md` — protocol for the 8-hour

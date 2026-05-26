@@ -6,7 +6,15 @@
 **Target venue:** AAAI 2027 main track.
 **Authoritative working document:** `paper/publication_plan.md`.
 
-**Posted to OSF on:** _(fill in OSF URL + timestamp after upload)_
+**Evidence trail:** this file's git history. The commit that first
+introduced each hypothesis (`paper/pre_registration.md` was created at
+commit `5eb78a4`, 2026-05-21, and last substantively revised at
+commit `1cfc1f2`, 2026-05-23 — both before Study 6 data was
+collected) is the timestamp that defeats post-hoc-framing concerns.
+This is a weaker guarantee than a third-party timestamping service
+(OSF, arXiv): the author controls the git history. The author
+commits to *not rewriting* commits that touch this file once data
+collection for the corresponding study has begun.
 
 ---
 
@@ -230,13 +238,21 @@ abstention reported in appendix).
 - Coding rubric for H7b: `experiments/inline_content/coding_rubric.md`
   (committed before any hand-coding).
 
-## 7. OSF upload checklist
+## 7. Evidence trail
 
-- [ ] Render this file to PDF.
-- [ ] Upload PDF to a new OSF project titled
-      "graphical-reasoning: AAAI 2027 pre-registration".
-- [ ] Capture the OSF URL and the timestamp.
-- [ ] Update the "Posted to OSF on" line at the top of this file.
-- [ ] Commit the updated line. The OSF timestamp + the git commit
-      timestamp together form the defensible evidence trail.
-- [ ] Do this *before* any new agent run for Studies 6/7/8.
+This pre-registration relies on the in-repo git history rather than a
+third-party timestamping service. The relevant invariants:
+
+- `paper/pre_registration.md` was committed at `5eb78a4` (2026-05-21)
+  before any Study 6 / 7 / 8 cells existed.
+- Study-6-affecting revisions to this file (none expected) must
+  precede the first Study 6 cell's `meta.json` timestamp; same rule
+  for Studies 7 and 8.
+- The author commits to not rewriting commits that touch this file
+  after data collection begins for the corresponding study; verifying
+  this is one `git log -- paper/pre_registration.md` away.
+
+This is a weaker guarantee than an OSF or arXiv timestamp (the author
+controls the repo). A reviewer who needs stronger evidence can still
+fetch the file at any historical commit via the public GitHub mirror
+of this repository.
