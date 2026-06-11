@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 5,
+  "started_at": 1779679403.7966132,
+  "wall_clock_s": 54.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 6,
+      "succeeded": 6
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "The correct inequality (1996 Putnam B-2) has the bounds reversed: ((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2}.",
+    "numeric_verdict": "At n=1,2,3 the product is 1, 3, 15 while the asserted lower bound ((2n+1)/e)^{(2n+1)/2} = 1.159, 4.589, 27.40 (larger than product) and asserted upper bound ((2n-1)/e)^{(2n-1)/2} = 0.607, 1.159, 4.589 (smaller than product) \u2014 both directions fail, the bounds are swapped.",
+    "confidence": "high",
+    "notes": "The assertion swaps the upper and lower bounds of the actual 1996 Putnam B-2 inequality; numerical evaluation at n=1,2,3 confirms both inequalities run the wrong way."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_textual__r5_rjzcczu4"
+}

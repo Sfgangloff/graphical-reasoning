@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 4,
+  "started_at": 1779674110.407145,
+  "wall_clock_s": 69.2,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 7,
+      "succeeded": 7
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "At a=1,2,3 the integral equals 0.23988, 0.02296, 0.002537 respectively, matching sqrt(pi/a)*exp(-2a) exactly and differing from the claimed sqrt(pi/a)*exp(-a) (e.g. 0.65205 vs 0.23988 at a=1).",
+    "confidence": "high",
+    "notes": "Substitution u=sqrt(t)-1/sqrt(t) gives t+1/t=u^2+2, so the exponential factor is e^{-2a}, not e^{-a}."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_textual__r4_u_p8ig0u"
+}

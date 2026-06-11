@@ -1,0 +1,30 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 3,
+  "started_at": 1779678887.971317,
+  "wall_clock_s": 71.5,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2}",
+    "reflection": "The asserted inequality is the exact statement of Putnam 1996 B2, a known true result. Using f(x)=x(ln x -1)/2 with f'(x)=ln(x)/2 plus concavity of ln (trapezoid underestimate for the upper bound, midpoint overestimate for the lower bound), both inequalities follow; small-n checks confirm the bounds are not tight in the wrong direction.",
+    "confidence": "high",
+    "notes": "Statement matches the original Putnam 1996 B2 verbatim, and integral/concavity argument confirms both bounds."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_reflection__r3_gazv7w4e"
+}

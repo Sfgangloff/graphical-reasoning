@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779675885.138117,
+  "wall_clock_s": 57.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "At c=2/9 the signed integral \u222b_0^{x_2}(2x-3x^3-c)dx \u2248 0.157 (B >> A), but at c=4/9 it is \u2248 0, so c=4/9 is the equal-area value.",
+    "confidence": "high",
+    "notes": "Setting c\u00b7x_2 = \u222b_0^{x_2}(2x-3x^3)dx with c=2x_2-3x_2^3 yields x_2=2/3 and c=4/9, confirmed numerically by the shaded-integrand plots."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_visual__r5_q6q838i6"
+}

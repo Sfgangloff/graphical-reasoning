@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 2,
+  "started_at": 1779528660.777772,
+  "wall_clock_s": 69.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 8,
+  "tool_calls_succeeded": 7,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "The shaded integral of (2x - 3x^3 - c) from 0 to x_2 equals ~+0.159 for c=2/9 (area B dwarfs area A), but ~0 for c=4/9 \u2014 so c=4/9 balances the regions, not c=2/9.",
+    "confidence": "high",
+    "notes": "Setting area(A)=area(B) reduces to c x_2 = \u222b_0^{x_2}(2x-3x^3)dx and 2x_2-3x_2^3=c, yielding x_2=2/3, c=4/9; the visualization confirms the imbalance at c=2/9."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_visual__r2_ifvbxt2j"
+}

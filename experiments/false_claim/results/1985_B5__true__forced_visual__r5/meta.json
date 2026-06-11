@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779673640.944797,
+  "wall_clock_s": 35.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 3,
+  "tool_calls_succeeded": 3,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "Shaded numerical integral at a=1 reads 0.239876, matching the asserted sqrt(pi)*e^(-2)\u22480.23985 to 4+ decimals.",
+    "confidence": "high",
+    "notes": "Standard derivation: substitute t=u^2, use u^2+1/u^2=(u-1/u)^2+2 and the u\u21941/u symmetry to reduce to a Gaussian integral, giving sqrt(pi/a)*e^(-2a); confirmed numerically."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_visual__r5_o3bfwvc6"
+}

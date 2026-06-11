@@ -1,0 +1,42 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 2,
+  "started_at": 1779528358.1347451,
+  "wall_clock_s": 40.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 6,
+      "succeeded": 6
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "1/3",
+    "numeric_verdict": "f(0.5)=0.1362, f(0.75)=0.2177, f(0.9)=0.2719, f(0.99)=0.3246, f(1)=1/3=0.3333; values strictly increase toward 1/3 and the maximum is attained at y=1.",
+    "confidence": "high",
+    "notes": "Bound sqrt(x^4+(y-y^2)^2) \u2264 x^2 + y(1-y) gives f(y) \u2264 y^2 - 2y^3/3, which is increasing on [0,1] with maximum 1/3 at y=1, matching the asserted value."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__true__forced_textual__r2_mqr2kakv"
+}

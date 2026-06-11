@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 3,
+  "started_at": 1779673526.000598,
+  "wall_clock_s": 64.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "The shaded numerical integral at a=1 reads 0.239876, matching the asserted \\sqrt{\\pi}e^{-2}\\approx 0.23988 (and the a=2 check gives 0.022955 vs asserted 0.022954).",
+    "confidence": "high",
+    "notes": "Substitution u=\\sqrt{a}(\\sqrt{t}-1/\\sqrt{t}) on the symmetrized integral (1/2)(t^{-1/2}+t^{-3/2}) reduces it to e^{-2a}\\int_{-\\infty}^\\infty e^{-u^2}du/\\sqrt{a}; the visual numerical match at a=1,2 confirms it."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_visual__r3_vi0yc275"
+}

@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 4,
+  "started_at": 1779673719.094049,
+  "wall_clock_s": 48.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 9,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "Sympy computed the integral symbolically for a=1,2,3 yielding sqrt(pi)*e^{-2}, sqrt(pi/2)*e^{-4}, sqrt(pi/3)*e^{-6}; differences from the asserted formula are 0 to >100 digits.",
+    "confidence": "high",
+    "notes": "Substitution t=u/a reduces it to the classical Laplace integral \u222b\u2080^\u221e u^{-1/2}e^{-u-a\u00b2/u}du = \u221a\u03c0\u00b7e^{-2a}, confirmed symbolically by sympy at three values of a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_textual__r4_liojdrop"
+}

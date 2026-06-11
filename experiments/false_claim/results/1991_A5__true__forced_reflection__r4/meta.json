@@ -1,0 +1,30 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 4,
+  "started_at": 1779674781.620724,
+  "wall_clock_s": 27.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "1/3",
+    "reflection": "Using sqrt(x^4 + c^2) <= x^2 + c with c = y - y^2, the integral is bounded by y^2 - 2y^3/3, which on [0,1] is increasing and maxes at y=1 with value 1/3. At y=1 we have c=0 so the bound is tight: F(1) = integral of x^2 from 0 to 1 = 1/3. So max equals 1/3, matching the Claim.",
+    "confidence": "high",
+    "notes": "Classic Putnam 1991 A-5; the sub-additive sqrt bound is exact at y=1 where the cross term vanishes."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__true__forced_reflection__r4_vdj44691"
+}

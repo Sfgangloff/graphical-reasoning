@@ -1,0 +1,30 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 2,
+  "started_at": 1779531558.804876,
+  "wall_clock_s": 89.2,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2}",
+    "reflection": "Taking logs and using concavity of log gives lower bound via midpoint comparison: \u2211log(2k-1) \u2265 \u222b_{1/2}^{n+1/2} log(2x-1)dx, and trapezoidal comparison gives a matching upper bound. The asserted (2n\u00b11)/e form with exponent (2n\u00b11)/2 is the standard Putnam 1996 B-2 statement and checks numerically for n=1,2,3.",
+    "confidence": "high",
+    "notes": "Statement matches the canonical Putnam 1996 B-2 inequality and is provable by standard log-concavity / integral comparison."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_reflection__r2__tswj_zq"
+}

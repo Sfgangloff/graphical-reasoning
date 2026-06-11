@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 2,
+  "started_at": 1779531498.2374,
+  "wall_clock_s": 60.6,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 4,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) for every positive integer n",
+    "numeric_verdict": "For n=1,2,3,4,8 the triple (LHS, (2n-1)!!, RHS) is (0.6065,1,1.1594), (1.1594,3,4.5887), (4.5887,15,27.4039), (27.40,105,218.66), (365996, 2027025, 5852110) \u2014 the strict inequalities hold in the asserted direction in every case.",
+    "confidence": "high",
+    "notes": "Classic Putnam 1996 B2; numerics for n=1..8 confirm both bounds, and the standard proof via integral comparison of ln on [2k-1, 2k+1] is well known."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_textual__r2_524r9t9u"
+}

@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 4,
+  "started_at": 1779674264.576784,
+  "wall_clock_s": 35.7,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_reflection",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}; for a=1985 the value is \\sqrt{\\pi/1985}\\,e^{-3970}",
+    "reflection": "The integrand t^{-1/2} e^{-a(t+1/t)} is sharply peaked at t=1, where t+1/t=2, so the exponential factor must be e^{-2a}, not e^{-a}. Substituting t=u^2 gives 2e^{-2a}\u222b_0^\u221e e^{-a(u-1/u)^2}du; the involution u\u21a61/u together with dv=(1+1/u^2)du collapses this to the Gaussian \u222b_{-\u221e}^\u221e e^{-av^2}dv = \u221a(\u03c0/a), so I(a)=\u221a(\u03c0/a) e^{-2a}. The asserted e^{-a} is wrong by a factor of e^{a}.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1985 B5 closed form is \u221a(\u03c0/a) e^{-2a}; the asserted exponent is off by a factor of e^{a}."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_reflection__r4_9h8cnydw"
+}

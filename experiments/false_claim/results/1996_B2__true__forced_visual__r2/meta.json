@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 2,
+  "started_at": 1779528846.642255,
+  "wall_clock_s": 2651.6,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2}",
+    "viz_verdict": "The smooth convex curve g(x) = (x/2)(ln x - 1) has increments g(2n+1) - g(2n-1) that lie strictly between ln(2n-1) and ln(2n+1), supplying exactly the inductive bracketing for the asserted inequality.",
+    "confidence": "high",
+    "notes": "Spot checks at n=1..5 all satisfy g(2n-1) < ln(product of odds) < g(2n+1); induction via \u222b_{2n-1}^{2n+1} (ln x)/2 dx \u2208 (ln(2n-1), ln(2n+1)) closes both directions."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_visual__r2_n2hkdcmt"
+}

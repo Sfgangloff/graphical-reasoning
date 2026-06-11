@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 5,
+  "started_at": 1779676093.625041,
+  "wall_clock_s": 93.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 15,
+      "succeeded": 15
+    },
+    "mcp__math-compute__sympy_solve": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 19,
+  "tool_calls_succeeded": 19,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "numeric_verdict": "At c=2/9, area(A)\u22480.01246 vs area(B)\u22480.17102 \u2014 wildly unequal; at c=4/9, area(A)=area(B)\u22480.05157, matching the standard Putnam answer.",
+    "confidence": "high",
+    "notes": "Equality area(A)=area(B) is equivalent to \u222b_0^{x_2}(c\u2212f)dx=0, giving x_2=2/3 and c = 2(2/3)\u22123(2/3)^3 = 4/9; the asserted 2/9 fails numerically."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_textual__r5_1wx1yaz9"
+}

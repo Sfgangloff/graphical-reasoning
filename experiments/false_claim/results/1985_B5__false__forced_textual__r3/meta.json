@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 3,
+  "started_at": 1779674054.9661949,
+  "wall_clock_s": 55.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "Computed integrals for a=1,2,3 give sqrt(pi)*e^-2 \u2248 0.2399, sqrt(pi/2)*e^-4 \u2248 0.02295, sqrt(pi/3)*e^-6 \u2248 0.002536, all matching sqrt(pi/a)*e^(-2a) and disagreeing with the claimed sqrt(pi/a)*e^(-a) by a factor of e^a.",
+    "confidence": "high",
+    "notes": "SymPy closed-form evaluation at a=1,2,3 yields sqrt(pi/a)*e^(-2a); the exponent in the claim should be -2a, not -a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_textual__r3_xcu3q092"
+}

@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 2,
+  "started_at": 1779528532.451875,
+  "wall_clock_s": 40.1,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "The shaded area between y=4/9 and the curve on [0, x_1] equals the shaded area between the curve and y=4/9 on [x_1, x_2], both numerically \u2248 0.0515668.",
+    "confidence": "high",
+    "notes": "Algebraically, setting F(x_2) = F(0) where F(x) = cx - x^2 + (3/4)x^4 with x_2 satisfying c = 2x_2 - 3x_2^3 yields x_2 = 2/3, c = 4/9, matched by the visual integrals."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_visual__r2_exq09c7h"
+}

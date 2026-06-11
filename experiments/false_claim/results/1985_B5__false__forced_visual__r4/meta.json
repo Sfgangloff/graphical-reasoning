@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779673964.160481,
+  "wall_clock_s": 44.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 3,
+  "tool_calls_succeeded": 3,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "The shaded integral for a=2 evaluates to \u22480.02296, which matches \u221a(\u03c0/2)\u00b7e^{-4} (the e^{-2a} formula) and contradicts the asserted \u22480.1696 from \u221a(\u03c0/2)\u00b7e^{-2}.",
+    "confidence": "high",
+    "notes": "Substitution u=\u221a(at) plus the Glasser identity \u222b\u2080^\u221e e^{-(u\u00b2+a\u00b2/u\u00b2)}du = (\u221a\u03c0/2)e^{-2a} yields the exponent -2a, confirmed numerically."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_visual__r4_wh14gs_g"
+}

@@ -1,0 +1,46 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 2,
+  "started_at": 1779528729.804777,
+  "wall_clock_s": 78.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 9,
+      "succeeded": 9
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "mcp__math-compute__sympy_solve": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 17,
+  "tool_calls_succeeded": 17,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "numeric_verdict": "At c=2/9, area(A)\u22480.01246 and area(B)\u22480.17102 (not equal); at c=4/9 with x_1\u22480.2440 and x_2=2/3, area(A)=area(B)\u22480.05157.",
+    "confidence": "high",
+    "notes": "Solving \u222b_0^{x_2}(c-2x+3x^3)dx=0 with c=2x_2-3x_2^3 gives x_2=2/3 and c=4/9; the asserted 2/9 fails numerically by an order of magnitude."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_textual__r2_m3enfyzd"
+}

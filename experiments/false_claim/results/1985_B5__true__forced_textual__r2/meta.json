@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 2,
+  "started_at": 1779528133.54821,
+  "wall_clock_s": 38.2,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 4,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "At a=1,2,3 the numerical integral equals sqrt(pi/a)*exp(-2a) to 20 digits (e.g., a=1 gives 0.23987554393612289474 on both sides; differences at a=2,3 are exactly 0).",
+    "confidence": "high",
+    "notes": "Substitution t=u^2 gives 2\u222be^{-a(u^2+u^{-2})}du; with v=u-1/u and u^2+u^{-2}=v^2+2, the Gaussian integral yields sqrt(pi/a)*e^{-2a}, matching numerics."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_textual__r2_54zghl_o"
+}

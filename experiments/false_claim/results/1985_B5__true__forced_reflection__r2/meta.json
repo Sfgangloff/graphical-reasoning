@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 2,
+  "started_at": 1779528171.749383,
+  "wall_clock_s": 28.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}; for a=1985, \\sqrt{\\pi/1985}\\,e^{-3970}",
+    "reflection": "Substitute t = u^2/a to get I = (2/sqrt(a)) \u222b_0^\u221e e^{-(u^2 + a^2/u^2)} du. The classical Glasser/averaging trick with w = u - a/u gives \u222b_0^\u221e e^{-(u^2+a^2/u^2)} du = (\u221a\u03c0/2) e^{-2a}. Hence I = \u221a(\u03c0/a) e^{-2a}, matching the Claim exactly.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1985 B-5; substitution plus the u \u2194 a/u symmetry trick reproduces the asserted closed form exactly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_reflection__r2_b8ofgcra"
+}

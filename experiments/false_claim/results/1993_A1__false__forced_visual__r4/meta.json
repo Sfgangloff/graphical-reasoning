@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779675809.607956,
+  "wall_clock_s": 75.5,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "At c=2/9 the net signed area between curve and line over [0,x_2] is \u22480.159 (B dominates A), while at c=4/9 it is \u22480, so c=4/9 is the value that balances regions A and B.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1993 A1: setting A=B reduces to c\u00b7x_2 = x_2^2 - (3/4)x_2^4 with c = 2x_2-3x_2^3, giving x_2=2/3 and c=4/9, confirmed visually."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__false__forced_visual__r4_uid1slew"
+}

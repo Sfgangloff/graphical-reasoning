@@ -1,0 +1,42 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 4,
+  "started_at": 1779675081.2877922,
+  "wall_clock_s": 36.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "1/3",
+    "numeric_verdict": "At y=1 the integral equals exactly 1/3 \u2248 0.3333 (the integrand reduces to x^2); at y=0.9 it is \u2248 0.2719; at y=0.5 it is \u2248 0.1362 \u2014 the value 1/3 already exceeds the asserted maximum 1/4.",
+    "confidence": "high",
+    "notes": "The standard Putnam 1991 A-5 answer is 1/3, attained at y=1, since (y-y^2)\u21920 there and the integrand becomes x^2; the claim of 1/4 is below this."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__false__forced_textual__r4__ycuug8b"
+}

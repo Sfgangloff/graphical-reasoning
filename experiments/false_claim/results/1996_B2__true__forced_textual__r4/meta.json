@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 4,
+  "started_at": 1779678741.565732,
+  "wall_clock_s": 95.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 8,
+      "succeeded": 8
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) for all positive integers n",
+    "numeric_verdict": "At n=1,2,3,10 the inequality holds: (0.6065<1<1.1594), (1.1594<3<4.5887), (4.5887<15<27.40), (1.05e8<6.55e8<2.10e9).",
+    "confidence": "high",
+    "notes": "This is the classical Putnam 1996 B2; the inequality follows from comparing ln((2k-1)!!) = sum log(2k-1) with the integral of log(x)/2 over the appropriate range, and numerics confirm at multiple n."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_textual__r4_sxk4xvrj"
+}

@@ -1,0 +1,30 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 5,
+  "started_at": 1779679019.39732,
+  "wall_clock_s": 75.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) for all positive integers n",
+    "reflection": "The double factorial is asymptotically \u221a2\u00b7(2n/e)^n by Stirling. The lower bound expands to ~(2n/e)^n/\u221a(2n) and the upper bound to ~(2n/e)^n\u00b7\u221a(2n), so both bounds are on the correct side with growing margins. Direct numerical verification at n=1,2,3,4 confirms strict inequality, and this matches the exact original Putnam 1996 B-2 statement.",
+    "confidence": "high",
+    "notes": "Stated inequality matches the canonical Putnam 1996 B-2 problem and passes small-n checks plus asymptotic direction check."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_reflection__r5_tn8rii33"
+}

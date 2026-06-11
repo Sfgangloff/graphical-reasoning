@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779679175.9550788,
+  "wall_clock_s": 48.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2)  (the two bounds are swapped in the claim)",
+    "viz_verdict": "The plot shows the claimed lower bound ((2n+1)/e)^((2n+1)/2) lies strictly above the claimed upper bound ((2n-1)/e)^((2n-1)/2) for all n\u22651, so the chained inequality is structurally impossible.",
+    "confidence": "high",
+    "notes": "Bounds are swapped relative to the standard 1996 B-2 inequality; at n=1 the claim would require 1.16 < 1 < 0.61, which fails."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_visual__r4_d6hzxdu9"
+}

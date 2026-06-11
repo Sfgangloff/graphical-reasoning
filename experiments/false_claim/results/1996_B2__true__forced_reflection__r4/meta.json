@@ -1,0 +1,30 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 4,
+  "started_at": 1779678959.477626,
+  "wall_clock_s": 59.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2} holds for all positive integers n.",
+    "reflection": "Taking logs and using f(x) = (x/2)(ln x - 1) with f'(x) = (ln x)/2, the claim is equivalent to f(2n-1) < sum_{k=1}^n ln(2k-1) < f(2n+1). Induction works: at each step we add ln(2n+1) to the sum, while f(2n+3)-f(2n+1) > ln(2n+1) > f(2n+1)-f(2n-1) because ln is strictly increasing on the integration intervals. Base n=1 and spot checks at n=2,3 hold with margin.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1996 B2 statement; the integral-comparison induction with f(x)=(x/2)(ln x - 1) gives the bracketing exactly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_reflection__r4_d25ejua6"
+}

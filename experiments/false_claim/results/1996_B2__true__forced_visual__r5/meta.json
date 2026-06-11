@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779678581.048264,
+  "wall_clock_s": 90.7,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) for all positive integers n",
+    "viz_verdict": "The Stirling estimate n\u00b7log(2n) \u2212 n + log(2)/2 for log((2n\u22121)!!) lies strictly between log(LHS) and log(RHS) across x\u2208[1,15], with gaps that widen, confirming the inequality.",
+    "confidence": "high",
+    "notes": "Asymptotic separation log(RHS) \u2212 log(LHS) \u2248 log(2n) \u2212 1 grows without bound, and exact evaluation at n=1,2,3 satisfies both bounds; this is the standard 1996 Putnam B-2 result."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_visual__r5_ebiilhrb"
+}

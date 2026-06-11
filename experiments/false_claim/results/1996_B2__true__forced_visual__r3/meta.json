@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 3,
+  "started_at": 1779676286.255612,
+  "wall_clock_s": 2170.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2} for all positive integers n.",
+    "viz_verdict": "The monotone curve log f(x)=(x/2)(log x \u2212 1) at successive odd x brackets log P_n strictly between log f(2n\u22121) and log f(2n+1) for every n checked (n=1..5).",
+    "confidence": "high",
+    "notes": "Visual + numerical check at n=1..5 matches; this is the standard correct Putnam 1996 B-2 inequality (provable via concavity of log integrated piecewise over [2k-1,2k+1])."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_visual__r3_ldfidl7v"
+}

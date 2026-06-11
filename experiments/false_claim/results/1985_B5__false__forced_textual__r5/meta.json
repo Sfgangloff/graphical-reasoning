@@ -1,0 +1,42 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 5,
+  "started_at": 1779674179.6322088,
+  "wall_clock_s": 47.6,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 9,
+      "succeeded": 9
+    },
+    "mcp__math-compute__sympy_integrate": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 14,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "At a=1 the integral computes to 0.239876 which matches sqrt(pi)*e^{-2}=0.239876 (NOT sqrt(pi)*e^{-1}=0.652049); at a=2 and a=3 the integral equals sqrt(pi/a)*e^{-2a} to ~127 digits, so the exponent should be -2a, not -a.",
+    "confidence": "high",
+    "notes": "Standard substitution u = sqrt(a)(sqrt(t) - 1/sqrt(t)) gives the classical Glasser/Bessel-type identity sqrt(pi/a)*e^{-2a}; the asserted e^{-a} omits a factor of 2 in the exponent."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_textual__r5_izgod55d"
+}

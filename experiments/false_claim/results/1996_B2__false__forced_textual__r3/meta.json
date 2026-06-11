@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 3,
+  "started_at": 1779679286.8015518,
+  "wall_clock_s": 62.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 7,
+      "succeeded": 7
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "For every positive integer n, ((2n-1)/e)^((2n-1)/2) < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^((2n+1)/2) (the bounds in the asserted claim are swapped).",
+    "numeric_verdict": "At n=1,2,3 the product 1, 3, 15 lies between ((2n-1)/e)^((2n-1)/2) \u2248 0.607, 1.159, 4.589 (lower) and ((2n+1)/e)^((2n+1)/2) \u2248 1.159, 4.589, 27.40 (upper); the asserted inequality direction fails at every tested n.",
+    "confidence": "high",
+    "notes": "The asserted claim reverses the standard Putnam 1996 B-2 bounds; direct numerical evaluation at n=1,2,3 violates both inequalities."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__false__forced_textual__r3_bs8i0f4r"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 2,
+  "started_at": 1779528091.5313091,
+  "wall_clock_s": 42.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "For a=1 the shaded area equals 0.23988 and for a=2 it equals 0.02296, both matching sqrt(pi/a)*exp(-2a) to 5 digits.",
+    "confidence": "high",
+    "notes": "Numerical integrals at a=1 and a=2 match the closed form, and the standard substitution t=u^2 followed by v=u-1/u (Glasser's master trick) proves it exactly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_visual__r2__h8sfpg8"
+}

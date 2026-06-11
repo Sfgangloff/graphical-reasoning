@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 4,
+  "started_at": 1779673859.608055,
+  "wall_clock_s": 30.2,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\, e^{-2a}; for a=1985, \\sqrt{\\pi/1985}\\,e^{-3970}",
+    "reflection": "Substitute t = u^2 to get I = 2\u222b_0^\u221e e^{-a(u^2+1/u^2)}du = 2e^{-2a}\u222b_0^\u221e e^{-a(u-1/u)^2}du, using u^2+1/u^2 = (u-1/u)^2+2. Splitting at u=1 and applying u\u21921/w on [0,1] folds the integral to \u222b_1^\u221e(1+1/u^2)e^{-a(u-1/u)^2}du; then v=u-1/u gives \u222b_0^\u221e e^{-av^2}dv = (1/2)\u221a(\u03c0/a). So I = \u221a(\u03c0/a)\u00b7e^{-2a}, matching the claim including the a=1985 case.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1985 B-5 derivation reproduces the asserted closed form exactly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_reflection__r4_tx_qfgyl"
+}

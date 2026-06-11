@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 2,
+  "started_at": 1779528200.095131,
+  "wall_clock_s": 35.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 3,
+  "tool_calls_succeeded": 3,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\, e^{-2a}",
+    "viz_verdict": "The shaded area for a=1 evaluates to ~0.2399 = sqrt(pi)*e^{-2}, not the asserted sqrt(pi)*e^{-1} ~ 0.6521, so the exponent should be -2a.",
+    "confidence": "high",
+    "notes": "Standard substitution u=sqrt(t) and (u-1/u)^2 = u^2+1/u^2 - 2 yields sqrt(pi/a)*e^{-2a}; the numerical visualization confirms 0.2399 for a=1."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_visual__r2_qqoesc92"
+}

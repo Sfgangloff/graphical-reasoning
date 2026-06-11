@@ -1,0 +1,38 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779678456.663274,
+  "wall_clock_s": 124.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 3
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2} holds for every positive integer n.",
+    "viz_verdict": "The plotted log-bound curves L(n) and R(n) on [1,6] separate cleanly with R always above L, and the integer-point values of log((2n-1)!!) lie strictly between them at n=1..5, matching the claim.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1996 B-2; visual gap between L and R curves agrees with hand-computed log((2n-1)!!) values for n=1..5, and concavity of ln(x) underlies the proof."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_visual__r4_5szmfd8m"
+}

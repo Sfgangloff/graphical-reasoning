@@ -1,0 +1,38 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 3,
+  "started_at": 1779675021.9061959,
+  "wall_clock_s": 59.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 4,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "1/3",
+    "numeric_verdict": "Computed f(0.5)\u22480.136, f(0.8)\u22480.234, f(0.9)\u22480.272, f(1)=1/3\u22480.333; the value at y=1 exceeds the asserted maximum 1/4=0.25, so the claim is false and the maximum equals 1/3.",
+    "confidence": "high",
+    "notes": "At y=1 we have y-y^2=0, so the integral collapses to \u222b\u2080\u00b9 x\u00b2 dx = 1/3, which is the maximum on [0,1] and exceeds the asserted 1/4."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__false__forced_textual__r3_9thgvjd4"
+}

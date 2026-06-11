@@ -1,0 +1,38 @@
+{
+  "problem_id": "1991.A5",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779674964.015326,
+  "wall_clock_s": 57.9,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 4,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 6,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "1/3",
+    "viz_verdict": "The shaded integral at y=1 evaluates to 0.3333 = 1/3, which already exceeds the claimed 1/4; sampled values F(0.5)\u22480.136, F(0.7)\u22480.202, F(0.9)\u22480.272, F(1.0)\u22480.333 show F is monotone increasing toward 1/3.",
+    "confidence": "high",
+    "notes": "At y=1, integrand reduces to x\u00b2 and integral = 1/3 > 1/4, refuting the claim; standard Putnam 1991 A-5 answer is 1/3."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1991_A5__false__forced_visual__r5_77_mlljd"
+}

@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_reflection",
+  "run_index": 3,
+  "started_at": 1779674227.248493,
+  "wall_clock_s": 37.3,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_reflection",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}; for a=1985, \\sqrt{\\pi/1985}\\,e^{-3970}",
+    "reflection": "Standard Putnam 1985 B-5: substitution u=sqrt(a t) reduces the integral to (2/sqrt(a)) \u222b\u2080^\u221e e^{-(u\u00b2+a\u00b2/u\u00b2)} du. The identity u\u00b2+a\u00b2/u\u00b2 = (u-a/u)\u00b2+2a together with the Cauchy/Glasser trick yields \u222b\u2080^\u221e e^{-(u\u00b2+a\u00b2/u\u00b2)}du = (\u221a\u03c0/2)e^{-2a}. Hence the integral equals \u221a(\u03c0/a) e^{-2a}, not e^{-a}; the claim's exponent is off by a factor of 2.",
+    "confidence": "high",
+    "notes": "Completing the square gives a +2a shift in the exponent, producing e^{-2a}, contradicting the claimed e^{-a}."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_reflection__r3_a2l4izpq"
+}

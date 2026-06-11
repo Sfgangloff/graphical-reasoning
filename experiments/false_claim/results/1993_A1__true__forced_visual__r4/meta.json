@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779675302.3545852,
+  "wall_clock_s": 64.4,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "Shaded integral from 0 to 2/3 of 2x-3x^3 \u2248 0.2963 = 8/27, exactly matching the rectangle area c\u00b7x\u2082 = (4/9)(2/3), so the cropped-off piece (region A) and the bulge above the line (region B) must balance.",
+    "confidence": "high",
+    "notes": "Symbolic check: roots of 2x-3x\u00b3=4/9 give x\u2082=2/3 (since 27x\u00b3-18x+4 factors as (3x-2)(9x\u00b2+6x-2)); equal-area condition c\u00b7x\u2082 = \u222b\u2080^{x\u2082}(2x-3x\u00b3)dx = x\u2082\u00b2\u2212(3/4)x\u2082\u2074 yields x\u2082=2/3, hence c=4/9."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_visual__r4_lbyju7bb"
+}

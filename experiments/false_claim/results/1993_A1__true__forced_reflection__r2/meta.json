@@ -1,0 +1,30 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 2,
+  "started_at": 1779528626.072066,
+  "wall_clock_s": 34.7,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "reflection": "Setting area(A) = area(B) collapses to \u222b_0^{x_2}(c - f(x))dx = 0, giving c = x_2 - 3x_2^3/4. Combined with c = 2x_2 - 3x_2^3 (point on curve), this yields x_2 = 2/3 and c = 4/9. Verified that 2(2/3) - 3(2/3)^3 = 4/3 - 8/9 = 4/9.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1993 A-1 derivation produces c = 4/9 exactly as claimed."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_reflection__r2_043pfqvp"
+}

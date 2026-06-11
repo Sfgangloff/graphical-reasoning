@@ -1,0 +1,42 @@
+{
+  "problem_id": "1996.B2",
+  "variant": "true",
+  "condition": "forced_textual",
+  "run_index": 3,
+  "started_at": 1779678671.724243,
+  "wall_clock_s": 69.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__batch_examples": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 4,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "variant": "true",
+    "condition": "forced_textual",
+    "verdict": "correct",
+    "correct_answer": "((2n-1)/e)^{(2n-1)/2} < 1\u00b73\u00b75\u00b7\u00b7\u00b7(2n-1) < ((2n+1)/e)^{(2n+1)/2} for all positive integers n",
+    "numeric_verdict": "At n=1,2,3,10 the triples (LHS, product, RHS) are (0.6065, 1, 1.159), (1.159, 3, 4.589), (4.589, 15, 27.40), (1.053e8, 6.547e8, 2.105e9) \u2014 the asserted strict inequality holds in every case.",
+    "confidence": "high",
+    "notes": "This is the standard Putnam 1996 B-2 statement; numeric checks for n=1..10 all confirm both strict bounds with the asserted direction."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1996_B2__true__forced_textual__r3_8bzpvrjz"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_textual",
+  "run_index": 2,
+  "started_at": 1779528235.3536232,
+  "wall_clock_s": 40.2,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-compute__sympy_eval": {
+      "attempted": 5,
+      "succeeded": 5
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 7,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_textual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "numeric_verdict": "For a=1,2,3 the integral evaluates to 0.23988, 0.022955, 0.0025366, matching sqrt(pi/a)*exp(-2a) exactly (0.23988, 0.022955, 0.0025366), while the claimed sqrt(pi/a)*exp(-a) gives 0.65205, 0.16962, 0.05095 \u2014 off by factor exp(a).",
+    "confidence": "high",
+    "notes": "The standard Putnam 1985 B-5 result is sqrt(pi/a)*exp(-2a); the claim has the exponent halved, confirmed numerically at three values of a."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_textual__r2__39aus40"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "false",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779674008.965326,
+  "wall_clock_s": 46.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "false",
+    "condition": "forced_visual",
+    "verdict": "incorrect",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "For a=1 the shaded integral reads \u22480.2399, matching \u221a\u03c0\u00b7e^{-2}\u22480.2399, not the claimed \u221a\u03c0\u00b7e^{-1}\u22480.6522; the exponent must be -2a.",
+    "confidence": "high",
+    "notes": "Two numerical checks (a=1: 0.2399 vs claim 0.6522; a=2: 0.02296 vs claim 0.1696) both confirm the closed form is \u221a(\u03c0/a)\u00b7e^{-2a}, not e^{-a}."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__false__forced_visual__r5_yqx_abe8"
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 4,
+  "started_at": 1779673590.098888,
+  "wall_clock_s": 50.8,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 4,
+  "tool_calls_succeeded": 4,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "viz_verdict": "Numerical shading gives 0.239876 for a=1 (vs \\sqrt{\\pi}e^{-2}\\approx 0.23988) and 0.022955 for a=2 (vs \\sqrt{\\pi/2}e^{-4}\\approx 0.02296), agreeing with the asserted closed form.",
+    "confidence": "high",
+    "notes": "Substitute t=u^2 then exploit u\\to 1/u symmetry with v=u-1/u; numerical agreement at a=1,2 confirms it."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_visual__r4_5ufp1j_h"
+}

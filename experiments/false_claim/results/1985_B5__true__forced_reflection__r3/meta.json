@@ -1,0 +1,30 @@
+{
+  "problem_id": "1985.B5",
+  "variant": "true",
+  "condition": "forced_reflection",
+  "run_index": 3,
+  "started_at": 1779673812.628412,
+  "wall_clock_s": 47.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 1,
+  "tool_calls_succeeded": 1,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "variant": "true",
+    "condition": "forced_reflection",
+    "verdict": "correct",
+    "correct_answer": "\\sqrt{\\pi/a}\\,e^{-2a}",
+    "reflection": "Substituting t=u^2 yields 2\u222b\u2080^\u221e e^{-a(u^2+u^{-2})}du = 2e^{-2a}\u222b\u2080^\u221e e^{-a(u-u^{-1})^2}du. The Cauchy\u2013Schl\u00f6milch involution u\u21a61/u combined with v = u - 1/u (so dv = (1+u^{-2})du, v ranges over \u211d) gives \u222b\u2080^\u221e e^{-a(u-u^{-1})^2}du = (1/2)\u221a(\u03c0/a). Therefore the integral equals \u221a(\u03c0/a)\u00b7e^{-2a}, matching the claim exactly.",
+    "confidence": "high",
+    "notes": "Standard Putnam 1985 B-5 with the Glasser/Cauchy\u2013Schl\u00f6milch trick; the closed form \u221a(\u03c0/a)e^{-2a} is the textbook answer."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1985_B5__true__forced_reflection__r3_utkiigkd"
+}

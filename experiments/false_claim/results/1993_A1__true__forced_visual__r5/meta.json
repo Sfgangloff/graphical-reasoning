@@ -1,0 +1,42 @@
+{
+  "problem_id": "1993.A1",
+  "variant": "true",
+  "condition": "forced_visual",
+  "run_index": 5,
+  "started_at": 1779675366.7507021,
+  "wall_clock_s": 56.0,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "tool_counts": {
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz__plot_region": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 5,
+  "tool_calls_succeeded": 5,
+  "png_read_back": false,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "variant": "true",
+    "condition": "forced_visual",
+    "verdict": "correct",
+    "correct_answer": "c = 4/9",
+    "viz_verdict": "The shaded picture shows Region A below y=4/9 (from x=0 to x\u2081\u22480.244) and Region B above y=4/9 under the curve (from x\u2081 to x\u2082=2/3) \u2014 they look comparable in area, consistent with the claim.",
+    "confidence": "high",
+    "notes": "Equal areas require \u222b\u2080^{x\u2082}(c-(2x-3x\u00b3))dx=0, giving c=x\u2082-(3/4)x\u2082\u00b3; combined with c=2x\u2082-3x\u2082\u00b3 yields x\u2082=2/3 and c=4/9, matching the claim."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/fc_1993_A1__true__forced_visual__r5_f1g87a1o"
+}
