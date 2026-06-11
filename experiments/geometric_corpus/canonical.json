@@ -41,13 +41,14 @@
     "verify_status": "PASS (verified 2026-05-25 by verify_geom_04)"
   },
   "geom_05": {
-    "title": "Monotonicity of a sequence (DRAFT — original canonical was algebraically wrong)",
-    "true_claim":  "TBD",
-    "false_claim": "TBD",
-    "canonical_evidence": "The draft sequence a_n = 1/n + sin(n)/n² was checked numerically (verify_geom_05 fragment): it IS monotone decreasing for n ∈ [1, 200], so the original 'not monotone' claim is false. Need a redesigned sequence whose non-monotonicity is real but only at indices a naive sparse sample misses (e.g. a smooth-decay-plus-Gaussian-bump at n=50).",
-    "viz_check": "TBD",
-    "sympy_naive_strategy": "TBD",
-    "verify_status": "TODO — redesign needed"
+    "title": "Monotonicity of a_n = 1/n + (1/200)·exp(−(n−47)²/2) for n ≥ 1",
+    "true_claim":  "The sequence (a_n) is NOT monotonically decreasing on n ≥ 1: a_47 > a_46, so the difference a_{n+1} − a_n is positive at n = 46.",
+    "false_claim": "The sequence (a_n) is strictly monotonically decreasing for every n ≥ 1.",
+    "canonical_evidence": "Numerically a_46 ≈ 0.024772, a_47 ≈ 0.026277, a_48 ≈ 0.023904. The 1/n trend gives a_{n+1} − a_n = −1/(n(n+1)) ≈ −4.6e−4 at n = 46, which is overwhelmed by the bump's local rise of +1.97e−3 from n=46 to n=47, producing a net positive difference of +1.5e−3. Outside the ±3-index neighborhood of n=47 the bump term is below 5.6e−5 and the 1/n trend dominates, so the sequence looks monotone everywhere else.",
+    "viz_check": "plot_function (or a discrete scatter of (n, a_n)) on n ∈ [1, 80]; the spike at n=47 is unmissable. A plot of the residual a_n − 1/n is even sharper.",
+    "sympy_naive_strategy": "logspace sparse sample at n ∈ {1, 2, 5, 10, 20, 50, 100, 200} and check pairwise a_{n_k} > a_{n_{k+1}}. The bump center n=47 is NOT sampled; the nearest sample n=50 is 3 indices away where the bump contribution is exp(−4.5)/200 ≈ 5.55e−5 vs 1/50 = 0.02, so a_50 ≈ 0.02006. The sparse sequence (1.0, 0.5, 0.2, 0.1, 0.05, 0.02006, 0.01, 0.005) is strictly decreasing and ratifies the FALSE 'monotone' claim.",
+    "sampling_fragile_against": "sparse / logspace sampling. NOT fragile against an exhaustive `for n in range(1, 100): check a[n+1] < a[n]` integer scan — that catches the bump at n=46. The realistic naive forced_textual strategy for a sequence with a transcendental Gaussian term is sparse-sample-and-conclude, not full integer enumeration; sympy.solve on a closed-form 'is a_{n+1} − a_n negative for all n?' inequality also cannot dispatch the transcendental term.",
+    "verify_status": "PASS (verified 2026-05-27 by verify_geom_05)"
   },
   "geom_06": {
     "title": "Inequality h(x) ≥ 0 on [0,1] with a narrow negative dip near x = 0.43",
@@ -60,19 +61,24 @@
     "verify_status": "PASS (verified 2026-05-25 by verify_geom_06)"
   },
   "geom_09": {
-    "title": "Differentiability of x·sin(1/x) at 0",
-    "true_claim":  "The function f(x) = x · sin(1/x), extended by f(0) = 0, is *not* differentiable at 0 (the difference quotient oscillates).",
-    "false_claim": "The function f(x) = x · sin(1/x), extended by f(0) = 0, is differentiable at 0 with f'(0) = 0.",
-    "canonical_evidence": "The difference quotient (f(h) − f(0))/h = sin(1/h) oscillates in [−1, 1] as h → 0; no limit.",
-    "viz_check": "plot_function of (f(h) − 0)/h as a function of h on (0, 0.5]; oscillation visible.",
-    "sympy_naive_strategy": "evaluate (f(h) − 0)/h at h ∈ {0.1, 0.01, 0.001, 0.0001}; these all hit near-zero crossings of sin(1/h) and the values look like they're → 0."
+    "title": "Differentiability of f(x) = x·sin(π/x), f(0) = 0, at x = 0",
+    "true_claim":  "f is NOT differentiable at 0: the difference quotient (f(h) − f(0))/h = sin(π/h) oscillates in [−1, 1] with unbounded frequency as h → 0, so the limit does not exist.",
+    "false_claim": "f is differentiable at 0 with f'(0) = 0.",
+    "canonical_evidence": "(f(h) − 0)/h = sin(π/h). For any h = 1/k with k a positive integer, sin(πk) = 0; for h = 2/(4k+1), sin(π(4k+1)/2) = ±1. The set of subsequential limits of the difference quotient is therefore all of [−1, 1], so lim_{h→0} sin(π/h) does not exist.",
+    "viz_check": "plot_function of (f(x) − 0)/x = sin(π/x) on x ∈ [0.001, 0.1] — wild oscillation between −1 and +1 with unboundedly increasing frequency is unmissable. Equivalently plot f(x) zoomed to the same window: oscillation modulated by amplitude |x|.",
+    "sympy_naive_strategy": "naive numerical-derivative sample of (f(h) − 0)/h = sin(π/h) at h ∈ {0.1, 0.05, 0.025, 0.01, 0.005, 0.001, 0.0005, 0.0001}. Every such h is m/10^k with k ≥ 1, so π/h is an integer multiple of π and sin(π/h) = 0 exactly (up to float64 rounding, |sin(π/h)| < 1e−10 across the sample). The 'compute f(h)/h at small decimal h' check sees a flat zero and ratifies the FALSE f'(0) = 0 claim.",
+    "sampling_fragile_against": "negative-powers-of-ten decimal h samples — the canonical agentic choice for a naive numerical-derivative check. NOT fragile against (a) irrational or non-divisor-of-π decimals like h = 0.3 (catches oscillation immediately), or (b) modern sympy.limit(sin(π/x), x, 0) which returns AccumBounds(−1, 1). The design models a forced_textual agent that reaches for `sin(pi/0.001)` rather than a symbolic limit, which matches observed Study 1–5 behaviour.",
+    "verify_status": "PASS (verified 2026-05-28 by verify_geom_09)"
   },
   "geom_10": {
-    "title": "Intersection structure of z=x²+y² and z=2−x²−y²",
-    "true_claim":  "The surfaces z = x² + y² and z = 2 − x² − y² intersect in a *single circle* (the circle x² + y² = 1 at z = 1).",
-    "false_claim": "The surfaces z = x² + y² and z = 2 − x² − y² intersect in *two disjoint circles*.",
-    "canonical_evidence": "Setting them equal: 2x² + 2y² = 2, i.e. x² + y² = 1, at z = 1. A single circle.",
-    "viz_check": "plot_surface or plot_implicit (3D); the single ring intersection is visible.",
-    "sympy_naive_strategy": "sample the difference z₁ − z₂ at z = 0 and z = 1; sign-change at z=1 is found, giving 'an intersection at z=1' but not its dimension/cardinality."
+    "title": "Real zero count of f(x) = (x²−1)(x²−4) + 3·sin(50x) on [−2.5, 2.5]",
+    "true_claim":  "f has strictly more than 4 zeros on [−2.5, 2.5] — in fact roughly 40+ distinct real zeros, concentrated near the unperturbed roots ±1 and ±2 where the polynomial slope is shallow enough for the high-frequency sin term to repeatedly cross zero.",
+    "false_claim": "f has exactly 4 distinct real zeros on [−2.5, 2.5].",
+    "canonical_evidence": "The unperturbed polynomial p(x) = (x²−1)(x²−4) has roots {±1, ±2} with derivatives p'(±1) = ∓6 and p'(±2) = ±12. In neighborhoods (root − δ, root + δ) where |p(x)| ≤ 3, the perturbation 3·sin(50x) can overwhelm p, producing additional zero crossings. The sin term has period 2π/50 ≈ 0.126, and the region |p| ≤ 3 has width ≈ 1.0 near x = ±1 and ≈ 0.5 near x = ±2; so roughly 16 zeros near each of ±1 and 8 near each of ±2, totalling ~48. A dense 20001-point scan on [−2.5, 2.5] counts 56 zeros.",
+    "viz_check": "plot_function of f on [−2.5, 2.5] (or, sharper, a zoom on x ∈ [0.5, 1.5]) — the high-frequency oscillation crossing zero many times near x = ±1 and x = ±2 is unmissable. The W-shape of the polynomial is still visible as the slow envelope.",
+    "sympy_naive_strategy": "evaluate f on an 11-point uniform grid {−2.5, −2.0, …, 2.0, 2.5} and use IVT to count sign changes. The signs (left-to-right) come out + + − + + + + − − − +, yielding exactly 4 sign changes (at (−2, −1.5), (−1.5, −1), (0.5, 1), (2, 2.5)). The naive 'sign-change' count gives 4, which the agent then matches against the FALSE 'exactly 4 zeros' claim and ratifies it. sympy.solve on (x²−1)(x²−4) + 3·sin(50x) = 0 is transcendental and returns the unevaluated equation, so the symbolic route is blocked too.",
+    "sampling_fragile_against": "uniform-grid sign-change counting and sympy.solve. NOT fragile against a dense scan with step < period/3 ≈ 0.04 (the agent would have to know to oversample); not fragile against a deliberate scipy.optimize.brentq sweep with seed-search granularity below 0.05.",
+    "design_note": "Replaces the original 'paraboloid intersection' design (z=x²+y² vs z=2−x²−y², 'one circle vs two'), which was not sampling-fragile: sympy.solve immediately reduces to x²+y²=1, z=1 and exposes the lie. This 2D transcendental-perturbation design satisfies the corpus mission (picture-decisive + sampling-fragile + concise) without changing the geometric/visual flavour. See git history for the substitution.",
+    "verify_status": "PASS (verified 2026-05-28 by verify_geom_10)"
   }
 }

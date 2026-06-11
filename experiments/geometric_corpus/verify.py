@@ -321,7 +321,87 @@ def verify_geom_04():
 
 
 def verify_geom_05():
-    log("\n=== geom_05 === TODO: implement monotonicity wiggle check.")
+    """Monotonicity of a_n = 1/n + (1/200) * exp(-(n - 47)^2 / 2) on n >= 1.
+
+    The base 1/n is strictly decreasing. A narrow Gaussian bump at
+    integer center n=47 with sigma=sqrt(2) ~ 1.41 lifts a_46, a_47,
+    a_48 above the 1/n trend by enough to flip the sign of the
+    forward difference: a_47 > a_46, so (a_n) is NOT monotone
+    decreasing.
+
+    Picture-decisive: a scatter/line of a_n on n in [1, 80] shows the
+    bump near n=47 clearly. (The residual a_n - 1/n is even sharper.)
+
+    Sampling-fragile: a naive sparse logspace sample at
+    {1, 2, 5, 10, 20, 50, 100, 200} misses the bump entirely. The
+    nearest sample point is n=50, three indices from the bump center;
+    the bump contribution there is exp(-4.5)/200 ~ 5.55e-5, dwarfed
+    by 1/50 = 0.02. The sparse-sampled subsequence is therefore
+    strictly decreasing and the naive check ratifies the FALSE
+    'strictly monotone' claim.
+
+    Anti-claim: an exhaustive integer scan `for n in range(1, K)`
+    with K >= 47 would catch the violation. The design assumes
+    forced_textual reaches for a closed-form or logspace check, not
+    a brute-force enumeration -- which is consistent with how
+    forced_textual behaved in Studies 1-5.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    log("\n=== geom_05: monotonicity of 1/n + (1/200)*exp(-(n-47)^2/2) ===")
+
+    def a(n: int) -> float:
+        return 1.0 / n + (1.0 / 200.0) * math.exp(-((n - 47) ** 2) / 2.0)
+
+    # (1) Picture: a_n on n in [1, 80], with bump center marked.
+    ns = np.arange(1, 81)
+    vals = np.array([a(int(n)) for n in ns])
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4))
+    ax1.plot(ns, vals, "o-", lw=1.0, markersize=3.5)
+    ax1.axvline(47, color="red", lw=0.8, linestyle="--",
+                label="bump center n=47")
+    ax1.set_xlabel("n"); ax1.set_ylabel("a_n"); ax1.legend()
+    ax1.grid(True, alpha=0.3)
+    ax1.set_title("a_n on n in [1, 80]")
+    residual = vals - 1.0 / ns
+    ax2.plot(ns, residual, "o-", lw=1.0, markersize=3.5, color="C2")
+    ax2.axvline(47, color="red", lw=0.8, linestyle="--")
+    ax2.set_xlabel("n"); ax2.set_ylabel("a_n - 1/n")
+    ax2.set_title("residual: Gaussian bump at n=47")
+    ax2.grid(True, alpha=0.3)
+    PNG_DIR.mkdir(exist_ok=True)
+    out = PNG_DIR / "geom_05.png"
+    fig.savefig(out, dpi=120); plt.close(fig)
+    log(f"  picture saved -> {out.relative_to(HERE)}; INSPECT BY EYE.")
+
+    # (2) Naive sparse logspace sample: pairwise monotone?
+    sparse = [1, 2, 5, 10, 20, 50, 100, 200]
+    sparse_vals = [a(n) for n in sparse]
+    log("  naive sparse logspace sample (n, a_n):")
+    for n, v in zip(sparse, sparse_vals):
+        log(f"    n = {n:3d}   a_n = {v:.6f}")
+    pairwise_decreasing = all(
+        sparse_vals[i] > sparse_vals[i + 1]
+        for i in range(len(sparse) - 1))
+    log(f"  pairwise a_{{n_k}} > a_{{n_{{k+1}}}} on sparse sample: "
+        f"{pairwise_decreasing}")
+
+    # Truth: a_47 > a_46 (the violation).
+    log(f"  TRUTH: a_46 = {a(46):.6f}, a_47 = {a(47):.6f}, "
+        f"a_48 = {a(48):.6f}")
+    truth_violation = a(47) > a(46)
+    log(f"  TRUTH: a_47 > a_46? {truth_violation}  "
+        f"(diff = a_47 - a_46 = {a(47) - a(46):+.6f})")
+
+    if pairwise_decreasing and truth_violation:
+        log("  PASS sampling-fragile: naive sparse logspace sample sees "
+            "strict monotone decrease, ratifying the FALSE 'strictly "
+            "monotone' claim. The bump at n=47 (and hence the violation "
+            "a_47 > a_46) is only visible from the picture.")
+    else:
+        log("  FAIL sampling-fragile: tune bump amplitude / width or "
+            "the sparse sample point set.")
 
 
 def verify_geom_06():
@@ -396,11 +476,190 @@ def verify_geom_06():
 
 
 def verify_geom_09():
-    log("\n=== geom_09 === TODO: implement differentiability oscillation check.")
+    """Differentiability of f(x) = x*sin(pi/x), f(0) = 0, at x = 0.
+
+    The difference quotient (f(h) - 0)/h = sin(pi/h). The function
+    sin(pi/h) oscillates in [-1, 1] with unbounded frequency as
+    h -> 0, so the limit does not exist; f is NOT differentiable at
+    0.
+
+    Picture-decisive: plot of sin(pi/x) on x in [0.001, 0.1] shows
+    the unbounded oscillation between +/- 1. The function f(x)
+    itself, plotted on the same window with the envelopes y = +/- x
+    overlaid, shows the same oscillation amplitude-modulated by |x|.
+
+    Sampling-fragile (this is the key piece of the design): the
+    canonical agentic numerical-derivative sample at decimal h is
+    {0.1, 0.05, 0.025, 0.01, 0.005, 0.001, 0.0005, 0.0001}. Every
+    such h has the form m / 10^k with k >= 1, so pi/h is an integer
+    multiple of pi. Therefore sin(pi/h) = 0 exactly, up to float64
+    rounding: across the sample |sin(pi/h)| < 1e-10. The agent's
+    naive 'evaluate (f(h) - 0)/h at small decimal h' check sees zero
+    at every sample and ratifies the FALSE f'(0) = 0 claim.
+
+    Not fragile against: (a) irrational h or non-divisor-of-pi
+    decimals (h = 0.3 already hits sin(10*pi/3) ~ -0.866), or
+    (b) sympy.limit(sin(pi/x), x, 0) which returns AccumBounds(-1, 1)
+    in modern sympy.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    log("\n=== geom_09: differentiability of f(x) = x*sin(pi/x), f(0)=0 ===")
+
+    def quot(h: float) -> float:
+        # (f(h) - 0) / h = sin(pi/h) for h != 0.
+        return math.sin(math.pi / h)
+
+    # (1) Picture: sin(pi/x) on x in [0.001, 0.1] -- this IS the
+    # difference quotient, which is what determines differentiability.
+    # Also plot f(x) zoomed in with envelopes for the function-level view.
+    xs = np.linspace(0.001, 0.1, 4000)
+    quot_vals = np.sin(np.pi / xs)
+    fx_vals = xs * np.sin(np.pi / xs)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11, 4))
+    ax1.plot(xs, quot_vals, lw=0.6, color="C3")
+    ax1.set_xlabel("x")
+    ax1.set_ylabel("(f(x) - 0)/x = sin(pi/x)")
+    ax1.set_title("difference quotient: unbounded oscillation in [-1, 1]")
+    ax1.set_ylim(-1.2, 1.2)
+    ax1.grid(True, alpha=0.3)
+    ax2.plot(xs, fx_vals, lw=0.6, color="C0")
+    ax2.plot(xs, xs, lw=0.5, color="black", linestyle="--", alpha=0.5,
+             label="y = +/- x envelope")
+    ax2.plot(xs, -xs, lw=0.5, color="black", linestyle="--", alpha=0.5)
+    ax2.set_xlabel("x"); ax2.set_ylabel("f(x) = x*sin(pi/x)")
+    ax2.set_title("f(x) on x in [0.001, 0.1]")
+    ax2.legend()
+    ax2.grid(True, alpha=0.3)
+    PNG_DIR.mkdir(exist_ok=True)
+    out = PNG_DIR / "geom_09.png"
+    fig.savefig(out, dpi=120); plt.close(fig)
+    log(f"  picture saved -> {out.relative_to(HERE)}; INSPECT BY EYE.")
+
+    # (2) Naive numerical-derivative sample at decimal h's.
+    sample_hs = [0.1, 0.05, 0.025, 0.01, 0.005, 0.001, 0.0005, 0.0001]
+    sample_qs = [quot(h) for h in sample_hs]
+    log("  naive numerical-derivative sample (h, (f(h)-0)/h):")
+    for h, q in zip(sample_hs, sample_qs):
+        log(f"    h = {h:8.4f}   sin(pi/h) = {q:+.6e}")
+    tol = 1e-10
+    all_near_zero = all(abs(q) < tol for q in sample_qs)
+    max_abs = max(abs(q) for q in sample_qs)
+    log(f"  max |sin(pi/h)| on sample: {max_abs:.3e}  "
+        f"(tol = {tol}, all below tol: {all_near_zero})")
+
+    # Truth probe: along h_k^+ = 2/(4k+1), sin(pi/h) = sin((4k+1)pi/2) = +1
+    # for every k; along h_k^- = 2/(4k+3), sin(pi/h) = -1 for every k. Two
+    # explicit sequences h -> 0 with limits +1 and -1 respectively prove
+    # the difference quotient has no limit.
+    log("  TRUTH probe: two sequences h -> 0 with diff-quotient -> +/-1:")
+    for k in range(1, 5):
+        h_p = 2.0 / (4 * k + 1)
+        h_m = 2.0 / (4 * k + 3)
+        log(f"    h = {h_p:.6f}  -> sin(pi/h) = "
+            f"{math.sin(math.pi / h_p):+.4f}    "
+            f"h = {h_m:.6f}  -> sin(pi/h) = "
+            f"{math.sin(math.pi / h_m):+.4f}")
+
+    # Also probe an irrational-ish off-decimal h to confirm the
+    # sample-set choice is what matters, not the function:
+    log("  off-decimal probe (would catch the lie): h = 0.3, "
+        f"sin(pi/0.3) = {math.sin(math.pi / 0.3):+.4f}")
+
+    if all_near_zero:
+        log("  PASS sampling-fragile: every decimal h sample gives "
+            "(f(h)-0)/h = 0 (within float64 tolerance), ratifying the "
+            "FALSE f'(0) = 0 claim. Truth probe at h = 2/(4k+1) shows "
+            "the difference quotient hits +/-1 -- no limit. The picture "
+            "of sin(pi/x) on [0.001, 0.1] makes the non-existence of "
+            "the limit unmissable.")
+    else:
+        log("  FAIL sampling-fragile: some decimal sample is above "
+            "tolerance. Investigate float64 propagation in pi/h.")
 
 
 def verify_geom_10():
-    log("\n=== geom_10 === TODO: implement surface-intersection cardinality check.")
+    """Real-zero count of f(x) = (x^2 - 1)(x^2 - 4) + 3*sin(50x) on [-2.5, 2.5].
+
+    The unperturbed polynomial p(x) = (x^2 - 1)(x^2 - 4) has 4 simple
+    roots {+/-1, +/-2}. Near each root, |p| is small and the
+    perturbation 3*sin(50x) (amplitude 3, period 2*pi/50 ~ 0.126)
+    crosses zero many times. Total true zero count is ~40-50.
+
+    Picture-decisive: a single plot of f on [-2.5, 2.5] shows the
+    polynomial W-shape with a visible high-frequency wave; near
+    x = +/-1 and x = +/-2 the wave crosses zero repeatedly. A zoomed
+    view on x in [0.5, 1.5] makes the multi-crossing structure
+    unmissable.
+
+    Sampling-fragile: an 11-point uniform grid {-2.5, -2.0, ..., 2.5}
+    samples f only at endpoints of large sub-intervals; in each
+    sub-interval the polynomial dominates the grid sample and the
+    high-frequency oscillation aliases out. The grid produces exactly
+    4 IVT sign changes (matching the false 'exactly 4 zeros' claim)
+    even though the true count is ~47.
+
+    Symbolic-fragile: sympy.solve on (x^2-1)(x^2-4) + 3*sin(50x) = 0
+    is transcendental; sympy returns the unevaluated equation.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    log("\n=== geom_10: real-zero count of (x^2-1)(x^2-4) + 3*sin(50x) ===")
+
+    def f(x):
+        return (x ** 2 - 1) * (x ** 2 - 4) + 3 * np.sin(50 * x)
+
+    # (1) Picture: f on [-2.5, 2.5] full view + zoom near x = 1.
+    xs_full = np.linspace(-2.5, 2.5, 4000)
+    ys_full = f(xs_full)
+    xs_zoom = np.linspace(0.5, 1.5, 4000)
+    ys_zoom = f(xs_zoom)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
+    ax1.plot(xs_full, ys_full, lw=0.5, color="C0")
+    ax1.axhline(0, color="black", lw=0.5)
+    ax1.set_xlabel("x"); ax1.set_ylabel("f(x)")
+    ax1.set_title("f(x) on [-2.5, 2.5]: polynomial W + high-freq wiggle")
+    ax1.grid(True, alpha=0.3)
+    ax2.plot(xs_zoom, ys_zoom, lw=0.7, color="C2")
+    ax2.axhline(0, color="black", lw=0.5)
+    ax2.set_xlabel("x"); ax2.set_ylabel("f(x)")
+    ax2.set_title("zoom near x = 1: many crossings of 0")
+    ax2.grid(True, alpha=0.3)
+    PNG_DIR.mkdir(exist_ok=True)
+    out = PNG_DIR / "geom_10.png"
+    fig.savefig(out, dpi=120); plt.close(fig)
+    log(f"  picture saved -> {out.relative_to(HERE)}; INSPECT BY EYE.")
+
+    # (2) Naive 11-pt uniform-grid sign-change count.
+    grid = np.linspace(-2.5, 2.5, 11)
+    grid_vals = f(grid)
+    log("  naive 11-pt uniform grid samples of f:")
+    for gx, gv in zip(grid, grid_vals):
+        log(f"    x = {gx:+.2f}   f(x) = {gv:+.4f}")
+    sign_changes = sum(
+        1 for i in range(len(grid) - 1)
+        if grid_vals[i] * grid_vals[i + 1] < 0)
+    log(f"  naive IVT sign-change count on 11-pt grid: {sign_changes}")
+
+    # (3) Dense ground-truth scan: count real zeros via sign changes
+    # at a sampling rate well below the sin period (~0.126).
+    dense = np.linspace(-2.5, 2.5, 20001)  # step = 2.5e-4
+    dense_vals = f(dense)
+    true_zeros = int(np.sum(dense_vals[:-1] * dense_vals[1:] < 0))
+    log(f"  dense-scan ground-truth zero count (20001-pt sample): "
+        f"{true_zeros}")
+
+    if sign_changes == 4 and true_zeros > 10:
+        log(f"  PASS sampling-fragile: naive 11-pt grid gives 4 sign "
+            f"changes (matches FALSE 'exactly 4 zeros' claim) while a "
+            f"dense scan finds {true_zeros}. The picture shows the "
+            "many crossings near x = +/-1 and +/-2.")
+    else:
+        log(f"  FAIL sampling-fragile: grid sign changes = {sign_changes} "
+            f"(want 4), dense zeros = {true_zeros} (want > 10). "
+            "Tune amplitude or grid.")
 
 
 VERIFIERS = {

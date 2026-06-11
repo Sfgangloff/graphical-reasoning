@@ -10,6 +10,9 @@ __pycache__/
 *.pyc
 tests.txt
 .DS_Store
+# macOS AppleDouble sidecar files. The repo lives on an exFAT external
+# drive, so macOS scatters `._*` metadata files everywhere.
+._*
 .venv*/
 
 # Claude Code per-machine state. settings.json and hooks/ are

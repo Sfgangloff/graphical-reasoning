@@ -85,9 +85,10 @@ transversally} (i.e.\ one passes from below to above the other).
 The *only* difference between `true` and `false` variants is the
 structural-claim sentence. Keep the setup identical.
 
-## Status (2026-05-25)
+## Status (2026-06-10)
 
-Five problems are designed and verified end-to-end:
+All eight problems are designed and verified end-to-end
+(`verify.py --all` → 8/8 PASS, 8 inspection PNGs in `verify_plots/`):
 
 | ID | Type | verify_status |
 |---|---|---|
@@ -95,34 +96,46 @@ Five problems are designed and verified end-to-end:
 | `geom_02` | Self-intersection of (cos t, sin 2t) | PASS |
 | `geom_03` | Convexity violated by narrow Gaussian bump | PASS |
 | `geom_04` | Unit disk minus a small off-grid circular hole | PASS |
+| `geom_05` | Monotonicity of `1/n + (1/200)·exp(−(n−47)²/2)` | PASS |
 | `geom_06` | Inequality h(x) ≥ 0 broken by narrow off-grid dip | PASS |
+| `geom_09` | Differentiability of `x·sin(π/x)` at 0 | PASS |
+| `geom_10` | Real-zero count of `(x²−1)(x²−4) + 3·sin(50x)` | PASS |
 
 `verify.py --problem <id>` for each of those runs the picture step
 (saves a PNG to `verify_plots/` for human inspection) and the
 sampling-fragile step (asserts the naive grid / containment strategy
 ratifies the FALSE claim).
 
-Three problems remain — each requires a per-problem redesign:
+### Notes on the redesigns (2026-05-27 / 28)
 
-- `geom_05`: original sequence `a_n = 1/n + sin(n)/n²` is in fact
-  monotone decreasing for n ∈ [1, 200] (verified numerically); the
-  draft canonical was algebraically wrong. A working replacement
-  needs a sequence whose non-monotonicity is real but at indices a
-  naive sparse sample misses (e.g. `1/n + 0.033·exp(−(n−50)²/9)`,
-  bump-around-n=50 — works but feels contrived). Drop or redesign.
-- `geom_09`: differentiability of `x sin(1/x)` at 0. The natural
-  naive sample `h ∈ {0.1, 0.01, 0.001, 0.0001}` returns
-  `sin(1/h) ∈ {−0.544, −0.506, 0.827, −0.306}` — not approaching
-  zero, so naive *does* catch the non-differentiability. Not
-  inherently sampling-fragile; needs reframing.
-- `geom_10`: surface intersection cardinality. A 3D picture-decisive
-  problem; needs 3D visualization plumbing and a sampling-fragile
-  variant for `forced_textual`.
+The originally-drafted forms of `geom_05`, `geom_09`, and `geom_10`
+were not deliverable as written; each was redesigned to satisfy the
+picture-decisive + sampling-fragile criteria. The replacements are
+recorded in `canonical.json` (see each entry's body and the
+`design_note` field on `geom_10`); the substitutions are:
 
-Pre-registered N for Study 8 was 8 problems × 30 cells = 240; with
-5 problems it would be 5 × 30 = 150 cells. If the remaining three
-cannot be made picture-decisive AND sampling-fragile, the
-pre-registration's H8 sample size needs revision before Study 8 runs.
+- `geom_05`: original `a_n = 1/n + sin(n)/n²` is in fact monotone
+  decreasing on [1, 200] (the `sin(n)/n²` term decays too fast to
+  ever overcome the 1/(n(n+1)) gap). Replaced with a 1/n trend plus
+  a *narrow integer-centered Gaussian bump at n = 47* — the bump
+  lifts `a_47` above `a_46`, breaking monotonicity, but falls between
+  conventional sparse sample points.
+- `geom_09`: changed the function from `x·sin(1/x)` to
+  `x·sin(π/x)`. The choice of π in the numerator makes `sin(π/h)`
+  evaluate to *exactly* 0 (within float64 rounding) at every decimal
+  h = m/10ᵏ — turning the naive numerical-derivative sample into a
+  perfectly misleading "f'(0) = 0" signal. Picture-decisiveness
+  (unbounded oscillation in [−1, 1]) is preserved.
+- `geom_10`: dropped surface-intersection cardinality (algebraically
+  trivial: sympy.solve reduces the two paraboloids to x²+y²=1, z=1
+  in one line). Replaced with a 2D real-zero-count problem on a
+  transcendental perturbation of a degree-4 polynomial; the naive
+  11-point uniform grid sees 4 IVT sign changes (matching the false
+  claim) while a dense scan finds 56 actual zeros. Sympy.solve also
+  fails because the equation is transcendental.
+
+Pre-registered N for Study 8 was 8 problems × 30 cells = 240 cells;
+with all 8 problems now verified, the original N stands.
 
 ## Time budget
 
