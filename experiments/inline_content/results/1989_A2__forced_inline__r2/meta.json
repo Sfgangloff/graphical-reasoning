@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_inline",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780052800.699017,
+  "ended_at": 1780053416.673511,
+  "wall_clock_s": 615.9744939804077,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The integrand e^{x^2} is positive and increasing and the region-density x\u00b7e^{x^2} integrates over [0,1] to (e-1)/2; doubled by symmetry the total is e-1\u22481.718 for a=b=1, confirming the answer (e^{a^2b^2}-1)/(ab).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_function",
+    "notes": "Solution def with correct closed form and faithful statement compile cleanly via lake build; proof left as sorry since the full Fubini region-split + Gaussian-antiderivative argument was not feasible within the wall-clock budget (lake build alone took 255s)."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r2_svkxss63/workspace"
+}

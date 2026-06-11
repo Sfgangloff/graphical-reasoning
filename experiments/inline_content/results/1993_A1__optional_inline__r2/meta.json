@@ -1,0 +1,44 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "optional_inline",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780109779.331331,
+  "ended_at": 1780110506.88577,
+  "wall_clock_s": 727.5544390678406,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "optional_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 5,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lake build",
+    "notes": "Reduced equal-area condition to antiderivative differences via integral_eq_sub_of_hasDerivAt; sqrt(3) terms cancel so a single ring closes the integral equality; compiled clean on first build."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r2_1cpgvv6f/workspace"
+}

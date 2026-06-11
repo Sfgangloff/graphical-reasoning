@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_inline",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780049514.324783,
+  "ended_at": 1780052303.822568,
+  "wall_clock_s": 2789.4977848529816,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_surface": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The surface of e^{max(b\u00b2x\u00b2,a\u00b2y\u00b2)} is positive with a symmetric ridge along the diagonal (where the max switches), rising from 1 at the origin to e^{a\u00b2b\u00b2}, confirming the region-split structure that yields the answer (e^{a\u00b2b\u00b2}\u22121)/(ab).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_surface",
+    "notes": "Correct answer term (e^{a\u00b2b\u00b2}\u22121)/(ab) and faithful statement compile cleanly; full proof (change-of-vars + Fubini + region split with non-elementary inner integral) left as sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r0_fmq0fcmv/workspace"
+}

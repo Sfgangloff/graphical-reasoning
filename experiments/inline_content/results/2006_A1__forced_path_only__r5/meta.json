@@ -1,0 +1,59 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "forced_path_only",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780242169.407063,
+  "ended_at": 1780242540.339921,
+  "wall_clock_s": 370.9328579902649,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The integrand x*sqrt((x-2)(4-x)) is positive and supported exactly on [2,4], confirming the radial cross-section r in [2,4] and giving V = 4*pi*\u222b_2^4 r*sqrt((r-2)(4-r)) dr = 6*pi^2.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz-path-only__plot_function",
+    "notes": "Statement faithful and answer term 6*pi^2 compiles cleanly (lake build exit 0); full 3D volume integral proof infeasible in budget so proof is sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r5_2h5wabe5/workspace"
+}

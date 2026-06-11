@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_path_only",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780056132.727147,
+  "ended_at": 1780056459.316649,
+  "wall_clock_s": 326.58950185775757,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_surface": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The surface exp(max(x\u00b2,y\u00b2)) on [0,1]\u00b2 is symmetric across the diagonal y=x and ranges from 1 at the origin to e at (1,1), consistent with the closed form (e^{a\u00b2b\u00b2}\u22121)/(ab) (\u2248 e\u22121 for a=b=1).",
+    "viz_changed_approach": false,
+    "decisive_tool": "plot_surface",
+    "notes": "Solution term (e^{a\u00b2b\u00b2}\u22121)/(ab) is correct and type-checks; the double-integral region-splitting proof was too heavy to complete in budget, so the proof remains a sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r1_1xu6j2_n/workspace"
+}

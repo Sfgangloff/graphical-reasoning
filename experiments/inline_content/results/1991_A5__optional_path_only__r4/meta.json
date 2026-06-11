@@ -1,0 +1,52 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "optional_path_only",
+  "run_index": 4,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780090773.323265,
+  "ended_at": 1780091230.659153,
+  "wall_clock_s": 457.33588790893555,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_verify": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 9,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "optional_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 7,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Bounded sqrt(x^4+c^2) by x^2+c with c=y-y^2\u22650, integrated, and closed the y^2-2y^3/3\u22641/3 inequality via nlinarith using (y-1)^2(2y+1)\u22650; compiled clean on first attempt."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r4_q5s3u152/workspace"
+}

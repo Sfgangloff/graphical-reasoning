@@ -1,0 +1,59 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "forced_path_only",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780240949.977314,
+  "ended_at": 1780241216.626558,
+  "wall_clock_s": 266.6492440700531,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_implicit": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The implicit boundary (x^2+y^2+8)^2=36x^2 in the (r,z) half-plane is exactly the unit circle centered at (3,0), so the solid is the unit disk at distance 3 from the z-axis revolved into a torus, giving Pappus volume 2\u03c0\u00b73\u00b7\u03c0 = 6\u03c0\u00b2.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz-path-only__plot_implicit",
+    "notes": "Faithful statement and correct closed form 6*Real.pi^2 compile cleanly (only sorry warning); full torus-volume proof was out of budget so the proof remains a sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r1_wgok620t/workspace"
+}

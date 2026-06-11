@@ -1,0 +1,59 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "forced_inline",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1779949936.23799,
+  "ended_at": 1779950285.8722198,
+  "wall_clock_s": 349.63422989845276,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "For the test case a=1 the shaded integral evaluates to \u2248 0.239876, which matches \u221a\u03c0\u00b7e^{-2} \u2248 0.23987, confirming the closed form \u222b\u2080^\u221e t^{-1/2} e^{-a(t+1/t)} dt = \u221a(\u03c0/a)\u00b7e^{-2a} and hence the answer \u221a(\u03c0/1985)\u00b7e^{-3970} for a=1985.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_integrand_with_shading",
+    "notes": "Closed form verified numerically; statement and answer term compile. Proof left as sorry \u2014 full formalization (substitution t = u\u00b2, Glasser identity, Gaussian integral) is beyond budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r0_rasonrb2/workspace"
+}

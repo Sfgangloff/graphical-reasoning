@@ -1,0 +1,22 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "forced_path_only",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780030919.241178,
+  "ended_at": 1780032025.860325,
+  "wall_clock_s": 1106.6191470623016,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 1,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {},
+  "tool_calls_attempted": 0,
+  "tool_calls_succeeded": 0,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r1_5ffclzka/workspace"
+}

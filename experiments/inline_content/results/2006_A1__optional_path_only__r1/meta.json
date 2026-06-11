@@ -1,0 +1,44 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "optional_path_only",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780244309.513618,
+  "ended_at": 1780244480.444331,
+  "wall_clock_s": 170.93071293830872,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 5,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "optional_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 4,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lake build",
+    "notes": "Faithful statement (volume of {(x,y,z) | (x\u00b2+y\u00b2+z\u00b2+8)\u00b2 \u2264 36(x\u00b2+y\u00b2)}) and correct answer term 6\u03c0\u00b2 compile cleanly; full solid-of-revolution volume proof left as sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r1_ecfa029q/workspace"
+}

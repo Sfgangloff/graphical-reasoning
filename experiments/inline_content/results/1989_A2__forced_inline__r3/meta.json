@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_inline",
+  "run_index": 3,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780053424.871725,
+  "ended_at": 1780054003.758007,
+  "wall_clock_s": 578.8862819671631,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_surface": {
+      "attempted": 3,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 16,
+    "tool_calls_viz": 3,
+    "viz_read_back": true,
+    "viz_verdict": "The integrand exp(max(b\u00b2x\u00b2,a\u00b2y\u00b2)) is everywhere positive and \u22651, symmetric under the scaled x\u2194y swap, consistent with the closed form (e^{a\u00b2b\u00b2}\u22121)/(ab) (\u2248 e\u22121 \u2248 1.72 at a=b=1).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_surface",
+    "notes": "Faithful statement + correct well-typed answer term compile cleanly (lake build succeeds with only the sorry warning); ran out of budget for the diagonal-split Fubini proof, so the proof remains sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r3_eb4s537m/workspace"
+}

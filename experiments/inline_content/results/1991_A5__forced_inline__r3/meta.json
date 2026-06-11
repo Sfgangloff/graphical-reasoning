@@ -1,0 +1,59 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_inline",
+  "run_index": 3,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780073460.102738,
+  "ended_at": 1780073847.607923,
+  "wall_clock_s": 387.5051851272583,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper bound y^2 - 2y^3/3 rises monotonically on [0,1] to exactly 1/3 at y=1, and since f(y) \u2264 this bound and f(1)=\u222b\u2080\u00b9x\u00b2dx=1/3 (the y-y\u00b2 term vanishes), the maximum is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lake build",
+    "notes": "Formalized as IsGreatest with solution 1/3; proof bounds \u221a(x\u2074+(y-y\u00b2)\u00b2) \u2264 x\u00b2+(y-y\u00b2) via sqrt_le_sqrt, integrates to y\u00b2-2y\u00b3/3, and closes with nlinarith using (y-1)\u00b2(2y+1)\u22650; built clean on first iteration after unfolding the solution def."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r3_mr3vg96a/workspace"
+}

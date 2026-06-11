@@ -1,0 +1,7 @@
+⚠ [8387/8388] Replayed Solution
+warning: Solution.lean:32:5: unused variable `hfa`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8388 jobs).
+
+--- stderr ---

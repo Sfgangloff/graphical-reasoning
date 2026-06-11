@@ -1,0 +1,55 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "forced_path_only",
+  "run_index": 4,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780036391.757277,
+  "ended_at": 1780037104.090688,
+  "wall_clock_s": 712.3334109783173,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_integrand_with_shading": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 9,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 10,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "Numerical integral with a=1 \u2248 0.239875 matches \u221a\u03c0\u00b7e^{-2}=0.23988 exactly, confirming \u222b_0^\u221e t^{-1/2}e^{-a(t+1/t)}dt = \u221a(\u03c0/a)\u00b7e^{-2a}, hence the answer \u221a(\u03c0/1985)\u00b7e^{-3970}.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz-path-only__plot_integrand_with_shading",
+    "notes": "Closed-form answer derived analytically and confirmed numerically via the shaded-integrand plot; statement typechecks faithfully, but the integral-evaluation proof (substitution + Glasser trick) was left as sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r4_13u2vnyd/workspace"
+}

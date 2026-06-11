@@ -1,0 +1,59 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "forced_path_only",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780037229.936513,
+  "ended_at": 1780037510.994154,
+  "wall_clock_s": 281.0576410293579,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 2,
+    "viz_read_back": true,
+    "viz_verdict": "The integrand (shown with a=1) is a positive unimodal bump peaking \u22480.144 near t\u22480.78 and decaying to 0 at both ends, so the integral is finite and positive (\u22480.24=\u221a\u03c0\u00b7e\u207b\u00b2 for a=1), confirming the formula \u221a(\u03c0/a)\u00b7e^(\u22122a) and hence the answer \u221a(\u03c0/1985)\u00b7e^(\u22123970).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz-path-only__plot_function",
+    "notes": "Answer term \u221a(\u03c0/1985)\u00b7e^(\u22123970) is defined, well-typed and confirmed by the plot; statement typechecks with only the sorry warning, but the full Glasser-substitution Gaussian proof is not in Mathlib and was infeasible within budget, so the proof is a sorry fallback."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r5_rj3m4dif/workspace"
+}

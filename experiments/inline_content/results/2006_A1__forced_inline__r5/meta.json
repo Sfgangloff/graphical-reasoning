@@ -1,0 +1,55 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "forced_inline",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780240125.008855,
+  "ended_at": 1780240349.1465442,
+  "wall_clock_s": 224.13768911361694,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_implicit": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 7,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The implicit plot of (r\u00b2+z\u00b2+8)\u00b2=36r\u00b2 in the (r,z) plane is exactly the unit circle centered at (3,0), so the solid is a torus (revolve unit disk at radius 3 about the z-axis) with volume \u03c0\u00b71\u00b2\u00b72\u03c0\u00b73 = 6\u03c0\u00b2.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_implicit",
+    "notes": "Viz confirmed the region is a torus and the answer is 6\u03c0\u00b2; the solution def and faithful theorem statement compile cleanly, but the from-scratch volume proof was left as sorry due to its difficulty within budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r5_l9x3wv2o/workspace"
+}

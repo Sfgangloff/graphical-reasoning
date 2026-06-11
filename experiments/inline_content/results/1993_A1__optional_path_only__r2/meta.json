@@ -1,0 +1,47 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "optional_path_only",
+  "run_index": 2,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780141563.548486,
+  "ended_at": 1780142344.298354,
+  "wall_clock_s": 780.7498679161072,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 8,
+      "succeeded": 6
+    },
+    "Edit": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 17,
+  "tool_calls_succeeded": 14,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r2_11bhnjgo/workspace"
+}

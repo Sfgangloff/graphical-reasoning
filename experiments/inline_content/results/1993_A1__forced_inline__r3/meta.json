@@ -1,0 +1,59 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "forced_inline",
+  "run_index": 3,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780093126.6729999,
+  "ended_at": 1780093681.707092,
+  "wall_clock_s": 555.0340921878815,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 3,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 2,
+    "viz_read_back": true,
+    "viz_verdict": "The curve y=2x-3x^3 rises from the origin to a max \u22480.628 (=4\u221a2/9) near x\u22480.47 then falls, crossing y=4/9\u22480.444 on the rising branch (x\u22480.24) and the falling branch at x=2/3, consistent with c=4/9 being the equal-area value.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lake build",
+    "notes": "Plotted curve to confirm geometry/answer c=4/9; proof computes both areas via FTC with antiderivative G and reduces equal-area condition to G(2/3)=0; built cleanly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r3_2vazc_2s/workspace"
+}

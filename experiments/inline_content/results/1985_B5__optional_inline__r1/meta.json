@@ -1,0 +1,48 @@
+{
+  "problem_id": "1985.B5",
+  "condition": "optional_inline",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780038150.901401,
+  "ended_at": 1780038377.197393,
+  "wall_clock_s": 226.295991897583,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 6,
+  "tool_calls_succeeded": 5,
+  "self_report": {
+    "problem_id": "1985.B5",
+    "condition": "optional_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 5,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Answer term sqrt(pi/1985)*exp(-3970) is correct, well-typed, and the faithful statement compiles; full proof needs Glasser's master theorem (not in Mathlib) so the proof is left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r1_9r7fx02i/workspace"
+}

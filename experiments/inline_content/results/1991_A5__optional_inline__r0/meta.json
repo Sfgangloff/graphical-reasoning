@@ -1,0 +1,64 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "optional_inline",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780086437.689795,
+  "ended_at": 1780086936.5982258,
+  "wall_clock_s": 498.90843081474304,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 7,
+      "succeeded": 6
+    },
+    "Edit": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Monitor": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 11,
+      "succeeded": 11
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_loogle": {
+      "attempted": 4,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 34,
+  "tool_calls_succeeded": 28,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "optional_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 18,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Bounded sqrt(x^4+(y-y^2)^2) <= x^2+(y-y^2) via sqrt_le_sqrt of a perfect square, integrated to y^3/3+y(y-y^2)<=1/3 with nlinarith; equality at y=1; lake build clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r0_dvp9ubcg/workspace"
+}

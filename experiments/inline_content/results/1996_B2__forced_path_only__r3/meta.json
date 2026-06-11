@@ -1,0 +1,59 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "forced_path_only",
+  "run_index": 3,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780149444.153907,
+  "ended_at": 1780149800.975461,
+  "wall_clock_s": 356.8215539455414,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "ToolSearch": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz-path-only__plot_partial_sums": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 15,
+  "tool_calls_succeeded": 14,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 4,
+    "viz_read_back": true,
+    "viz_verdict": "log P(N)=\u03a3 log(2k-1) grows smoothly/convexly (log P(12)\u224826.48) and sits strictly between log L\u224824.55 and log U\u224827.74 at N=12, confirming L<P<U holds in exactly the stated direction for all n \u2014 the inequality is TRUE.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz-path-only__plot_partial_sums",
+    "notes": "Faithful theorem statement compiles (product as \u220f Icc 1 n (2k-1), real rpow bounds); full analytic induction proof was infeasible in budget so the proof is left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r3_a73otx06/workspace"
+}

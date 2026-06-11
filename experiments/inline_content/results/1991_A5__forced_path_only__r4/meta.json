@@ -1,0 +1,67 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_path_only",
+  "run_index": 4,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780080549.52158,
+  "ended_at": 1780083117.247932,
+  "wall_clock_s": 2567.7263519763947,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_loogle": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 2,
+      "succeeded": 2
+    }
+  },
+  "tool_calls_attempted": 18,
+  "tool_calls_succeeded": 17,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 4,
+    "viz_read_back": true,
+    "viz_verdict": "The upper-bound curve g(y)=y\u00b2\u2212(2/3)y\u00b3 rises monotonically to exactly 1/3 at y=1, and since the integrand \u221a(x\u2074+(y\u2212y\u00b2)\u00b2) \u2264 x\u00b2+(y\u2212y\u00b2) gives f(y)\u2264g(y)\u22641/3 with f(1)=\u222b\u2080\u00b9x\u00b2dx=1/3 exactly, the maximum is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Formalized as IsGreatest; attained at y=1 (integrand becomes x\u00b2) and upper-bounded via \u221a(a\u00b2+b\u00b2)\u2264a+b and intervalIntegral.integral_mono_on, closed by nlinarith; full proof builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r4_btygu814/workspace"
+}

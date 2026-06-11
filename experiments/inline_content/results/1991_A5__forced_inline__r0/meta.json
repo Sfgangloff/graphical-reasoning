@@ -1,0 +1,59 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_inline",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780071837.583616,
+  "ended_at": 1780072315.670351,
+  "wall_clock_s": 478.0867350101471,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper-bound function y^2 - (2/3)y^3 rises monotonically on [0,1] to exactly 1/3 at y=1, where the bound is tight (integrand becomes x^2), so the maximum value of the integral is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lean_diagnostic_messages (via lake build)",
+    "notes": "Bounded sqrt(x^4+c^2) \u2264 x^2+c (c=y-y^2\u22650), used intervalIntegral.integral_mono_on + integral_pow to get y^3/3 + (y-y^2)y \u2264 1/3 via nlinarith ((y-1)^2(2y+1)\u22650); membership at y=1 where integrand = x^2; builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r0_1ve4dzkp/workspace"
+}

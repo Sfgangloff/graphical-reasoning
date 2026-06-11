@@ -1,0 +1,63 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_path_only",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780075826.521722,
+  "ended_at": 1780076353.820205,
+  "wall_clock_s": 527.2984828948975,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 13,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The integrand sqrt(x^4+(y-y^2)^2) stays at or below x^2+(y-y^2) everywhere on the interval, so integrating the bound gives y^2-(2/3)y^3 which increases to 1/3 at y=1 where the integrand is exactly x^2 \u2014 confirming the maximum is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Formalized as IsGreatest of the value set; proved membership at y=1 (sqrt(x^4)=x^2, integral=1/3) and the upper bound via integral_mono_on with sqrt(x^4+c^2) \u2264 x^2+c then nlinarith on (y-1)^2(2y+1)\u22650; the plot confirmed the key inequality direction."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r0_1nubwmkb/workspace"
+}

@@ -1,0 +1,44 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "optional_inline",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780058569.5552058,
+  "ended_at": 1780058752.519337,
+  "wall_clock_s": 182.96413111686707,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 7,
+  "tool_calls_succeeded": 6,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "optional_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 6,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lake build",
+    "notes": "Faithful statement and correct closed-form answer term (e^{a^2b^2}-1)/(ab) compile cleanly; the double-integral proof (Fubini + region split along y=bx/a + change of variables) was too large to complete within the build-time budget, so the proof is a sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r1_gmzn6n_m/workspace"
+}

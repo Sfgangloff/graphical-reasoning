@@ -1,0 +1,59 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "forced_path_only",
+  "run_index": 0,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780148090.264767,
+  "ended_at": 1780148430.43784,
+  "wall_clock_s": 340.17307305336,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The log-lower-bound curve lies strictly below the log-upper-bound curve for all n\u22651, with the log-product sandwiched between them, confirming the double inequality and its direction are correct.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Faithful statement (double-factorial product with real rpow bounds) compiles cleanly with only the sorry warning; the full inequality proof requires a ln-concavity/integral-comparison argument that did not fit the budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r0_9xijbh48/workspace"
+}

@@ -1,0 +1,67 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_path_only",
+  "run_index": 3,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780077421.039822,
+  "ended_at": 1780080544.878829,
+  "wall_clock_s": 3123.8390069007874,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 9,
+      "succeeded": 8
+    },
+    "Edit": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_verify": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 22,
+  "tool_calls_succeeded": 19,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 13,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper bound y^2 - (2/3)y^3 rises monotonically on [0,1] to exactly 1/3 \u2248 0.333 at y=1, confirming the maximum is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Bounding sqrt(x^4+c^2) \u2264 x^2+c then integrating gives the clean (y-1)^2(2y+1) \u2265 0 nlinarith finish; workspace config files vanished mid-run and had to be restored from the template before lake build succeeded cleanly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r3_niq8c15t/workspace"
+}

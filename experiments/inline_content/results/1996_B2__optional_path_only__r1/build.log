@@ -1,0 +1,53 @@
+✖ [8387/8388] Building Solution (126s)
+trace: .> LEAN_PATH=/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Cli/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/batteries/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/Qq/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/aesop/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/importGraph/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/plausible/.lake/build/lib/lean:/Users/silveregangloff/Desktop/graphical-reasoning/experiments/workspace_template/.lake/packages/mathlib/.lake/build/lib/lean:/private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/.lake/build/lib/lean /Users/silveregangloff/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/Solution.lean -o /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/.lake/build/lib/lean/Solution.olean -i /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/.lake/build/lib/lean/Solution.ilean -c /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/.lake/build/ir/Solution.c --setup /private/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace/.lake/build/ir/Solution.setup.json --json
+error: Solution.lean:33:4: linarith failed to find a contradiction
+case h
+k : ℕ
+hk1 : 0 < 2 * ↑k + 1
+hk3 : 0 < 2 * ↑k + 3
+hbound : Real.log (2 * ↑k + 3) - Real.log (2 * ↑k + 1) ≤ 2 / (2 * ↑k + 1)
+a✝ :
+  Real.log (2 * ↑k + 3) + (2 * ↑k + 1) / 2 * (Real.log (2 * ↑k + 1) - 1) <
+    (2 * (↑k + 1) + 1) / 2 * (Real.log (2 * (↑k + 1) + 1) - 1)
+⊢ False
+failed
+error: Solution.lean:35:46: failed to prove positivity/nonnegativity/nonzeroness
+error: Solution.lean:52:4: linarith failed to find a contradiction
+case h
+k : ℕ
+hk1 : 0 < 2 * ↑k + 1
+hk3 : 0 < 2 * ↑k + 3
+hbound : Real.log (2 * ↑k + 1) - Real.log (2 * ↑k + 3) ≤ -2 / (2 * ↑k + 3)
+a✝ :
+  (2 * (↑k + 1) + 1) / 2 * (Real.log (2 * (↑k + 1) + 1) - 1) <
+    Real.log (2 * ↑k + 1) + (2 * ↑k + 1) / 2 * (Real.log (2 * ↑k + 1) - 1)
+⊢ False
+failed
+error: Solution.lean:53:46: failed to prove positivity/nonnegativity/nonzeroness
+error: Solution.lean:81:12: Unknown identifier `lt_div_iff`
+error: Solution.lean:91:4: unsolved goals
+case succ.left.calc.step
+m : ℕ
+ihl : g m < ∏ i ∈ range (m + 1), (2 * ↑i + 1)
+ihr : ∏ i ∈ range (m + 1), (2 * ↑i + 1) < g (m + 1)
+hk3 : 0 < 2 * ↑m + 3
+hfac : 2 * ↑(m + 1) + 1 = 2 * ↑m + 3
+⊢ (∏ i ∈ range (m + 1), (2 * ↑i + 1)) * (2 * ↑(m + 1) + 1) < (∏ x ∈ range (m + 1), (2 * ↑x + 1)) * (2 * ↑m + 3)
+warning: Solution.lean:121:28: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:121:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:121:28: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:121:42: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+error: Lean exited with code 1
+Some required targets logged failures:
+- Solution
+
+--- stderr ---
+error: build failed

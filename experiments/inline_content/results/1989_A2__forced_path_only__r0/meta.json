@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_path_only",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780055518.171139,
+  "ended_at": 1780056123.628512,
+  "wall_clock_s": 605.4573729038239,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz-path-only__plot_surface": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 15,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 17,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The surface e^{max(b\u00b2x\u00b2,a\u00b2y\u00b2)} is symmetric across the diagonal ay=bx with a crease where max switches, everywhere \u22651 rising to e^{a\u00b2b\u00b2} at the far corner, confirming the split-along-the-diagonal computation that gives the answer (e^{a\u00b2b\u00b2}\u22121)/(ab).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Correct, well-typed solution term (e^{a\u00b2b\u00b2}\u22121)/(ab) and a faithful theorem statement; lake build exits 0 (sorry warning only). The full integral proof (diagonal split + substitution + parts) was left as a sorry due to budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r0_tgszqg22/workspace"
+}

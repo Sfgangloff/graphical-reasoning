@@ -1,0 +1,63 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "forced_path_only",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780095204.412533,
+  "ended_at": 1780095785.560687,
+  "wall_clock_s": 581.1481540203094,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Edit": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 13,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "forced_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 15,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The curve peaks at \u22480.628 and the line c=4/9\u22480.444 cuts it at x\u2081\u22480.244 and x\u2082\u22480.667=2/3, confirming the answer c=4/9 with intersection points x\u2081=(\u221a3\u22121)/3 and x\u2082=2/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Reduced the equal-area condition to the antiderivative identity F(x\u2082)=0 at x\u2082=2/3 (so the F(x\u2081) terms cancel automatically); proved polynomial integrals via integral_eq_sub_of_hasDerivAt and closed the residual with ring_nf; lake build is clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r0_vy4kjmru/workspace"
+}

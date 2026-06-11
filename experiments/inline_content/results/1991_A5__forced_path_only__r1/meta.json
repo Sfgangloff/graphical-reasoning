@@ -1,0 +1,63 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_path_only",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780076360.470179,
+  "ended_at": 1780076893.861769,
+  "wall_clock_s": 533.3915898799896,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "Edit": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "mcp__math-viz-path-only__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 21,
+  "tool_calls_succeeded": 20,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 13,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper bound y^2-2y^3/3 (which dominates the integral since sqrt(x^4+c^2) <= x^2+c with c=y-y^2) rises monotonically to exactly 1/3 at y=1, and the integral equals 1/3 there, so the maximum is 1/3.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Proved IsGreatest with answer 1/3: attained at y=1 (integrand becomes x^2), and bounded above via sqrt(x^4+c^2)<=x^2+c, integral_mono_on, and the polynomial inequality (y-1)^2(2y+1)>=0; builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r1_s3mcvd9n/workspace"
+}

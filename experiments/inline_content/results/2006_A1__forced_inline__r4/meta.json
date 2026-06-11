@@ -1,0 +1,59 @@
+{
+  "problem_id": "2006.A1",
+  "condition": "forced_inline",
+  "run_index": 4,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780239637.2969851,
+  "ended_at": 1780240118.064578,
+  "wall_clock_s": 480.7675929069519,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_implicit": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "2006.A1",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 12,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The implicit curve (x\u00b2+y\u00b2+8)\u00b2=36x\u00b2 is a unit circle centered at radial distance 3, so the 3D region is a solid torus revolving the unit disk about the z-axis, giving volume 2\u03c0\u00b73\u00b7\u03c0\u00b71\u00b2 = 6\u03c0\u00b2.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_implicit",
+    "notes": "Answer term 6\u03c0\u00b2 confirmed by the cross-section plot and the file builds clean; the solid-torus volume proof itself was left as sorry due to budget (no direct Mathlib torus-volume lemma and ~3min builds)."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r4_21wwbo3w/workspace"
+}

@@ -1,0 +1,51 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "optional_inline",
+  "run_index": 0,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780157685.6799512,
+  "ended_at": 1780184048.980971,
+  "wall_clock_s": 26363.301019906998,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": false,
+  "build_ok": false,
+  "sorries_remaining": -1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "BashOutput": {
+      "attempted": 8,
+      "succeeded": 0
+    },
+    "Read": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 0
+    },
+    "lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 0
+    },
+    "lean_lsp_initialize": {
+      "attempted": 1,
+      "succeeded": 0
+    }
+  },
+  "tool_calls_attempted": 20,
+  "tool_calls_succeeded": 9,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r0_83_ls6pu/workspace"
+}

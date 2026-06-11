@@ -1,0 +1,847 @@
+inline-content matrix: 144 cells (6 problems × 4 conditions × 6 runs)  budget=12min/cell
+
+=== cell 1/144  1985.B5 / forced_inline / r0  (elapsed 0.0min) ===
+[1985_B5__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r0_rasonrb2/workspace
+[1985_B5__forced_inline__r0] X  build=True  sorries=1  wall=349.6s  tools=10/10
+  -> experiments/inline_content/results/1985_B5__forced_inline__r0
+
+=== cell 2/144  1985.B5 / forced_inline / r1  (elapsed 8.1min) ===
+[1985_B5__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r1_161jc4nu/workspace
+[1985_B5__forced_inline__r1] X  build=True  sorries=1  wall=1038.1s  tools=17/18
+  -> experiments/inline_content/results/1985_B5__forced_inline__r1
+
+=== cell 3/144  1985.B5 / forced_inline / r2  (elapsed 25.5min) ===
+[1985_B5__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r2_043iu6ep/workspace
+[1985_B5__forced_inline__r2] X  build=True  sorries=1  wall=3673.1s  tools=9/10
+  -> experiments/inline_content/results/1985_B5__forced_inline__r2
+
+=== cell 4/144  1985.B5 / forced_inline / r3  (elapsed 86.9min) ===
+[1985_B5__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r3_xh_5bssu/workspace
+[1985_B5__forced_inline__r3] X  build=True  sorries=1  wall=4.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_inline__r3
+
+=== cell 5/144  1985.B5 / forced_inline / r4  (elapsed 90.7min) ===
+[1985_B5__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r4_m5z3b4ee/workspace
+[1985_B5__forced_inline__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_inline__r4
+
+=== cell 6/144  1985.B5 / forced_inline / r5  (elapsed 90.9min) ===
+[1985_B5__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r5_fqaba9rj/workspace
+[1985_B5__forced_inline__r5] X  build=True  sorries=1  wall=2.7s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_inline__r5
+
+=== cell 7/144  1985.B5 / forced_path_only / r0  (elapsed 91.1min) ===
+[1985_B5__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r0_79jccc3z/workspace
+[1985_B5__forced_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r0
+
+=== cell 8/144  1985.B5 / forced_path_only / r1  (elapsed 91.3min) ===
+[1985_B5__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r1_e7dj_67g/workspace
+[1985_B5__forced_path_only__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r1
+
+=== cell 9/144  1985.B5 / forced_path_only / r2  (elapsed 91.4min) ===
+[1985_B5__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r2_rifdweu7/workspace
+[1985_B5__forced_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r2
+
+=== cell 10/144  1985.B5 / forced_path_only / r3  (elapsed 91.5min) ===
+[1985_B5__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r3_yok864mc/workspace
+[1985_B5__forced_path_only__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r3
+
+=== cell 11/144  1985.B5 / forced_path_only / r4  (elapsed 91.7min) ===
+[1985_B5__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r4_30xd87ek/workspace
+[1985_B5__forced_path_only__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r4
+
+=== cell 12/144  1985.B5 / forced_path_only / r5  (elapsed 91.8min) ===
+[1985_B5__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r5_ri6n84vk/workspace
+[1985_B5__forced_path_only__r5] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r5
+
+=== cell 13/144  1985.B5 / optional_inline / r0  (elapsed 91.9min) ===
+[1985_B5__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r0_td0evoah/workspace
+[1985_B5__optional_inline__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r0
+
+=== cell 14/144  1985.B5 / optional_inline / r1  (elapsed 92.1min) ===
+[1985_B5__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r1_hvmft1b1/workspace
+[1985_B5__optional_inline__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r1
+
+=== cell 15/144  1985.B5 / optional_inline / r2  (elapsed 92.2min) ===
+[1985_B5__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r2_5oygeak6/workspace
+[1985_B5__optional_inline__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r2
+
+=== cell 16/144  1985.B5 / optional_inline / r3  (elapsed 92.3min) ===
+[1985_B5__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r3_o0s6k1e8/workspace
+[1985_B5__optional_inline__r3] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r3
+
+=== cell 17/144  1985.B5 / optional_inline / r4  (elapsed 92.5min) ===
+[1985_B5__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r4_q7_mt8ze/workspace
+[1985_B5__optional_inline__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r4
+
+=== cell 18/144  1985.B5 / optional_inline / r5  (elapsed 92.6min) ===
+[1985_B5__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r5_njgnd9pv/workspace
+[1985_B5__optional_inline__r5] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_inline__r5
+
+=== cell 19/144  1985.B5 / optional_path_only / r0  (elapsed 92.8min) ===
+[1985_B5__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r0_xgu5fgbn/workspace
+[1985_B5__optional_path_only__r0] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r0
+
+=== cell 20/144  1985.B5 / optional_path_only / r1  (elapsed 92.9min) ===
+[1985_B5__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r1_vg692wp_/workspace
+[1985_B5__optional_path_only__r1] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r1
+
+=== cell 21/144  1985.B5 / optional_path_only / r2  (elapsed 93.1min) ===
+[1985_B5__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r2_m5zw3ynz/workspace
+[1985_B5__optional_path_only__r2] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r2
+
+=== cell 22/144  1985.B5 / optional_path_only / r3  (elapsed 93.2min) ===
+[1985_B5__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r3_dsdqm7y6/workspace
+[1985_B5__optional_path_only__r3] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r3
+
+=== cell 23/144  1985.B5 / optional_path_only / r4  (elapsed 93.3min) ===
+[1985_B5__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r4_1rjq3r1o/workspace
+[1985_B5__optional_path_only__r4] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r4
+
+=== cell 24/144  1985.B5 / optional_path_only / r5  (elapsed 93.4min) ===
+[1985_B5__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r5_bndxxpn4/workspace
+[1985_B5__optional_path_only__r5] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r5
+
+=== cell 25/144  1989.A2 / forced_inline / r0  (elapsed 93.5min) ===
+[1989_A2__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r0_umx0a98o/workspace
+[1989_A2__forced_inline__r0] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r0
+
+=== cell 26/144  1989.A2 / forced_inline / r1  (elapsed 93.7min) ===
+[1989_A2__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r1_6xwoim8h/workspace
+[1989_A2__forced_inline__r1] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r1
+
+=== cell 27/144  1989.A2 / forced_inline / r2  (elapsed 93.8min) ===
+[1989_A2__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r2_qe09ld7h/workspace
+[1989_A2__forced_inline__r2] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r2
+
+=== cell 28/144  1989.A2 / forced_inline / r3  (elapsed 93.9min) ===
+[1989_A2__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r3_szwlleic/workspace
+[1989_A2__forced_inline__r3] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r3
+
+=== cell 29/144  1989.A2 / forced_inline / r4  (elapsed 94.0min) ===
+[1989_A2__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r4_ja2ul5_x/workspace
+[1989_A2__forced_inline__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r4
+
+=== cell 30/144  1989.A2 / forced_inline / r5  (elapsed 94.1min) ===
+[1989_A2__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r5_ubman8j8/workspace
+[1989_A2__forced_inline__r5] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_inline__r5
+
+=== cell 31/144  1989.A2 / forced_path_only / r0  (elapsed 94.3min) ===
+[1989_A2__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r0_0fc434li/workspace
+[1989_A2__forced_path_only__r0] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r0
+
+=== cell 32/144  1989.A2 / forced_path_only / r1  (elapsed 94.4min) ===
+[1989_A2__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r1_m6l6j0xl/workspace
+[1989_A2__forced_path_only__r1] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r1
+
+=== cell 33/144  1989.A2 / forced_path_only / r2  (elapsed 94.5min) ===
+[1989_A2__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r2_ydv1al_6/workspace
+[1989_A2__forced_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r2
+
+=== cell 34/144  1989.A2 / forced_path_only / r3  (elapsed 94.6min) ===
+[1989_A2__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r3_rhqfwa5r/workspace
+[1989_A2__forced_path_only__r3] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r3
+
+=== cell 35/144  1989.A2 / forced_path_only / r4  (elapsed 94.7min) ===
+[1989_A2__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r4_ygsxoawz/workspace
+[1989_A2__forced_path_only__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r4
+
+=== cell 36/144  1989.A2 / forced_path_only / r5  (elapsed 94.8min) ===
+[1989_A2__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r5_ja0n4xld/workspace
+[1989_A2__forced_path_only__r5] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r5
+
+=== cell 37/144  1989.A2 / optional_inline / r0  (elapsed 95.0min) ===
+[1989_A2__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r0_efv9_vb2/workspace
+[1989_A2__optional_inline__r0] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r0
+
+=== cell 38/144  1989.A2 / optional_inline / r1  (elapsed 95.1min) ===
+[1989_A2__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r1_ggod4u_3/workspace
+[1989_A2__optional_inline__r1] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r1
+
+=== cell 39/144  1989.A2 / optional_inline / r2  (elapsed 95.2min) ===
+[1989_A2__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r2_wkq7kppa/workspace
+[1989_A2__optional_inline__r2] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r2
+
+=== cell 40/144  1989.A2 / optional_inline / r3  (elapsed 95.3min) ===
+[1989_A2__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r3_cj424nfb/workspace
+[1989_A2__optional_inline__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r3
+
+=== cell 41/144  1989.A2 / optional_inline / r4  (elapsed 95.4min) ===
+[1989_A2__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r4_6_gtz_nq/workspace
+[1989_A2__optional_inline__r4] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r4
+
+=== cell 42/144  1989.A2 / optional_inline / r5  (elapsed 95.5min) ===
+[1989_A2__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r5_zvlf1qff/workspace
+[1989_A2__optional_inline__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_inline__r5
+
+=== cell 43/144  1989.A2 / optional_path_only / r0  (elapsed 95.7min) ===
+[1989_A2__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r0_uu2dy5_6/workspace
+[1989_A2__optional_path_only__r0] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r0
+
+=== cell 44/144  1989.A2 / optional_path_only / r1  (elapsed 95.8min) ===
+[1989_A2__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r1_16909ppf/workspace
+[1989_A2__optional_path_only__r1] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r1
+
+=== cell 45/144  1989.A2 / optional_path_only / r2  (elapsed 95.9min) ===
+[1989_A2__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r2_1y4a8cas/workspace
+[1989_A2__optional_path_only__r2] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r2
+
+=== cell 46/144  1989.A2 / optional_path_only / r3  (elapsed 96.0min) ===
+[1989_A2__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r3_uzn0gyy4/workspace
+[1989_A2__optional_path_only__r3] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r3
+
+=== cell 47/144  1989.A2 / optional_path_only / r4  (elapsed 96.1min) ===
+[1989_A2__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r4_5ml1ijfj/workspace
+[1989_A2__optional_path_only__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r4
+
+=== cell 48/144  1989.A2 / optional_path_only / r5  (elapsed 96.3min) ===
+[1989_A2__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r5_qgbifcbx/workspace
+[1989_A2__optional_path_only__r5] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r5
+
+=== cell 49/144  1991.A5 / forced_inline / r0  (elapsed 96.4min) ===
+[1991_A5__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r0_yv0ark_w/workspace
+[1991_A5__forced_inline__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r0
+
+=== cell 50/144  1991.A5 / forced_inline / r1  (elapsed 96.5min) ===
+[1991_A5__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r1_gfmzqg_b/workspace
+[1991_A5__forced_inline__r1] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r1
+
+=== cell 51/144  1991.A5 / forced_inline / r2  (elapsed 96.6min) ===
+[1991_A5__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r2_94wx3bw3/workspace
+[1991_A5__forced_inline__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r2
+
+=== cell 52/144  1991.A5 / forced_inline / r3  (elapsed 96.7min) ===
+[1991_A5__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r3_b5qn2vok/workspace
+[1991_A5__forced_inline__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r3
+
+=== cell 53/144  1991.A5 / forced_inline / r4  (elapsed 96.8min) ===
+[1991_A5__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r4_z03296t1/workspace
+[1991_A5__forced_inline__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r4
+
+=== cell 54/144  1991.A5 / forced_inline / r5  (elapsed 97.0min) ===
+[1991_A5__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r5_pgcm8n34/workspace
+[1991_A5__forced_inline__r5] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_inline__r5
+
+=== cell 55/144  1991.A5 / forced_path_only / r0  (elapsed 97.1min) ===
+[1991_A5__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r0_nv3cq9ev/workspace
+[1991_A5__forced_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r0
+
+=== cell 56/144  1991.A5 / forced_path_only / r1  (elapsed 97.2min) ===
+[1991_A5__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r1_f_pacjaa/workspace
+[1991_A5__forced_path_only__r1] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r1
+
+=== cell 57/144  1991.A5 / forced_path_only / r2  (elapsed 97.4min) ===
+[1991_A5__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r2_yzj1smy2/workspace
+[1991_A5__forced_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r2
+
+=== cell 58/144  1991.A5 / forced_path_only / r3  (elapsed 97.5min) ===
+[1991_A5__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r3_60kxzlgr/workspace
+[1991_A5__forced_path_only__r3] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r3
+
+=== cell 59/144  1991.A5 / forced_path_only / r4  (elapsed 97.6min) ===
+[1991_A5__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r4_87m16p6m/workspace
+[1991_A5__forced_path_only__r4] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r4
+
+=== cell 60/144  1991.A5 / forced_path_only / r5  (elapsed 97.8min) ===
+[1991_A5__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r5_5_nrofao/workspace
+[1991_A5__forced_path_only__r5] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r5
+
+=== cell 61/144  1991.A5 / optional_inline / r0  (elapsed 97.9min) ===
+[1991_A5__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r0_cxb5l_e1/workspace
+[1991_A5__optional_inline__r0] X  build=True  sorries=1  wall=3.0s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r0
+
+=== cell 62/144  1991.A5 / optional_inline / r1  (elapsed 98.1min) ===
+[1991_A5__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r1_uqd0_ut2/workspace
+[1991_A5__optional_inline__r1] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r1
+
+=== cell 63/144  1991.A5 / optional_inline / r2  (elapsed 98.3min) ===
+[1991_A5__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r2_w_zomnb_/workspace
+[1991_A5__optional_inline__r2] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r2
+
+=== cell 64/144  1991.A5 / optional_inline / r3  (elapsed 98.4min) ===
+[1991_A5__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r3_bc10ys75/workspace
+[1991_A5__optional_inline__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r3
+
+=== cell 65/144  1991.A5 / optional_inline / r4  (elapsed 98.6min) ===
+[1991_A5__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r4_3i7p7q6z/workspace
+[1991_A5__optional_inline__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r4
+
+=== cell 66/144  1991.A5 / optional_inline / r5  (elapsed 98.7min) ===
+[1991_A5__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r5_j6l9hd0d/workspace
+[1991_A5__optional_inline__r5] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_inline__r5
+
+=== cell 67/144  1991.A5 / optional_path_only / r0  (elapsed 98.8min) ===
+[1991_A5__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r0_fpqz8hz9/workspace
+[1991_A5__optional_path_only__r0] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r0
+
+=== cell 68/144  1991.A5 / optional_path_only / r1  (elapsed 99.0min) ===
+[1991_A5__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r1_dwcdn95l/workspace
+[1991_A5__optional_path_only__r1] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r1
+
+=== cell 69/144  1991.A5 / optional_path_only / r2  (elapsed 99.1min) ===
+[1991_A5__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r2_11m8qedh/workspace
+[1991_A5__optional_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r2
+
+=== cell 70/144  1991.A5 / optional_path_only / r3  (elapsed 99.3min) ===
+[1991_A5__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r3_7vzsp55u/workspace
+[1991_A5__optional_path_only__r3] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r3
+
+=== cell 71/144  1991.A5 / optional_path_only / r4  (elapsed 99.4min) ===
+[1991_A5__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r4_0mbqcyt0/workspace
+[1991_A5__optional_path_only__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r4
+
+=== cell 72/144  1991.A5 / optional_path_only / r5  (elapsed 99.6min) ===
+[1991_A5__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r5_v1qhwdu0/workspace
+[1991_A5__optional_path_only__r5] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r5
+
+=== cell 73/144  1993.A1 / forced_inline / r0  (elapsed 99.7min) ===
+[1993_A1__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r0_3f1mhpk_/workspace
+[1993_A1__forced_inline__r0] X  build=True  sorries=1  wall=1.9s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r0
+
+=== cell 74/144  1993.A1 / forced_inline / r1  (elapsed 99.8min) ===
+[1993_A1__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r1_0mth1e4d/workspace
+[1993_A1__forced_inline__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r1
+
+=== cell 75/144  1993.A1 / forced_inline / r2  (elapsed 99.9min) ===
+[1993_A1__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r2_biaje836/workspace
+[1993_A1__forced_inline__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r2
+
+=== cell 76/144  1993.A1 / forced_inline / r3  (elapsed 100.1min) ===
+[1993_A1__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r3_pnw6s68p/workspace
+[1993_A1__forced_inline__r3] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r3
+
+=== cell 77/144  1993.A1 / forced_inline / r4  (elapsed 100.2min) ===
+[1993_A1__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r4_s7i43ad9/workspace
+[1993_A1__forced_inline__r4] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r4
+
+=== cell 78/144  1993.A1 / forced_inline / r5  (elapsed 100.3min) ===
+[1993_A1__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r5_cr27aew9/workspace
+[1993_A1__forced_inline__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_inline__r5
+
+=== cell 79/144  1993.A1 / forced_path_only / r0  (elapsed 100.5min) ===
+[1993_A1__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r0_q8amwjfh/workspace
+[1993_A1__forced_path_only__r0] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r0
+
+=== cell 80/144  1993.A1 / forced_path_only / r1  (elapsed 100.6min) ===
+[1993_A1__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r1_7lze2vvl/workspace
+[1993_A1__forced_path_only__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r1
+
+=== cell 81/144  1993.A1 / forced_path_only / r2  (elapsed 100.7min) ===
+[1993_A1__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r2_u2_gtws6/workspace
+[1993_A1__forced_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r2
+
+=== cell 82/144  1993.A1 / forced_path_only / r3  (elapsed 100.9min) ===
+[1993_A1__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r3_id_p1567/workspace
+[1993_A1__forced_path_only__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r3
+
+=== cell 83/144  1993.A1 / forced_path_only / r4  (elapsed 101.0min) ===
+[1993_A1__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r4_zdw5oaj4/workspace
+[1993_A1__forced_path_only__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r4
+
+=== cell 84/144  1993.A1 / forced_path_only / r5  (elapsed 101.2min) ===
+[1993_A1__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r5_w6h454vs/workspace
+[1993_A1__forced_path_only__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r5
+
+=== cell 85/144  1993.A1 / optional_inline / r0  (elapsed 101.3min) ===
+[1993_A1__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r0_j38tb_x7/workspace
+[1993_A1__optional_inline__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r0
+
+=== cell 86/144  1993.A1 / optional_inline / r1  (elapsed 101.4min) ===
+[1993_A1__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r1_ylxn82ji/workspace
+[1993_A1__optional_inline__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r1
+
+=== cell 87/144  1993.A1 / optional_inline / r2  (elapsed 101.5min) ===
+[1993_A1__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r2_gdfq0fkf/workspace
+[1993_A1__optional_inline__r2] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r2
+
+=== cell 88/144  1993.A1 / optional_inline / r3  (elapsed 101.7min) ===
+[1993_A1__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r3_o_p2xll0/workspace
+[1993_A1__optional_inline__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r3
+
+=== cell 89/144  1993.A1 / optional_inline / r4  (elapsed 101.8min) ===
+[1993_A1__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r4_lbooucan/workspace
+[1993_A1__optional_inline__r4] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r4
+
+=== cell 90/144  1993.A1 / optional_inline / r5  (elapsed 101.9min) ===
+[1993_A1__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r5_erxq3due/workspace
+[1993_A1__optional_inline__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_inline__r5
+
+=== cell 91/144  1993.A1 / optional_path_only / r0  (elapsed 102.1min) ===
+[1993_A1__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r0__jxq1c2z/workspace
+[1993_A1__optional_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r0
+
+=== cell 92/144  1993.A1 / optional_path_only / r1  (elapsed 102.2min) ===
+[1993_A1__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r1_hb69p54o/workspace
+[1993_A1__optional_path_only__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r1
+
+=== cell 93/144  1993.A1 / optional_path_only / r2  (elapsed 102.3min) ===
+[1993_A1__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r2_cu8bajwp/workspace
+[1993_A1__optional_path_only__r2] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r2
+
+=== cell 94/144  1993.A1 / optional_path_only / r3  (elapsed 102.5min) ===
+[1993_A1__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r3_v_prcdsl/workspace
+[1993_A1__optional_path_only__r3] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r3
+
+=== cell 95/144  1993.A1 / optional_path_only / r4  (elapsed 102.7min) ===
+[1993_A1__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r4_rf7rpg6e/workspace
+[1993_A1__optional_path_only__r4] X  build=True  sorries=1  wall=2.8s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r4
+
+=== cell 96/144  1993.A1 / optional_path_only / r5  (elapsed 102.8min) ===
+[1993_A1__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r5_tyow_sx0/workspace
+[1993_A1__optional_path_only__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r5
+
+=== cell 97/144  1996.B2 / forced_inline / r0  (elapsed 103.0min) ===
+[1996_B2__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r0_u_eshf9o/workspace
+[1996_B2__forced_inline__r0] X  build=True  sorries=1  wall=2.6s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r0
+
+=== cell 98/144  1996.B2 / forced_inline / r1  (elapsed 103.1min) ===
+[1996_B2__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r1_ztqulk8a/workspace
+[1996_B2__forced_inline__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r1
+
+=== cell 99/144  1996.B2 / forced_inline / r2  (elapsed 103.2min) ===
+[1996_B2__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r2_e78ybsem/workspace
+[1996_B2__forced_inline__r2] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r2
+
+=== cell 100/144  1996.B2 / forced_inline / r3  (elapsed 103.4min) ===
+[1996_B2__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r3_ost5hwy2/workspace
+[1996_B2__forced_inline__r3] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r3
+
+=== cell 101/144  1996.B2 / forced_inline / r4  (elapsed 103.5min) ===
+[1996_B2__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r4_qhllct2m/workspace
+[1996_B2__forced_inline__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r4
+
+=== cell 102/144  1996.B2 / forced_inline / r5  (elapsed 103.6min) ===
+[1996_B2__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r5_6m4qe2xa/workspace
+[1996_B2__forced_inline__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_inline__r5
+
+=== cell 103/144  1996.B2 / forced_path_only / r0  (elapsed 103.8min) ===
+[1996_B2__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r0_vvg5nkhe/workspace
+[1996_B2__forced_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r0
+
+=== cell 104/144  1996.B2 / forced_path_only / r1  (elapsed 103.9min) ===
+[1996_B2__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r1_lesy__c1/workspace
+[1996_B2__forced_path_only__r1] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r1
+
+=== cell 105/144  1996.B2 / forced_path_only / r2  (elapsed 104.0min) ===
+[1996_B2__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r2_pbh7cwv4/workspace
+[1996_B2__forced_path_only__r2] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r2
+
+=== cell 106/144  1996.B2 / forced_path_only / r3  (elapsed 104.1min) ===
+[1996_B2__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r3_yfr0qhs7/workspace
+[1996_B2__forced_path_only__r3] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r3
+
+=== cell 107/144  1996.B2 / forced_path_only / r4  (elapsed 104.3min) ===
+[1996_B2__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r4_2r0lqdrp/workspace
+[1996_B2__forced_path_only__r4] X  build=True  sorries=1  wall=2.4s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r4
+
+=== cell 108/144  1996.B2 / forced_path_only / r5  (elapsed 104.5min) ===
+[1996_B2__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r5_l8pudyw4/workspace
+[1996_B2__forced_path_only__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r5
+
+=== cell 109/144  1996.B2 / optional_inline / r0  (elapsed 104.6min) ===
+[1996_B2__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r0_2oc5x16p/workspace
+[1996_B2__optional_inline__r0] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r0
+
+=== cell 110/144  1996.B2 / optional_inline / r1  (elapsed 104.7min) ===
+[1996_B2__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r1_dv1cd8ob/workspace
+[1996_B2__optional_inline__r1] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r1
+
+=== cell 111/144  1996.B2 / optional_inline / r2  (elapsed 104.9min) ===
+[1996_B2__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r2_0q_ivw7v/workspace
+[1996_B2__optional_inline__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r2
+
+=== cell 112/144  1996.B2 / optional_inline / r3  (elapsed 105.0min) ===
+[1996_B2__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r3_10aewc1o/workspace
+[1996_B2__optional_inline__r3] X  build=True  sorries=1  wall=3.3s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r3
+
+=== cell 113/144  1996.B2 / optional_inline / r4  (elapsed 105.2min) ===
+[1996_B2__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r4_rd81ml3_/workspace
+[1996_B2__optional_inline__r4] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r4
+
+=== cell 114/144  1996.B2 / optional_inline / r5  (elapsed 105.3min) ===
+[1996_B2__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r5_fwhd_jgg/workspace
+[1996_B2__optional_inline__r5] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_inline__r5
+
+=== cell 115/144  1996.B2 / optional_path_only / r0  (elapsed 105.4min) ===
+[1996_B2__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r0_zfsvbmt2/workspace
+[1996_B2__optional_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r0
+
+=== cell 116/144  1996.B2 / optional_path_only / r1  (elapsed 105.6min) ===
+[1996_B2__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_1n31g_q2/workspace
+[1996_B2__optional_path_only__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r1
+
+=== cell 117/144  1996.B2 / optional_path_only / r2  (elapsed 105.7min) ===
+[1996_B2__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r2_qzom58th/workspace
+[1996_B2__optional_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r2
+
+=== cell 118/144  1996.B2 / optional_path_only / r3  (elapsed 105.8min) ===
+[1996_B2__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r3_jyvk3cxf/workspace
+[1996_B2__optional_path_only__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r3
+
+=== cell 119/144  1996.B2 / optional_path_only / r4  (elapsed 105.9min) ===
+[1996_B2__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r4_rlzwb1ur/workspace
+[1996_B2__optional_path_only__r4] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r4
+
+=== cell 120/144  1996.B2 / optional_path_only / r5  (elapsed 106.1min) ===
+[1996_B2__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r5_0nnqgs8p/workspace
+[1996_B2__optional_path_only__r5] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r5
+
+=== cell 121/144  2006.A1 / forced_inline / r0  (elapsed 106.2min) ===
+[2006_A1__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r0_kum1d295/workspace
+[2006_A1__forced_inline__r0] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r0
+
+=== cell 122/144  2006.A1 / forced_inline / r1  (elapsed 106.3min) ===
+[2006_A1__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r1_6qdjqm74/workspace
+[2006_A1__forced_inline__r1] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r1
+
+=== cell 123/144  2006.A1 / forced_inline / r2  (elapsed 106.4min) ===
+[2006_A1__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r2_f2lms3b3/workspace
+[2006_A1__forced_inline__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r2
+
+=== cell 124/144  2006.A1 / forced_inline / r3  (elapsed 106.6min) ===
+[2006_A1__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r3_1bq9vhyo/workspace
+[2006_A1__forced_inline__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r3
+
+=== cell 125/144  2006.A1 / forced_inline / r4  (elapsed 106.7min) ===
+[2006_A1__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r4_459de_n_/workspace
+[2006_A1__forced_inline__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r4
+
+=== cell 126/144  2006.A1 / forced_inline / r5  (elapsed 106.8min) ===
+[2006_A1__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r5_sqw2vou8/workspace
+[2006_A1__forced_inline__r5] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_inline__r5
+
+=== cell 127/144  2006.A1 / forced_path_only / r0  (elapsed 106.9min) ===
+[2006_A1__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r0_1vioxatq/workspace
+[2006_A1__forced_path_only__r0] X  build=True  sorries=1  wall=2.0s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r0
+
+=== cell 128/144  2006.A1 / forced_path_only / r1  (elapsed 107.1min) ===
+[2006_A1__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r1_i0qukp5s/workspace
+[2006_A1__forced_path_only__r1] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r1
+
+=== cell 129/144  2006.A1 / forced_path_only / r2  (elapsed 107.2min) ===
+[2006_A1__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r2_iu1jlvyz/workspace
+[2006_A1__forced_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r2
+
+=== cell 130/144  2006.A1 / forced_path_only / r3  (elapsed 107.3min) ===
+[2006_A1__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r3_3uqtwbbu/workspace
+[2006_A1__forced_path_only__r3] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r3
+
+=== cell 131/144  2006.A1 / forced_path_only / r4  (elapsed 107.4min) ===
+[2006_A1__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r4_qnjgmzyb/workspace
+[2006_A1__forced_path_only__r4] X  build=True  sorries=1  wall=1.8s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r4
+
+=== cell 132/144  2006.A1 / forced_path_only / r5  (elapsed 107.6min) ===
+[2006_A1__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r5_oimqbivr/workspace
+[2006_A1__forced_path_only__r5] X  build=True  sorries=1  wall=2.2s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r5
+
+=== cell 133/144  2006.A1 / optional_inline / r0  (elapsed 107.7min) ===
+[2006_A1__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r0_uewid8y0/workspace
+[2006_A1__optional_inline__r0] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r0
+
+=== cell 134/144  2006.A1 / optional_inline / r1  (elapsed 107.9min) ===
+[2006_A1__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r1_a70ajnks/workspace
+[2006_A1__optional_inline__r1] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r1
+
+=== cell 135/144  2006.A1 / optional_inline / r2  (elapsed 108.0min) ===
+[2006_A1__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r2_ru1quw86/workspace
+[2006_A1__optional_inline__r2] X  build=True  sorries=1  wall=2.8s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r2
+
+=== cell 136/144  2006.A1 / optional_inline / r3  (elapsed 108.1min) ===
+[2006_A1__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r3_2z4vrk6x/workspace
+[2006_A1__optional_inline__r3] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r3
+
+=== cell 137/144  2006.A1 / optional_inline / r4  (elapsed 108.3min) ===
+[2006_A1__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r4_ie5x92o7/workspace
+[2006_A1__optional_inline__r4] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r4
+
+=== cell 138/144  2006.A1 / optional_inline / r5  (elapsed 108.4min) ===
+[2006_A1__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r5_3dara18j/workspace
+[2006_A1__optional_inline__r5] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_inline__r5
+
+=== cell 139/144  2006.A1 / optional_path_only / r0  (elapsed 108.5min) ===
+[2006_A1__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r0_2rxjqxzc/workspace
+[2006_A1__optional_path_only__r0] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r0
+
+=== cell 140/144  2006.A1 / optional_path_only / r1  (elapsed 108.7min) ===
+[2006_A1__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r1_p6j5ce9s/workspace
+[2006_A1__optional_path_only__r1] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r1
+
+=== cell 141/144  2006.A1 / optional_path_only / r2  (elapsed 122.2min) ===
+[2006_A1__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r2_nqzhjbfg/workspace
+[2006_A1__optional_path_only__r2] X  build=True  sorries=1  wall=2.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r2
+
+=== cell 142/144  2006.A1 / optional_path_only / r3  (elapsed 122.4min) ===
+[2006_A1__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r3_koi1k6hi/workspace
+[2006_A1__optional_path_only__r3] X  build=True  sorries=1  wall=2.3s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r3
+
+=== cell 143/144  2006.A1 / optional_path_only / r4  (elapsed 122.6min) ===
+[2006_A1__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r4_wv7zx5y4/workspace
+[2006_A1__optional_path_only__r4] X  build=True  sorries=1  wall=3.1s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r4
+
+=== cell 144/144  2006.A1 / optional_path_only / r5  (elapsed 122.7min) ===
+[2006_A1__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r5_3sodxtju/workspace
+[2006_A1__optional_path_only__r5] X  build=True  sorries=1  wall=2.5s  tools=0/0
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r5
+
+inline-content study complete in 122.9 min
+  probe: OK
+RELAUNCHED genuine=3 poisoned=141 (stall_counter=0)
+[loop 10:50:19] auto_resume exit=12
+RUNNING genuine=5 poisoned=138
+[loop 13:33:57] auto_resume exit=10
+RUNNING genuine=9 poisoned=134
+[loop 15:23:51] auto_resume exit=10
+RUNNING genuine=11 poisoned=132
+[loop 15:48:28] auto_resume exit=10
+RUNNING genuine=14 poisoned=129
+[loop 16:08:28] auto_resume exit=10
+RUNNING genuine=16 poisoned=127
+[loop 17:07:03] auto_resume exit=10
+RUNNING genuine=19 poisoned=124
+[loop 17:51:08] auto_resume exit=10
+RUNNING genuine=22 poisoned=121
+[loop 18:11:09] auto_resume exit=10
+RUNNING genuine=25 poisoned=118
+[loop 20:02:01] auto_resume exit=10
+RUNNING genuine=27 poisoned=116
+[loop 20:22:01] auto_resume exit=10
+RUNNING genuine=29 poisoned=114
+[loop 20:48:48] auto_resume exit=10
+RUNNING genuine=31 poisoned=112
+[loop 21:08:48] auto_resume exit=10
+RUNNING genuine=34 poisoned=109
+[loop 21:28:49] auto_resume exit=10
+RUNNING genuine=38 poisoned=105
+[loop 21:48:49] auto_resume exit=10
+RUNNING genuine=41 poisoned=102
+[loop 22:33:45] auto_resume exit=10
+RUNNING genuine=44 poisoned=99
+[loop 01:00:27] auto_resume exit=10
+RUNNING genuine=46 poisoned=97
+[loop 01:20:27] auto_resume exit=10
+RUNNING genuine=49 poisoned=94
+[loop 01:40:27] auto_resume exit=10
+RUNNING genuine=52 poisoned=91
+[loop 02:00:27] auto_resume exit=10
+RUNNING genuine=54 poisoned=89
+[loop 02:35:43] auto_resume exit=10
+RUNNING genuine=56 poisoned=87
+[loop 02:55:43] auto_resume exit=10
+RUNNING genuine=58 poisoned=85
+[loop 04:28:08] auto_resume exit=10
+RUNNING genuine=61 poisoned=82
+[loop 05:36:42] auto_resume exit=10
+RUNNING genuine=64 poisoned=79
+[loop 05:56:42] auto_resume exit=10
+RUNNING genuine=67 poisoned=76
+[loop 06:16:43] auto_resume exit=10
+RUNNING genuine=69 poisoned=74
+[loop 06:36:43] auto_resume exit=10
+RUNNING genuine=72 poisoned=71
+[loop 06:56:43] auto_resume exit=10
+RUNNING genuine=74 poisoned=69
+[loop 07:16:43] auto_resume exit=10
+RUNNING genuine=76 poisoned=67
+[loop 07:36:43] auto_resume exit=10
+RUNNING genuine=78 poisoned=65
+[loop 07:56:44] auto_resume exit=10
+RUNNING genuine=80 poisoned=63
+[loop 08:16:44] auto_resume exit=10
+RUNNING genuine=82 poisoned=61
+[loop 08:36:44] auto_resume exit=10
+RUNNING genuine=84 poisoned=59
+[loop 11:33:16] auto_resume exit=10
+RUNNING genuine=86 poisoned=57
+[loop 11:56:57] auto_resume exit=10
+RUNNING genuine=87 poisoned=56
+[loop 12:16:58] auto_resume exit=10
+RUNNING genuine=89 poisoned=54
+[loop 12:36:58] auto_resume exit=10
+RUNNING genuine=90 poisoned=53
+[loop 20:26:34] auto_resume exit=10
+RUNNING genuine=92 poisoned=51
+[loop 20:46:34] auto_resume exit=10
+RUNNING genuine=94 poisoned=49
+[loop 21:06:34] auto_resume exit=10
+RUNNING genuine=96 poisoned=47
+[loop 21:35:01] auto_resume exit=10
+RUNNING genuine=98 poisoned=45
+[loop 21:55:01] auto_resume exit=10
+RUNNING genuine=99 poisoned=44
+[loop 22:15:01] auto_resume exit=10
+RUNNING genuine=102 poisoned=41
+[loop 22:35:02] auto_resume exit=10
+RUNNING genuine=104 poisoned=39
+[loop 22:55:02] auto_resume exit=10
+RUNNING genuine=106 poisoned=37
+[loop 23:15:02] auto_resume exit=10
+RUNNING genuine=108 poisoned=35
+[loop 03:15:19] auto_resume exit=10
+RUNNING genuine=110 poisoned=33
+[loop 16:13:41] auto_resume exit=10
+RUNNING genuine=112 poisoned=31
+[loop 16:33:41] auto_resume exit=10
+RUNNING genuine=113 poisoned=30
+[loop 16:53:41] auto_resume exit=10
+RUNNING genuine=114 poisoned=29
+[loop 21:43:59] auto_resume exit=10
+RUNNING genuine=116 poisoned=27
+[loop 22:35:58] auto_resume exit=10
+RUNNING genuine=117 poisoned=26
+[loop 22:55:58] auto_resume exit=10
+RUNNING genuine=118 poisoned=25
+[loop 23:15:58] auto_resume exit=10
+RUNNING genuine=120 poisoned=23
+[loop 23:35:59] auto_resume exit=10
+RUNNING genuine=122 poisoned=21
+[loop 23:55:59] auto_resume exit=10
+RUNNING genuine=126 poisoned=17
+[loop 00:15:59] auto_resume exit=10
+RUNNING genuine=129 poisoned=14
+[loop 00:35:59] auto_resume exit=10
+RUNNING genuine=134 poisoned=9
+[loop 00:55:59] auto_resume exit=10
+RUNNING genuine=138 poisoned=5
+[loop 01:15:59] auto_resume exit=10
+RUNNING genuine=143 poisoned=0
+[loop 01:36:00] auto_resume exit=10
+COMPLETE genuine=144
+[loop 01:56:00] auto_resume exit=0
+COMPLETE

@@ -1,0 +1,55 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "forced_inline",
+  "run_index": 0,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780091727.601043,
+  "ended_at": 1780092106.098907,
+  "wall_clock_s": 378.49786400794983,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 11,
+  "tool_calls_succeeded": 10,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 8,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The curve 2x-3x^3 rises from the origin to a max ~0.628 (=4\u221a2/9) near x~0.47 then falls crossing zero near x~0.816; the line y=4/9~0.444 cuts it at x1~0.244 and x2~0.667, consistent with the equal-area answer c=4/9.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lake build",
+    "notes": "Reduced area equality to \u222b_0^{x2}(c-f)=0 with x2=2/3 root, used explicit antiderivatives via integral_eq_sub_of_hasDerivAt so the \u221a3 terms in x1 cancel under ring; builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r0_7fsww26l/workspace"
+}

@@ -1,0 +1,55 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "forced_inline",
+  "run_index": 1,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780145206.419092,
+  "ended_at": 1780145537.419449,
+  "wall_clock_s": 331.0003571510315,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 9,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "1996.B2",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 10,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The log-lower-bound curve sits strictly below the log-upper-bound curve over n\u2208[1,10], and a hand-check at n=3 (lower\u22481.52 < ln(15)\u22482.71 < upper\u22483.31) confirms the product is squeezed strictly between the two bounds, so the stated double inequality is TRUE.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Faithful statement of the double-factorial inequality (no answer term needed for a 'Show that' problem) type-checks cleanly with rpow; full proof needs the ln-integral/concavity midpoint argument which exceeded the remaining budget, so proof left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r1_4ch6zkn6/workspace"
+}

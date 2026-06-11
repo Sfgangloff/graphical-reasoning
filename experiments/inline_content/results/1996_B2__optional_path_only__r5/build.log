@@ -1,0 +1,13 @@
+⚠ [8387/8388] Built Solution (98s)
+warning: Solution.lean:73:31: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:104:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:73:31: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (8388 jobs).
+
+--- stderr ---

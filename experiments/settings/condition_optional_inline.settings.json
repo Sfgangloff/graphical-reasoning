@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "mcp__math-viz-path-only",
+      "mcp__math-compute",
+      "mcp__math-search",
+      "mcp__proof-explorer",
+      "mcp__commutative-diagrams",
+      "mcp__ide",
+      "WebFetch",
+      "WebSearch"
+    ]
+  }
+}

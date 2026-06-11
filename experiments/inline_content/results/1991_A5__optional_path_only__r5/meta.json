@@ -1,0 +1,56 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "optional_path_only",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780091237.508511,
+  "ended_at": 1780091720.352333,
+  "wall_clock_s": 482.8438220024109,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Edit": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 5,
+      "succeeded": 4
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 14,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "optional_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Bounded integrand by x^2+c, integrated to y^3/3+cy, and closed the polynomial inequality with nlinarith; full proof builds cleanly."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r5_pq8d1uyo/workspace"
+}

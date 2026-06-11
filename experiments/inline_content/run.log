@@ -1,0 +1,858 @@
+inline-content matrix: 144 cells (6 problems × 4 conditions × 6 runs)  budget=12min/cell
+
+=== cell 1/144  1985.B5 / forced_inline / r0  (elapsed 0.0min) ===
+  already done (1985_B5__forced_inline__r0), skipping.
+
+=== cell 2/144  1985.B5 / forced_inline / r1  (elapsed 0.0min) ===
+  already done (1985_B5__forced_inline__r1), skipping.
+
+=== cell 3/144  1985.B5 / forced_inline / r2  (elapsed 0.0min) ===
+  already done (1985_B5__forced_inline__r2), skipping.
+
+=== cell 4/144  1985.B5 / forced_inline / r3  (elapsed 0.0min) ===
+  poisoned record (1985_B5__forced_inline__r3) — deleting, will retry.
+[1985_B5__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r3_tyt49b3g/workspace
+[1985_B5__forced_inline__r3] X  build=True  sorries=1  wall=328.6s  tools=7/9
+  -> experiments/inline_content/results/1985_B5__forced_inline__r3
+
+=== cell 5/144  1985.B5 / forced_inline / r4  (elapsed 7.5min) ===
+  poisoned record (1985_B5__forced_inline__r4) — deleting, will retry.
+[1985_B5__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r4_bqo7gofm/workspace
+[1985_B5__forced_inline__r4] X  build=True  sorries=1  wall=5079.2s  tools=13/15
+  -> experiments/inline_content/results/1985_B5__forced_inline__r4
+
+=== cell 6/144  1985.B5 / forced_inline / r5  (elapsed 107.8min) ===
+  poisoned record (1985_B5__forced_inline__r5) — deleting, will retry.
+[1985_B5__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_inline__r5_0g0xpr_2/workspace
+[1985_B5__forced_inline__r5] X  build=True  sorries=1  wall=3185.9s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_inline__r5
+
+=== cell 7/144  1985.B5 / forced_path_only / r0  (elapsed 169.1min) ===
+  poisoned record (1985_B5__forced_path_only__r0) — deleting, will retry.
+[1985_B5__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r0_r8o9x5ii/workspace
+[1985_B5__forced_path_only__r0] X  build=True  sorries=1  wall=1343.1s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r0
+
+=== cell 8/144  1985.B5 / forced_path_only / r1  (elapsed 191.7min) ===
+  poisoned record (1985_B5__forced_path_only__r1) — deleting, will retry.
+[1985_B5__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r1_5ffclzka/workspace
+[1985_B5__forced_path_only__r1] X  build=True  sorries=1  wall=1106.6s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r1
+
+=== cell 9/144  1985.B5 / forced_path_only / r2  (elapsed 210.2min) ===
+  poisoned record (1985_B5__forced_path_only__r2) — deleting, will retry.
+[1985_B5__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r2_5n6_2sa9/workspace
+[1985_B5__forced_path_only__r2] X  build=True  sorries=1  wall=1676.0s  tools=0/0
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r2
+
+=== cell 10/144  1985.B5 / forced_path_only / r3  (elapsed 239.3min) ===
+  poisoned record (1985_B5__forced_path_only__r3) — deleting, will retry.
+[1985_B5__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r3_grcoq4cr/workspace
+[1985_B5__forced_path_only__r3] X  build=True  sorries=1  wall=2464.4s  tools=29/29
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r3
+
+=== cell 11/144  1985.B5 / forced_path_only / r4  (elapsed 282.9min) ===
+  poisoned record (1985_B5__forced_path_only__r4) — deleting, will retry.
+[1985_B5__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r4_13u2vnyd/workspace
+[1985_B5__forced_path_only__r4] X  build=True  sorries=1  wall=712.3s  tools=9/10
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r4
+
+=== cell 12/144  1985.B5 / forced_path_only / r5  (elapsed 296.8min) ===
+  poisoned record (1985_B5__forced_path_only__r5) — deleting, will retry.
+[1985_B5__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__forced_path_only__r5_rj3m4dif/workspace
+[1985_B5__forced_path_only__r5] X  build=True  sorries=1  wall=281.1s  tools=10/12
+  -> experiments/inline_content/results/1985_B5__forced_path_only__r5
+
+=== cell 13/144  1985.B5 / optional_inline / r0  (elapsed 304.0min) ===
+  poisoned record (1985_B5__optional_inline__r0) — deleting, will retry.
+[1985_B5__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r0_2796xod5/workspace
+[1985_B5__optional_inline__r0] X  build=True  sorries=1  wall=485.3s  tools=8/9
+  -> experiments/inline_content/results/1985_B5__optional_inline__r0
+
+=== cell 14/144  1985.B5 / optional_inline / r1  (elapsed 312.2min) ===
+  poisoned record (1985_B5__optional_inline__r1) — deleting, will retry.
+[1985_B5__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r1_9r7fx02i/workspace
+[1985_B5__optional_inline__r1] X  build=True  sorries=1  wall=226.3s  tools=5/6
+  -> experiments/inline_content/results/1985_B5__optional_inline__r1
+
+=== cell 15/144  1985.B5 / optional_inline / r2  (elapsed 317.9min) ===
+  poisoned record (1985_B5__optional_inline__r2) — deleting, will retry.
+[1985_B5__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r2_sdram6xj/workspace
+[1985_B5__optional_inline__r2] X  build=True  sorries=1  wall=528.6s  tools=6/7
+  -> experiments/inline_content/results/1985_B5__optional_inline__r2
+
+=== cell 16/144  1985.B5 / optional_inline / r3  (elapsed 326.8min) ===
+  poisoned record (1985_B5__optional_inline__r3) — deleting, will retry.
+[1985_B5__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r3_45dvy5hl/workspace
+[1985_B5__optional_inline__r3] X  build=True  sorries=1  wall=2022.2s  tools=6/8
+  -> experiments/inline_content/results/1985_B5__optional_inline__r3
+
+=== cell 17/144  1985.B5 / optional_inline / r4  (elapsed 371.3min) ===
+  poisoned record (1985_B5__optional_inline__r4) — deleting, will retry.
+[1985_B5__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r4_zhii9w73/workspace
+[1985_B5__optional_inline__r4] X  build=True  sorries=1  wall=528.2s  tools=6/7
+  -> experiments/inline_content/results/1985_B5__optional_inline__r4
+
+=== cell 18/144  1985.B5 / optional_inline / r5  (elapsed 405.3min) ===
+  poisoned record (1985_B5__optional_inline__r5) — deleting, will retry.
+[1985_B5__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_inline__r5_gz3xfexs/workspace
+[1985_B5__optional_inline__r5] X  build=True  sorries=1  wall=273.4s  tools=5/7
+  -> experiments/inline_content/results/1985_B5__optional_inline__r5
+
+=== cell 19/144  1985.B5 / optional_path_only / r0  (elapsed 412.0min) ===
+  poisoned record (1985_B5__optional_path_only__r0) — deleting, will retry.
+[1985_B5__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r0_15c2o04x/workspace
+[1985_B5__optional_path_only__r0] X  build=True  sorries=1  wall=271.5s  tools=5/6
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r0
+
+=== cell 20/144  1985.B5 / optional_path_only / r1  (elapsed 416.6min) ===
+  poisoned record (1985_B5__optional_path_only__r1) — deleting, will retry.
+[1985_B5__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r1_wq5ywm83/workspace
+[1985_B5__optional_path_only__r1] X  build=True  sorries=1  wall=513.2s  tools=7/9
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r1
+
+=== cell 21/144  1985.B5 / optional_path_only / r2  (elapsed 425.3min) ===
+  poisoned record (1985_B5__optional_path_only__r2) — deleting, will retry.
+[1985_B5__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r2_f8w8owl2/workspace
+[1985_B5__optional_path_only__r2] X  build=True  sorries=1  wall=256.1s  tools=4/5
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r2
+
+=== cell 22/144  1985.B5 / optional_path_only / r3  (elapsed 431.7min) ===
+  poisoned record (1985_B5__optional_path_only__r3) — deleting, will retry.
+[1985_B5__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r3_6fsost3s/workspace
+[1985_B5__optional_path_only__r3] X  build=True  sorries=1  wall=225.2s  tools=5/6
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r3
+
+=== cell 23/144  1985.B5 / optional_path_only / r4  (elapsed 437.5min) ===
+  poisoned record (1985_B5__optional_path_only__r4) — deleting, will retry.
+[1985_B5__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r4_rp37se53/workspace
+[1985_B5__optional_path_only__r4] X  build=True  sorries=1  wall=259.4s  tools=4/5
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r4
+
+=== cell 24/144  1985.B5 / optional_path_only / r5  (elapsed 497.7min) ===
+  poisoned record (1985_B5__optional_path_only__r5) — deleting, will retry.
+[1985_B5__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1985_B5__optional_path_only__r5_r9wm1ifo/workspace
+[1985_B5__optional_path_only__r5] X  build=True  sorries=1  wall=223.5s  tools=5/6
+  -> experiments/inline_content/results/1985_B5__optional_path_only__r5
+
+=== cell 25/144  1989.A2 / forced_inline / r0  (elapsed 501.6min) ===
+  poisoned record (1989_A2__forced_inline__r0) — deleting, will retry.
+[1989_A2__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r0_fmq0fcmv/workspace
+[1989_A2__forced_inline__r0] X  build=True  sorries=1  wall=2789.5s  tools=11/11
+  -> experiments/inline_content/results/1989_A2__forced_inline__r0
+
+=== cell 26/144  1989.A2 / forced_inline / r1  (elapsed 548.2min) ===
+  poisoned record (1989_A2__forced_inline__r1) — deleting, will retry.
+[1989_A2__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r1_l0bjjq87/workspace
+[1989_A2__forced_inline__r1] X  build=True  sorries=1  wall=329.4s  tools=8/9
+  -> experiments/inline_content/results/1989_A2__forced_inline__r1
+
+=== cell 27/144  1989.A2 / forced_inline / r2  (elapsed 556.3min) ===
+  poisoned record (1989_A2__forced_inline__r2) — deleting, will retry.
+[1989_A2__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r2_svkxss63/workspace
+[1989_A2__forced_inline__r2] X  build=True  sorries=1  wall=616.0s  tools=12/12
+  -> experiments/inline_content/results/1989_A2__forced_inline__r2
+
+=== cell 28/144  1989.A2 / forced_inline / r3  (elapsed 566.8min) ===
+  poisoned record (1989_A2__forced_inline__r3) — deleting, will retry.
+[1989_A2__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r3_eb4s537m/workspace
+[1989_A2__forced_inline__r3] X  build=True  sorries=1  wall=578.9s  tools=13/16
+  -> experiments/inline_content/results/1989_A2__forced_inline__r3
+
+=== cell 29/144  1989.A2 / forced_inline / r4  (elapsed 576.5min) ===
+  poisoned record (1989_A2__forced_inline__r4) — deleting, will retry.
+[1989_A2__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r4_80biopap/workspace
+[1989_A2__forced_inline__r4] X  build=True  sorries=1  wall=750.7s  tools=10/10
+  -> experiments/inline_content/results/1989_A2__forced_inline__r4
+
+=== cell 30/144  1989.A2 / forced_inline / r5  (elapsed 591.9min) ===
+  poisoned record (1989_A2__forced_inline__r5) — deleting, will retry.
+[1989_A2__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r5_t3_ycwkx/workspace
+[1989_A2__forced_inline__r5] X  build=True  sorries=1  wall=575.2s  tools=12/16
+  -> experiments/inline_content/results/1989_A2__forced_inline__r5
+
+=== cell 31/144  1989.A2 / forced_path_only / r0  (elapsed 601.6min) ===
+  poisoned record (1989_A2__forced_path_only__r0) — deleting, will retry.
+[1989_A2__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r0_tgszqg22/workspace
+[1989_A2__forced_path_only__r0] X  build=True  sorries=1  wall=605.5s  tools=13/15
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r0
+
+=== cell 32/144  1989.A2 / forced_path_only / r1  (elapsed 611.9min) ===
+  poisoned record (1989_A2__forced_path_only__r1) — deleting, will retry.
+[1989_A2__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r1_1xu6j2_n/workspace
+[1989_A2__forced_path_only__r1] X  build=True  sorries=1  wall=326.6s  tools=11/11
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r1
+
+=== cell 33/144  1989.A2 / forced_path_only / r2  (elapsed 619.4min) ===
+  poisoned record (1989_A2__forced_path_only__r2) — deleting, will retry.
+[1989_A2__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r2_uj5ymil8/workspace
+[1989_A2__forced_path_only__r2] X  build=True  sorries=1  wall=36.8s  tools=4/4
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r2
+
+=== cell 34/144  1989.A2 / forced_path_only / r3  (elapsed 622.2min) ===
+  poisoned record (1989_A2__forced_path_only__r3) — deleting, will retry.
+[1989_A2__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r3_b3a1x_8k/workspace
+[1989_A2__forced_path_only__r3] X  build=True  sorries=1  wall=322.9s  tools=9/9
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r3
+
+=== cell 35/144  1989.A2 / forced_path_only / r4  (elapsed 629.6min) ===
+  poisoned record (1989_A2__forced_path_only__r4) — deleting, will retry.
+[1989_A2__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r4_k0rauttw/workspace
+[1989_A2__forced_path_only__r4] X  build=True  sorries=1  wall=546.4s  tools=12/14
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r4
+
+=== cell 36/144  1989.A2 / forced_path_only / r5  (elapsed 638.9min) ===
+  poisoned record (1989_A2__forced_path_only__r5) — deleting, will retry.
+[1989_A2__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_path_only__r5_jgf_irtj/workspace
+[1989_A2__forced_path_only__r5] X  build=True  sorries=1  wall=306.1s  tools=9/10
+  -> experiments/inline_content/results/1989_A2__forced_path_only__r5
+
+=== cell 37/144  1989.A2 / optional_inline / r0  (elapsed 645.8min) ===
+  poisoned record (1989_A2__optional_inline__r0) — deleting, will retry.
+[1989_A2__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r0_2h5hfto5/workspace
+[1989_A2__optional_inline__r0] X  build=True  sorries=1  wall=281.3s  tools=5/7
+  -> experiments/inline_content/results/1989_A2__optional_inline__r0
+
+=== cell 38/144  1989.A2 / optional_inline / r1  (elapsed 652.5min) ===
+  poisoned record (1989_A2__optional_inline__r1) — deleting, will retry.
+[1989_A2__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r1_gmzn6n_m/workspace
+[1989_A2__optional_inline__r1] X  build=True  sorries=1  wall=183.0s  tools=6/7
+  -> experiments/inline_content/results/1989_A2__optional_inline__r1
+
+=== cell 39/144  1989.A2 / optional_inline / r2  (elapsed 655.7min) ===
+  poisoned record (1989_A2__optional_inline__r2) — deleting, will retry.
+[1989_A2__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r2_w0hx18g6/workspace
+[1989_A2__optional_inline__r2] X  build=True  sorries=1  wall=265.4s  tools=5/6
+  -> experiments/inline_content/results/1989_A2__optional_inline__r2
+
+=== cell 40/144  1989.A2 / optional_inline / r3  (elapsed 662.0min) ===
+  poisoned record (1989_A2__optional_inline__r3) — deleting, will retry.
+[1989_A2__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r3_2laf0qda/workspace
+[1989_A2__optional_inline__r3] X  build=True  sorries=1  wall=1902.2s  tools=7/9
+  -> experiments/inline_content/results/1989_A2__optional_inline__r3
+
+=== cell 41/144  1989.A2 / optional_inline / r4  (elapsed 693.8min) ===
+  poisoned record (1989_A2__optional_inline__r4) — deleting, will retry.
+[1989_A2__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r4_7p9_gcqq/workspace
+[1989_A2__optional_inline__r4] X  build=True  sorries=1  wall=254.5s  tools=9/10
+  -> experiments/inline_content/results/1989_A2__optional_inline__r4
+
+=== cell 42/144  1989.A2 / optional_inline / r5  (elapsed 698.2min) ===
+  poisoned record (1989_A2__optional_inline__r5) — deleting, will retry.
+[1989_A2__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_inline__r5_eylkk0_2/workspace
+[1989_A2__optional_inline__r5] X  build=True  sorries=1  wall=374.3s  tools=8/10
+  -> experiments/inline_content/results/1989_A2__optional_inline__r5
+
+=== cell 43/144  1989.A2 / optional_path_only / r0  (elapsed 704.5min) ===
+  poisoned record (1989_A2__optional_path_only__r0) — deleting, will retry.
+[1989_A2__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r0_2rlkh_a9/workspace
+[1989_A2__optional_path_only__r0] X  build=True  sorries=1  wall=212.6s  tools=7/9
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r0
+
+=== cell 44/144  1989.A2 / optional_path_only / r1  (elapsed 708.2min) ===
+  poisoned record (1989_A2__optional_path_only__r1) — deleting, will retry.
+[1989_A2__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r1_4pvrnn_p/workspace
+[1989_A2__optional_path_only__r1] X  build=True  sorries=1  wall=317.0s  tools=5/6
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r1
+
+=== cell 45/144  1989.A2 / optional_path_only / r2  (elapsed 715.4min) ===
+  poisoned record (1989_A2__optional_path_only__r2) — deleting, will retry.
+[1989_A2__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r2_7sr7jal1/workspace
+[1989_A2__optional_path_only__r2] X  build=True  sorries=1  wall=8328.3s  tools=5/6
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r2
+
+=== cell 46/144  1989.A2 / optional_path_only / r3  (elapsed 856.1min) ===
+  poisoned record (1989_A2__optional_path_only__r3) — deleting, will retry.
+[1989_A2__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r3_qijkr6xw/workspace
+[1989_A2__optional_path_only__r3] X  build=True  sorries=1  wall=382.9s  tools=9/11
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r3
+
+=== cell 47/144  1989.A2 / optional_path_only / r4  (elapsed 862.6min) ===
+  poisoned record (1989_A2__optional_path_only__r4) — deleting, will retry.
+[1989_A2__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r4_gjlqz0r4/workspace
+[1989_A2__optional_path_only__r4] X  build=True  sorries=1  wall=473.0s  tools=12/14
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r4
+
+=== cell 48/144  1989.A2 / optional_path_only / r5  (elapsed 870.6min) ===
+  poisoned record (1989_A2__optional_path_only__r5) — deleting, will retry.
+[1989_A2__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r5_iuhccozp/workspace
+[1989_A2__optional_path_only__r5] X  build=True  sorries=1  wall=173.9s  tools=5/6
+  -> experiments/inline_content/results/1989_A2__optional_path_only__r5
+
+=== cell 49/144  1991.A5 / forced_inline / r0  (elapsed 873.6min) ===
+  poisoned record (1991_A5__forced_inline__r0) — deleting, will retry.
+[1991_A5__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r0_1ve4dzkp/workspace
+[1991_A5__forced_inline__r0] OK  build=True  sorries=0  wall=478.1s  tools=12/13
+  -> experiments/inline_content/results/1991_A5__forced_inline__r0
+
+=== cell 50/144  1991.A5 / forced_inline / r1  (elapsed 881.7min) ===
+  poisoned record (1991_A5__forced_inline__r1) — deleting, will retry.
+[1991_A5__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r1_g4sfq66g/workspace
+[1991_A5__forced_inline__r1] OK  build=True  sorries=0  wall=571.0s  tools=15/16
+  -> experiments/inline_content/results/1991_A5__forced_inline__r1
+
+=== cell 51/144  1991.A5 / forced_inline / r2  (elapsed 891.3min) ===
+  poisoned record (1991_A5__forced_inline__r2) — deleting, will retry.
+[1991_A5__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r2__8yujo39/workspace
+[1991_A5__forced_inline__r2] OK  build=True  sorries=0  wall=551.9s  tools=16/17
+  -> experiments/inline_content/results/1991_A5__forced_inline__r2
+
+=== cell 52/144  1991.A5 / forced_inline / r3  (elapsed 900.7min) ===
+  poisoned record (1991_A5__forced_inline__r3) — deleting, will retry.
+[1991_A5__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r3_mr3vg96a/workspace
+[1991_A5__forced_inline__r3] OK  build=True  sorries=0  wall=387.5s  tools=13/13
+  -> experiments/inline_content/results/1991_A5__forced_inline__r3
+
+=== cell 53/144  1991.A5 / forced_inline / r4  (elapsed 907.2min) ===
+  poisoned record (1991_A5__forced_inline__r4) — deleting, will retry.
+[1991_A5__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r4_621u4nc5/workspace
+[1991_A5__forced_inline__r4] OK  build=True  sorries=0  wall=1475.4s  tools=13/15
+  -> experiments/inline_content/results/1991_A5__forced_inline__r4
+
+=== cell 54/144  1991.A5 / forced_inline / r5  (elapsed 931.9min) ===
+  poisoned record (1991_A5__forced_inline__r5) — deleting, will retry.
+[1991_A5__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r5_cpwkyg8z/workspace
+[1991_A5__forced_inline__r5] OK  build=True  sorries=0  wall=483.7s  tools=11/11
+  -> experiments/inline_content/results/1991_A5__forced_inline__r5
+
+=== cell 55/144  1991.A5 / forced_path_only / r0  (elapsed 940.1min) ===
+  poisoned record (1991_A5__forced_path_only__r0) — deleting, will retry.
+[1991_A5__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r0_1nubwmkb/workspace
+[1991_A5__forced_path_only__r0] OK  build=True  sorries=0  wall=527.3s  tools=12/13
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r0
+
+=== cell 56/144  1991.A5 / forced_path_only / r1  (elapsed 949.0min) ===
+  poisoned record (1991_A5__forced_path_only__r1) — deleting, will retry.
+[1991_A5__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r1_s3mcvd9n/workspace
+[1991_A5__forced_path_only__r1] OK  build=True  sorries=0  wall=533.4s  tools=20/21
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r1
+
+=== cell 57/144  1991.A5 / forced_path_only / r2  (elapsed 958.0min) ===
+  poisoned record (1991_A5__forced_path_only__r2) — deleting, will retry.
+[1991_A5__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r2_s74ejar3/workspace
+[1991_A5__forced_path_only__r2] OK  build=True  sorries=0  wall=514.2s  tools=14/15
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r2
+
+=== cell 58/144  1991.A5 / forced_path_only / r3  (elapsed 966.7min) ===
+  poisoned record (1991_A5__forced_path_only__r3) — deleting, will retry.
+[1991_A5__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r3_niq8c15t/workspace
+[1991_A5__forced_path_only__r3] OK  build=True  sorries=0  wall=3123.8s  tools=19/22
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r3
+
+=== cell 59/144  1991.A5 / forced_path_only / r4  (elapsed 1018.8min) ===
+  poisoned record (1991_A5__forced_path_only__r4) — deleting, will retry.
+[1991_A5__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r4_btygu814/workspace
+[1991_A5__forced_path_only__r4] OK  build=True  sorries=0  wall=2567.7s  tools=17/18
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r4
+
+=== cell 60/144  1991.A5 / forced_path_only / r5  (elapsed 1061.7min) ===
+  poisoned record (1991_A5__forced_path_only__r5) — deleting, will retry.
+[1991_A5__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_path_only__r5_g2qubv7r/workspace
+[1991_A5__forced_path_only__r5] X  build=True  sorries=1  wall=3199.0s  tools=6/6
+  -> experiments/inline_content/results/1991_A5__forced_path_only__r5
+
+=== cell 61/144  1991.A5 / optional_inline / r0  (elapsed 1117.0min) ===
+  poisoned record (1991_A5__optional_inline__r0) — deleting, will retry.
+[1991_A5__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r0_dvp9ubcg/workspace
+[1991_A5__optional_inline__r0] OK  build=True  sorries=0  wall=498.9s  tools=28/34
+  -> experiments/inline_content/results/1991_A5__optional_inline__r0
+
+=== cell 62/144  1991.A5 / optional_inline / r1  (elapsed 1125.4min) ===
+  poisoned record (1991_A5__optional_inline__r1) — deleting, will retry.
+[1991_A5__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r1_gqhrzle1/workspace
+[1991_A5__optional_inline__r1] OK  build=True  sorries=0  wall=373.8s  tools=12/14
+  -> experiments/inline_content/results/1991_A5__optional_inline__r1
+
+=== cell 63/144  1991.A5 / optional_inline / r2  (elapsed 1131.7min) ===
+  poisoned record (1991_A5__optional_inline__r2) — deleting, will retry.
+[1991_A5__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r2_bp_8dm7a/workspace
+[1991_A5__optional_inline__r2] OK  build=True  sorries=0  wall=331.8s  tools=8/9
+  -> experiments/inline_content/results/1991_A5__optional_inline__r2
+
+=== cell 64/144  1991.A5 / optional_inline / r3  (elapsed 1137.4min) ===
+  poisoned record (1991_A5__optional_inline__r3) — deleting, will retry.
+[1991_A5__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r3_zmrhpt_5/workspace
+[1991_A5__optional_inline__r3] OK  build=True  sorries=0  wall=407.9s  tools=12/15
+  -> experiments/inline_content/results/1991_A5__optional_inline__r3
+
+=== cell 65/144  1991.A5 / optional_inline / r4  (elapsed 1144.3min) ===
+  poisoned record (1991_A5__optional_inline__r4) — deleting, will retry.
+[1991_A5__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r4_3030v6fq/workspace
+[1991_A5__optional_inline__r4] OK  build=True  sorries=0  wall=504.4s  tools=9/10
+  -> experiments/inline_content/results/1991_A5__optional_inline__r4
+
+=== cell 66/144  1991.A5 / optional_inline / r5  (elapsed 1152.8min) ===
+  poisoned record (1991_A5__optional_inline__r5) — deleting, will retry.
+[1991_A5__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r5_d2k6blis/workspace
+[1991_A5__optional_inline__r5] OK  build=True  sorries=0  wall=383.8s  tools=8/11
+  -> experiments/inline_content/results/1991_A5__optional_inline__r5
+
+=== cell 67/144  1991.A5 / optional_path_only / r0  (elapsed 1159.3min) ===
+  poisoned record (1991_A5__optional_path_only__r0) — deleting, will retry.
+[1991_A5__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r0_0w5hu_yw/workspace
+[1991_A5__optional_path_only__r0] OK  build=True  sorries=0  wall=346.1s  tools=7/8
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r0
+
+=== cell 68/144  1991.A5 / optional_path_only / r1  (elapsed 1165.2min) ===
+  poisoned record (1991_A5__optional_path_only__r1) — deleting, will retry.
+[1991_A5__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r1_twcq87j0/workspace
+[1991_A5__optional_path_only__r1] OK  build=True  sorries=0  wall=624.3s  tools=12/13
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r1
+
+=== cell 69/144  1991.A5 / optional_path_only / r2  (elapsed 1175.7min) ===
+  poisoned record (1991_A5__optional_path_only__r2) — deleting, will retry.
+[1991_A5__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r2__3bo8e69/workspace
+[1991_A5__optional_path_only__r2] OK  build=True  sorries=0  wall=460.0s  tools=8/9
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r2
+
+=== cell 70/144  1991.A5 / optional_path_only / r3  (elapsed 1183.5min) ===
+  poisoned record (1991_A5__optional_path_only__r3) — deleting, will retry.
+[1991_A5__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r3_0clu9lo2/workspace
+[1991_A5__optional_path_only__r3] OK  build=True  sorries=0  wall=339.1s  tools=7/8
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r3
+
+=== cell 71/144  1991.A5 / optional_path_only / r4  (elapsed 1189.2min) ===
+  poisoned record (1991_A5__optional_path_only__r4) — deleting, will retry.
+[1991_A5__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r4_q5s3u152/workspace
+[1991_A5__optional_path_only__r4] OK  build=True  sorries=0  wall=457.3s  tools=9/11
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r4
+
+=== cell 72/144  1991.A5 / optional_path_only / r5  (elapsed 1197.0min) ===
+  poisoned record (1991_A5__optional_path_only__r5) — deleting, will retry.
+[1991_A5__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_path_only__r5_pq8d1uyo/workspace
+[1991_A5__optional_path_only__r5] OK  build=True  sorries=0  wall=482.8s  tools=14/16
+  -> experiments/inline_content/results/1991_A5__optional_path_only__r5
+
+=== cell 73/144  1993.A1 / forced_inline / r0  (elapsed 1205.1min) ===
+  poisoned record (1993_A1__forced_inline__r0) — deleting, will retry.
+[1993_A1__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r0_7fsww26l/workspace
+[1993_A1__forced_inline__r0] OK  build=True  sorries=0  wall=378.5s  tools=10/11
+  -> experiments/inline_content/results/1993_A1__forced_inline__r0
+
+=== cell 74/144  1993.A1 / forced_inline / r1  (elapsed 1211.5min) ===
+  poisoned record (1993_A1__forced_inline__r1) — deleting, will retry.
+[1993_A1__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r1_pbbn8812/workspace
+[1993_A1__forced_inline__r1] OK  build=True  sorries=0  wall=639.4s  tools=15/17
+  -> experiments/inline_content/results/1993_A1__forced_inline__r1
+
+=== cell 75/144  1993.A1 / forced_inline / r2  (elapsed 1222.3min) ===
+  poisoned record (1993_A1__forced_inline__r2) — deleting, will retry.
+[1993_A1__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r2_gb73268q/workspace
+[1993_A1__forced_inline__r2] X  build=True  sorries=1  wall=361.6s  tools=4/16
+  -> experiments/inline_content/results/1993_A1__forced_inline__r2
+
+=== cell 76/144  1993.A1 / forced_inline / r3  (elapsed 1228.4min) ===
+  poisoned record (1993_A1__forced_inline__r3) — deleting, will retry.
+[1993_A1__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r3_2vazc_2s/workspace
+[1993_A1__forced_inline__r3] OK  build=True  sorries=0  wall=555.0s  tools=11/13
+  -> experiments/inline_content/results/1993_A1__forced_inline__r3
+
+=== cell 77/144  1993.A1 / forced_inline / r4  (elapsed 1237.8min) ===
+  poisoned record (1993_A1__forced_inline__r4) — deleting, will retry.
+[1993_A1__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r4__8zufr6n/workspace
+[1993_A1__forced_inline__r4] OK  build=True  sorries=0  wall=780.9s  tools=13/16
+  -> experiments/inline_content/results/1993_A1__forced_inline__r4
+
+=== cell 78/144  1993.A1 / forced_inline / r5  (elapsed 1252.7min) ===
+  poisoned record (1993_A1__forced_inline__r5) — deleting, will retry.
+[1993_A1__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r5_47tuecaq/workspace
+[1993_A1__forced_inline__r5] OK  build=True  sorries=0  wall=617.3s  tools=11/13
+  -> experiments/inline_content/results/1993_A1__forced_inline__r5
+
+=== cell 79/144  1993.A1 / forced_path_only / r0  (elapsed 1263.1min) ===
+  poisoned record (1993_A1__forced_path_only__r0) — deleting, will retry.
+[1993_A1__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r0_vy4kjmru/workspace
+[1993_A1__forced_path_only__r0] OK  build=True  sorries=0  wall=581.1s  tools=13/14
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r0
+
+=== cell 80/144  1993.A1 / forced_path_only / r1  (elapsed 1272.9min) ===
+  poisoned record (1993_A1__forced_path_only__r1) — deleting, will retry.
+[1993_A1__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r1_lhgv6c_3/workspace
+[1993_A1__forced_path_only__r1] OK  build=True  sorries=0  wall=680.1s  tools=11/13
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r1
+
+=== cell 81/144  1993.A1 / forced_path_only / r2  (elapsed 1284.3min) ===
+  poisoned record (1993_A1__forced_path_only__r2) — deleting, will retry.
+[1993_A1__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r2_zu3ug1wr/workspace
+[1993_A1__forced_path_only__r2] OK  build=True  sorries=0  wall=659.3s  tools=12/13
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r2
+
+=== cell 82/144  1993.A1 / forced_path_only / r3  (elapsed 1295.4min) ===
+  poisoned record (1993_A1__forced_path_only__r3) — deleting, will retry.
+[1993_A1__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r3__w0rm6e8/workspace
+[1993_A1__forced_path_only__r3] OK  build=True  sorries=0  wall=410.7s  tools=11/14
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r3
+
+=== cell 83/144  1993.A1 / forced_path_only / r4  (elapsed 1302.4min) ===
+  poisoned record (1993_A1__forced_path_only__r4) — deleting, will retry.
+[1993_A1__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r4_sjrv2spg/workspace
+[1993_A1__forced_path_only__r4] X  build=True  sorries=1  wall=226.0s  tools=3/31
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r4
+
+=== cell 84/144  1993.A1 / forced_path_only / r5  (elapsed 1307.7min) ===
+  poisoned record (1993_A1__forced_path_only__r5) — deleting, will retry.
+[1993_A1__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_path_only__r5_qosdhz6x/workspace
+[1993_A1__forced_path_only__r5] X  build=True  sorries=1  wall=7258.7s  tools=10/11
+  -> experiments/inline_content/results/1993_A1__forced_path_only__r5
+
+=== cell 85/144  1993.A1 / optional_inline / r0  (elapsed 1447.5min) ===
+  poisoned record (1993_A1__optional_inline__r0) — deleting, will retry.
+[1993_A1__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r0_xevgh3ii/workspace
+[1993_A1__optional_inline__r0] OK  build=True  sorries=0  wall=2833.5s  tools=5/6
+  -> experiments/inline_content/results/1993_A1__optional_inline__r0
+
+=== cell 86/144  1993.A1 / optional_inline / r1  (elapsed 1494.8min) ===
+  poisoned record (1993_A1__optional_inline__r1) — deleting, will retry.
+[1993_A1__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r1_x1g09nja/workspace
+[1993_A1__optional_inline__r1] OK  build=True  sorries=0  wall=664.9s  tools=8/10
+  -> experiments/inline_content/results/1993_A1__optional_inline__r1
+
+=== cell 87/144  1993.A1 / optional_inline / r2  (elapsed 1506.0min) ===
+  poisoned record (1993_A1__optional_inline__r2) — deleting, will retry.
+[1993_A1__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r2_1cpgvv6f/workspace
+[1993_A1__optional_inline__r2] OK  build=True  sorries=0  wall=727.6s  tools=6/7
+  -> experiments/inline_content/results/1993_A1__optional_inline__r2
+
+=== cell 88/144  1993.A1 / optional_inline / r3  (elapsed 1518.3min) ===
+  poisoned record (1993_A1__optional_inline__r3) — deleting, will retry.
+[1993_A1__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r3_dctlm194/workspace
+[1993_A1__optional_inline__r3] OK  build=True  sorries=0  wall=649.3s  tools=6/7
+  -> experiments/inline_content/results/1993_A1__optional_inline__r3
+
+=== cell 89/144  1993.A1 / optional_inline / r4  (elapsed 1529.2min) ===
+  poisoned record (1993_A1__optional_inline__r4) — deleting, will retry.
+[1993_A1__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r4_5r1yadon/workspace
+[1993_A1__optional_inline__r4] OK  build=True  sorries=0  wall=627.4s  tools=6/8
+  -> experiments/inline_content/results/1993_A1__optional_inline__r4
+
+=== cell 90/144  1993.A1 / optional_inline / r5  (elapsed 1539.7min) ===
+  poisoned record (1993_A1__optional_inline__r5) — deleting, will retry.
+[1993_A1__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r5_5pylkpby/workspace
+[1993_A1__optional_inline__r5] OK  build=True  sorries=0  wall=19999.0s  tools=12/14
+  -> experiments/inline_content/results/1993_A1__optional_inline__r5
+
+=== cell 91/144  1993.A1 / optional_path_only / r0  (elapsed 2004.7min) ===
+  poisoned record (1993_A1__optional_path_only__r0) — deleting, will retry.
+[1993_A1__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r0_6cwd5zh9/workspace
+[1993_A1__optional_path_only__r0] OK  build=True  sorries=0  wall=781.0s  tools=10/12
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r0
+
+=== cell 92/144  1993.A1 / optional_path_only / r1  (elapsed 2019.9min) ===
+  poisoned record (1993_A1__optional_path_only__r1) — deleting, will retry.
+[1993_A1__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r1_i2fu2eie/workspace
+[1993_A1__optional_path_only__r1] OK  build=True  sorries=0  wall=781.0s  tools=9/11
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r1
+
+=== cell 93/144  1993.A1 / optional_path_only / r2  (elapsed 2035.7min) ===
+  poisoned record (1993_A1__optional_path_only__r2) — deleting, will retry.
+[1993_A1__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r2_11bhnjgo/workspace
+[1993_A1__optional_path_only__r2] OK  build=True  sorries=0  wall=780.7s  tools=14/17
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r2
+
+=== cell 94/144  1993.A1 / optional_path_only / r3  (elapsed 2050.6min) ===
+  poisoned record (1993_A1__optional_path_only__r3) — deleting, will retry.
+[1993_A1__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r3_x187pd1u/workspace
+[1993_A1__optional_path_only__r3] X  build=True  sorries=1  wall=202.1s  tools=2/7
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r3
+
+=== cell 95/144  1993.A1 / optional_path_only / r4  (elapsed 2055.7min) ===
+  poisoned record (1993_A1__optional_path_only__r4) — deleting, will retry.
+[1993_A1__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r4_33erz1hw/workspace
+[1993_A1__optional_path_only__r4] X  build=True  sorries=1  wall=450.2s  tools=13/22
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r4
+
+=== cell 96/144  1993.A1 / optional_path_only / r5  (elapsed 2063.3min) ===
+  poisoned record (1993_A1__optional_path_only__r5) — deleting, will retry.
+[1993_A1__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r5_puptteau/workspace
+[1993_A1__optional_path_only__r5] OK  build=True  sorries=0  wall=1009.5s  tools=15/16
+  -> experiments/inline_content/results/1993_A1__optional_path_only__r5
+
+=== cell 97/144  1996.B2 / forced_inline / r0  (elapsed 2083.3min) ===
+  poisoned record (1996_B2__forced_inline__r0) — deleting, will retry.
+[1996_B2__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r0_qs5h88eq/workspace
+[1996_B2__forced_inline__r0] X  build=True  sorries=1  wall=780.9s  tools=13/13
+  -> experiments/inline_content/results/1996_B2__forced_inline__r0
+
+=== cell 98/144  1996.B2 / forced_inline / r1  (elapsed 2096.4min) ===
+  poisoned record (1996_B2__forced_inline__r1) — deleting, will retry.
+[1996_B2__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r1_4ch6zkn6/workspace
+[1996_B2__forced_inline__r1] X  build=True  sorries=1  wall=331.0s  tools=8/9
+  -> experiments/inline_content/results/1996_B2__forced_inline__r1
+
+=== cell 99/144  1996.B2 / forced_inline / r2  (elapsed 2104.1min) ===
+  poisoned record (1996_B2__forced_inline__r2) — deleting, will retry.
+[1996_B2__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r2_kx602g7a/workspace
+[1996_B2__forced_inline__r2] X  build=True  sorries=1  wall=350.1s  tools=10/10
+  -> experiments/inline_content/results/1996_B2__forced_inline__r2
+
+=== cell 100/144  1996.B2 / forced_inline / r3  (elapsed 2112.0min) ===
+  poisoned record (1996_B2__forced_inline__r3) — deleting, will retry.
+[1996_B2__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r3_dgtn491c/workspace
+[1996_B2__forced_inline__r3] X  build=True  sorries=1  wall=780.9s  tools=13/14
+  -> experiments/inline_content/results/1996_B2__forced_inline__r3
+
+=== cell 101/144  1996.B2 / forced_inline / r4  (elapsed 2125.2min) ===
+  poisoned record (1996_B2__forced_inline__r4) — deleting, will retry.
+[1996_B2__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r4_bpngfxi9/workspace
+[1996_B2__forced_inline__r4] X  build=True  sorries=1  wall=582.2s  tools=12/13
+  -> experiments/inline_content/results/1996_B2__forced_inline__r4
+
+=== cell 102/144  1996.B2 / forced_inline / r5  (elapsed 2135.0min) ===
+  poisoned record (1996_B2__forced_inline__r5) — deleting, will retry.
+[1996_B2__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_inline__r5_n_xj5gwy/workspace
+[1996_B2__forced_inline__r5] X  build=True  sorries=1  wall=440.2s  tools=12/13
+  -> experiments/inline_content/results/1996_B2__forced_inline__r5
+
+=== cell 103/144  1996.B2 / forced_path_only / r0  (elapsed 2144.5min) ===
+  poisoned record (1996_B2__forced_path_only__r0) — deleting, will retry.
+[1996_B2__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r0_9xijbh48/workspace
+[1996_B2__forced_path_only__r0] X  build=True  sorries=1  wall=340.2s  tools=11/11
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r0
+
+=== cell 104/144  1996.B2 / forced_path_only / r1  (elapsed 2152.3min) ===
+  poisoned record (1996_B2__forced_path_only__r1) — deleting, will retry.
+[1996_B2__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r1_hnc4og4y/workspace
+[1996_B2__forced_path_only__r1] X  build=True  sorries=1  wall=434.8s  tools=10/26
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r1
+
+=== cell 105/144  1996.B2 / forced_path_only / r2  (elapsed 2159.6min) ===
+  poisoned record (1996_B2__forced_path_only__r2) — deleting, will retry.
+[1996_B2__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r2_srqism5i/workspace
+[1996_B2__forced_path_only__r2] X  build=True  sorries=1  wall=329.9s  tools=12/14
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r2
+
+=== cell 106/144  1996.B2 / forced_path_only / r3  (elapsed 2167.1min) ===
+  poisoned record (1996_B2__forced_path_only__r3) — deleting, will retry.
+[1996_B2__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r3_a73otx06/workspace
+[1996_B2__forced_path_only__r3] X  build=True  sorries=1  wall=356.8s  tools=14/15
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r3
+
+=== cell 107/144  1996.B2 / forced_path_only / r4  (elapsed 2175.2min) ===
+  poisoned record (1996_B2__forced_path_only__r4) — deleting, will retry.
+[1996_B2__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r4_i1m9ar72/workspace
+[1996_B2__forced_path_only__r4] OK  build=True  sorries=0  wall=780.9s  tools=15/16
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r4
+
+=== cell 108/144  1996.B2 / forced_path_only / r5  (elapsed 2190.2min) ===
+  poisoned record (1996_B2__forced_path_only__r5) — deleting, will retry.
+[1996_B2__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r5_iz92yrwn/workspace
+[1996_B2__forced_path_only__r5] X  build=True  sorries=1  wall=6847.8s  tools=12/14
+  -> experiments/inline_content/results/1996_B2__forced_path_only__r5
+
+=== cell 109/144  1996.B2 / optional_inline / r0  (elapsed 2304.4min) ===
+  poisoned record (1996_B2__optional_inline__r0) — deleting, will retry.
+[1996_B2__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r0_83_ls6pu/workspace
+[1996_B2__optional_inline__r0] X  build=False  sorries=-1  wall=26363.3s  tools=9/20
+  -> experiments/inline_content/results/1996_B2__optional_inline__r0
+
+=== cell 110/144  1996.B2 / optional_inline / r1  (elapsed 2743.8min) ===
+  poisoned record (1996_B2__optional_inline__r1) — deleting, will retry.
+[1996_B2__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r1_9qb1zk8z/workspace
+[1996_B2__optional_inline__r1] X  build=True  sorries=1  wall=5402.8s  tools=6/6
+  -> experiments/inline_content/results/1996_B2__optional_inline__r1
+
+=== cell 111/144  1996.B2 / optional_inline / r2  (elapsed 3186.3min) ===
+  poisoned record (1996_B2__optional_inline__r2) — deleting, will retry.
+[1996_B2__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r2_ox56ph_v/workspace
+[1996_B2__optional_inline__r2] X  build=True  sorries=1  wall=1096.1s  tools=1/1
+  -> experiments/inline_content/results/1996_B2__optional_inline__r2
+
+=== cell 112/144  1996.B2 / optional_inline / r3  (elapsed 3204.7min) ===
+  poisoned record (1996_B2__optional_inline__r3) — deleting, will retry.
+[1996_B2__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r3_t_m9dg0h/workspace
+[1996_B2__optional_inline__r3] OK  build=True  sorries=0  wall=780.9s  tools=10/12
+  -> experiments/inline_content/results/1996_B2__optional_inline__r3
+
+=== cell 113/144  1996.B2 / optional_inline / r4  (elapsed 3220.6min) ===
+  poisoned record (1996_B2__optional_inline__r4) — deleting, will retry.
+[1996_B2__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r4_rw3kdkbq/workspace
+[1996_B2__optional_inline__r4] OK  build=True  sorries=0  wall=780.9s  tools=7/9
+  -> experiments/inline_content/results/1996_B2__optional_inline__r4
+
+=== cell 114/144  1996.B2 / optional_inline / r5  (elapsed 3235.8min) ===
+  poisoned record (1996_B2__optional_inline__r5) — deleting, will retry.
+[1996_B2__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r5_vzcbbuzo/workspace
+[1996_B2__optional_inline__r5] OK  build=True  sorries=0  wall=15266.1s  tools=14/17
+  -> experiments/inline_content/results/1996_B2__optional_inline__r5
+
+=== cell 115/144  1996.B2 / optional_path_only / r0  (elapsed 3506.5min) ===
+  poisoned record (1996_B2__optional_path_only__r0) — deleting, will retry.
+[1996_B2__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r0_sk8a07vl/workspace
+[1996_B2__optional_path_only__r0] X  build=True  sorries=1  wall=3421.1s  tools=8/9
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r0
+
+=== cell 116/144  1996.B2 / optional_path_only / r1  (elapsed 3567.3min) ===
+  poisoned record (1996_B2__optional_path_only__r1) — deleting, will retry.
+[1996_B2__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r1_ja0h5p5i/workspace
+[1996_B2__optional_path_only__r1] X  build=False  sorries=0  wall=780.6s  tools=9/10
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r1
+
+=== cell 117/144  1996.B2 / optional_path_only / r2  (elapsed 3582.6min) ===
+  poisoned record (1996_B2__optional_path_only__r2) — deleting, will retry.
+[1996_B2__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r2_9ykwltfd/workspace
+[1996_B2__optional_path_only__r2] OK  build=True  sorries=0  wall=780.7s  tools=13/14
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r2
+
+=== cell 118/144  1996.B2 / optional_path_only / r3  (elapsed 3597.6min) ===
+  poisoned record (1996_B2__optional_path_only__r3) — deleting, will retry.
+[1996_B2__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r3_k9u7pkzp/workspace
+[1996_B2__optional_path_only__r3] OK  build=True  sorries=0  wall=780.9s  tools=10/12
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r3
+
+=== cell 119/144  1996.B2 / optional_path_only / r4  (elapsed 3613.9min) ===
+  poisoned record (1996_B2__optional_path_only__r4) — deleting, will retry.
+[1996_B2__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r4_rxwl5nc0/workspace
+[1996_B2__optional_path_only__r4] OK  build=True  sorries=0  wall=781.1s  tools=10/12
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r4
+
+=== cell 120/144  1996.B2 / optional_path_only / r5  (elapsed 3628.7min) ===
+  poisoned record (1996_B2__optional_path_only__r5) — deleting, will retry.
+[1996_B2__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_path_only__r5_z3e9fise/workspace
+[1996_B2__optional_path_only__r5] OK  build=True  sorries=0  wall=781.0s  tools=11/13
+  -> experiments/inline_content/results/1996_B2__optional_path_only__r5
+
+=== cell 121/144  2006.A1 / forced_inline / r0  (elapsed 3643.5min) ===
+  poisoned record (2006_A1__forced_inline__r0) — deleting, will retry.
+[2006_A1__forced_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r0_fdyox9h_/workspace
+[2006_A1__forced_inline__r0] X  build=True  sorries=1  wall=255.4s  tools=25/61
+  -> experiments/inline_content/results/2006_A1__forced_inline__r0
+
+=== cell 122/144  2006.A1 / forced_inline / r1  (elapsed 3647.8min) ===
+  poisoned record (2006_A1__forced_inline__r1) — deleting, will retry.
+[2006_A1__forced_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r1_5nlv0awu/workspace
+[2006_A1__forced_inline__r1] X  build=True  sorries=1  wall=507.1s  tools=16/17
+  -> experiments/inline_content/results/2006_A1__forced_inline__r1
+
+=== cell 123/144  2006.A1 / forced_inline / r2  (elapsed 3656.4min) ===
+  poisoned record (2006_A1__forced_inline__r2) — deleting, will retry.
+[2006_A1__forced_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r2_c_5md2do/workspace
+[2006_A1__forced_inline__r2] X  build=True  sorries=1  wall=490.4s  tools=8/8
+  -> experiments/inline_content/results/2006_A1__forced_inline__r2
+
+=== cell 124/144  2006.A1 / forced_inline / r3  (elapsed 3666.7min) ===
+  poisoned record (2006_A1__forced_inline__r3) — deleting, will retry.
+[2006_A1__forced_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r3_2_1_e53e/workspace
+[2006_A1__forced_inline__r3] X  build=True  sorries=1  wall=209.7s  tools=9/9
+  -> experiments/inline_content/results/2006_A1__forced_inline__r3
+
+=== cell 125/144  2006.A1 / forced_inline / r4  (elapsed 3670.3min) ===
+  poisoned record (2006_A1__forced_inline__r4) — deleting, will retry.
+[2006_A1__forced_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r4_21wwbo3w/workspace
+[2006_A1__forced_inline__r4] X  build=True  sorries=1  wall=480.8s  tools=11/11
+  -> experiments/inline_content/results/2006_A1__forced_inline__r4
+
+=== cell 126/144  2006.A1 / forced_inline / r5  (elapsed 3678.4min) ===
+  poisoned record (2006_A1__forced_inline__r5) — deleting, will retry.
+[2006_A1__forced_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_inline__r5_l9x3wv2o/workspace
+[2006_A1__forced_inline__r5] X  build=True  sorries=1  wall=224.1s  tools=8/9
+  -> experiments/inline_content/results/2006_A1__forced_inline__r5
+
+=== cell 127/144  2006.A1 / forced_path_only / r0  (elapsed 3683.9min) ===
+  poisoned record (2006_A1__forced_path_only__r0) — deleting, will retry.
+[2006_A1__forced_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r0_ofzwy4pq/workspace
+[2006_A1__forced_path_only__r0] X  build=True  sorries=1  wall=301.2s  tools=10/11
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r0
+
+=== cell 128/144  2006.A1 / forced_path_only / r1  (elapsed 3692.2min) ===
+  poisoned record (2006_A1__forced_path_only__r1) — deleting, will retry.
+[2006_A1__forced_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r1_wgok620t/workspace
+[2006_A1__forced_path_only__r1] X  build=True  sorries=1  wall=266.6s  tools=10/10
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r1
+
+=== cell 129/144  2006.A1 / forced_path_only / r2  (elapsed 3698.5min) ===
+  poisoned record (2006_A1__forced_path_only__r2) — deleting, will retry.
+[2006_A1__forced_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r2_6hm8jxz3/workspace
+[2006_A1__forced_path_only__r2] X  build=True  sorries=1  wall=67.7s  tools=5/8
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r2
+
+=== cell 130/144  2006.A1 / forced_path_only / r3  (elapsed 3701.5min) ===
+  poisoned record (2006_A1__forced_path_only__r3) — deleting, will retry.
+[2006_A1__forced_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r3_v9t8wog_/workspace
+[2006_A1__forced_path_only__r3] X  build=True  sorries=1  wall=265.6s  tools=9/11
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r3
+
+=== cell 131/144  2006.A1 / forced_path_only / r4  (elapsed 3707.9min) ===
+  poisoned record (2006_A1__forced_path_only__r4) — deleting, will retry.
+[2006_A1__forced_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r4_3f19b_vv/workspace
+[2006_A1__forced_path_only__r4] X  build=True  sorries=1  wall=268.1s  tools=11/11
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r4
+
+=== cell 132/144  2006.A1 / forced_path_only / r5  (elapsed 3712.5min) ===
+  poisoned record (2006_A1__forced_path_only__r5) — deleting, will retry.
+[2006_A1__forced_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__forced_path_only__r5_2h5wabe5/workspace
+[2006_A1__forced_path_only__r5] X  build=True  sorries=1  wall=370.9s  tools=12/14
+  -> experiments/inline_content/results/2006_A1__forced_path_only__r5
+
+=== cell 133/144  2006.A1 / optional_inline / r0  (elapsed 3718.8min) ===
+  poisoned record (2006_A1__optional_inline__r0) — deleting, will retry.
+[2006_A1__optional_inline__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r0_qosr7s27/workspace
+[2006_A1__optional_inline__r0] X  build=True  sorries=1  wall=159.1s  tools=33/35
+  -> experiments/inline_content/results/2006_A1__optional_inline__r0
+
+=== cell 134/144  2006.A1 / optional_inline / r1  (elapsed 3721.5min) ===
+  poisoned record (2006_A1__optional_inline__r1) — deleting, will retry.
+[2006_A1__optional_inline__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r1_9n_0pj3l/workspace
+[2006_A1__optional_inline__r1] X  build=True  sorries=1  wall=201.4s  tools=6/7
+  -> experiments/inline_content/results/2006_A1__optional_inline__r1
+
+=== cell 135/144  2006.A1 / optional_inline / r2  (elapsed 3725.0min) ===
+  poisoned record (2006_A1__optional_inline__r2) — deleting, will retry.
+[2006_A1__optional_inline__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r2_pxtlay__/workspace
+[2006_A1__optional_inline__r2] X  build=True  sorries=1  wall=239.6s  tools=5/6
+  -> experiments/inline_content/results/2006_A1__optional_inline__r2
+
+=== cell 136/144  2006.A1 / optional_inline / r3  (elapsed 3731.0min) ===
+  poisoned record (2006_A1__optional_inline__r3) — deleting, will retry.
+[2006_A1__optional_inline__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r3_xtv_so06/workspace
+[2006_A1__optional_inline__r3] X  build=True  sorries=1  wall=190.1s  tools=17/21
+  -> experiments/inline_content/results/2006_A1__optional_inline__r3
+
+=== cell 137/144  2006.A1 / optional_inline / r4  (elapsed 3734.3min) ===
+  poisoned record (2006_A1__optional_inline__r4) — deleting, will retry.
+[2006_A1__optional_inline__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r4_3c34bhbs/workspace
+[2006_A1__optional_inline__r4] X  build=True  sorries=1  wall=268.8s  tools=5/6
+  -> experiments/inline_content/results/2006_A1__optional_inline__r4
+
+=== cell 138/144  2006.A1 / optional_inline / r5  (elapsed 3740.7min) ===
+  poisoned record (2006_A1__optional_inline__r5) — deleting, will retry.
+[2006_A1__optional_inline__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_inline__r5_gw_s2wbj/workspace
+[2006_A1__optional_inline__r5] X  build=True  sorries=1  wall=263.2s  tools=8/9
+  -> experiments/inline_content/results/2006_A1__optional_inline__r5
+
+=== cell 139/144  2006.A1 / optional_path_only / r0  (elapsed 3745.2min) ===
+  poisoned record (2006_A1__optional_path_only__r0) — deleting, will retry.
+[2006_A1__optional_path_only__r0] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r0_lznlai7l/workspace
+[2006_A1__optional_path_only__r0] X  build=True  sorries=1  wall=172.3s  tools=5/6
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r0
+
+=== cell 140/144  2006.A1 / optional_path_only / r1  (elapsed 3748.2min) ===
+  poisoned record (2006_A1__optional_path_only__r1) — deleting, will retry.
+[2006_A1__optional_path_only__r1] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r1_ecfa029q/workspace
+[2006_A1__optional_path_only__r1] X  build=True  sorries=1  wall=170.9s  tools=5/6
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r1
+
+=== cell 141/144  2006.A1 / optional_path_only / r2  (elapsed 3751.1min) ===
+  poisoned record (2006_A1__optional_path_only__r2) — deleting, will retry.
+[2006_A1__optional_path_only__r2] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r2_1i9yp0ys/workspace
+[2006_A1__optional_path_only__r2] X  build=True  sorries=1  wall=431.7s  tools=7/8
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r2
+
+=== cell 142/144  2006.A1 / optional_path_only / r3  (elapsed 3758.5min) ===
+  poisoned record (2006_A1__optional_path_only__r3) — deleting, will retry.
+[2006_A1__optional_path_only__r3] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r3_wh4miy2c/workspace
+[2006_A1__optional_path_only__r3] X  build=True  sorries=1  wall=40.4s  tools=3/4
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r3
+
+=== cell 143/144  2006.A1 / optional_path_only / r4  (elapsed 3760.6min) ===
+  poisoned record (2006_A1__optional_path_only__r4) — deleting, will retry.
+[2006_A1__optional_path_only__r4] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r4_ye8281uz/workspace
+[2006_A1__optional_path_only__r4] X  build=True  sorries=1  wall=51.8s  tools=6/7
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r4
+
+=== cell 144/144  2006.A1 / optional_path_only / r5  (elapsed 3761.6min) ===
+  poisoned record (2006_A1__optional_path_only__r5) — deleting, will retry.
+[2006_A1__optional_path_only__r5] workspace = /var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_2006_A1__optional_path_only__r5_pa8yssnp/workspace
+[2006_A1__optional_path_only__r5] X  build=True  sorries=1  wall=386.1s  tools=7/9
+  -> experiments/inline_content/results/2006_A1__optional_path_only__r5
+
+inline-content study complete in 3768.2 min

@@ -1,0 +1,59 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "forced_inline",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780054935.144136,
+  "ended_at": 1780055510.375991,
+  "wall_clock_s": 575.2318551540375,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_surface": {
+      "attempted": 3,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "forced_inline",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 3,
+    "viz_read_back": true,
+    "viz_verdict": "The surface exp(max(x\u00b2,y\u00b2)) is symmetric about the diagonal y=x with a ridge along it, confirming max splits the square into two equal triangles and the answer is (e^{a\u00b2b\u00b2}-1)/(ab).",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__math-viz__plot_surface",
+    "notes": "Correct answer term (e^{a\u00b2b\u00b2}-1)/(ab) defined and statement compiles cleanly; full proof needs 2D diagonal region-split + Tonelli (inner \u222be^{a\u00b2y\u00b2}dy is non-elementary), not feasible in budget, so proof left as sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__forced_inline__r5_t3_ycwkx/workspace"
+}

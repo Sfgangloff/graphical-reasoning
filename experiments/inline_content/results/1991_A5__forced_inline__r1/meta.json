@@ -1,0 +1,59 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "forced_inline",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780072322.2819688,
+  "ended_at": 1780072893.278492,
+  "wall_clock_s": 570.996523141861,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__math-viz__plot_function": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 15,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 1,
+    "viz_read_back": true,
+    "viz_verdict": "The upper bound g(y)=y^2-2y^3/3 (dominating the integral via \u221a(x^4+c^2)\u2264x^2+c) increases monotonically on [0,1] to exactly 1/3 at y=1, confirming the maximum value is 1/3 attained at y=1.",
+    "viz_changed_approach": false,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Proved IsGreatest with answer 1/3: membership via y=1 (\u222bx^2=1/3), upper bound via \u221a(x^4+c^2)\u2264x^2+c then integral_mono_on and nlinarith using (1-y)^2(2y+1)\u22650; builds clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__forced_inline__r1_g4sfq66g/workspace"
+}

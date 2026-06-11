@@ -1,0 +1,39 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "optional_inline",
+  "run_index": 3,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780211701.200184,
+  "ended_at": 1780212482.0607722,
+  "wall_clock_s": 780.8605880737305,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 143,
+  "claude_timed_out": true,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "Edit": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 12,
+  "tool_calls_succeeded": 10,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__optional_inline__r3_t_m9dg0h/workspace"
+}

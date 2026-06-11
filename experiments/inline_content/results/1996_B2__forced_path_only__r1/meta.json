@@ -1,0 +1,55 @@
+{
+  "problem_id": "1996.B2",
+  "condition": "forced_path_only",
+  "run_index": 1,
+  "tags": "asymptotic|integral-inequality",
+  "category": "graph-friendly",
+  "started_at": 1780148555.143481,
+  "ended_at": 1780148989.9708989,
+  "wall_clock_s": 434.8274178504944,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 1,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 6,
+      "succeeded": 6
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 1
+    },
+    "ToolSearch": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Write": {
+      "attempted": 1,
+      "succeeded": 0
+    },
+    "lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 0
+    },
+    "lean_goal": {
+      "attempted": 5,
+      "succeeded": 0
+    },
+    "lean_verify": {
+      "attempted": 3,
+      "succeeded": 0
+    },
+    "plot_function": {
+      "attempted": 2,
+      "succeeded": 0
+    }
+  },
+  "tool_calls_attempted": 26,
+  "tool_calls_succeeded": 10,
+  "self_report": null,
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1996_B2__forced_path_only__r1_hnc4og4y/workspace"
+}

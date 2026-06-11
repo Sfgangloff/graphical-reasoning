@@ -1,0 +1,59 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "forced_inline",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780094580.2507899,
+  "ended_at": 1780095197.506525,
+  "wall_clock_s": 617.2557351589203,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "mcp__math-viz__plot_integrand_with_shading": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 13,
+  "tool_calls_succeeded": 11,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "forced_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 2,
+    "viz_read_back": true,
+    "viz_verdict": "The plot shows \u222b\u2080^{2/3}(2x\u22123x\u00b3\u22124/9)dx \u2248 \u22121.1e\u221207 \u2248 0 \u2014 the integrand is negative on [0,x\u2081] (region 1) and positive on [x\u2081,x\u2082] (region 2) and the areas cancel, confirming c = 4/9.",
+    "viz_changed_approach": false,
+    "decisive_tool": "lake build",
+    "notes": "Formalized as uniqueness (given the equal-area hypothesis, c=4/9); proof uses FTC to evaluate the combined integral then linear_combination/algebra to solve, builds cleanly with no sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__forced_inline__r5_47tuecaq/workspace"
+}

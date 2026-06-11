@@ -1,0 +1,52 @@
+{
+  "problem_id": "1989.A2",
+  "condition": "optional_path_only",
+  "run_index": 4,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780071177.4689422,
+  "ended_at": 1780071650.4550269,
+  "wall_clock_s": 472.98608469963074,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 1,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "Read": {
+      "attempted": 4,
+      "succeeded": 4
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 14,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1989.A2",
+    "condition": "optional_path_only",
+    "outcome": "partial",
+    "sorries_remaining": 1,
+    "tool_calls_total": 9,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_diagnostic_messages",
+    "notes": "Correct answer term (e^{a^2b^2}-1)/(ab) and faithful statement compile cleanly; full proof (max domain-split + FTC + order swap) left as sorry due to time budget."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1989_A2__optional_path_only__r4_gjlqz0r4/workspace"
+}

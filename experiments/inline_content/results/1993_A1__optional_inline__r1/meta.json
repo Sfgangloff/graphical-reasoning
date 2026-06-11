@@ -1,0 +1,52 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "optional_inline",
+  "run_index": 1,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780109107.365483,
+  "ended_at": 1780109772.2941382,
+  "wall_clock_s": 664.9286551475525,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 4,
+      "succeeded": 3
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 10,
+  "tool_calls_succeeded": 8,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "optional_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 7,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Reduced equal-areas condition to two interval integrals computed via FTC with antiderivative G(x)=4/9 x - x^2 + 3/4 x^4; the irrational lower-intersection terms cancel and G(2/3)=G(0)=0 closes it; build clean."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_inline__r1_x1g09nja/workspace"
+}

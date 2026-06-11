@@ -1,0 +1,52 @@
+{
+  "problem_id": "1991.A5",
+  "condition": "optional_inline",
+  "run_index": 3,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780087661.964889,
+  "ended_at": 1780088069.8814871,
+  "wall_clock_s": 407.91659808158875,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 6,
+      "succeeded": 5
+    },
+    "Read": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "ToolSearch": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Write": {
+      "attempted": 3,
+      "succeeded": 2
+    },
+    "mcp__lean-lsp-mcp__lean_loogle": {
+      "attempted": 2,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 15,
+  "tool_calls_succeeded": 12,
+  "self_report": {
+    "problem_id": "1991.A5",
+    "condition": "optional_inline",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 11,
+    "tool_calls_viz": 0,
+    "decisive_tool": "mcp__lean-lsp-mcp__lean_loogle",
+    "notes": "Proved IsGreatest with answer 1/3 via the sqrt(a\u00b2+b\u00b2)\u2264a+b bound and the factorization (y-1)\u00b2(2y+1)\u22650; only fix needed was the lemma name integral_pow (no namespace), found via loogle."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1991_A5__optional_inline__r3_zmrhpt_5/workspace"
+}

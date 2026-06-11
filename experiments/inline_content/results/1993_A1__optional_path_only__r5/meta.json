@@ -1,0 +1,60 @@
+{
+  "problem_id": "1993.A1",
+  "condition": "optional_path_only",
+  "run_index": 5,
+  "tags": "integral-evaluation",
+  "category": "graph-friendly",
+  "started_at": 1780143219.573086,
+  "ended_at": 1780144229.0412009,
+  "wall_clock_s": 1009.4681148529053,
+  "budget_minutes": 12,
+  "budget_tool_calls": 80,
+  "claude_exit_code": 0,
+  "claude_timed_out": false,
+  "solution_produced": true,
+  "build_ok": true,
+  "sorries_remaining": 0,
+  "tool_counts": {
+    "Bash": {
+      "attempted": 5,
+      "succeeded": 5
+    },
+    "Edit": {
+      "attempted": 1,
+      "succeeded": 1
+    },
+    "Read": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "ToolSearch": {
+      "attempted": 2,
+      "succeeded": 2
+    },
+    "Write": {
+      "attempted": 2,
+      "succeeded": 1
+    },
+    "mcp__lean-lsp-mcp__lean_diagnostic_messages": {
+      "attempted": 3,
+      "succeeded": 3
+    },
+    "mcp__lean-lsp-mcp__lean_verify": {
+      "attempted": 1,
+      "succeeded": 1
+    }
+  },
+  "tool_calls_attempted": 16,
+  "tool_calls_succeeded": 15,
+  "self_report": {
+    "problem_id": "1993.A1",
+    "condition": "optional_path_only",
+    "outcome": "solved",
+    "sorries_remaining": 0,
+    "tool_calls_total": 17,
+    "tool_calls_viz": 0,
+    "decisive_tool": "lean_diagnostic_messages",
+    "notes": "Reduced equal-area condition to c\u00b7x2 = \u222b\u2080^x2 f (x1 cancels); FTC via integral_pow/integral_id, finished with ring; LSP diagnostics confirmed clean compile with no sorry."
+  },
+  "workspace": "/var/folders/pl/c57pb2_52t513h0r4dgr0ryc0000gn/T/exp_1993_A1__optional_path_only__r5_puptteau/workspace"
+}
