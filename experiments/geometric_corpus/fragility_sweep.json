@@ -1,0 +1,61 @@
+{
+  "method": "min uniform-sampler resolution N to catch the falsifier; 12 grid alignments per N; sweep N=3..400",
+  "continuous": [
+    {
+      "problem": "geom_01",
+      "desc": "tangent touch (double root off-grid)",
+      "N_any": 3,
+      "N_all": 22,
+      "designer_N": 11
+    },
+    {
+      "problem": "geom_03",
+      "desc": "convexity dip (narrow neg f'')",
+      "N_any": 3,
+      "N_all": 37,
+      "designer_N": 11
+    },
+    {
+      "problem": "geom_04",
+      "desc": "disk hole (2D containment)",
+      "N_any": 10,
+      "N_all": 20,
+      "designer_N": 5
+    },
+    {
+      "problem": "geom_06",
+      "desc": "inequality dip (narrow neg)",
+      "N_any": 5,
+      "N_all": 86,
+      "designer_N": 11
+    },
+    {
+      "problem": "geom_10",
+      "desc": "zero-count (high-freq aliasing)",
+      "N_any": 9,
+      "N_all": 17,
+      "designer_N": 11
+    }
+  ],
+  "geom_05": {
+    "stride_caught": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": false,
+      "5": true,
+      "6": false,
+      "7": false,
+      "8": false,
+      "9": false,
+      "10": false
+    },
+    "min_exhaustive_prefix_K": 45,
+    "note": "uniform stride-1 enumeration catches at K=45; sparse/logspace samplers (verify.py uses {1,2,5,10,20,50,100,200}) miss it. Fragility is heuristic-specific, not resolution-based: a dense integer scan wins."
+  },
+  "geom_09": {
+    "uniform_grid_N_any": 4,
+    "decimal_heuristic_max_abs_q": 4.123661161048562e-12,
+    "note": "the decimal-h heuristic in verify.py gives max|sin(pi/h)|=4.12e-12 (ratifies false f'(0)=0), but ANY generic uniform h-grid catches at N=4. Fragility is entirely heuristic-specific (decimal h are integer multiples of 1/pi's denominator); resolution does not help the LIE survive."
+  }
+}
