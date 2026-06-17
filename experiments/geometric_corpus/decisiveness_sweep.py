@@ -240,6 +240,32 @@ def load_frag_N_all():
     return out
 
 
+def robustness_sweep():
+    """Re-evaluate every decider across a grid of figure sizes and MIN_PX
+    thresholds, to show the picture-decisive verdict is not an artifact of the
+    one default plot size / threshold. Mutates the module resolution globals in
+    place (the deciders read them), then restores."""
+    import sys
+    me = sys.modules[__name__]
+    base = (me.FIG_W_IN, me.FIG_H_IN, me.MIN_PX, me.PX_W, me.PX_H)
+    sizes = [(3.2, 2.4), (6.4, 4.8), (10.0, 7.5)]   # small / default / large
+    mins = [2.0, 3.0, 5.0]
+    out = {}
+    for name, fn in DECIDERS.items():
+        grid = {}
+        for w, h in sizes:
+            for mp in mins:
+                me.FIG_W_IN, me.FIG_H_IN, me.MIN_PX = w, h, mp
+                me.PX_W = w * me.DPI * me.AXES_FRAC
+                me.PX_H = h * me.DPI * me.AXES_FRAC
+                r, _ = fn()
+                grid[f"{int(w*100*0.80)}px@MIN{mp:g}"] = r
+        out[name] = {"decisive_all_settings": all(grid.values()),
+                     "by_setting": grid}
+    me.FIG_W_IN, me.FIG_H_IN, me.MIN_PX, me.PX_W, me.PX_H = base
+    return out
+
+
 def main():
     n_all = load_frag_N_all()
     n_eff = int(round(PX_W))    # the plot's effective uniform-sampler resolution
@@ -282,6 +308,16 @@ def main():
     print("  uniform-sampling logic, run at ~2 orders of magnitude finer")
     print("  resolution for free. That asymmetry IS the picture-decisiveness.")
 
+    rob = robustness_sweep()
+    print()
+    print("  ROBUSTNESS (fig size 256/512/800 px x MIN_PX 2/3/5):")
+    for name, r in rob.items():
+        if r["decisive_all_settings"]:
+            print(f"    {name}: decisive in ALL 9 settings")
+        else:
+            fails = [k for k, v in r["by_setting"].items() if not v]
+            print(f"    {name}: decisive 7/9 -- fails at {fails}")
+
     OUT_JSON.write_text(json.dumps({
         "method": ("pixel footprint of the falsifier in a standard "
                    f"{int(PX_W)}x{int(PX_H)}px plot vs naive-grid N_all from "
@@ -290,6 +326,7 @@ def main():
                 "axes_frac": AXES_FRAC, "px_w": PX_W, "px_h": PX_H,
                 "MIN_PX": MIN_PX, "N_eff_plot": n_eff},
         "problems": rows,
+        "robustness": rob,
         "summary": {"picture_decisive": f"{n_dec}/{len(rows)}",
                     "min_edge_x": min(edges) if edges else None,
                     "max_edge_x": max(edges) if edges else None},

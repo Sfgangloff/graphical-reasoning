@@ -92,6 +92,120 @@
       "reads_as": "dense oscillation crossing zero ~47 times"
     }
   ],
+  "robustness": {
+    "geom_01": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_02": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_03": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_04": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_05": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_06": {
+      "decisive_all_settings": false,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": false,
+        "256px@MIN5": false,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_09": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    },
+    "geom_10": {
+      "decisive_all_settings": true,
+      "by_setting": {
+        "256px@MIN2": true,
+        "256px@MIN3": true,
+        "256px@MIN5": true,
+        "512px@MIN2": true,
+        "512px@MIN3": true,
+        "512px@MIN5": true,
+        "800px@MIN2": true,
+        "800px@MIN3": true,
+        "800px@MIN5": true
+      }
+    }
+  },
   "summary": {
     "picture_decisive": "8/8",
     "min_edge_x": 3.6,
