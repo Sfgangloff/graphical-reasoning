@@ -1,0 +1,100 @@
+{
+  "method": "pixel footprint of the falsifier in a standard 512x384px plot vs naive-grid N_all from fragility_sweep.json; MIN_PX=3",
+  "fig": {
+    "w_in": 6.4,
+    "h_in": 4.8,
+    "dpi": 100,
+    "axes_frac": 0.8,
+    "px_w": 512.0,
+    "px_h": 384.0,
+    "MIN_PX": 3.0,
+    "N_eff_plot": 512
+  },
+  "problems": [
+    {
+      "problem": "geom_01",
+      "picture_decisive": true,
+      "N_all_grid": 22,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 23.3,
+      "min_curve_gap_px": 0.0,
+      "max_curve_gap_px": 349.1,
+      "reads_as": "single visible contact point"
+    },
+    {
+      "problem": "geom_02",
+      "picture_decisive": true,
+      "N_all_grid": 141,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 3.6,
+      "crossing_angle_deg": 53.1,
+      "reads_as": "figure-eight X at the origin"
+    },
+    {
+      "problem": "geom_03",
+      "picture_decisive": true,
+      "N_all_grid": 37,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 13.8,
+      "neg_spike_depth_px": 212.4,
+      "neg_region_width_px": 13.7,
+      "reads_as": "sharp downward spike below zero"
+    },
+    {
+      "problem": "geom_04",
+      "picture_decisive": true,
+      "N_all_grid": 20,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 25.6,
+      "hole_diam_px_x": 25.6,
+      "hole_diam_px_y": 19.2,
+      "reads_as": "visible punched hole"
+    },
+    {
+      "problem": "geom_05",
+      "picture_decisive": true,
+      "N_all_grid": null,
+      "N_eff_plot": 512,
+      "resolution_edge_x": null,
+      "residual_bump_px": 151.1,
+      "raw_bump_px": 0.59,
+      "raw_plot_decisive": false,
+      "reads_as": "residual a_n-1/n spikes at n=47 (RAW plot is sub-pixel -- use residual)"
+    },
+    {
+      "problem": "geom_06",
+      "picture_decisive": true,
+      "N_all_grid": 86,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 6.0,
+      "dip_depth_px": 8.9,
+      "dip_width_px": 5.6,
+      "reads_as": "curve dips below the axis"
+    },
+    {
+      "problem": "geom_09",
+      "picture_decisive": true,
+      "N_all_grid": null,
+      "N_eff_plot": 512,
+      "resolution_edge_x": null,
+      "resolvable_swings_x>0": 13.3,
+      "innermost_resolved_x": 0.0335,
+      "reads_as": "oscillation fills the +-|x| envelope"
+    },
+    {
+      "problem": "geom_10",
+      "picture_decisive": true,
+      "N_all_grid": 17,
+      "N_eff_plot": 512,
+      "resolution_edge_x": 30.1,
+      "wiggle_period_px": 12.9,
+      "n_visible_periods": 39.8,
+      "reads_as": "dense oscillation crossing zero ~47 times"
+    }
+  ],
+  "summary": {
+    "picture_decisive": "8/8",
+    "min_edge_x": 3.6,
+    "max_edge_x": 30.1
+  }
+}

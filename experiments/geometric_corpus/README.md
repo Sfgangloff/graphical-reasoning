@@ -106,6 +106,27 @@ All eight problems are designed and verified end-to-end
 sampling-fragile step (asserts the naive grid / containment strategy
 ratifies the FALSE claim).
 
+### Quantified acceptance (2026-06-17)
+
+Both Study-8 criteria are now measured numerically, not just by eye:
+
+- **Sampling-fragile** — `fragility_sweep.py` / `fragility_sweep.json`:
+  smallest naive-uniform-sampler resolution `N_all` (robust over 12
+  alignments) that catches each falsifier. Continuous problems:
+  geom_01 22, geom_03 37, geom_04 20, geom_06 86, geom_10 17;
+  geom_02 odd-N (designer regime) 141. geom_05/geom_09 are
+  heuristic-fragile (a dense scan wins), not resolution-fragile.
+- **Picture-decisive** — `decisiveness_sweep.py` /
+  `decisiveness_sweep.json`: pixel footprint of each falsifier feature
+  in a standard 512×384 px (mpl 640×480 @100 dpi) plot vs `N_all`.
+  Result: **8/8 picture-decisive**; the plot's effective resolution
+  `N_eff≈512` exceeds the catching grid by **4×–30× (median 23×)** — the
+  same uniform-sampling logic, run ~2 orders of magnitude finer for free.
+  **Caveat surfaced:** geom_05's *raw* `(n, a_n)` plot is sub-pixel
+  (bump ≈0.6 px) and is NOT decisive; it is decisive only on the
+  *residual* `a_n − 1/n` plot (≈151 px), exactly the `viz_check`
+  prescribed in `canonical.json`. Use the residual plot for geom_05.
+
 ### Notes on the redesigns (2026-05-27 / 28)
 
 The originally-drafted forms of `geom_05`, `geom_09`, and `geom_10`
